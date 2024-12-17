@@ -14,6 +14,7 @@ keyword:
  - NETCONF
  - RESTCONF
  - NMOPS
+ - RFC3535
 venue:
   github: "intarchboard/draft-iab-nemops-workshop-report"
   latest: "https://intarchboard.github.io/draft-iab-nemops-workshop-report/draft-iab-nemops-workshop-report.html"
