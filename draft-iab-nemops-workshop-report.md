@@ -80,7 +80,76 @@ The workshop was organized across three days with all-group discussion slots, on
 
 ## Session III: Future (possible solutions, recommendations and next steps)
 
-## Key Take Aways
+## Key Takeaways
+
+At the end of the third day the discussion turned to key takeaways
+that had consensus.  In the process of discussion there were some
+realizations where additional work was also needed.
+
+[XXX: note at this point these are cut and paste from the slides and
+not properly edited/cleaned/moved around]
+
+### Ecosystem conclusions
+
+1. The current network management protocols/models/tools still fail the ‘ease of use’ requirement
+    1. The tools may matter more than the protocols
+1. The overall ecosystem is still fragmented for both protocols and data models
+    1. SNMP (for monitoring) and CLI is still the rule in many networks (this is a potential obstacle)
+    1. Transitions between frameworks is challenging (see IPv4 -> IPv6)
+    1. Fragments: SNMP, CLI, NETCONF, RESTCONF, gNMI, etc…
+    1. gNMI is popular for stream
+1. Model-driven network management is generally a success
+1. Documentation for how the network management ecosystem works is lacking
+    1. Could use architecture documentation, deployment guides, tutorials, training, getting started
+1. Easily usable network management tools for the operators are needed
+    1. Lack of open source tools are a barrier to adoption
+    1. We need more discussion about tooling success paths
+    1. Tools need good use cases / example use cases and flows
+
+### Protocol conclusions
+
+1. False: Netconf for configuration has been successful in some larger scale deployment
+    1. Let’s discuss this further on list
+    1. Service config?
+1. Netconf/YANG is not used much (yet?) for monitoring
+1. False: Full device control and configuration frequently requires CLI and screen scraping
+1. Full coverage of NetConf support on devices is missing
+1. Polling based solutions are still frequently deployed
+
+### Modeling conclusions
+
+[XXX: note -- I don't think we talked about this slide much -Wes]
+
+1. YANG models can sometimes get too complex (not a fault of the language)
+1. Vendor-specific features need to be exposed through network management protocols
+1. More service-level modeling is needed
+    1. Device level modeling needs to be a building block but is not a complete service-level solution
+1. Network configuration needs to be verifiable
+1. Multi-vendor compatibility support is required.
+1. Full coverage of YANG models on all devices is missing
+1. Model translation adaptors may be the best path forward
+    1. Likely off-device
+
+### Standardization conclusions
+
+1. More rapid model development procedures are (still) needed 
+    1. Faster than how the IETF produces (simple) results today (especially models)
+    1. New approaches/methods to make it live outside the RFCs should be explored
+    1. Need more predictable timelines
+1. More focus is needed on scalability of all network management roles (monitoring, configuration, notifications)
+1. We should reduce complexity for future changes to a minimal agreed set of core features
+    1. For both protocol and models
+1. Network management enhancements needs to be backed by operator use cases and vendor buy-in
+    1. Vendors and operators should must work together
+1. An rapid development experiment would be an interesting approach
+
+
+### Additional work needed
+
+Here we list the things that the group realized needed significant
+more attention in order to come to conclusion about.
+
+...
 
 --- back
 
