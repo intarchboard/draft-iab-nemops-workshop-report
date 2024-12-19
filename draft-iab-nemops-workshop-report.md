@@ -37,7 +37,7 @@ informative:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf
     title: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations
      -
-       ins:  J Schönwälder
+       ins:  J. Schönwälder
        name: Jürgen Schönwälder
     date: November 2024
 
