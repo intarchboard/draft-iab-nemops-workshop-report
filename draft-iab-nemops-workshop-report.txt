@@ -167,9 +167,9 @@ Table of Contents
               <https://www.rfc-editor.org/rfc/rfc8040>.
 
    [SCHONWALDER]
-              "Composable, Declarative, Reproducible, Verifiable Network
-              and Service Configurations", November 2024,
-              <https://www.ietf.org/slides/slides-nemopsws-paper-
+              Schönwälder, J., "Composable, Declarative, Reproducible,
+              Verifiable Network and Service Configurations", November
+              2024, <https://www.ietf.org/slides/slides-nemopsws-paper-
               composable-declarative-reproducible-verifiable-network-
               and-service-configurations-00.pdf>.
 
