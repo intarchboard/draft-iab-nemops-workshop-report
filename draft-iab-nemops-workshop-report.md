@@ -28,14 +28,16 @@ author:
 normative:
 
 informative:
-RFC3535:
-RFC6241:
-RFC7950:
-RFC8040:
-I-D.ietf-core-comi:
-SCHONWALDER:
-  target: https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf
-  title: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations
+  RFC3535:
+  RFC6241:
+  RFC7950:
+  RFC8040:
+  I-D.ietf-core-comi:
+  SCHONWALDER:
+    target: https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf
+    title: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations
+    date: November 2024
+
 --- abstract
 
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 200[...]
