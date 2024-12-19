@@ -36,9 +36,10 @@ informative:
   SCHONWALDER:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf
     title: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations
+    author:    
       -
-        ins:  L. M. Martínez-Cervantes
-        name: Luis Miguel Martínez Cervantes
+        ins:  J. Schönwälder
+        name: Jürgen Schönwälder
     date: November 2024
 
 --- abstract
