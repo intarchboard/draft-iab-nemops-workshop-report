@@ -33,7 +33,7 @@ RFC6241:
 RFC7950:
 RFC8040:
 I-D.ietf-core-comi:
-SCHOENWAELDER:
+SCHONWALDER:
   target: https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf
   title: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations
 --- abstract
@@ -84,7 +84,7 @@ The workshop was organized across three days with all-group discussion slots, on
 
 This is the list of all papers:
 
-* J Schönwälder: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations {{SCHOENWAELDER}}
+* J Schönwälder: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations {{SCHONWALDER}}
 
 # Workshop Participants
 
