@@ -33,7 +33,14 @@ RFC6241:
 RFC7950:
 RFC8040:
 I-D.ietf-core-comi:
-
+SCHOENWAELDER:
+  target: https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf
+  title: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations
+    author:
+      -
+        ins:  J Schönwälder
+        name: Jürgen Schönwälder
+    date: January 2024        
 --- abstract
 
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
@@ -77,6 +84,13 @@ The workshop was organized across three days with all-group discussion slots, on
 --- back
 
 # Position Papers
+
+20 position papers were submitted to the workshop call for papers. All papers are available at: https://datatracker.ietf.org/group/nemopsws/materials/
+
+This is the list of all papers:
+
+* J Schönwälder: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations {{SCHOENWAELDER}}
+* 
 
 # Workshop Participants
 
