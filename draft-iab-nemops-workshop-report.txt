@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 20 June 2025                                   17 December 2024
+Expires: 22 June 2025                                   19 December 2024
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -16,23 +16,12 @@ Abstract
 
    The "Next Era of Network Management Operations (NEMOPS)" workshop was
    convened by the Internet Architecture Board (IAB) on December 3-5,
-   2024 as a three-day online meeting.  It builds on a previous 2002
-   workshop, the outcome of which was documented in RFC 3535 identifying
-   14 operator requirements for consideration in future network
-   management protocol design and related data models, along with some
-   recommendations for the IETF.  Much has changed in the Internet’s
-   operation and technological foundations since then.  The NEMOPS
-   workshop reviewed the past outcomes and identified any operational
-   barriers that prevented these technologies from being widely
-   implemented.  It sketched new requirements for future network
-   management operations collaboratively with the industry, network
-   operators and protocol engineers, and developed a suggested action
-   plan and recommendations for the IETF.
+   2024 as a three-day online meeting.  It builds on a previous 200[...]
 
    Note that this document is a report on the proceedings of the
    workshop.  The views and positions documented in this report were
    expressed during the workshop by participants and do not necessarily
-   reflect IAB's views and positions.
+   ref[...]
 
 About This Document
 
@@ -62,7 +51,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 June 2025.
+   This Internet-Draft will expire on 22 June 2025.
 
 Copyright Notice
 
@@ -85,6 +74,7 @@ Table of Contents
      2.3.  Session III: Future (possible solutions, recommendations
            and next steps)
      2.4.  Key Take Aways
+   3.  Informative References
    Appendix A.  Position Papers
    Appendix B.  Workshop Participants
    Appendix C.  Workshop Program Committee
@@ -97,23 +87,19 @@ Table of Contents
    The IAB organized a workshop in June 2002 to establish a dialog
    between network operators and protocol developers, and to guide IETF
    when working on network management protocols.  The outcome of that
-   workshop was documented in the "Overview of the 2002 IAB Network
-   Management Workshop" [RFC3535] which identified 14 operator
-   requirements for consideration in future network management protocol
-   design and related data models, along with some recommendations for
-   the IETF.
+   w[...]
 
    Those requirements were instrumental in developing first the NETCONF
    protocol (in the NETCONF Working Group) [RFC6241], the associated
-   YANG data modeling language (in the NETMOD Working Group) [RFC7950],
-   RESTCONF [RFC8040], and most recently CORECONF [I-D.ietf-core-comi].
+   YANG data modeling language (in the NETMOD Working Group)
+   [RFC795[...]
 
    The NEMOPS workshop aimed to discuss the following key topics:
 
    *  Review the outcomes and results of the 2002 workshop (current
       deployments, state of the art) and identify any operational
       barriers that prevent these technologies from being widely
-      implemented (limitations, hurdles).
+      implemented (limi[...]
 
    *  Sketch new requirements for future network management operations
       in a collaborative manner with the industry, network operators,
@@ -126,29 +112,24 @@ Table of Contents
    The Internet Architecture Board (IAB) holds occasional workshops
    designed to consider long-term issues and strategies for the
    Internet, and to suggest future directions for the Internet
-   architecture.  This long-term planning function of the IAB is
-   complementary to the ongoing engineering efforts performed by working
-   groups of the Internet Engineering Task Force (IETF).
+   architecture. [...]
 
    This document is a report on the proceedings of the workshop.  The
    views and positions documented in this report are expressed during
    the workshop by participants and do not necessarily reflect IAB's
-   views and positions.
+   v[...]
 
    Furthermore, the content of the report comes from presentations given
    by workshop participants and notes taken during the discussions,
    without interpretation or validation.  Thus, the content of this
-   report follows the flow and dialogue of the workshop but does not
-   necessarily attempt to capture a consensus, unless stated otherwise.
+   [...]
 
 2.  Workshop Scope and Discussion
 
    The workshop was organized across three days with all-group
    discussion slots, one per day.  The following topic areas were
    identified and the program committee organized paper submissions into
-   three main themes for each of the three discussion slots.  During
-   each discussion, those papers were presented sequentially with open
-   discussion held at the end of each day.
+   three ma[...]
 
 2.1.  Session I: Past (lookback, analysis)
 
@@ -159,7 +140,49 @@ Table of Contents
 
 2.4.  Key Take Aways
 
+3.  Informative References
+
+   [I-D.ietf-core-comi]
+              Veillette, M., Van der Stok, P., Pelov, A., Bierman, A.,
+              and C. Bormann, "CoAP Management Interface (CORECONF)",
+              Work in Progress, Internet-Draft, draft-ietf-core-comi-19,
+              3 November 2024, <https://datatracker.ietf.org/doc/html/
+              draft-ietf-core-comi-19>.
+
+   [RFC3535]  Schoenwaelder, J., "Overview of the 2002 IAB Network
+              Management Workshop", RFC 3535, DOI 10.17487/RFC3535, May
+              2003, <https://www.rfc-editor.org/rfc/rfc3535>.
+
+   [RFC6241]  Enns, R., Ed., Bjorklund, M., Ed., Schoenwaelder, J., Ed.,
+              and A. Bierman, Ed., "Network Configuration Protocol
+              (NETCONF)", RFC 6241, DOI 10.17487/RFC6241, June 2011,
+              <https://www.rfc-editor.org/rfc/rfc6241>.
+
+   [RFC7950]  Bjorklund, M., Ed., "The YANG 1.1 Data Modeling Language",
+              RFC 7950, DOI 10.17487/RFC7950, August 2016,
+              <https://www.rfc-editor.org/rfc/rfc7950>.
+
+   [RFC8040]  Bierman, A., Bjorklund, M., and K. Watsen, "RESTCONF
+              Protocol", RFC 8040, DOI 10.17487/RFC8040, January 2017,
+              <https://www.rfc-editor.org/rfc/rfc8040>.
+
+   [SCHONWALDER]
+              "Composable, Declarative, Reproducible, Verifiable Network
+              and Service Configurations", November 2024,
+              <https://www.ietf.org/slides/slides-nemopsws-paper-
+              composable-declarative-reproducible-verifiable-network-
+              and-service-configurations-00.pdf>.
+
 Appendix A.  Position Papers
+
+   20 position papers were submitted to the workshop call for papers.
+   All papers are available at:
+   https://datatracker.ietf.org/group/nemopsws/materials/
+
+   This is the list of all papers:
+
+   *  J Schönwälder: Composable, Declarative, Reproducible, Verifiable
+      Network and Service Configurations [SCHONWALDER]
 
 Appendix B.  Workshop Participants
 

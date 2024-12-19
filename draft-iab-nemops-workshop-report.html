@@ -7,10 +7,10 @@
 <title>Report from the IAB Workshop on the Next Era of Network Management Operations</title>
 <meta content="Wes Hardaker" name="author">
 <meta content="Dhruv Dhody" name="author">
-<meta content="
-       The &quot;Next Era of Network Management Operations (NEMOPS)&quot; workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF. 
-       Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily reflect IAB's views and positions. 
-    " name="description">
+<meta content='
+       The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 200[...] 
+       Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily ref[...] 
+    ' name="description">
 <meta content="xml2rfc 3.25.0" name="generator">
 <meta content="YANG" name="keyword">
 <meta content="NETCONF" name="keyword">
@@ -20,15 +20,15 @@
 <meta content="draft-iab-nemops-workshop-report-latest" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.25.0
-    Python 3.12.7
+    Python 3.12.8
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
     Jinja2 3.1.4
     lxml 5.3.0
     platformdirs 4.3.6
-    pycountry 22.3.5
-    PyYAML 6.0.1
+    pycountry 24.6.1
+    PyYAML 6.0.2
     requests 2.32.3
     setuptools 70.3.0
     wcwidth 0.2.13
@@ -1054,7 +1054,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Hardaker &amp; Dhody</td>
-<td class="center">Expires 20 June 2025</td>
+<td class="center">Expires 22 June 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1067,12 +1067,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-iab-nemops-workshop-report-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-12-17" class="published">17 December 2024</time>
+<time datetime="2024-12-19" class="published">19 December 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-06-20">20 June 2025</time></dd>
+<dd class="expires"><time datetime="2025-06-22">22 June 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1087,8 +1087,8 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">Report from the IAB Workshop on the Next Era of Network Management Operations</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
-<p id="section-abstract-2">Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily reflect IAB's views and positions.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 200[...]<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-2">Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily ref[...]<a href="#section-abstract-2" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-about-this-document">
@@ -1120,7 +1120,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 20 June 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 22 June 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1172,22 +1172,25 @@ svg :is([fill="white"], [fill^="#fff"]) {
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
-            <p id="section-toc.1-1.3.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-position-papers" class="internal xref">Position Papers</a></p>
+            <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#appendix-B" class="auto internal xref">Appendix B</a>.  <a href="#name-workshop-participants" class="internal xref">Workshop Participants</a></p>
+            <p id="section-toc.1-1.4.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-position-papers" class="internal xref">Position Papers</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#appendix-C" class="auto internal xref">Appendix C</a>.  <a href="#name-workshop-program-committee" class="internal xref">Workshop Program Committee</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#appendix-B" class="auto internal xref">Appendix B</a>.  <a href="#name-workshop-participants" class="internal xref">Workshop Participants</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#appendix-D" class="auto internal xref"></a><a href="#name-iab-members-at-the-time-of-" class="internal xref">IAB Members at the Time of Approval</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#appendix-C" class="auto internal xref">Appendix C</a>.  <a href="#name-workshop-program-committee" class="internal xref">Workshop Program Committee</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#appendix-E" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+            <p id="section-toc.1-1.7.1"><a href="#appendix-D" class="auto internal xref"></a><a href="#name-iab-members-at-the-time-of-" class="internal xref">IAB Members at the Time of Approval</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#appendix-F" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+            <p id="section-toc.1-1.8.1"><a href="#appendix-E" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9">
+            <p id="section-toc.1-1.9.1"><a href="#appendix-F" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -1198,12 +1201,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="name-introduction">
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
-<p id="section-1-1">The IAB organized a workshop in June 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" [RFC3535] which identified 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF.<a href="#section-1-1" class="pilcrow">¶</a></p>
-<p id="section-1-2">Those requirements were instrumental in developing first the NETCONF protocol (in the NETCONF Working Group) [RFC6241], the associated YANG data modeling language (in the NETMOD Working Group) [RFC7950], RESTCONF [RFC8040], and most recently CORECONF [I-D.ietf-core-comi].<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-1">The IAB organized a workshop in June 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that w[...]<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-2">Those requirements were instrumental in developing first the NETCONF protocol (in the NETCONF Working Group) <span>[<a href="#RFC6241" class="cite xref">RFC6241</a>]</span>, the associated YANG data modeling language (in the NETMOD Working Group) [RFC795[...]<a href="#section-1-2" class="pilcrow">¶</a></p>
 <p id="section-1-3">The NEMOPS workshop aimed to discuss the following key topics:<a href="#section-1-3" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-1-4.1">
-          <p id="section-1-4.1.1">Review the outcomes and results of the 2002 workshop (current deployments, state of the art) and identify any operational barriers that prevent these technologies from being widely implemented (limitations, hurdles).<a href="#section-1-4.1.1" class="pilcrow">¶</a></p>
+          <p id="section-1-4.1.1">Review the outcomes and results of the 2002 workshop (current deployments, state of the art) and identify any operational barriers that prevent these technologies from being widely implemented (limi[...]<a href="#section-1-4.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-1-4.2">
           <p id="section-1-4.2.1">Sketch new requirements for future network management operations in a collaborative manner with the industry, network operators, and protocol engineers.<a href="#section-1-4.2.1" class="pilcrow">¶</a></p>
@@ -1217,9 +1220,9 @@ svg :is([fill="white"], [fill^="#fff"]) {
         <h3 id="name-about-this-workshop-report-">
 <a href="#section-1.1" class="section-number selfRef">1.1. </a><a href="#name-about-this-workshop-report-" class="section-name selfRef">About this workshop report content</a>
         </h3>
-<p id="section-1.1-1">The Internet Architecture Board (IAB) holds occasional workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture.  This long-term planning function of the IAB is complementary to the ongoing engineering efforts performed by working groups of the Internet Engineering Task Force (IETF).<a href="#section-1.1-1" class="pilcrow">¶</a></p>
-<p id="section-1.1-2">This document is a report on the proceedings of the workshop. The views and positions documented in this report are expressed during the workshop by participants and do not necessarily reflect IAB's views and positions.<a href="#section-1.1-2" class="pilcrow">¶</a></p>
-<p id="section-1.1-3">Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation.  Thus, the content of this report follows the flow and dialogue of the workshop but does not necessarily attempt to capture a consensus, unless stated otherwise.<a href="#section-1.1-3" class="pilcrow">¶</a></p>
+<p id="section-1.1-1">The Internet Architecture Board (IAB) holds occasional workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture. [...]<a href="#section-1.1-1" class="pilcrow">¶</a></p>
+<p id="section-1.1-2">This document is a report on the proceedings of the workshop. The views and positions documented in this report are expressed during the workshop by participants and do not necessarily reflect IAB's v[...]<a href="#section-1.1-2" class="pilcrow">¶</a></p>
+<p id="section-1.1-3">Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation.  Thus, the content of this [...]<a href="#section-1.1-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1229,7 +1232,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="name-workshop-scope-and-discussi">
 <a href="#section-2" class="section-number selfRef">2. </a><a href="#name-workshop-scope-and-discussi" class="section-name selfRef">Workshop Scope and Discussion</a>
       </h2>
-<p id="section-2-1">The workshop was organized across three days with all-group discussion slots, one per day. The following topic areas were identified and the program committee organized paper submissions into three main themes for each of the three discussion slots. During each discussion, those papers were presented sequentially with open discussion held at the end of each day.<a href="#section-2-1" class="pilcrow">¶</a></p>
+<p id="section-2-1">The workshop was organized across three days with all-group discussion slots, one per day. The following topic areas were identified and the program committee organized paper submissions into three ma[...]<a href="#section-2-1" class="pilcrow">¶</a></p>
 <div id="session-i-past-lookback-analysis">
 <section id="section-2.1">
         <h3 id="name-session-i-past-lookback-ana">
@@ -1260,11 +1263,51 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </div>
 </section>
 </div>
+<div id="sec-informative-references">
+<section id="section-3">
+      <h2 id="name-informative-references">
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+      </h2>
+<dl class="references">
+<dt id="I-D.ietf-core-comi">[I-D.ietf-core-comi]</dt>
+      <dd>
+<span class="refAuthor">Veillette, M.</span>, <span class="refAuthor">Van der Stok, P.</span>, <span class="refAuthor">Pelov, A.</span>, <span class="refAuthor">Bierman, A.</span>, and <span class="refAuthor">C. Bormann</span>, <span class="refTitle">"CoAP Management Interface (CORECONF)"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-core-comi-19</span>, <time datetime="2024-11-03" class="refDate">3 November 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-core-comi-19">https://datatracker.ietf.org/doc/html/draft-ietf-core-comi-19</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC3535">[RFC3535]</dt>
+      <dd>
+<span class="refAuthor">Schoenwaelder, J.</span>, <span class="refTitle">"Overview of the 2002 IAB Network Management Workshop"</span>, <span class="seriesInfo">RFC 3535</span>, <span class="seriesInfo">DOI 10.17487/RFC3535</span>, <time datetime="2003-05" class="refDate">May 2003</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc3535">https://www.rfc-editor.org/rfc/rfc3535</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC6241">[RFC6241]</dt>
+      <dd>
+<span class="refAuthor">Enns, R., Ed.</span>, <span class="refAuthor">Bjorklund, M., Ed.</span>, <span class="refAuthor">Schoenwaelder, J., Ed.</span>, and <span class="refAuthor">A. Bierman, Ed.</span>, <span class="refTitle">"Network Configuration Protocol (NETCONF)"</span>, <span class="seriesInfo">RFC 6241</span>, <span class="seriesInfo">DOI 10.17487/RFC6241</span>, <time datetime="2011-06" class="refDate">June 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc6241">https://www.rfc-editor.org/rfc/rfc6241</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC7950">[RFC7950]</dt>
+      <dd>
+<span class="refAuthor">Bjorklund, M., Ed.</span>, <span class="refTitle">"The YANG 1.1 Data Modeling Language"</span>, <span class="seriesInfo">RFC 7950</span>, <span class="seriesInfo">DOI 10.17487/RFC7950</span>, <time datetime="2016-08" class="refDate">August 2016</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc7950">https://www.rfc-editor.org/rfc/rfc7950</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC8040">[RFC8040]</dt>
+      <dd>
+<span class="refAuthor">Bierman, A.</span>, <span class="refAuthor">Bjorklund, M.</span>, and <span class="refAuthor">K. Watsen</span>, <span class="refTitle">"RESTCONF Protocol"</span>, <span class="seriesInfo">RFC 8040</span>, <span class="seriesInfo">DOI 10.17487/RFC8040</span>, <time datetime="2017-01" class="refDate">January 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8040">https://www.rfc-editor.org/rfc/rfc8040</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="SCHONWALDER">[SCHONWALDER]</dt>
+    <dd>
+<span class="refTitle">"Composable, Declarative, Reproducible, Verifiable Network and Service Configurations"</span>, <time datetime="2024-11" class="refDate">November 2024</time>, <span>&lt;<a href="https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf">https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+</dl>
+</section>
+</div>
 <div id="position-papers">
 <section id="appendix-A">
       <h2 id="name-position-papers">
 <a href="#appendix-A" class="section-number selfRef">Appendix A. </a><a href="#name-position-papers" class="section-name selfRef">Position Papers</a>
-    </h2>
+      </h2>
+<p id="appendix-A-1">20 position papers were submitted to the workshop call for papers. All papers are available at: https://datatracker.ietf.org/group/nemopsws/materials/<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<p id="appendix-A-2">This is the list of all papers:<a href="#appendix-A-2" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="appendix-A-3.1">
+          <p id="appendix-A-3.1.1">J Schönwälder: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations <span>[<a href="#SCHONWALDER" class="cite xref">SCHONWALDER</a>]</span><a href="#appendix-A-3.1.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
 </section>
 </div>
 <div id="workshop-participants">
