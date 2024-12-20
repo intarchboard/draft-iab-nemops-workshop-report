@@ -7,10 +7,10 @@
 <title>Report from the IAB Workshop on the Next Era of Network Management Operations</title>
 <meta content="Wes Hardaker" name="author">
 <meta content="Dhruv Dhody" name="author">
-<meta content='
-       The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 200[...] 
-       Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily ref[...] 
-    ' name="description">
+<meta content="
+       The &quot;Next Era of Network Management Operations (NEMOPS)&quot; workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF. 
+       Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily reflect IAB's views and positions. 
+    " name="description">
 <meta content="xml2rfc 3.25.0" name="generator">
 <meta content="YANG" name="keyword">
 <meta content="NETCONF" name="keyword">
@@ -1054,7 +1054,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Hardaker &amp; Dhody</td>
-<td class="center">Expires 22 June 2025</td>
+<td class="center">Expires 23 June 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1067,12 +1067,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-iab-nemops-workshop-report-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-12-19" class="published">19 December 2024</time>
+<time datetime="2024-12-20" class="published">20 December 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-06-22">22 June 2025</time></dd>
+<dd class="expires"><time datetime="2025-06-23">23 June 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1087,8 +1087,8 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">Report from the IAB Workshop on the Next Era of Network Management Operations</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 200[...]<a href="#section-abstract-1" class="pilcrow">¶</a></p>
-<p id="section-abstract-2">Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily ref[...]<a href="#section-abstract-2" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-2">Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily reflect IAB's views and positions.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-about-this-document">
@@ -1120,7 +1120,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 22 June 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 23 June 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1155,42 +1155,62 @@ svg :is([fill="white"], [fill^="#fff"]) {
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2">
-            <p id="section-toc.1-1.2.1"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-workshop-scope-and-discussi" class="internal xref">Workshop Scope and Discussion</a></p>
+            <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-outreach-and-survey" class="internal xref">Outreach and Survey</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
+            <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-workshop-scope-and-discussi" class="internal xref">Workshop Scope and Discussion</a></p>
 <ul class="compact toc ulBare ulEmpty">
-<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.1">
-                <p id="section-toc.1-1.2.2.1.1" class="keepWithNext"><a href="#section-2.1" class="auto internal xref">2.1</a>.  <a href="#name-session-i-past-lookback-ana" class="internal xref">Session I: Past (lookback, analysis)</a></p>
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1">
+                <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-session-i-past-lookback-ana" class="internal xref">Session I: Past (lookback, analysis)</a></p>
 </li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.2">
-                <p id="section-toc.1-1.2.2.2.1"><a href="#section-2.2" class="auto internal xref">2.2</a>.  <a href="#name-session-ii-present-identifi" class="internal xref">Session II: Present (identified problems &amp; requirements)</a></p>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2">
+                <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="auto internal xref">3.2</a>.  <a href="#name-session-ii-present-identifi" class="internal xref">Session II: Present (identified problems &amp; requirements)</a></p>
 </li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.3">
-                <p id="section-toc.1-1.2.2.3.1"><a href="#section-2.3" class="auto internal xref">2.3</a>.  <a href="#name-session-iii-future-possible" class="internal xref">Session III: Future (possible solutions, recommendations and next steps)</a></p>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3">
+                <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="auto internal xref">3.3</a>.  <a href="#name-session-iii-future-possible" class="internal xref">Session III: Future (possible solutions, recommendations and next steps)</a></p>
 </li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.4">
-                <p id="section-toc.1-1.2.2.4.1"><a href="#section-2.4" class="auto internal xref">2.4</a>.  <a href="#name-key-take-aways" class="internal xref">Key Take Aways</a></p>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.4">
+                <p id="section-toc.1-1.3.2.4.1"><a href="#section-3.4" class="auto internal xref">3.4</a>.  <a href="#name-key-takeaways" class="internal xref">Key Takeaways</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.4.2.1">
+                    <p id="section-toc.1-1.3.2.4.2.1.1"><a href="#section-3.4.1" class="auto internal xref">3.4.1</a>.  <a href="#name-ecosystem-conclusions" class="internal xref">Ecosystem conclusions</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.4.2.2">
+                    <p id="section-toc.1-1.3.2.4.2.2.1"><a href="#section-3.4.2" class="auto internal xref">3.4.2</a>.  <a href="#name-protocol-conclusions" class="internal xref">Protocol conclusions</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.4.2.3">
+                    <p id="section-toc.1-1.3.2.4.2.3.1"><a href="#section-3.4.3" class="auto internal xref">3.4.3</a>.  <a href="#name-modeling-conclusions" class="internal xref">Modeling conclusions</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.4.2.4">
+                    <p id="section-toc.1-1.3.2.4.2.4.1"><a href="#section-3.4.4" class="auto internal xref">3.4.4</a>.  <a href="#name-standardization-conclusions" class="internal xref">Standardization conclusions</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.4.2.5">
+                    <p id="section-toc.1-1.3.2.4.2.5.1"><a href="#section-3.4.5" class="auto internal xref">3.4.5</a>.  <a href="#name-additional-work-needed" class="internal xref">Additional work needed</a></p>
+</li>
+                </ul>
 </li>
             </ul>
 </li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
-            <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
-</li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-position-papers" class="internal xref">Position Papers</a></p>
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#appendix-B" class="auto internal xref">Appendix B</a>.  <a href="#name-workshop-participants" class="internal xref">Workshop Participants</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-position-papers" class="internal xref">Position Papers</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#appendix-C" class="auto internal xref">Appendix C</a>.  <a href="#name-workshop-program-committee" class="internal xref">Workshop Program Committee</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#appendix-B" class="auto internal xref">Appendix B</a>.  <a href="#name-workshop-participants" class="internal xref">Workshop Participants</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#appendix-D" class="auto internal xref"></a><a href="#name-iab-members-at-the-time-of-" class="internal xref">IAB Members at the Time of Approval</a></p>
+            <p id="section-toc.1-1.7.1"><a href="#appendix-C" class="auto internal xref">Appendix C</a>.  <a href="#name-workshop-program-committee" class="internal xref">Workshop Program Committee</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#appendix-E" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+            <p id="section-toc.1-1.8.1"><a href="#appendix-D" class="auto internal xref"></a><a href="#name-iab-members-at-the-time-of-" class="internal xref">IAB Members at the Time of Approval</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9">
-            <p id="section-toc.1-1.9.1"><a href="#appendix-F" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+            <p id="section-toc.1-1.9.1"><a href="#appendix-E" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10">
+            <p id="section-toc.1-1.10.1"><a href="#appendix-F" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -1201,12 +1221,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="name-introduction">
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
-<p id="section-1-1">The IAB organized a workshop in June 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that w[...]<a href="#section-1-1" class="pilcrow">¶</a></p>
-<p id="section-1-2">Those requirements were instrumental in developing first the NETCONF protocol (in the NETCONF Working Group) <span>[<a href="#RFC6241" class="cite xref">RFC6241</a>]</span>, the associated YANG data modeling language (in the NETMOD Working Group) [RFC795[...]<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-1">The IAB organized a workshop in June 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span> which identified 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF.<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-2">Those requirements were instrumental in developing first the NETCONF protocol (in the NETCONF Working Group) <span>[<a href="#RFC6241" class="cite xref">RFC6241</a>]</span>, the associated YANG data modeling language (in the NETMOD Working Group) <span>[<a href="#RFC7950" class="cite xref">RFC7950</a>]</span>, RESTCONF <span>[<a href="#RFC8040" class="cite xref">RFC8040</a>]</span>, and most recently CORECONF <span>[<a href="#I-D.ietf-core-comi" class="cite xref">I-D.ietf-core-comi</a>]</span>.<a href="#section-1-2" class="pilcrow">¶</a></p>
 <p id="section-1-3">The NEMOPS workshop aimed to discuss the following key topics:<a href="#section-1-3" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-1-4.1">
-          <p id="section-1-4.1.1">Review the outcomes and results of the 2002 workshop (current deployments, state of the art) and identify any operational barriers that prevent these technologies from being widely implemented (limi[...]<a href="#section-1-4.1.1" class="pilcrow">¶</a></p>
+          <p id="section-1-4.1.1">Review the outcomes and results of the 2002 workshop (current deployments, state of the art) and identify any operational barriers that prevent these technologies from being widely implemented (limitations, hurdles).<a href="#section-1-4.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-1-4.2">
           <p id="section-1-4.2.1">Sketch new requirements for future network management operations in a collaborative manner with the industry, network operators, and protocol engineers.<a href="#section-1-4.2.1" class="pilcrow">¶</a></p>
@@ -1220,53 +1240,247 @@ svg :is([fill="white"], [fill^="#fff"]) {
         <h3 id="name-about-this-workshop-report-">
 <a href="#section-1.1" class="section-number selfRef">1.1. </a><a href="#name-about-this-workshop-report-" class="section-name selfRef">About this workshop report content</a>
         </h3>
-<p id="section-1.1-1">The Internet Architecture Board (IAB) holds occasional workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture. [...]<a href="#section-1.1-1" class="pilcrow">¶</a></p>
-<p id="section-1.1-2">This document is a report on the proceedings of the workshop. The views and positions documented in this report are expressed during the workshop by participants and do not necessarily reflect IAB's v[...]<a href="#section-1.1-2" class="pilcrow">¶</a></p>
-<p id="section-1.1-3">Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation.  Thus, the content of this [...]<a href="#section-1.1-3" class="pilcrow">¶</a></p>
+<p id="section-1.1-1">The Internet Architecture Board (IAB) holds occasional workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture.  This long-term planning function of the IAB is complementary to the ongoing engineering efforts performed by working groups of the Internet Engineering Task Force (IETF).<a href="#section-1.1-1" class="pilcrow">¶</a></p>
+<p id="section-1.1-2">This document is a report on the proceedings of the workshop. The views and positions documented in this report are expressed during the workshop by participants and do not necessarily reflect IAB's views and positions.<a href="#section-1.1-2" class="pilcrow">¶</a></p>
+<p id="section-1.1-3">Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation.  Thus, the content of this report follows the flow and dialogue of the workshop but does not necessarily attempt to capture a consensus, unless stated otherwise.<a href="#section-1.1-3" class="pilcrow">¶</a></p>
 </section>
 </div>
+</section>
+</div>
+<div id="outreach-and-survey">
+<section id="section-2">
+      <h2 id="name-outreach-and-survey">
+<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-outreach-and-survey" class="section-name selfRef">Outreach and Survey</a>
+    </h2>
 </section>
 </div>
 <div id="workshop-scope-and-discussion">
-<section id="section-2">
+<section id="section-3">
       <h2 id="name-workshop-scope-and-discussi">
-<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-workshop-scope-and-discussi" class="section-name selfRef">Workshop Scope and Discussion</a>
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-workshop-scope-and-discussi" class="section-name selfRef">Workshop Scope and Discussion</a>
       </h2>
-<p id="section-2-1">The workshop was organized across three days with all-group discussion slots, one per day. The following topic areas were identified and the program committee organized paper submissions into three ma[...]<a href="#section-2-1" class="pilcrow">¶</a></p>
+<p id="section-3-1">The workshop was organized across three days with all-group discussion slots, one per day. The following topic areas were identified and the program committee organized paper submissions into three main themes for each of the three discussion slots. During each discussion, those papers were presented sequentially with open discussion held at the end of each day.<a href="#section-3-1" class="pilcrow">¶</a></p>
 <div id="session-i-past-lookback-analysis">
-<section id="section-2.1">
+<section id="section-3.1">
         <h3 id="name-session-i-past-lookback-ana">
-<a href="#section-2.1" class="section-number selfRef">2.1. </a><a href="#name-session-i-past-lookback-ana" class="section-name selfRef">Session I: Past (lookback, analysis)</a>
+<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-session-i-past-lookback-ana" class="section-name selfRef">Session I: Past (lookback, analysis)</a>
       </h3>
 </section>
 </div>
 <div id="session-ii-present-identified-problems-requirements">
-<section id="section-2.2">
+<section id="section-3.2">
         <h3 id="name-session-ii-present-identifi">
-<a href="#section-2.2" class="section-number selfRef">2.2. </a><a href="#name-session-ii-present-identifi" class="section-name selfRef">Session II: Present (identified problems &amp; requirements)</a>
+<a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-session-ii-present-identifi" class="section-name selfRef">Session II: Present (identified problems &amp; requirements)</a>
       </h3>
 </section>
 </div>
 <div id="session-iii-future-possible-solutions-recommendations-and-next-steps">
-<section id="section-2.3">
+<section id="section-3.3">
         <h3 id="name-session-iii-future-possible">
-<a href="#section-2.3" class="section-number selfRef">2.3. </a><a href="#name-session-iii-future-possible" class="section-name selfRef">Session III: Future (possible solutions, recommendations and next steps)</a>
+<a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-session-iii-future-possible" class="section-name selfRef">Session III: Future (possible solutions, recommendations and next steps)</a>
       </h3>
 </section>
 </div>
-<div id="key-take-aways">
-<section id="section-2.4">
-        <h3 id="name-key-take-aways">
-<a href="#section-2.4" class="section-number selfRef">2.4. </a><a href="#name-key-take-aways" class="section-name selfRef">Key Take Aways</a>
-      </h3>
+<div id="key-takeaways">
+<section id="section-3.4">
+        <h3 id="name-key-takeaways">
+<a href="#section-3.4" class="section-number selfRef">3.4. </a><a href="#name-key-takeaways" class="section-name selfRef">Key Takeaways</a>
+        </h3>
+<p id="section-3.4-1">At the end of the third day the discussion turned to key takeaways that had consensus. In the process of discussion there were some realizations where additional work was also needed.<a href="#section-3.4-1" class="pilcrow">¶</a></p>
+<p id="section-3.4-2">[XXX: note at this point these are cut and paste from the slides and not properly edited/cleaned/moved around]<a href="#section-3.4-2" class="pilcrow">¶</a></p>
+<div id="ecosystem-conclusions">
+<section id="section-3.4.1">
+          <h4 id="name-ecosystem-conclusions">
+<a href="#section-3.4.1" class="section-number selfRef">3.4.1. </a><a href="#name-ecosystem-conclusions" class="section-name selfRef">Ecosystem conclusions</a>
+          </h4>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.1-1">
+<li id="section-3.4.1-1.1">
+              <p id="section-3.4.1-1.1.1">The current network management protocols/models/tools still fail the ‘ease of use’ requirement<a href="#section-3.4.1-1.1.1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.1-1.1.2">
+<li id="section-3.4.1-1.1.2.1">
+                  <p id="section-3.4.1-1.1.2.1.1">The tools may matter more than the protocols<a href="#section-3.4.1-1.1.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              </ol>
+</li>
+            <li id="section-3.4.1-1.2">
+              <p id="section-3.4.1-1.2.1">The overall ecosystem is still fragmented for both protocols and data models<a href="#section-3.4.1-1.2.1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.1-1.2.2">
+<li id="section-3.4.1-1.2.2.1">
+                  <p id="section-3.4.1-1.2.2.1.1">SNMP (for monitoring) and CLI is still the rule in many networks (this is a potential obstacle)<a href="#section-3.4.1-1.2.2.1.1" class="pilcrow">¶</a></p>
+</li>
+                <li id="section-3.4.1-1.2.2.2">
+                  <p id="section-3.4.1-1.2.2.2.1">Transitions between frameworks is challenging (see IPv4 -&gt; IPv6)<a href="#section-3.4.1-1.2.2.2.1" class="pilcrow">¶</a></p>
+</li>
+                <li id="section-3.4.1-1.2.2.3">
+                  <p id="section-3.4.1-1.2.2.3.1">Fragments: SNMP, CLI, NETCONF, RESTCONF, gNMI, etc…<a href="#section-3.4.1-1.2.2.3.1" class="pilcrow">¶</a></p>
+</li>
+                <li id="section-3.4.1-1.2.2.4">
+                  <p id="section-3.4.1-1.2.2.4.1">gNMI is popular for stream<a href="#section-3.4.1-1.2.2.4.1" class="pilcrow">¶</a></p>
+</li>
+              </ol>
+</li>
+            <li id="section-3.4.1-1.3">
+              <p id="section-3.4.1-1.3.1">Model-driven network management is generally a success<a href="#section-3.4.1-1.3.1" class="pilcrow">¶</a></p>
+</li>
+            <li id="section-3.4.1-1.4">
+              <p id="section-3.4.1-1.4.1">Documentation for how the network management ecosystem works is lacking<a href="#section-3.4.1-1.4.1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.1-1.4.2">
+<li id="section-3.4.1-1.4.2.1">
+                  <p id="section-3.4.1-1.4.2.1.1">Could use architecture documentation, deployment guides, tutorials, training, getting started<a href="#section-3.4.1-1.4.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              </ol>
+</li>
+            <li id="section-3.4.1-1.5">
+              <p id="section-3.4.1-1.5.1">Easily usable network management tools for the operators are needed<a href="#section-3.4.1-1.5.1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.1-1.5.2">
+<li id="section-3.4.1-1.5.2.1">
+                  <p id="section-3.4.1-1.5.2.1.1">Lack of open source tools are a barrier to adoption<a href="#section-3.4.1-1.5.2.1.1" class="pilcrow">¶</a></p>
+</li>
+                <li id="section-3.4.1-1.5.2.2">
+                  <p id="section-3.4.1-1.5.2.2.1">We need more discussion about tooling success paths<a href="#section-3.4.1-1.5.2.2.1" class="pilcrow">¶</a></p>
+</li>
+                <li id="section-3.4.1-1.5.2.3">
+                  <p id="section-3.4.1-1.5.2.3.1">Tools need good use cases / example use cases and flows<a href="#section-3.4.1-1.5.2.3.1" class="pilcrow">¶</a></p>
+</li>
+              </ol>
+</li>
+          </ol>
+</section>
+</div>
+<div id="protocol-conclusions">
+<section id="section-3.4.2">
+          <h4 id="name-protocol-conclusions">
+<a href="#section-3.4.2" class="section-number selfRef">3.4.2. </a><a href="#name-protocol-conclusions" class="section-name selfRef">Protocol conclusions</a>
+          </h4>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.2-1">
+<li id="section-3.4.2-1.1">
+              <p id="section-3.4.2-1.1.1">False: Netconf for configuration has been successful in some larger scale deployment<a href="#section-3.4.2-1.1.1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.2-1.1.2">
+<li id="section-3.4.2-1.1.2.1">
+                  <p id="section-3.4.2-1.1.2.1.1">Let’s discuss this further on list<a href="#section-3.4.2-1.1.2.1.1" class="pilcrow">¶</a></p>
+</li>
+                <li id="section-3.4.2-1.1.2.2">
+                  <p id="section-3.4.2-1.1.2.2.1">Service config?<a href="#section-3.4.2-1.1.2.2.1" class="pilcrow">¶</a></p>
+</li>
+              </ol>
+</li>
+            <li id="section-3.4.2-1.2">
+              <p id="section-3.4.2-1.2.1">Netconf/YANG is not used much (yet?) for monitoring<a href="#section-3.4.2-1.2.1" class="pilcrow">¶</a></p>
+</li>
+            <li id="section-3.4.2-1.3">
+              <p id="section-3.4.2-1.3.1">False: Full device control and configuration frequently requires CLI and screen scraping<a href="#section-3.4.2-1.3.1" class="pilcrow">¶</a></p>
+</li>
+            <li id="section-3.4.2-1.4">
+              <p id="section-3.4.2-1.4.1">Full coverage of NetConf support on devices is missing<a href="#section-3.4.2-1.4.1" class="pilcrow">¶</a></p>
+</li>
+            <li id="section-3.4.2-1.5">
+              <p id="section-3.4.2-1.5.1">Polling based solutions are still frequently deployed<a href="#section-3.4.2-1.5.1" class="pilcrow">¶</a></p>
+</li>
+          </ol>
+</section>
+</div>
+<div id="modeling-conclusions">
+<section id="section-3.4.3">
+          <h4 id="name-modeling-conclusions">
+<a href="#section-3.4.3" class="section-number selfRef">3.4.3. </a><a href="#name-modeling-conclusions" class="section-name selfRef">Modeling conclusions</a>
+          </h4>
+<p id="section-3.4.3-1">[XXX: note -- I don't think we talked about this slide much -Wes]<a href="#section-3.4.3-1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.3-2">
+<li id="section-3.4.3-2.1">
+              <p id="section-3.4.3-2.1.1">YANG models can sometimes get too complex (not a fault of the language)<a href="#section-3.4.3-2.1.1" class="pilcrow">¶</a></p>
+</li>
+            <li id="section-3.4.3-2.2">
+              <p id="section-3.4.3-2.2.1">Vendor-specific features need to be exposed through network management protocols<a href="#section-3.4.3-2.2.1" class="pilcrow">¶</a></p>
+</li>
+            <li id="section-3.4.3-2.3">
+              <p id="section-3.4.3-2.3.1">More service-level modeling is needed<a href="#section-3.4.3-2.3.1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.3-2.3.2">
+<li id="section-3.4.3-2.3.2.1">
+                  <p id="section-3.4.3-2.3.2.1.1">Device level modeling needs to be a building block but is not a complete service-level solution<a href="#section-3.4.3-2.3.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              </ol>
+</li>
+            <li id="section-3.4.3-2.4">
+              <p id="section-3.4.3-2.4.1">Network configuration needs to be verifiable<a href="#section-3.4.3-2.4.1" class="pilcrow">¶</a></p>
+</li>
+            <li id="section-3.4.3-2.5">
+              <p id="section-3.4.3-2.5.1">Multi-vendor compatibility support is required<a href="#section-3.4.3-2.5.1" class="pilcrow">¶</a></p>
+</li>
+            <li id="section-3.4.3-2.6">
+              <p id="section-3.4.3-2.6.1">Full coverage of YANG models on all devices is missing<a href="#section-3.4.3-2.6.1" class="pilcrow">¶</a></p>
+</li>
+            <li id="section-3.4.3-2.7">
+              <p id="section-3.4.3-2.7.1">Model translation adaptors may be the best path forward<a href="#section-3.4.3-2.7.1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.3-2.7.2">
+<li id="section-3.4.3-2.7.2.1">
+                  <p id="section-3.4.3-2.7.2.1.1">Likely off-device<a href="#section-3.4.3-2.7.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              </ol>
+</li>
+          </ol>
+</section>
+</div>
+<div id="standardization-conclusions">
+<section id="section-3.4.4">
+          <h4 id="name-standardization-conclusions">
+<a href="#section-3.4.4" class="section-number selfRef">3.4.4. </a><a href="#name-standardization-conclusions" class="section-name selfRef">Standardization conclusions</a>
+          </h4>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.4-1">
+<li id="section-3.4.4-1.1">
+              <p id="section-3.4.4-1.1.1">More rapid model development procedures are (still) needed<a href="#section-3.4.4-1.1.1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.4-1.1.2">
+<li id="section-3.4.4-1.1.2.1">
+                  <p id="section-3.4.4-1.1.2.1.1">Faster than how the IETF produces (simple) results today (especially models)<a href="#section-3.4.4-1.1.2.1.1" class="pilcrow">¶</a></p>
+</li>
+                <li id="section-3.4.4-1.1.2.2">
+                  <p id="section-3.4.4-1.1.2.2.1">New approaches/methods to make it live outside the RFCs should be explored<a href="#section-3.4.4-1.1.2.2.1" class="pilcrow">¶</a></p>
+</li>
+                <li id="section-3.4.4-1.1.2.3">
+                  <p id="section-3.4.4-1.1.2.3.1">Need more predictable timelines<a href="#section-3.4.4-1.1.2.3.1" class="pilcrow">¶</a></p>
+</li>
+              </ol>
+</li>
+            <li id="section-3.4.4-1.2">
+              <p id="section-3.4.4-1.2.1">More focus is needed on scalability of all network management roles (monitoring, configuration, notifications)<a href="#section-3.4.4-1.2.1" class="pilcrow">¶</a></p>
+</li>
+            <li id="section-3.4.4-1.3">
+              <p id="section-3.4.4-1.3.1">We should reduce complexity for future changes to a minimal agreed set of core features<a href="#section-3.4.4-1.3.1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.4-1.3.2">
+<li id="section-3.4.4-1.3.2.1">
+                  <p id="section-3.4.4-1.3.2.1.1">For both protocol and models<a href="#section-3.4.4-1.3.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              </ol>
+</li>
+            <li id="section-3.4.4-1.4">
+              <p id="section-3.4.4-1.4.1">Network management enhancements needs to be backed by operator use cases and vendor buy-in<a href="#section-3.4.4-1.4.1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.4-1.4.2">
+<li id="section-3.4.4-1.4.2.1">
+                  <p id="section-3.4.4-1.4.2.1.1">Vendors and operators should must work together<a href="#section-3.4.4-1.4.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              </ol>
+</li>
+            <li id="section-3.4.4-1.5">
+              <p id="section-3.4.4-1.5.1">An rapid development experiment would be an interesting approach<a href="#section-3.4.4-1.5.1" class="pilcrow">¶</a></p>
+</li>
+          </ol>
+</section>
+</div>
+<div id="additional-work-needed">
+<section id="section-3.4.5">
+          <h4 id="name-additional-work-needed">
+<a href="#section-3.4.5" class="section-number selfRef">3.4.5. </a><a href="#name-additional-work-needed" class="section-name selfRef">Additional work needed</a>
+          </h4>
+<p id="section-3.4.5-1">Here we list the things that the group realized needed significant more attention in order to come to conclusion about.<a href="#section-3.4.5-1" class="pilcrow">¶</a></p>
+</section>
+</div>
 </section>
 </div>
 </section>
 </div>
 <div id="sec-informative-references">
-<section id="section-3">
+<section id="section-4">
       <h2 id="name-informative-references">
-<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
       </h2>
 <dl class="references">
 <dt id="I-D.ietf-core-comi">[I-D.ietf-core-comi]</dt>

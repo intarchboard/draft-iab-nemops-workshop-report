@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 22 June 2025                                   19 December 2024
+Expires: 23 June 2025                                   20 December 2024
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -16,12 +16,23 @@ Abstract
 
    The "Next Era of Network Management Operations (NEMOPS)" workshop was
    convened by the Internet Architecture Board (IAB) on December 3-5,
-   2024 as a three-day online meeting.  It builds on a previous 200[...]
+   2024 as a three-day online meeting.  It builds on a previous 2002
+   workshop, the outcome of which was documented in RFC 3535 identifying
+   14 operator requirements for consideration in future network
+   management protocol design and related data models, along with some
+   recommendations for the IETF.  Much has changed in the Internet’s
+   operation and technological foundations since then.  The NEMOPS
+   workshop reviewed the past outcomes and identified any operational
+   barriers that prevented these technologies from being widely
+   implemented.  It sketched new requirements for future network
+   management operations collaboratively with the industry, network
+   operators and protocol engineers, and developed a suggested action
+   plan and recommendations for the IETF.
 
    Note that this document is a report on the proceedings of the
    workshop.  The views and positions documented in this report were
    expressed during the workshop by participants and do not necessarily
-   ref[...]
+   reflect IAB's views and positions.
 
 About This Document
 
@@ -51,7 +62,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 June 2025.
+   This Internet-Draft will expire on 23 June 2025.
 
 Copyright Notice
 
@@ -68,13 +79,19 @@ Table of Contents
 
    1.  Introduction
      1.1.  About this workshop report content
-   2.  Workshop Scope and Discussion
-     2.1.  Session I: Past (lookback, analysis)
-     2.2.  Session II: Present (identified problems & requirements)
-     2.3.  Session III: Future (possible solutions, recommendations
+   2.  Outreach and Survey
+   3.  Workshop Scope and Discussion
+     3.1.  Session I: Past (lookback, analysis)
+     3.2.  Session II: Present (identified problems & requirements)
+     3.3.  Session III: Future (possible solutions, recommendations
            and next steps)
-     2.4.  Key Take Aways
-   3.  Informative References
+     3.4.  Key Takeaways
+       3.4.1.  Ecosystem conclusions
+       3.4.2.  Protocol conclusions
+       3.4.3.  Modeling conclusions
+       3.4.4.  Standardization conclusions
+       3.4.5.  Additional work needed
+   4.  Informative References
    Appendix A.  Position Papers
    Appendix B.  Workshop Participants
    Appendix C.  Workshop Program Committee
@@ -87,19 +104,23 @@ Table of Contents
    The IAB organized a workshop in June 2002 to establish a dialog
    between network operators and protocol developers, and to guide IETF
    when working on network management protocols.  The outcome of that
-   w[...]
+   workshop was documented in the "Overview of the 2002 IAB Network
+   Management Workshop" [RFC3535] which identified 14 operator
+   requirements for consideration in future network management protocol
+   design and related data models, along with some recommendations for
+   the IETF.
 
    Those requirements were instrumental in developing first the NETCONF
    protocol (in the NETCONF Working Group) [RFC6241], the associated
-   YANG data modeling language (in the NETMOD Working Group)
-   [RFC795[...]
+   YANG data modeling language (in the NETMOD Working Group) [RFC7950],
+   RESTCONF [RFC8040], and most recently CORECONF [I-D.ietf-core-comi].
 
    The NEMOPS workshop aimed to discuss the following key topics:
 
    *  Review the outcomes and results of the 2002 workshop (current
       deployments, state of the art) and identify any operational
       barriers that prevent these technologies from being widely
-      implemented (limi[...]
+      implemented (limitations, hurdles).
 
    *  Sketch new requirements for future network management operations
       in a collaborative manner with the industry, network operators,
@@ -112,35 +133,161 @@ Table of Contents
    The Internet Architecture Board (IAB) holds occasional workshops
    designed to consider long-term issues and strategies for the
    Internet, and to suggest future directions for the Internet
-   architecture. [...]
+   architecture.  This long-term planning function of the IAB is
+   complementary to the ongoing engineering efforts performed by working
+   groups of the Internet Engineering Task Force (IETF).
 
    This document is a report on the proceedings of the workshop.  The
    views and positions documented in this report are expressed during
    the workshop by participants and do not necessarily reflect IAB's
-   v[...]
+   views and positions.
 
    Furthermore, the content of the report comes from presentations given
    by workshop participants and notes taken during the discussions,
    without interpretation or validation.  Thus, the content of this
-   [...]
+   report follows the flow and dialogue of the workshop but does not
+   necessarily attempt to capture a consensus, unless stated otherwise.
 
-2.  Workshop Scope and Discussion
+2.  Outreach and Survey
+
+3.  Workshop Scope and Discussion
 
    The workshop was organized across three days with all-group
    discussion slots, one per day.  The following topic areas were
    identified and the program committee organized paper submissions into
-   three ma[...]
+   three main themes for each of the three discussion slots.  During
+   each discussion, those papers were presented sequentially with open
+   discussion held at the end of each day.
 
-2.1.  Session I: Past (lookback, analysis)
+3.1.  Session I: Past (lookback, analysis)
 
-2.2.  Session II: Present (identified problems & requirements)
+3.2.  Session II: Present (identified problems & requirements)
 
-2.3.  Session III: Future (possible solutions, recommendations and next
+3.3.  Session III: Future (possible solutions, recommendations and next
       steps)
 
-2.4.  Key Take Aways
+3.4.  Key Takeaways
 
-3.  Informative References
+   At the end of the third day the discussion turned to key takeaways
+   that had consensus.  In the process of discussion there were some
+   realizations where additional work was also needed.
+
+   [XXX: note at this point these are cut and paste from the slides and
+   not properly edited/cleaned/moved around]
+
+3.4.1.  Ecosystem conclusions
+
+   1.  The current network management protocols/models/tools still fail
+       the ‘ease of use’ requirement
+
+       1.  The tools may matter more than the protocols
+
+   2.  The overall ecosystem is still fragmented for both protocols and
+       data models
+
+       1.  SNMP (for monitoring) and CLI is still the rule in many
+           networks (this is a potential obstacle)
+
+       2.  Transitions between frameworks is challenging (see IPv4 ->
+           IPv6)
+
+       3.  Fragments: SNMP, CLI, NETCONF, RESTCONF, gNMI, etc…
+
+       4.  gNMI is popular for stream
+
+   3.  Model-driven network management is generally a success
+
+   4.  Documentation for how the network management ecosystem works is
+       lacking
+
+       1.  Could use architecture documentation, deployment guides,
+           tutorials, training, getting started
+
+   5.  Easily usable network management tools for the operators are
+       needed
+
+       1.  Lack of open source tools are a barrier to adoption
+
+       2.  We need more discussion about tooling success paths
+
+       3.  Tools need good use cases / example use cases and flows
+
+3.4.2.  Protocol conclusions
+
+   1.  False: Netconf for configuration has been successful in some
+       larger scale deployment
+
+       1.  Let’s discuss this further on list
+
+       2.  Service config?
+
+   2.  Netconf/YANG is not used much (yet?) for monitoring
+
+   3.  False: Full device control and configuration frequently requires
+       CLI and screen scraping
+
+   4.  Full coverage of NetConf support on devices is missing
+
+   5.  Polling based solutions are still frequently deployed
+
+3.4.3.  Modeling conclusions
+
+   [XXX: note -- I don't think we talked about this slide much -Wes]
+
+   1.  YANG models can sometimes get too complex (not a fault of the
+       language)
+
+   2.  Vendor-specific features need to be exposed through network
+       management protocols
+
+   3.  More service-level modeling is needed
+
+       1.  Device level modeling needs to be a building block but is not
+           a complete service-level solution
+
+   4.  Network configuration needs to be verifiable
+
+   5.  Multi-vendor compatibility support is required
+
+   6.  Full coverage of YANG models on all devices is missing
+
+   7.  Model translation adaptors may be the best path forward
+
+       1.  Likely off-device
+
+3.4.4.  Standardization conclusions
+
+   1.  More rapid model development procedures are (still) needed
+
+       1.  Faster than how the IETF produces (simple) results today
+           (especially models)
+
+       2.  New approaches/methods to make it live outside the RFCs
+           should be explored
+
+       3.  Need more predictable timelines
+
+   2.  More focus is needed on scalability of all network management
+       roles (monitoring, configuration, notifications)
+
+   3.  We should reduce complexity for future changes to a minimal
+       agreed set of core features
+
+       1.  For both protocol and models
+
+   4.  Network management enhancements needs to be backed by operator
+       use cases and vendor buy-in
+
+       1.  Vendors and operators should must work together
+
+   5.  An rapid development experiment would be an interesting approach
+
+3.4.5.  Additional work needed
+
+   Here we list the things that the group realized needed significant
+   more attention in order to come to conclusion about.
+
+4.  Informative References
 
    [I-D.ietf-core-comi]
               Veillette, M., Van der Stok, P., Pelov, A., Bierman, A.,
