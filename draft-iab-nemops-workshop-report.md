@@ -44,35 +44,36 @@ informative:
 
 --- abstract
 
-The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 200[...]
+The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
 
-Note that this document is a report on the proceedings of the workshop. The views and positions documented in this report were expressed during the workshop by participants and do not necessarily ref[...]
+Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily reflect IAB's views and positions.
 
 --- middle
 
 # Introduction
 
-The IAB organized a workshop in June 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that w[...]
+The IAB organized a workshop in June 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" [RFC3535] which identified 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF.
 
-Those requirements were instrumental in developing first the NETCONF protocol (in the NETCONF Working Group) [RFC6241], the associated YANG data modeling language (in the NETMOD Working Group) [RFC795[...]
+Those requirements were instrumental in developing first the NETCONF protocol (in the NETCONF Working Group) [RFC6241], the associated YANG data modeling language (in the NETMOD Working Group) [RFC7950], RESTCONF [RFC8040], and most recently CORECONF [I-D.ietf-core-comi].
 
 The NEMOPS workshop aimed to discuss the following key topics:
 
-* Review the outcomes and results of the 2002 workshop (current deployments, state of the art) and identify any operational barriers that prevent these technologies from being widely implemented (limi[...]
+* Review the outcomes and results of the 2002 workshop (current deployments, state of the art) and identify any operational barriers that prevent these technologies from being widely implemented (limitations, hurdles).
 * Sketch new requirements for future network management operations in a collaborative manner with the industry, network operators, and protocol engineers.
 * Develop a plan of action and recommendations for the IETF.
 
 ## About this workshop report content
 
-The Internet Architecture Board (IAB) holds occasional workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture. [...]
+The Internet Architecture Board (IAB) holds occasional workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture.  This long-term planning function of the IAB is complementary to the ongoing engineering efforts performed by working groups of the Internet Engineering Task Force (IETF).
 
-This document is a report on the proceedings of the workshop. The views and positions documented in this report are expressed during the workshop by participants and do not necessarily reflect IAB's v[...]
+This document is a report on the proceedings of the workshop. The views and positions documented in this report are expressed during the workshop by participants and do not necessarily reflect IAB's views and positions.
 
-Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation. Thus, the content of this [...]
+Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation.  Thus, the content of this report follows the flow and dialogue of the workshop but does not necessarily attempt to capture a consensus, unless stated otherwise.
+
+# Outreach and Survey
 
 # Workshop Scope and Discussion
-
-The workshop was organized across three days with all-group discussion slots, one per day. The following topic areas were identified and the program committee organized paper submissions into three ma[...]
+The workshop was organized across three days with all-group discussion slots, one per day. The following topic areas were identified and the program committee organized paper submissions into three main themes for each of the three discussion slots. During each discussion, those papers were presented sequentially with open discussion held at the end of each day.
 
 ## Session I: Past (lookback, analysis)
 
@@ -122,14 +123,14 @@ At the end of the third day the discussion turned to key takeaways that had cons
 1. More service-level modeling is needed
     1. Device level modeling needs to be a building block but is not a complete service-level solution
 1. Network configuration needs to be verifiable
-1. Multi-vendor compatibility support is required.
+1. Multi-vendor compatibility support is required
 1. Full coverage of YANG models on all devices is missing
 1. Model translation adaptors may be the best path forward
     1. Likely off-device
 
 ### Standardization conclusions
 
-1. More rapid model development procedures are (still) needed 
+1. More rapid model development procedures are (still) needed
     1. Faster than how the IETF produces (simple) results today (especially models)
     1. New approaches/methods to make it live outside the RFCs should be explored
     1. Need more predictable timelines
@@ -144,8 +145,6 @@ At the end of the third day the discussion turned to key takeaways that had cons
 ### Additional work needed
 
 Here we list the things that the group realized needed significant more attention in order to come to conclusion about.
-
-...
 
 --- back
 
