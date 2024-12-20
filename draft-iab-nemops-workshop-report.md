@@ -46,7 +46,7 @@ informative:
 
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 200[...]
 
-Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily ref[...]
+Note that this document is a report on the proceedings of the workshop. The views and positions documented in this report were expressed during the workshop by participants and do not necessarily ref[...]
 
 --- middle
 
@@ -68,7 +68,7 @@ The Internet Architecture Board (IAB) holds occasional workshops designed to con
 
 This document is a report on the proceedings of the workshop. The views and positions documented in this report are expressed during the workshop by participants and do not necessarily reflect IAB's v[...]
 
-Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation.  Thus, the content of this [...]
+Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation. Thus, the content of this [...]
 
 # Workshop Scope and Discussion
 
@@ -82,12 +82,9 @@ The workshop was organized across three days with all-group discussion slots, on
 
 ## Key Takeaways
 
-At the end of the third day the discussion turned to key takeaways
-that had consensus.  In the process of discussion there were some
-realizations where additional work was also needed.
+At the end of the third day the discussion turned to key takeaways that had consensus. In the process of discussion there were some realizations where additional work was also needed.
 
-[XXX: note at this point these are cut and paste from the slides and
-not properly edited/cleaned/moved around]
+[XXX: note at this point these are cut and paste from the slides and not properly edited/cleaned/moved around]
 
 ### Ecosystem conclusions
 
@@ -146,8 +143,7 @@ not properly edited/cleaned/moved around]
 
 ### Additional work needed
 
-Here we list the things that the group realized needed significant
-more attention in order to come to conclusion about.
+Here we list the things that the group realized needed significant more attention in order to come to conclusion about.
 
 ...
 
