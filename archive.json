@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-12-19T01:44:25.880923+00:00",
+  "timestamp": "2024-12-22T01:45:10.148653+00:00",
   "repo": "intarchboard/draft-iab-nemops-workshop-report",
   "labels": [
     {
@@ -49,6 +49,52 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDONe90rM6j7u6I",
+      "title": "Attendee List",
+      "url": "https://github.com/intarchboard/draft-iab-nemops-workshop-report/issues/1",
+      "state": "CLOSED",
+      "author": "dhruvdhody",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Need to get a merged list of workshop participants for all days from webex",
+      "createdAt": "2024-12-19T13:31:21Z",
+      "updatedAt": "2024-12-20T05:41:18Z",
+      "closedAt": "2024-12-20T05:41:18Z",
+      "comments": [
+        {
+          "author": "dhruvdhody",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@cindymorgan - can you help with that?",
+          "createdAt": "2024-12-19T13:31:35Z",
+          "updatedAt": "2024-12-19T13:31:35Z"
+        },
+        {
+          "author": "cindymorgan",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Combined participant list from all 3 days:\r\n\r\nAlex Huang\r\nAlexander Clemm\r\nAlexander PELOV\r\nBenoit Claise\r\nBoris Khasanov\r\nBrad Peters (nbn)\r\nCarsten Bormann\r\nChongfeng Xie\r\nCindy Morgan\r\nDan Voyer\r\nDarren Loher\r\nDean Bogdanovic\r\nDean Bogdanovi\u0107\r\nDhruv Dhody\r\nDiego Lopez\r\nEbben Aries\r\nFrank (Chong Feng)\r\nHolger Keller\r\nIan Farrer\r\nJaime Jimenez\r\nJames Cumming\r\nJanne Karvonen\r\nJason Sterne\r\nJiaming Ye\r\nJinming Li\r\nJohn Carson\r\nJulien Maisonneuve\r\nJ\u00fcrgen Sch\u00f6nw\u00e4lder\r\nKent Watsen\r\nKris Lambrechts\r\nKristian Larsson\r\nLaurent Ciavaglia\r\nLaurent Toutain\r\nLiz Flynn\r\nLuis M. Contreras (Telefonica)\r\nMahesh Jethanandani\r\nManoj Gudi\r\nMartin Horneffer\r\nMatthew Bocci\r\nMed Boucadair\r\nMichael Mackey\r\nMichael Richardson\r\nMichael Scharf\r\nMikko Pesonen\r\nNacho Dominguez (Telefonica)\r\nNaveen Achyuta\r\nNick Corran\r\nNils Warnke\r\nOscar Gonzalez de Dios\r\nPaolo Lucente\r\nParisa foroughi\r\nPer Andersson\r\nPhil Shafer\r\nQin Wu\r\nQiufang Ma\r\nRaquel Rodriguez\r\nReshad\r\nReshad Rahman\r\nRob Shakir\r\nRob Wilton\r\nRoland Bless (KIT)\r\nRoland Schott\r\nR\u00fcdiger Geib\r\nRui Zhuang\r\nRuibo han\r\nSabine Randriamasy\r\nScott Mansfield (Ericsson)\r\nScott Robohn\r\nShengnan Yue\r\nSuresh Krishnan\r\nThomas Graf\r\nToerless Eckert\r\nwangbo\r\nWarren Kumari\r\nWes Hardaker\r\nWim Henderickx\r\nXue Yang\r\nY. Richard Yang\r\nyangbo\r\nYisong Liu\r\nZhenqiang Li",
+          "createdAt": "2024-12-19T17:46:19Z",
+          "updatedAt": "2024-12-19T17:46:19Z"
+        },
+        {
+          "author": "dhruvdhody",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "https://github.com/intarchboard/draft-iab-nemops-workshop-report/commit/1fb27d9473ce1d84089dd61afd5a1eada743fcde",
+          "createdAt": "2024-12-20T05:41:06Z",
+          "updatedAt": "2024-12-20T05:41:06Z"
+        },
+        {
+          "author": "dhruvdhody",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Thanks @cindymorgan ",
+          "createdAt": "2024-12-20T05:41:18Z",
+          "updatedAt": "2024-12-20T05:41:18Z"
+        }
+      ]
+    }
+  ],
   "pulls": []
 }
