@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 23 June 2025                                   20 December 2024
+Expires: 25 July 2025                                    21 January 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -62,11 +62,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 23 June 2025.
+   This Internet-Draft will expire on 25 July 2025.
 
 Copyright Notice
 
-   Copyright (c) 2024 IETF Trust and the persons identified as the
+   Copyright (c) 2025 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -177,40 +177,35 @@ Table of Contents
 
 3.4.1.  Ecosystem conclusions
 
-   1.  The current network management protocols/models/tools still fail
-       the ‘ease of use’ requirement
+   These takeaways try to document the general thinking of the
+   participants with respect to the entire Network Management ecosystem
+   as it exists today.
 
-       1.  The tools may matter more than the protocols
+   1.  The current network management protocols, models and tools still
+       fail the ‘ease of use’ requirement.  Participants noted that the
+       tools almost matter more than the protocols.
 
    2.  The overall ecosystem is still fragmented for both protocols and
-       data models
+       data models.  SNMP is still used extensively for monitoring, and
+       the CLI is still heavily relied on in in many networks.  Popular
+       protocols include SNMP, CLI, NETCONF, RESTCONF, gNMI, etc.
 
-       1.  SNMP (for monitoring) and CLI is still the rule in many
-           networks (this is a potential obstacle)
+   3.  Documentation about the architecture and usage of the network
+       management ecosystem is lacking.  More work is needed to create
+       general architecture documentation, deployment guides, tutorials,
+       training material, getting started guides.
 
-       2.  Transitions between frameworks is challenging (see IPv4 ->
-           IPv6)
+   4.  Transitioning between network management frameworks is
+       challenging, just like it is for transitioning between other
+       protocols like IPv4 to IPv6.
 
-       3.  Fragments: SNMP, CLI, NETCONF, RESTCONF, gNMI, etc…
+   5.  Model-driven network management is generally a success where it
+       is implemented and possible to use.
 
-       4.  gNMI is popular for stream
-
-   3.  Model-driven network management is generally a success
-
-   4.  Documentation for how the network management ecosystem works is
-       lacking
-
-       1.  Could use architecture documentation, deployment guides,
-           tutorials, training, getting started
-
-   5.  Easily usable network management tools for the operators are
-       needed
-
-       1.  Lack of open source tools are a barrier to adoption
-
-       2.  We need more discussion about tooling success paths
-
-       3.  Tools need good use cases / example use cases and flows
+   6.  More easily usable network management tools for the operators are
+       needed.  The lack of open source tools are seen as a barrier to
+       adoption.  Tools need good use cases, example flows and better
+       analysis of when and how they work and have been successful.
 
 3.4.2.  Protocol conclusions
 
