@@ -89,20 +89,28 @@ At the end of the third day the discussion turned to key takeaways that had cons
 
 ### Ecosystem conclusions
 
-1. The current network management protocols/models/tools still fail the ‘ease of use’ requirement
-    1. The tools may matter more than the protocols
-1. The overall ecosystem is still fragmented for both protocols and data models
-    1. SNMP (for monitoring) and CLI is still the rule in many networks (this is a potential obstacle)
-    1. Transitions between frameworks is challenging (see IPv4 -> IPv6)
-    1. Fragments: SNMP, CLI, NETCONF, RESTCONF, gNMI, etc…
-    1. gNMI is popular for stream
-1. Model-driven network management is generally a success
-1. Documentation for how the network management ecosystem works is lacking
-    1. Could use architecture documentation, deployment guides, tutorials, training, getting started
-1. Easily usable network management tools for the operators are needed
-    1. Lack of open source tools are a barrier to adoption
-    1. We need more discussion about tooling success paths
-    1. Tools need good use cases / example use cases and flows
+These takeaways try to document the general thinking of the participants with respect to the entire Network Management ecosystem as it exists today.
+
+1. The current network management protocols, models and tools still
+   fail the ‘ease of use’ requirement.  Participants noted that the
+   tools almost matter more than the protocols.
+1. The overall ecosystem is still fragmented for both protocols and
+   data models.  SNMP is still used extensively for monitoring, and
+   the CLI is still heavily relied on in in many networks.  Popular
+   protocols include SNMP, CLI, NETCONF, RESTCONF, gNMI, etc.
+1. Documentation about the architecture and usage of the network
+   management ecosystem is lacking.  More work is needed to create
+   general architecture documentation, deployment guides, tutorials,
+   training material, getting started guides.
+1. Transitioning between network management frameworks is challenging,
+   just like it is for transitioning between other protocols like IPv4
+   to IPv6.
+1. Model-driven network management is generally a success where it is
+   implemented and possible to use.
+1. More easily usable network management tools for the operators are
+   needed.  The lack of open source tools are seen as a barrier to
+   adoption.  Tools need good use cases, example flows and better
+   analysis of when and how they work and have been successful.
 
 ### Protocol conclusions
 
