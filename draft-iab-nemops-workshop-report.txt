@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 25 July 2025                                    21 January 2025
+Expires: 26 July 2025                                    22 January 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -62,7 +62,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 25 July 2025.
+   This Internet-Draft will expire on 26 July 2025.
 
 Copyright Notice
 
@@ -209,21 +209,27 @@ Table of Contents
 
 3.4.2.  Protocol conclusions
 
-   1.  False: Netconf for configuration has been successful in some
+   1.  Netconf and YANG are not used much for monitoring tasks.
+
+   2.  Netconf and YANG do not have full coverage on many devices.
+
+   3.  Polling based solutions are still frequently deployed.
+
+   4.  False: Netconf for configuration has been successful in some
        larger scale deployment
 
        1.  Let’s discuss this further on list
 
        2.  Service config?
 
-   2.  Netconf/YANG is not used much (yet?) for monitoring
-
-   3.  False: Full device control and configuration frequently requires
+   5.  False: Full device control and configuration frequently requires
        CLI and screen scraping
 
-   4.  Full coverage of NetConf support on devices is missing
+   6.  Full coverage of NetConf support on devices is missing
 
-   5.  Polling based solutions are still frequently deployed
+   7.  Polling based solutions are still frequently deployed.  Push
+       based solutions are often desired but are not yet widely
+       available.
 
 3.4.3.  Modeling conclusions
 
@@ -252,30 +258,26 @@ Table of Contents
 
 3.4.4.  Standardization conclusions
 
-   1.  More rapid model development procedures are (still) needed
+   1.  A methodology rapid model development procedures is needed to
+       ensure model deployment can keep pace with new feature
+       deployment.  We need a solution that significantly increase the
+       speed and predictable timeline for developing and publishing
+       models within the IETF.  New approaches and methods to make
+       models live outside of published RFCs should be explored.  An
+       experiment should be started to test a new rapid development
+       approach.
 
-       1.  Faster than how the IETF produces (simple) results today
-           (especially models)
+   2.  Protocol and model complexity should be reduced to keep additions
+       and changes to a minimal set of agreed upon core features.
 
-       2.  New approaches/methods to make it live outside the RFCs
-           should be explored
+   3.  More standardization focus is needed on the scalability of the
+       different roles of network management: monitoring, configuration,
+       notifications.
 
-       3.  Need more predictable timelines
-
-   2.  More focus is needed on scalability of all network management
-       roles (monitoring, configuration, notifications)
-
-   3.  We should reduce complexity for future changes to a minimal
-       agreed set of core features
-
-       1.  For both protocol and models
-
-   4.  Network management enhancements needs to be backed by operator
-       use cases and vendor buy-in
-
-       1.  Vendors and operators should must work together
-
-   5.  An rapid development experiment would be an interesting approach
+   4.  Enhancements to network management protocols and models needs to
+       be backed by real-world operator use cases and expected adoption
+       by vendors.  Vendors and operators will need to work together to
+       ensure these goals are appropriately met.
 
 3.4.5.  Additional work needed
 
