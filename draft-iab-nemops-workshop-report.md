@@ -114,13 +114,16 @@ These takeaways try to document the general thinking of the participants with re
 
 ### Protocol conclusions
 
+1. Netconf and YANG are not used much for monitoring tasks.
+1. Netconf and YANG do not have full coverage on many devices.
+1. Polling based solutions are still frequently deployed.
+
 1. False: Netconf for configuration has been successful in some larger scale deployment
     1. Let’s discuss this further on list
     1. Service config?
-1. Netconf/YANG is not used much (yet?) for monitoring
 1. False: Full device control and configuration frequently requires CLI and screen scraping
 1. Full coverage of NetConf support on devices is missing
-1. Polling based solutions are still frequently deployed
+1. Polling based solutions are still frequently deployed.  Push based solutions are often desired but are not yet widely available.
 
 ### Modeling conclusions
 
@@ -138,17 +141,22 @@ These takeaways try to document the general thinking of the participants with re
 
 ### Standardization conclusions
 
-1. More rapid model development procedures are (still) needed
-    1. Faster than how the IETF produces (simple) results today (especially models)
-    1. New approaches/methods to make it live outside the RFCs should be explored
-    1. Need more predictable timelines
-1. More focus is needed on scalability of all network management roles (monitoring, configuration, notifications)
-1. We should reduce complexity for future changes to a minimal agreed set of core features
-    1. For both protocol and models
-1. Network management enhancements needs to be backed by operator use cases and vendor buy-in
-    1. Vendors and operators should must work together
-1. An rapid development experiment would be an interesting approach
-
+1. A methodology rapid model development procedures is needed to
+   ensure model deployment can keep pace with new feature deployment.
+   We need a solution that significantly increase the speed and
+   predictable timeline for developing and publishing models within
+   the IETF.  New approaches and methods to make models live outside
+   of published RFCs should be explored.  An experiment should be
+   started to test a new rapid development approach.
+1. Protocol and model complexity should be reduced to keep additions
+   and changes to a minimal set of agreed upon core features.
+1. More standardization focus is needed on the scalability of the
+   different roles of network management: monitoring, configuration,
+   notifications.
+1. Enhancements to network management protocols and models needs to be
+   backed by real-world operator use cases and expected adoption by
+   vendors.  Vendors and operators will need to work together to
+   ensure these goals are appropriately met.
 
 ### Additional work needed
 
