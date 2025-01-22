@@ -117,13 +117,13 @@ These takeaways try to document the general thinking of the participants with re
 1. Netconf and YANG are not used much for monitoring tasks.
 1. Netconf and YANG do not have full coverage on many devices.
 1. Polling based solutions are still frequently deployed.
+1. Full coverage of NetConf support on devices dose not exist today.
+1. Polling based solutions are still frequently deployed.  Push based solutions are often desired but are not yet widely available.
 
 1. False: Netconf for configuration has been successful in some larger scale deployment
     1. Let’s discuss this further on list
     1. Service config?
 1. False: Full device control and configuration frequently requires CLI and screen scraping
-1. Full coverage of NetConf support on devices dose not exist today.
-1. Polling based solutions are still frequently deployed.  Push based solutions are often desired but are not yet widely available.
 
 ### Modeling conclusions
 
