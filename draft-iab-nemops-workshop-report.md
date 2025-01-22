@@ -122,22 +122,27 @@ These takeaways try to document the general thinking of the participants with re
     1. Let’s discuss this further on list
     1. Service config?
 1. False: Full device control and configuration frequently requires CLI and screen scraping
-1. Full coverage of NetConf support on devices is missing
+1. Full coverage of NetConf support on devices dose not exist today.
 1. Polling based solutions are still frequently deployed.  Push based solutions are often desired but are not yet widely available.
 
 ### Modeling conclusions
 
-[XXX: note -- I don't think we talked about this slide much -Wes]
-
-1. YANG models can sometimes get too complex (not a fault of the language)
-1. Vendor-specific features need to be exposed through network management protocols
-1. More service-level modeling is needed
-    1. Device level modeling needs to be a building block but is not a complete service-level solution
-1. Network configuration needs to be verifiable
-1. Multi-vendor compatibility support is required
-1. Full coverage of YANG models on all devices is missing
-1. Model translation adaptors may be the best path forward
-    1. Likely off-device
+1. Some YANG models can become too complex, though not as a fault of
+   the language.
+1. Multi-vendor compatibility support is required.
+1. Even vendor-specific features, not just standardized protocol
+   features, need to be exposed through network management protocols
+   for a network management ecosystem to be viable.
+1. Greater support for service-level modeling is needed.  Device level
+   modeling can be a building block to achieve a sufficient
+   service-level model but is not a complete solution by itself.
+1. Network configuration needs to be verifiable to ensure any
+   potential changes can be accepted by devices.  Model translation
+   adapters (likely performed on the management-station not the end
+   device) may be the best path forward to simultaneously achieve this
+   and a goal of supporting one configuration set across a diversity
+   of devices with different internal models.
+1. Full coverage of YANG models on all devices does not exist today. 
 
 ### Standardization conclusions
 
