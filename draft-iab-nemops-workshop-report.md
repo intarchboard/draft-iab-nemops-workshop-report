@@ -195,6 +195,8 @@ The second day of the workshop concentrated on challenges and emerging requireme
 
 {{KELLER}} shared Deutsche Telekom’s perspective, emphasizing that while YANG performs well for provisioning, it currently falls short in providing the operational stability required for validation. Achieving fully closed-loop automated and autonomous networking will require a greater focus on observability, particularly through advancements in streaming telemetry.
 
+{{JIMENEZ}} discussed the challenges associated with the SDN Transport Automation Platform, including issues with data streaming, scalability, diverse models, and mechanisms to secure the network management protocols. The presentation also emphasized how advancements in AI and machine learning, along with the potential adaptation of protocols designed for constrained environments, could drive the next evolution in network management.
+
 ### Survey
 
 ### Discussion
