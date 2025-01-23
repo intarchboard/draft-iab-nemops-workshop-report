@@ -272,6 +272,13 @@ Table of Contents
 
 3.2.1.  Operator Feedback
 
+   [KELLER] shared Deutsche Telekom’s perspective, emphasizing that
+   while YANG performs well for provisioning, it currently falls short
+   in providing the operational stability required for validation.
+   Achieving fully closed-loop automated and autonomous networking will
+   require a greater focus on observability, particularly through
+   advancements in streaming telemetry.
+
 3.2.2.  Survey
 
 3.2.3.  Discussion
@@ -424,6 +431,13 @@ Table of Contents
               3 November 2024, <https://datatracker.ietf.org/doc/html/
               draft-ietf-core-comi-19>.
 
+   [JIMENEZ]  Jiménez, J., Mansfield, S., , Pesonen, M., Torvinen, V.,
+              and J. Karvonen, "Evolving Challenges and Solutions in
+              Network Management", November 2024,
+              <https://www.ietf.org/slides/slides-nemopsws-paper-
+              evolving-challenges-and-solutions-in-network-management-
+              00.pdf>.
+
    [KELLER]   Warnke, N., Geib, R., Horneffer, M., and H. Keller,
               "NEMOPS: RFC3535 and the forgotten word — Or Provisioning
               is only a subset of Network Management", November 2024,
@@ -501,6 +515,10 @@ Appendix A.  Position Papers
    *  N.  Warnke, R.  Geib, M.  Horneffer, and H.  Keller: NEMOPS:
       RFC3535 and the forgotten word — Or Provisioning is only a subset
       of Network Management [KELLER]
+
+   *  J.  Jiménez, S.  Mansfield, R.  Rodriguez A., M.  Pesonen, V.
+      Torvinen, and J.  Karvonen: Evolving Challenges and Solutions in
+      Network Management [JIMENEZ]
 
 Appendix B.  Workshop Participants
 
