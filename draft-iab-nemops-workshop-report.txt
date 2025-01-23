@@ -217,6 +217,12 @@ Table of Contents
    standardized network management protocols: toolkit vendors and system
    operators.  Their requirements for protocol simplicity differ, and it
    is essential to address the needs of both to ensure success.
+   [BORMANN] presented an overview of the CORECONF architecture,
+   showcasing how model-driven network management techniques can be
+   applied to manage IoT devices, with a focus on the unique
+   characteristics of constrained nodes.  Some participants noted that
+   the binary encoding of CBOR has applications that extend beyond IoT
+   networks.
 
 3.2.  Session II: Present (identified problems & requirements)
 
@@ -412,6 +418,9 @@ Appendix A.  Position Papers
       Later from an Operator’s Perspective (Deutsche Telekom) [LARSSON]
 
    *  W.  Hardaker: Lessons Learned from 30 Years of Net-SNMP [HARDAKER]
+
+   *  C.  Bormann: CORECONF: Managing IoT Devices with YANG Models
+      [BORMANN]
 
 Appendix B.  Workshop Participants
 
