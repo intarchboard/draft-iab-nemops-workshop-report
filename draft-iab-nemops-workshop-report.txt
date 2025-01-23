@@ -418,6 +418,14 @@ Table of Contents
               slides-nemopsws-paper-coreconf-managing-iot-devices-with-
               yang-models-00.pdf>.
 
+   [CONTRERAS]
+              "RFC 3535, 20 Years Later: An Update of Operators
+              Requirements on Network Management Protocols and
+              Modelling", n.d., <https://www.ietf.org/slides/slides-
+              nemopsws-paper-rfc3535-years-later-an-update-of-operators-
+              requirements-on-network-management-protocols-and-
+              modelling-00.pdf>.
+
    [HARDAKER] Hardaker, W., "Lessons Learned from 30 Years of Net-SNMP",
               November 2024, <https://www.ietf.org/slides/slides-
               nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-
@@ -527,6 +535,11 @@ Appendix A.  Position Papers
    *  J.  Jiménez, S.  Mansfield, R.  Rodriguez A., M.  Pesonen, V.
       Torvinen, and J.  Karvonen: Evolving Challenges and Solutions in
       Network Management [JIMENEZ]
+
+   *  M.  Boucadair, L.  M.  Contreras, O.  Gonzalez de Dios, T.  Graf,
+      R.  Rahman, and L.  Tailhardat: RFC 3535, 20 Years Later: An
+      Update of Operators Requirements on Network Management Protocols
+      and Modelling [CONTRERAS]
 
 Appendix B.  Workshop Participants
 
