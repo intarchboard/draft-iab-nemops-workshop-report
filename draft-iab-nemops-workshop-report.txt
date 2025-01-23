@@ -342,6 +342,11 @@ Table of Contents
 
 4.  Informative References
 
+   [BORMANN]  Bormann, C., "CORECONF: Managing IoT Devices with YANG
+              Models", November 2024, <https://www.ietf.org/slides/
+              slides-nemopsws-paper-coreconf-managing-iot-devices-with-
+              yang-models-00.pdf>.
+
    [HARDAKER] Hardaker, W., "Lessons Learned from 30 Years of Net-SNMP",
               November 2024, <https://www.ietf.org/slides/slides-
               nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-
