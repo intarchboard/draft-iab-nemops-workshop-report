@@ -151,7 +151,7 @@ These takeaways try to document the general thinking of the participants with re
    device) may be the best path forward to simultaneously achieve this
    and a goal of supporting one configuration set across a diversity
    of devices with different internal models.
-1. Full coverage of YANG models on all devices does not exist today. 
+1. Full coverage of YANG models on all devices does not exist today.
 
 ### Standardization conclusions
 
