@@ -262,6 +262,8 @@ As outlined in {{outreach}}, the workshop program committee organized outreach i
 
 ### Discussion
 
+
+
 ## Session III: Future (possible solutions, recommendations and next steps)
 
 ## Key Takeaways
@@ -353,6 +355,8 @@ Here we list the things that the group realized needed significantly more attent
 --- back
 
 # Insights from Operator Feedback {#insights}
+
+[TODO: Check if this is useful in the RFC or should it be removed]
 
 ## General Insights
 
