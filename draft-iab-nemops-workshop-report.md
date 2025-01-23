@@ -188,7 +188,45 @@ informative:
     date: November 2024
   CLAISE:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-knowledge-graph-framework-for-network-operations-00.pdf
-    title: Knowledge Graph Framework for Network Operations  
+    title: Knowledge Graph Framework for Network Operations
+    author:
+      -
+        ins:  B. Claise
+        name: Benoit Claise
+      -
+        ins:  T. Graf
+        name: Thomas Graf
+      -
+        ins:  H. Keller
+        name: Holger Keller
+      -
+        ins:  D. Voyer
+        name: Dan Voyer
+      -
+        ins:  P. Lucente
+        name: Paolo Lucente
+      -
+        ins:  D. Lopez
+        name: Diego Lopez
+      -
+        ins:  I. Martinez-Casanueva
+        name: Ignacio Dominguez Martinez-Casanueva
+      -
+        ins:  B. Peters
+        name: Brad Peters
+      -
+        ins:  P. Fasano
+        name: Paolo Fasano
+      -
+        ins:  P. Ran
+        name: Pang Ran
+      -
+        ins:  W. Cheng
+        name: Weiqiang Cheng
+      -
+        ins:  M. Mackey
+        name: Michael Mackey
+    date: November 2024
 --- abstract
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
 
