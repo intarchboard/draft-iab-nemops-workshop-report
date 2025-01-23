@@ -287,6 +287,14 @@ Table of Contents
    adaptation of protocols designed for constrained environments, could
    drive the next evolution in network management.
 
+   Using YANG-Push as an example, [GRAF] highlights how standards
+   development often fails to align with the needs of network operators,
+   the constraints of network vendors, and the integration requirements.
+   Most critically, it lacks an agile, incremental development process.
+   The presentation advocated for adopting an iterative approach to
+   standards development, focusing on delivering minimal viable products
+   as part of the process.
+
    [CONTRERAS] emphasized the importance of reassessing deployment
    assumptions and incorporating updated operator requirements.  The
    authors are addressing these aspects through
@@ -433,8 +441,10 @@ Table of Contents
               rfc3535-years-later-an-update-of-operators-requirements-
               on-network-management-protocols-and-modelling-00.pdf>.
 
-   [GRAF]     "Agile Incremental Driven Development for Network
-              Management", n.d., <https://www.ietf.org/slides/slides-
+   [GRAF]     Graf, T., Keller, H., Voyer, D., Lucente, P., Claise, B.,
+              Wilton, R., Huang-Feng, A., and P. Francois, "Agile
+              Incremental Driven Development for Network Management",
+              November 2024, <https://www.ietf.org/slides/slides-
               nemopsws-paper-agile-incremental-driven-development-for-
               network-management-01.pdf>.
 
