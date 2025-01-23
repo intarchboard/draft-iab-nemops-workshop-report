@@ -550,6 +550,8 @@ Table of Contents
 
 Appendix A.  Insights from Operator Feedback
 
+   [TODO: Check if this is useful in the RFC or should it be removed]
+
 A.1.  General Insights
 
    1.  In network deployments, operations are typically at the bottom of
