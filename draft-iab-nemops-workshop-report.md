@@ -130,6 +130,9 @@ informative:
         ins:  J. Karvonen
         name: Janne Karvonen
     date: November 2024
+  CONTRERAS:
+    target: https://www.ietf.org/slides/slides-nemopsws-paper-rfc3535-years-later-an-update-of-operators-requirements-on-network-management-protocols-and-modelling-00.pdf
+    title: "RFC 3535, 20 Years Later: An Update of Operators Requirements on Network Management Protocols and Modelling"
 --- abstract
 
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
@@ -304,6 +307,7 @@ This is the list of all papers:
 * R. Shakir: Rethinking Standardisation of Network Management {{SHAKIR}}
 * N. Warnke, R. Geib, M. Horneffer, and H. Keller: NEMOPS: RFC3535 and the forgotten word — Or Provisioning is only a subset of Network Management {{KELLER}}
 * J. Jiménez, S. Mansfield, R. Rodriguez A., M. Pesonen, V. Torvinen, and J. Karvonen: Evolving Challenges and Solutions in Network Management {{JIMENEZ}}
+* M. Boucadair, L. M. Contreras, O. Gonzalez de Dios, T. Graf, R. Rahman, and L. Tailhardat: RFC 3535, 20 Years Later: An Update of Operators Requirements on Network Management Protocols and Modelling {{CONTRERAS}}
 
 # Workshop Participants
 
