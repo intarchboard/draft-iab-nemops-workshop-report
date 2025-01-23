@@ -262,7 +262,7 @@ As outlined in {{outreach}}, the workshop program committee organized outreach i
 
 ### Discussion
 
-
+The open discussion featured feedback from implementers, highlighting how divergence in vendor implementations creates complexity and necessitates workarounds. Challenges were noted in mapping standard models to internal device models and legacy devices. The conversation also emphasized the importance of developing open-source reference implementations, compliance testing, and interoperability solutions.
 
 ## Session III: Future (possible solutions, recommendations and next steps)
 
