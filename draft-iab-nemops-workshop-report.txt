@@ -202,13 +202,21 @@ Table of Contents
    and Verifiable.  An operator’s perspective highlighted that the
    recommendations of [RFC3535], which led to the development of YANG
    and NETCONF, have been successful in addressing device configuration.
-   However, in certain areas, advancements in semantics and protocols
-   for streaming telemetry have even surpassed the original scope.
+   In certain areas, the advancements in semantics and protocols for
+   streaming telemetry have even surpassed the original scope.
    [LARSSON] stressed the need to prioritize service modeling, including
    operational state, to support closed-loop automation.  Furthermore,
    the absence of open-source tools, NMS and device model
    implementations was recognized as a significant obstacle to advancing
    standardization efforts.
+
+   [HARDAKER] emphasized that the success of Net-SNMP [NET-SNMP] was
+   driven by empowering users through simplicity.  He stressed that the
+   focus should remain on ensuring ease of use and adaptability of the
+   protocols.  Emphasis was placed on the two distinct audiences for
+   standardized network management protocols: toolkit vendors and system
+   operators.  Their requirements for protocol simplicity differ, and it
+   is essential to address the needs of both to ensure success.
 
 3.2.  Session II: Present (identified problems & requirements)
 
@@ -334,6 +342,11 @@ Table of Contents
 
 4.  Informative References
 
+   [HARDAKER] Hardaker, W., "Lessons Learned from 30 Years of Net-SNMP",
+              November 2024, <https://www.ietf.org/slides/slides-
+              nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-
+              00.pdf>.
+
    [I-D.ietf-core-comi]
               Veillette, M., Van der Stok, P., Pelov, A., Bierman, A.,
               and C. Bormann, "CoAP Management Interface (CORECONF)",
@@ -346,6 +359,8 @@ Table of Contents
               Telekom)", November 2024, <https://www.ietf.org/slides/
               slides-nemopsws-paper-rfc3535-years-later-from-an-
               operators-perspective-deutsche-telekom-00.pdf>.
+
+   [NET-SNMP] "Net-SNMP", n.d., <http://www.net-snmp.org/>.
 
    [RFC3535]  Schoenwaelder, J., "Overview of the 2002 IAB Network
               Management Workshop", RFC 3535, DOI 10.17487/RFC3535, May
@@ -390,6 +405,8 @@ Appendix A.  Position Papers
 
    *  K.  Larsson, K.  Lambrechts, and I.  Farrer: RFC3535, 20 Years
       Later from an Operator’s Perspective (Deutsche Telekom) [LARSSON]
+
+   *  W.  Hardaker: Lessons Learned from 30 Years of Net-SNMP [HARDAKER]
 
 Appendix B.  Workshop Participants
 

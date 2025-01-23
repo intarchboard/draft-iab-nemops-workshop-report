@@ -1269,7 +1269,8 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-session-i-past-lookback-ana" class="section-name selfRef">Session I: Past (lookback, analysis)</a>
         </h3>
 <p id="section-3.1-1">The first day of the workshop focused on reflecting on the past by reviewing the evolution of network management since the 2002 workshop, analyzing both the successes and the challenges encountered along the way. The presentations covered a range of topics, including reflections on the history of network management, lessons learned from widely used tools, practices in constrained networks, and the need to reconsider how network management models and protocols are standardized within the IETF.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.1-2">The workshop began by reflecting on the IAB’s role in shaping the evolution of network management, focusing on the context and key outcomes of the previous workshop, an assessment of the current state, and an acknowledgement of some regrets. <span>[<a href="#SCHONWALDER" class="cite xref">SCHONWALDER</a>]</span> emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable, Declarative, Reproducible, and Verifiable. An operator’s perspective highlighted that the recommendations of <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span>, which led to the development of YANG and NETCONF, have been successful in addressing device configuration. However, in certain areas, advancements in semantics and protocols for streaming telemetry have even surpassed the original scope. <span>[<a href="#LARSSON" class="cite xref">LARSSON</a>]</span> stressed the need to prioritize service modeling, including operational state, to support closed-loop automation. Furthermore, the absence of open-source tools, NMS and device model implementations was recognized as a significant obstacle to advancing standardization efforts.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
+<p id="section-3.1-2">The workshop began by reflecting on the IAB’s role in shaping the evolution of network management, focusing on the context and key outcomes of the previous workshop, an assessment of the current state, and an acknowledgement of some regrets. <span>[<a href="#SCHONWALDER" class="cite xref">SCHONWALDER</a>]</span> emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable, Declarative, Reproducible, and Verifiable. An operator’s perspective highlighted that the recommendations of <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span>, which led to the development of YANG and NETCONF, have been successful in addressing device configuration. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope. <span>[<a href="#LARSSON" class="cite xref">LARSSON</a>]</span> stressed the need to prioritize service modeling, including operational state, to support closed-loop automation. Furthermore, the absence of open-source tools, NMS and device model implementations was recognized as a significant obstacle to advancing standardization efforts.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
+<p id="section-3.1-3"><span>[<a href="#HARDAKER" class="cite xref">HARDAKER</a>]</span> emphasized that the success of Net-SNMP <span>[<a href="#NET-SNMP" class="cite xref">NET-SNMP</a>]</span> was driven by empowering users through simplicity. He stressed that the focus should remain on ensuring ease of use and adaptability of the protocols. Emphasis was placed on the two distinct audiences for standardized network management protocols: toolkit vendors and system operators. Their requirements for protocol simplicity differ, and it is essential to address the needs of both to ensure success.<a href="#section-3.1-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="session-ii-present-identified-problems-requirements">
@@ -1461,6 +1462,10 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-1.4.1" class="p
 <a href="#section-4" class="section-number selfRef">4. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
       </h2>
 <dl class="references">
+<dt id="HARDAKER">[HARDAKER]</dt>
+      <dd>
+<span class="refAuthor">Hardaker, W.</span>, <span class="refTitle">"Lessons Learned from 30 Years of Net-SNMP"</span>, <time datetime="2024-11" class="refDate">November 2024</time>, <span>&lt;<a href="https://www.ietf.org/slides/slides-nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-00.pdf">https://www.ietf.org/slides/slides-nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-00.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="I-D.ietf-core-comi">[I-D.ietf-core-comi]</dt>
       <dd>
 <span class="refAuthor">Veillette, M.</span>, <span class="refAuthor">Van der Stok, P.</span>, <span class="refAuthor">Pelov, A.</span>, <span class="refAuthor">Bierman, A.</span>, and <span class="refAuthor">C. Bormann</span>, <span class="refTitle">"CoAP Management Interface (CORECONF)"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-core-comi-19</span>, <time datetime="2024-11-03" class="refDate">3 November 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-core-comi-19">https://datatracker.ietf.org/doc/html/draft-ietf-core-comi-19</a>&gt;</span>. </dd>
@@ -1468,6 +1473,10 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-1.4.1" class="p
 <dt id="LARSSON">[LARSSON]</dt>
       <dd>
 <span class="refAuthor">Larsson, K.</span>, <span class="refAuthor">Lambrechts, K.</span>, and <span class="refAuthor">I. Farrer</span>, <span class="refTitle">"RFC3535, 20 Years Later from an Operator's Perspective (Deutsche Telekom)"</span>, <time datetime="2024-11" class="refDate">November 2024</time>, <span>&lt;<a href="https://www.ietf.org/slides/slides-nemopsws-paper-rfc3535-years-later-from-an-operators-perspective-deutsche-telekom-00.pdf">https://www.ietf.org/slides/slides-nemopsws-paper-rfc3535-years-later-from-an-operators-perspective-deutsche-telekom-00.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="NET-SNMP">[NET-SNMP]</dt>
+      <dd>
+<span class="refTitle">"Net-SNMP"</span>, <span>n.d.</span>, <span>&lt;<a href="http://www.net-snmp.org/">http://www.net-snmp.org/</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC3535">[RFC3535]</dt>
       <dd>
@@ -1509,6 +1518,9 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-1.4.1" class="p
 </li>
         <li class="normal" id="appendix-A-3.2">
           <p id="appendix-A-3.2.1">K. Larsson, K. Lambrechts, and I. Farrer: RFC3535, 20 Years Later from an Operator’s Perspective (Deutsche Telekom) <span>[<a href="#LARSSON" class="cite xref">LARSSON</a>]</span><a href="#appendix-A-3.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-A-3.3">
+          <p id="appendix-A-3.3.1">W. Hardaker: Lessons Learned from 30 Years of Net-SNMP <span>[<a href="#HARDAKER" class="cite xref">HARDAKER</a>]</span><a href="#appendix-A-3.3.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
