@@ -348,9 +348,33 @@ Table of Contents
    for a machine-readable approach to expose semantics.  A potential
    solution was proposed using a knowledge graph based on the Semantic
    Web Stack, along with the need to define a basic ontology for the
-   networking domain in an iterative manner.
+   networking domain in an iterative manner.  [WATSEN] recommends
+   prioritizing the following areas: (1) RESTCONF (including YANG-Push
+   Lite), (2) the Network Management Datastore Architecture (NMDA), (3)
+   Data Model Adapters, and (4) Device Protocol Adapters.  [WILTON]
+   recommends reducing unnecessary complexity, delivering timely
+   solutions, fostering open collaboration between vendors and
+   operators, and prioritizing simplicity.  Practical suggestions
+   include focusing on YANG-Push Lite, introducing YANG 2.0 through
+   incremental updates, developing NETCONFv2, and managing IETF YANG
+   models as code or APIs rather than embedding them within RFCs.
 
 3.3.2.  Discussion
+
+   The open discussion delved into the absence of NMDA in OpenConfig,
+   the history of introducing gNMI in the IETF, and the challenges of
+   building consensus on common ground and converging on a single
+   protocol.  It also explored approaches to handling YANG models within
+   the IETF, such as leveraging GitHub, along with the challenges
+   associated with its use.  The discussion emphasized the need for
+   process experimentation, particularly at the working group or area
+   level, and considered ways to involve operators in an iterative
+   process.
+
+   Some topics absent from the workshop discussions included tooling and
+   strategies to support tool development.  The primary focus was on
+   YANG and NETCONF/RESTCONF, while several other network management
+   protocols and techniques currently used received little attention.
 
 3.4.  Key Takeaways
 
@@ -589,6 +613,12 @@ Table of Contents
               <https://www.ietf.org/slides/slides-nemopsws-nemops-
               position-paper-kent-watsen-00.pdf>.
 
+   [WILTON]   Wilton, R. and N. Corran, "Device Network Management -
+              Current Status, and Future Direction", November 2024,
+              <https://datatracker.ietf.org/doc/slides-nemopsws-paper-
+              device-network-management-current-status-and-future-
+              direction/>.
+
 Appendix A.  Insights from Operator Feedback
 
    [TODO: Check if this is useful in the RFC or should it be removed]
@@ -704,6 +734,9 @@ Appendix B.  Position Papers
 
    *  K.  Watsen: Four Thoughts for How to Improve Network Management
       for Operators [WATSEN]
+
+   *  R.  Wilton and N.  Corran: Device Network Management: Current
+      Status and Future Direction [WILTON]
 
 Appendix C.  Workshop Participants
 
