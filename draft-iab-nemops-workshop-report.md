@@ -89,6 +89,23 @@ informative:
   OPENCONFIG:
     target: https://www.openconfig.net/
     title: OpenConfig
+  KELLER:
+    target: https://www.ietf.org/slides/slides-nemopsws-nemops-rfc3535-and-the-forgotten-word-00.pdf
+    title: "NEMOPS: RFC3535 and the forgotten word — Or Provisioning is only a subset of Network Management"
+    author:
+      -
+        ins:  N. Warnke
+        name: Nils Warnke
+      -
+        ins:  R. Geib
+        name: Rüdiger Geib
+      -
+        ins:  M. Horneffer
+        name: Martin Horneffer
+      -
+        ins:  H. Keller
+        name: Holger Keller        
+    date: November 2024
 --- abstract
 
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
@@ -143,6 +160,8 @@ Drawing from the experience of OpenConfig {{OPENCONFIG}}, {{SHAKIR}} emphasized 
 The open discussion highlighted the divergence between vendor implementations of standards and what is accessible via YANG models, particularly when compared to CLI. Common challenges identified included performance issues at scale, the steep learning curve for network management protocols, models, and tools, and the backward compatibility of models. Some participants suggested that the IETF should focus on system-level APIs that address specific problems. Additionally, the lack of simple tools for smaller networks operating under tight timelines and budgets was emphasized. A key question raised was whether the proliferation of protocols and languages complicates adoption, and if converging on a single approach would improve adoption.
 
 ## Session II: Present (identified problems & requirements)
+
+The second day of the workshop focused on Problems and new requirements for future network management operations.
 
 ## Session III: Future (possible solutions, recommendations and next steps)
 
@@ -245,6 +264,7 @@ This is the list of all papers:
 * W. Hardaker: Lessons Learned from 30 Years of Net-SNMP {{HARDAKER}}
 * C. Bormann: CORECONF: Managing IoT Devices with YANG Models {{BORMANN}}
 * R. Shakir: Rethinking Standardisation of Network Management {{SHAKIR}}
+* N. Warnke, R. Geib, M. Horneffer, and H. Keller: NEMOPS: RFC3535 and the forgotten word — Or Provisioning is only a subset of Network Management {{KELLER}}
 
 # Workshop Participants
 
