@@ -1164,12 +1164,29 @@ svg :is([fill="white"], [fill^="#fff"]) {
                 <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-session-i-past-lookback-ana" class="internal xref">Session I: Past (lookback, analysis)</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1.2.1">
-                    <p id="section-toc.1-1.3.2.1.2.1.1"><a href="#section-3.1.1" class="auto internal xref">3.1.1</a>.  <a href="#name-discussion" class="internal xref">Discussion</a></p>
+                    <p id="section-toc.1-1.3.2.1.2.1.1"><a href="#section-3.1.1" class="auto internal xref">3.1.1</a>.  <a href="#name-reflections" class="internal xref">Reflections</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1.2.2">
+                    <p id="section-toc.1-1.3.2.1.2.2.1"><a href="#section-3.1.2" class="auto internal xref">3.1.2</a>.  <a href="#name-lessons-to-be-learned" class="internal xref">Lessons to be Learned</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1.2.3">
+                    <p id="section-toc.1-1.3.2.1.2.3.1"><a href="#section-3.1.3" class="auto internal xref">3.1.3</a>.  <a href="#name-discussion" class="internal xref">Discussion</a></p>
 </li>
                 </ul>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2">
                 <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="auto internal xref">3.2</a>.  <a href="#name-session-ii-present-identifi" class="internal xref">Session II: Present (identified problems &amp; requirements)</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2.2.1">
+                    <p id="section-toc.1-1.3.2.2.2.1.1"><a href="#section-3.2.1" class="auto internal xref">3.2.1</a>.  <a href="#name-operator-feedback" class="internal xref">Operator Feedback</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2.2.2">
+                    <p id="section-toc.1-1.3.2.2.2.2.1"><a href="#section-3.2.2" class="auto internal xref">3.2.2</a>.  <a href="#name-survey" class="internal xref">Survey</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2.2.3">
+                    <p id="section-toc.1-1.3.2.2.2.3.1"><a href="#section-3.2.3" class="auto internal xref">3.2.3</a>.  <a href="#name-discussion-2" class="internal xref">Discussion</a></p>
+</li>
+                </ul>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3">
                 <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="auto internal xref">3.3</a>.  <a href="#name-session-iii-future-possible" class="internal xref">Session III: Future (possible solutions, recommendations and next steps)</a></p>
@@ -1274,15 +1291,29 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-session-i-past-lookback-ana" class="section-name selfRef">Session I: Past (lookback, analysis)</a>
         </h3>
 <p id="section-3.1-1">The first day of the workshop focused on reflecting on the past by reviewing the evolution of network management since the 2002 workshop, analyzing both the successes and the challenges encountered along the way. The presentations covered a range of topics, including reflections on the history of network management, lessons learned from widely used tools, practices in constrained networks, and the need to reconsider how network management models and protocols are standardized within the IETF.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.1-2">The workshop began by reflecting on the IAB’s role in shaping the evolution of network management, focusing on the context and key outcomes of the previous workshop, an assessment of the current state, and an acknowledgement of some regrets. <span>[<a href="#SCHONWALDER" class="cite xref">SCHONWALDER</a>]</span> emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable, Declarative, Reproducible, and Verifiable. An operator’s perspective highlighted that the recommendations of <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span>, which led to the development of YANG and NETCONF, have been successful in addressing device configuration. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope. <span>[<a href="#LARSSON" class="cite xref">LARSSON</a>]</span> stressed the need to prioritize service modeling, including operational state, to support closed-loop automation. Furthermore, the absence of open-source tools, NMS and device model implementations was recognized as a significant obstacle to advancing standardization efforts.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
-<p id="section-3.1-3"><span>[<a href="#HARDAKER" class="cite xref">HARDAKER</a>]</span> emphasized that the success of Net-SNMP <span>[<a href="#NET-SNMP" class="cite xref">NET-SNMP</a>]</span> was driven by empowering users through simplicity. He stressed that the focus should remain on ensuring ease of use and adaptability of the protocols. Emphasis was placed on the two distinct audiences for standardized network management protocols: toolkit vendors and system operators. Their requirements for protocol simplicity differ, and it is essential to address the needs of both to ensure success. <span>[<a href="#BORMANN" class="cite xref">BORMANN</a>]</span> presented an overview of the CORECONF architecture, showcasing how model-driven network management techniques can be applied to manage IoT devices, with a focus on the unique characteristics of constrained nodes. Some participants noted that the binary encoding of CBOR has applications that extend beyond IoT networks.<a href="#section-3.1-3" class="pilcrow">¶</a></p>
-<p id="section-3.1-4">Drawing from the experience of OpenConfig <span>[<a href="#OPENCONFIG" class="cite xref">OPENCONFIG</a>]</span>, <span>[<a href="#SHAKIR" class="cite xref">SHAKIR</a>]</span> emphasized that protocol definition cannot be done in isolation. It must integrate lessons learned from implementation and large-scale deployment. He highlighted the importance of enabling quick iterations, shipping rapidly, embracing open-source culture, adopting systems thinking driven by business outcomes, and reusing existing technologies rather than developing solutions exclusively for network management.<a href="#section-3.1-4" class="pilcrow">¶</a></p>
-<div id="discussion">
+<div id="reflections">
 <section id="section-3.1.1">
-          <h4 id="name-discussion">
-<a href="#section-3.1.1" class="section-number selfRef">3.1.1. </a><a href="#name-discussion" class="section-name selfRef">Discussion</a>
+          <h4 id="name-reflections">
+<a href="#section-3.1.1" class="section-number selfRef">3.1.1. </a><a href="#name-reflections" class="section-name selfRef">Reflections</a>
           </h4>
-<p id="section-3.1.1-1">The open discussion highlighted the divergence between vendor implementations of standards and what is accessible via YANG models, particularly when compared to CLI. Common challenges identified included performance issues at scale, the steep learning curve for network management protocols, models, and tools, and the backward compatibility of models. Some participants suggested that the IETF should focus on system-level APIs that address specific problems. Additionally, the lack of simple tools for smaller networks operating under tight timelines and budgets was emphasized. A key question raised was whether the proliferation of protocols and languages complicates adoption, and if converging on a single approach would improve adoption.<a href="#section-3.1.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.1.1-1">The workshop began by reflecting on the IAB’s role in shaping the evolution of network management, focusing on the context and key outcomes of the previous workshop, an assessment of the current state, and an acknowledgement of some regrets. <span>[<a href="#SCHONWALDER" class="cite xref">SCHONWALDER</a>]</span> emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable, Declarative, Reproducible, and Verifiable. An operator’s perspective highlighted that the recommendations of <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span>, which led to the development of YANG and NETCONF, have been successful in addressing device configuration. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope. <span>[<a href="#LARSSON" class="cite xref">LARSSON</a>]</span> stressed the need to prioritize service modeling, including operational state, to support closed-loop automation. Furthermore, the absence of open-source tools, NMS and device model implementations was recognized as a significant obstacle to advancing standardization efforts.<a href="#section-3.1.1-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="lessons-to-be-learned">
+<section id="section-3.1.2">
+          <h4 id="name-lessons-to-be-learned">
+<a href="#section-3.1.2" class="section-number selfRef">3.1.2. </a><a href="#name-lessons-to-be-learned" class="section-name selfRef">Lessons to be Learned</a>
+          </h4>
+<p id="section-3.1.2-1"><span>[<a href="#HARDAKER" class="cite xref">HARDAKER</a>]</span> emphasized that the success of Net-SNMP <span>[<a href="#NET-SNMP" class="cite xref">NET-SNMP</a>]</span> was driven by empowering users through simplicity. He stressed that the focus should remain on ensuring ease of use and adaptability of the protocols. Emphasis was placed on the two distinct audiences for standardized network management protocols: toolkit vendors and system operators. Their requirements for protocol simplicity differ, and it is essential to address the needs of both to ensure success. <span>[<a href="#BORMANN" class="cite xref">BORMANN</a>]</span> presented an overview of the CORECONF architecture, showcasing how model-driven network management techniques can be applied to manage IoT devices, with a focus on the unique characteristics of constrained nodes. Some participants noted that the binary encoding of CBOR has applications that extend beyond IoT networks.<a href="#section-3.1.2-1" class="pilcrow">¶</a></p>
+<p id="section-3.1.2-2">Drawing from the experience of OpenConfig <span>[<a href="#OPENCONFIG" class="cite xref">OPENCONFIG</a>]</span>, <span>[<a href="#SHAKIR" class="cite xref">SHAKIR</a>]</span> emphasized that protocol definition cannot be done in isolation. It must integrate lessons learned from implementation and large-scale deployment. He highlighted the importance of enabling quick iterations, shipping rapidly, embracing open-source culture, adopting systems thinking driven by business outcomes, and reusing existing technologies rather than developing solutions exclusively for network management.<a href="#section-3.1.2-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="discussion">
+<section id="section-3.1.3">
+          <h4 id="name-discussion">
+<a href="#section-3.1.3" class="section-number selfRef">3.1.3. </a><a href="#name-discussion" class="section-name selfRef">Discussion</a>
+          </h4>
+<p id="section-3.1.3-1">The open discussion highlighted the divergence between vendor implementations of standards and what is accessible via YANG models, particularly when compared to CLI. Common challenges identified included performance issues at scale, the steep learning curve for network management protocols, models, and tools, and the backward compatibility of models. Some participants suggested that the IETF should focus on system-level APIs that address specific problems. Additionally, the lack of simple tools for smaller networks operating under tight timelines and budgets was emphasized. A key question raised was whether the proliferation of protocols and languages complicates adoption, and if converging on a single approach would improve adoption.<a href="#section-3.1.3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1291,7 +1322,29 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <section id="section-3.2">
         <h3 id="name-session-ii-present-identifi">
 <a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-session-ii-present-identifi" class="section-name selfRef">Session II: Present (identified problems &amp; requirements)</a>
-      </h3>
+        </h3>
+<p id="section-3.2-1">The second day of the workshop concentrated on challenges and emerging requirements for future network management operations. The presentation emphasized the importance of validation, observability, automation, and the need for agile, incremental development of both network models and management protocols. A compilation of new requirements is being maintained in <span>[<a href="#I-D.boucadair-nmop-rfc3535-20years-later" class="cite xref">I-D.boucadair-nmop-rfc3535-20years-later</a>]</span>. The final presentation of the day provided a summary of the survey results and operator feedback gathered from outreach events.<a href="#section-3.2-1" class="pilcrow">¶</a></p>
+<div id="operator-feedback">
+<section id="section-3.2.1">
+          <h4 id="name-operator-feedback">
+<a href="#section-3.2.1" class="section-number selfRef">3.2.1. </a><a href="#name-operator-feedback" class="section-name selfRef">Operator Feedback</a>
+        </h4>
+</section>
+</div>
+<div id="survey">
+<section id="section-3.2.2">
+          <h4 id="name-survey">
+<a href="#section-3.2.2" class="section-number selfRef">3.2.2. </a><a href="#name-survey" class="section-name selfRef">Survey</a>
+        </h4>
+</section>
+</div>
+<div id="discussion-1">
+<section id="section-3.2.3">
+          <h4 id="name-discussion-2">
+<a href="#section-3.2.3" class="section-number selfRef">3.2.3. </a><a href="#name-discussion-2" class="section-name selfRef">Discussion</a>
+        </h4>
+</section>
+</div>
 </section>
 </div>
 <div id="session-iii-future-possible-solutions-recommendations-and-next-steps">
@@ -1484,9 +1537,17 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-1.4.1" class="p
       <dd>
 <span class="refAuthor">Hardaker, W.</span>, <span class="refTitle">"Lessons Learned from 30 Years of Net-SNMP"</span>, <time datetime="2024-11" class="refDate">November 2024</time>, <span>&lt;<a href="https://www.ietf.org/slides/slides-nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-00.pdf">https://www.ietf.org/slides/slides-nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-00.pdf</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="I-D.boucadair-nmop-rfc3535-20years-later">[I-D.boucadair-nmop-rfc3535-20years-later]</dt>
+      <dd>
+<span class="refAuthor">Boucadair, M.</span>, <span class="refAuthor">Contreras, L. M.</span>, <span class="refAuthor">de Dios, O. G.</span>, <span class="refAuthor">Graf, T.</span>, <span class="refAuthor">Rahman, R.</span>, and <span class="refAuthor">L. Tailhardat</span>, <span class="refTitle">"RFC 3535, 20 Years Later: An Update of Operators Requirements on Network Management Protocols and Modelling"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-boucadair-nmop-rfc3535-20years-later-06</span>, <time datetime="2024-11-25" class="refDate">25 November 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-boucadair-nmop-rfc3535-20years-later-06">https://datatracker.ietf.org/doc/html/draft-boucadair-nmop-rfc3535-20years-later-06</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="I-D.ietf-core-comi">[I-D.ietf-core-comi]</dt>
       <dd>
 <span class="refAuthor">Veillette, M.</span>, <span class="refAuthor">Van der Stok, P.</span>, <span class="refAuthor">Pelov, A.</span>, <span class="refAuthor">Bierman, A.</span>, and <span class="refAuthor">C. Bormann</span>, <span class="refTitle">"CoAP Management Interface (CORECONF)"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-core-comi-19</span>, <time datetime="2024-11-03" class="refDate">3 November 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-core-comi-19">https://datatracker.ietf.org/doc/html/draft-ietf-core-comi-19</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="KELLER">[KELLER]</dt>
+      <dd>
+<span class="refAuthor">Warnke, N.</span>, <span class="refAuthor">Geib, R.</span>, <span class="refAuthor">Horneffer, M.</span>, and <span class="refAuthor">H. Keller</span>, <span class="refTitle">"NEMOPS: RFC3535 and the forgotten word — Or Provisioning is only a subset of Network Management"</span>, <time datetime="2024-11" class="refDate">November 2024</time>, <span>&lt;<a href="https://www.ietf.org/slides/slides-nemopsws-nemops-rfc3535-and-the-forgotten-word-00.pdf">https://www.ietf.org/slides/slides-nemopsws-nemops-rfc3535-and-the-forgotten-word-00.pdf</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="LARSSON">[LARSSON]</dt>
       <dd>
@@ -1553,6 +1614,9 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-1.4.1" class="p
 </li>
         <li class="normal" id="appendix-A-3.5">
           <p id="appendix-A-3.5.1">R. Shakir: Rethinking Standardisation of Network Management <span>[<a href="#SHAKIR" class="cite xref">SHAKIR</a>]</span><a href="#appendix-A-3.5.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-A-3.6">
+          <p id="appendix-A-3.6.1">N. Warnke, R. Geib, M. Horneffer, and H. Keller: NEMOPS: RFC3535 and the forgotten word — Or Provisioning is only a subset of Network Management <span>[<a href="#KELLER" class="cite xref">KELLER</a>]</span><a href="#appendix-A-3.6.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>

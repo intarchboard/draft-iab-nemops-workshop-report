@@ -82,8 +82,13 @@ Table of Contents
    2.  Outreach and Survey
    3.  Workshop Scope and Discussion
      3.1.  Session I: Past (lookback, analysis)
-       3.1.1.  Discussion
+       3.1.1.  Reflections
+       3.1.2.  Lessons to be Learned
+       3.1.3.  Discussion
      3.2.  Session II: Present (identified problems & requirements)
+       3.2.1.  Operator Feedback
+       3.2.2.  Survey
+       3.2.3.  Discussion
      3.3.  Session III: Future (possible solutions, recommendations
            and next steps)
      3.4.  Key Takeaways
@@ -192,6 +197,8 @@ Table of Contents
    and the need to reconsider how network management models and
    protocols are standardized within the IETF.
 
+3.1.1.  Reflections
+
    The workshop began by reflecting on the IAB’s role in shaping the
    evolution of network management, focusing on the context and key
    outcomes of the previous workshop, an assessment of the current
@@ -210,6 +217,8 @@ Table of Contents
    the absence of open-source tools, NMS and device model
    implementations was recognized as a significant obstacle to advancing
    standardization efforts.
+
+3.1.2.  Lessons to be Learned
 
    [HARDAKER] emphasized that the success of Net-SNMP [NET-SNMP] was
    driven by empowering users through simplicity.  He stressed that the
@@ -234,7 +243,7 @@ Table of Contents
    technologies rather than developing solutions exclusively for network
    management.
 
-3.1.1.  Discussion
+3.1.3.  Discussion
 
    The open discussion highlighted the divergence between vendor
    implementations of standards and what is accessible via YANG models,
@@ -250,6 +259,22 @@ Table of Contents
    improve adoption.
 
 3.2.  Session II: Present (identified problems & requirements)
+
+   The second day of the workshop concentrated on challenges and
+   emerging requirements for future network management operations.  The
+   presentation emphasized the importance of validation, observability,
+   automation, and the need for agile, incremental development of both
+   network models and management protocols.  A compilation of new
+   requirements is being maintained in
+   [I-D.boucadair-nmop-rfc3535-20years-later].  The final presentation
+   of the day provided a summary of the survey results and operator
+   feedback gathered from outreach events.
+
+3.2.1.  Operator Feedback
+
+3.2.2.  Survey
+
+3.2.3.  Discussion
 
 3.3.  Session III: Future (possible solutions, recommendations and next
       steps)
@@ -383,12 +408,27 @@ Table of Contents
               nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-
               00.pdf>.
 
+   [I-D.boucadair-nmop-rfc3535-20years-later]
+              Boucadair, M., Contreras, L. M., de Dios, O. G., Graf, T.,
+              Rahman, R., and L. Tailhardat, "RFC 3535, 20 Years Later:
+              An Update of Operators Requirements on Network Management
+              Protocols and Modelling", Work in Progress, Internet-
+              Draft, draft-boucadair-nmop-rfc3535-20years-later-06, 25
+              November 2024, <https://datatracker.ietf.org/doc/html/
+              draft-boucadair-nmop-rfc3535-20years-later-06>.
+
    [I-D.ietf-core-comi]
               Veillette, M., Van der Stok, P., Pelov, A., Bierman, A.,
               and C. Bormann, "CoAP Management Interface (CORECONF)",
               Work in Progress, Internet-Draft, draft-ietf-core-comi-19,
               3 November 2024, <https://datatracker.ietf.org/doc/html/
               draft-ietf-core-comi-19>.
+
+   [KELLER]   Warnke, N., Geib, R., Horneffer, M., and H. Keller,
+              "NEMOPS: RFC3535 and the forgotten word — Or Provisioning
+              is only a subset of Network Management", November 2024,
+              <https://www.ietf.org/slides/slides-nemopsws-nemops-
+              rfc3535-and-the-forgotten-word-00.pdf>.
 
    [LARSSON]  Larsson, K., Lambrechts, K., and I. Farrer, "RFC3535, 20
               Years Later from an Operator's Perspective (Deutsche
@@ -457,6 +497,10 @@ Appendix A.  Position Papers
 
    *  R.  Shakir: Rethinking Standardisation of Network Management
       [SHAKIR]
+
+   *  N.  Warnke, R.  Geib, M.  Horneffer, and H.  Keller: NEMOPS:
+      RFC3535 and the forgotten word — Or Provisioning is only a subset
+      of Network Management [KELLER]
 
 Appendix B.  Workshop Participants
 
