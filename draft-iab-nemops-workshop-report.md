@@ -66,7 +66,7 @@ informative:
       -
         ins:  W. Hardaker
         name: Wes Hardaker
-    date: November 2024  
+    date: November 2024
   NET-SNMP:
     target: http://www.net-snmp.org/
     title: Net-SNMP
@@ -115,7 +115,7 @@ The first day of the workshop focused on reflecting on the past by reviewing the
 
 The workshop began by reflecting on the IAB’s role in shaping the evolution of network management, focusing on the context and key outcomes of the previous workshop, an assessment of the current state, and an acknowledgement of some regrets. {{SCHONWALDER}} emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable, Declarative, Reproducible, and Verifiable. An operator’s perspective highlighted that the recommendations of {{RFC3535}}, which led to the development of YANG and NETCONF, have been successful in addressing device configuration. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope. {{LARSSON}} stressed the need to prioritize service modeling, including operational state, to support closed-loop automation. Furthermore, the absence of open-source tools, NMS and device model implementations was recognized as a significant obstacle to advancing standardization efforts.
 
-{{HARDEKAR}} emphasized that the success of Net-SNMP {{NET-SNMP}} was driven by empowering users through simplicity. He stressed that the focus should remain on ensuring ease of use and adaptability of the protocols. Emphasis was placed on the two distinct audiences for standardized network management protocols: toolkit vendors and system operators. Their requirements for protocol simplicity differ, and it is essential to address the needs of both to ensure success.
+{{HARDAKER}} emphasized that the success of Net-SNMP {{NET-SNMP}} was driven by empowering users through simplicity. He stressed that the focus should remain on ensuring ease of use and adaptability of the protocols. Emphasis was placed on the two distinct audiences for standardized network management protocols: toolkit vendors and system operators. Their requirements for protocol simplicity differ, and it is essential to address the needs of both to ensure success.
 
 ## Session II: Present (identified problems & requirements)
 
