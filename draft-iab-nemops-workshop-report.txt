@@ -419,12 +419,13 @@ Table of Contents
               yang-models-00.pdf>.
 
    [CONTRERAS]
-              "RFC 3535, 20 Years Later: An Update of Operators
-              Requirements on Network Management Protocols and
-              Modelling", n.d., <https://www.ietf.org/slides/slides-
-              nemopsws-paper-rfc3535-years-later-an-update-of-operators-
-              requirements-on-network-management-protocols-and-
-              modelling-00.pdf>.
+              Boucadair, M., Contreras, L. M., Gonzalez de Dios, O.,
+              Graf, T., Rahman, R., and L. Tailhardat, "RFC 3535, 20
+              Years Later: An Update of Operators Requirements on
+              Network Management Protocols and Modelling", October 2024,
+              <https://www.ietf.org/slides/slides-nemopsws-paper-
+              rfc3535-years-later-an-update-of-operators-requirements-
+              on-network-management-protocols-and-modelling-00.pdf>.
 
    [HARDAKER] Hardaker, W., "Lessons Learned from 30 Years of Net-SNMP",
               November 2024, <https://www.ietf.org/slides/slides-
