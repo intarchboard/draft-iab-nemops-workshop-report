@@ -287,6 +287,12 @@ Table of Contents
    adaptation of protocols designed for constrained environments, could
    drive the next evolution in network management.
 
+   [CONTRERAS] emphasized the importance of reassessing deployment
+   assumptions and incorporating updated operator requirements.  The
+   authors are addressing these aspects through
+   [I-D.boucadair-nmop-rfc3535-20years-later], leveraging feedback and
+   discussions from the workshop.
+
 3.2.2.  Survey
 
 3.2.3.  Discussion
@@ -427,6 +433,11 @@ Table of Contents
               rfc3535-years-later-an-update-of-operators-requirements-
               on-network-management-protocols-and-modelling-00.pdf>.
 
+   [GRAF]     "Agile Incremental Driven Development for Network
+              Management", n.d., <https://www.ietf.org/slides/slides-
+              nemopsws-paper-agile-incremental-driven-development-for-
+              network-management-01.pdf>.
+
    [HARDAKER] Hardaker, W., "Lessons Learned from 30 Years of Net-SNMP",
               November 2024, <https://www.ietf.org/slides/slides-
               nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-
@@ -541,6 +552,10 @@ Appendix A.  Position Papers
       R.  Rahman, and L.  Tailhardat: RFC 3535, 20 Years Later: An
       Update of Operators Requirements on Network Management Protocols
       and Modelling [CONTRERAS]
+
+   *  T.  Graf, H.  Keller, D.  Voyer, P.  Lucente, B.  Claise, R.
+      Wilton, A.  Huang-Feng, and P.  Francois: Agile Incremental Driven
+      Development for Network Management [GRAF]
 
 Appendix B.  Workshop Participants
 
