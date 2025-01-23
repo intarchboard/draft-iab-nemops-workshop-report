@@ -224,6 +224,15 @@ Table of Contents
    the binary encoding of CBOR has applications that extend beyond IoT
    networks.
 
+   Drawing from the experience of OpenConfig [OPENCONFIG], [SHAKIR]
+   emphasized that protocol definition cannot be done in isolation.  It
+   must integrate lessons learned from implementation and large-scale
+   deployment.  He highlighted the importance of enabling quick
+   iterations, shipping rapidly, embracing open-source culture, adopting
+   systems thinking driven by business outcomes, and reusing existing
+   technologies rather than developing solutions exclusively for network
+   management.
+
 3.2.  Session II: Present (identified problems & requirements)
 
 3.3.  Session III: Future (possible solutions, recommendations and next
@@ -373,6 +382,9 @@ Table of Contents
 
    [NET-SNMP] "Net-SNMP", n.d., <http://www.net-snmp.org/>.
 
+   [OPENCONFIG]
+              "OpenConfig", n.d., <https://www.openconfig.net/>.
+
    [RFC3535]  Schoenwaelder, J., "Overview of the 2002 IAB Network
               Management Workshop", RFC 3535, DOI 10.17487/RFC3535, May
               2003, <https://www.rfc-editor.org/rfc/rfc3535>.
@@ -396,6 +408,11 @@ Table of Contents
               2024, <https://www.ietf.org/slides/slides-nemopsws-paper-
               composable-declarative-reproducible-verifiable-network-
               and-service-configurations-00.pdf>.
+
+   [SHAKIR]   Shakir, R., "Rethinking Standardisation of Network
+              Management", September 2024, <https://www.ietf.org/slides/
+              slides-nemopsws-paper-rethinking-standardisation-of-
+              network-management-00.pdf>.
 
    [SURVEY]   "Next Era of Network Management Operations (NEMOPS)
               workshop survey", October 2024,
@@ -421,6 +438,9 @@ Appendix A.  Position Papers
 
    *  C.  Bormann: CORECONF: Managing IoT Devices with YANG Models
       [BORMANN]
+
+   *  R.  Shakir: Rethinking Standardisation of Network Management
+      [SHAKIR]
 
 Appendix B.  Workshop Participants
 
