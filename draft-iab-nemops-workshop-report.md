@@ -41,7 +41,7 @@ informative:
   SURVEY-INSIGHTS:
     target: https://datatracker.ietf.org/meeting/interim-2024-nemopsws-02/materials/slides-interim-2024-nemopsws-02-sessa-6-insights-from-operator-outreach-survey-03.pdf
     title: Insights from Operator Survey & Outreach
-    date: December 2024  
+    date: December 2024
   SCHONWALDER:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf
     title: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations
@@ -351,6 +351,7 @@ These takeaways try to document the general thinking of the participants with re
 Here we list the things that the group realized needed significantly more attention in order to come to a conclusion.
 
 --- back
+
 # Insights from Operator Feedback {#insights}
 
 ## General Insights
@@ -361,7 +362,7 @@ Here we list the things that the group realized needed significantly more attent
 4. It was suggested that other domains (e.g., K8N/automation) are years ahead of the current network engineering stack.
 5. Support for multiple friendly, stable and feature rich libraries for programming languages is needed. Many DevOps routines use shell scripts, others use a high-level programming language. In any case, on the client side, multiple programming languages are used.
 6. Screen scraping is both necessary and evil. This most often occurs when interacting with a device having only a CLI.
-7. It was noted that there could be an outreach to Academia to establish programs to teach lessons using modern management stacks, and then a new generation of engineers could be helping to improve tooling and automation, with university (and/or IETF) hackathons. 
+7. It was noted that there could be an outreach to Academia to establish programs to teach lessons using modern management stacks, and then a new generation of engineers could be helping to improve tooling and automation, with university (and/or IETF) hackathons.
 
 ## Data Models
 
