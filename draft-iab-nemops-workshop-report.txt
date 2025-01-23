@@ -82,6 +82,7 @@ Table of Contents
    2.  Outreach and Survey
    3.  Workshop Scope and Discussion
      3.1.  Session I: Past (lookback, analysis)
+       3.1.1.  Discussion
      3.2.  Session II: Present (identified problems & requirements)
      3.3.  Session III: Future (possible solutions, recommendations
            and next steps)
@@ -232,6 +233,21 @@ Table of Contents
    systems thinking driven by business outcomes, and reusing existing
    technologies rather than developing solutions exclusively for network
    management.
+
+3.1.1.  Discussion
+
+   The open discussion highlighted the divergence between vendor
+   implementations of standards and what is accessible via YANG models,
+   particularly when compared to CLI.  Common challenges identified
+   included performance issues at scale, the steep learning curve for
+   network management protocols, models, and tools, and the backward
+   compatibility of models.  Some participants suggested that the IETF
+   should focus on system-level APIs that address specific problems.
+   Additionally, the lack of simple tools for smaller networks operating
+   under tight timelines and budgets was emphasized.  A key question
+   raised was whether the proliferation of protocols and languages
+   complicates adoption, and if converging on a single approach would
+   improve adoption.
 
 3.2.  Session II: Present (identified problems & requirements)
 
