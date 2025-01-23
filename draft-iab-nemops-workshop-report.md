@@ -156,6 +156,32 @@ informative:
   GRAF:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-agile-incremental-driven-development-for-network-management-01.pdf
     title: Agile Incremental Driven Development for Network Management
+    author:
+      -
+        ins:  T. Graf
+        name: Thomas Graf
+      -
+        ins:  H. Keller
+        name: Holger Keller
+      -
+        ins:  D. Voyer
+        name: Dan Voyer
+      -
+        ins:  P. Lucente
+        name: Paolo Lucente
+      -
+        ins:  B. Claise
+        name: Benoit Claise
+      -
+        ins:  R. Wilton
+        name: Rob Wilton
+      -
+        ins:  A. Huang-Feng
+        name: Alex Huang-Feng
+      -
+        ins:  P. Francois
+        name: Pierre Francois
+    date: November 2024
 --- abstract
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
 
@@ -221,6 +247,8 @@ The second day of the workshop concentrated on challenges and emerging requireme
 {{KELLER}} shared Deutsche Telekom’s perspective, emphasizing that while YANG performs well for provisioning, it currently falls short in providing the operational stability required for validation. Achieving fully closed-loop automated and autonomous networking will require a greater focus on observability, particularly through advancements in streaming telemetry.
 
 {{JIMENEZ}} discussed the challenges associated with the SDN Transport Automation Platform, including issues with data streaming, scalability, diverse models, and mechanisms to secure the network management protocols. The presentation also emphasized how advancements in AI and machine learning, along with the potential adaptation of protocols designed for constrained environments, could drive the next evolution in network management.
+
+Using YANG-Push as an example, {{GRAF}} highlights how standards development often fails to align with the needs of network operators, the constraints of network vendors, and the integration requirements. Most critically, it lacks an agile, incremental development process. The presentation advocated for adopting an iterative approach to standards development, focusing on delivering minimal viable products as part of the process.
 
 {{CONTRERAS}} emphasized the importance of reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through {{I-D.boucadair-nmop-rfc3535-20years-later}}, leveraging feedback and discussions from the workshop.
 
