@@ -35,7 +35,7 @@ informative:
   I-D.ietf-core-comi:
   SURVEY:
     target: https://ietf.iad1.qualtrics.com/jfe/form/SV_9vQxBRiZqDntarc
-    title: Next Era of Network Management Operations (NEMOPS) workshop survey 
+    title: Next Era of Network Management Operations (NEMOPS) workshop survey
   SCHONWALDER:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf
     title: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations
