@@ -38,6 +38,10 @@ informative:
     target: https://ietf.iad1.qualtrics.com/jfe/form/SV_9vQxBRiZqDntarc
     title: Next Era of Network Management Operations (NEMOPS) workshop survey
     date: October 2024
+  SURVEY-INSIGHTS:
+    target: https://datatracker.ietf.org/meeting/interim-2024-nemopsws-02/materials/slides-interim-2024-nemopsws-02-sessa-6-insights-from-operator-outreach-survey-03.pdf
+    title: Insights from Operator Survey & Outreach
+    date: December 2024  
   SCHONWALDER:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf
     title: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations
@@ -209,7 +213,7 @@ This document is a report on the proceedings of the workshop. The views and posi
 
 Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation.  Thus, the content of this report follows the flow and dialogue of the workshop but does not necessarily attempt to capture a consensus, unless stated otherwise.
 
-# Outreach and Survey
+# Outreach and Survey {#outreach}
 
 There has been a noticeable decline in the direct participation of network operators in the IETF and its associated discussions on network management protocols and operations. Many operators prioritize operational conferences over standards development organizations (SDOs), such as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc.
 
@@ -253,6 +257,8 @@ Using YANG-Push as an example, {{GRAF}} highlights how standards development oft
 {{CONTRERAS}} emphasized the importance of reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through {{I-D.boucadair-nmop-rfc3535-20years-later}}, leveraging feedback and discussions from the workshop.
 
 ### Survey
+
+As outlined in {{outreach}}, the workshop program committee organized outreach initiatives to gather direct feedback and conducted a survey. {{SURVEY-INSIGHTS}} provided an overview of the respondents’ backgrounds, as well as insights into the most widely used tools, protocols, and APIs for configuration, monitoring, and other network operations. Notably, the survey revealed that Ansible and CLI are the most popular configuration tools, NetConf is the preferred configuration protocol, and Prometheus and SNMP are widely used for monitoring. The survey also captured feedback on network automation and streaming telemetry. Additionally, valuable insights from direct operator feedback were also presented (see {{insights}}).
 
 ### Discussion
 
@@ -345,6 +351,26 @@ These takeaways try to document the general thinking of the participants with re
 Here we list the things that the group realized needed significantly more attention in order to come to a conclusion.
 
 --- back
+# Insights from Operator Feedback {#insights}
+
+## General Insights
+
+1. In network deployments, operations are typically at the bottom of the ladder. It's the most squeezed for time and resources. Network engineers are not typically seasoned developers. The development of needed in-house tools often takes years to develop. There is a need for tools that are easy to use and just work.
+2. Vast majority of smaller operators use CLI and open source to manage their networks.
+3. There is debate fatigue. The protocol/model debate is a recurring conversation. The problem isn’t going away.
+4. It was suggested that other domains (e.g., K8N/automation) are years ahead of the current network engineering stack.
+5. Support for multiple friendly, stable and feature rich libraries for programming languages is needed. Many DevOps routines use shell scripts, others use a high-level programming language. In any case, on the client side, multiple programming languages are used.
+6. Screen scraping is both necessary and evil. This most often occurs when interacting with a device having only a CLI.
+7. It was noted that there could be an outreach to Academia to establish programs to teach lessons using modern management stacks, and then a new generation of engineers could be helping to improve tooling and automation, with university (and/or IETF) hackathons. 
+
+## Data Models
+
+1. In some network deployments, the focus is solely on service-level models, such that device-level protocols and device-level models are unimportant. This assumes the existence of a device adaptation layer to transcode service-level models to device-level models and conform to the device-specific protocol.
+2. There is a need for solutions to not hide vendor-specific knobs. Currently, vendors compete by differentiating their offerings in unique ways. The reason why an Operator may choose a particular vendor is because of its differentiating features. Whilst standard models enable conformance, they must not hide the vendor-specific knobs. YANG deviations are a partial solution to not hiding vendor knobs.
+3. It was emphasized that streaming telemetry requires picking a model and sticking with it. It is quite a commitment and the current environment makes the decision harder.
+4. It was noted that IETF's focus should be on defining abstract/service-level data models since it is the only thing the community may ever agree on.
+5. There was a point about navigating non-device-specific models being difficult. If understood correctly, the Network Engineer knows the CLI command but has trouble grepping for it in YANG modules defined by SDOs.
+6. There was a wish that IETF and OpenConfig models would merge.
 
 # Position Papers
 
