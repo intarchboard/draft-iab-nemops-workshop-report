@@ -98,9 +98,12 @@ Table of Contents
        3.4.4.  Standardization conclusions
        3.4.5.  Additional work needed
    4.  Informative References
-   Appendix A.  Position Papers
-   Appendix B.  Workshop Participants
-   Appendix C.  Workshop Program Committee
+   Appendix A.  Insights from Operator Feedback
+     A.1.  General Insights
+     A.2.  Data Models
+   Appendix B.  Position Papers
+   Appendix C.  Workshop Participants
+   Appendix D.  Workshop Program Committee
    IAB Members at the Time of Approval
    Acknowledgments
    Authors' Addresses
@@ -302,6 +305,18 @@ Table of Contents
    discussions from the workshop.
 
 3.2.2.  Survey
+
+   As outlined in Section 2, the workshop program committee organized
+   outreach initiatives to gather direct feedback and conducted a
+   survey.  [SURVEY-INSIGHTS] provided an overview of the respondents’
+   backgrounds, as well as insights into the most widely used tools,
+   protocols, and APIs for configuration, monitoring, and other network
+   operations.  Notably, the survey revealed that Ansible and CLI are
+   the most popular configuration tools, NetConf is the preferred
+   configuration protocol, and Prometheus and SNMP are widely used for
+   monitoring.  The survey also captured feedback on network automation
+   and streaming telemetry.  Additionally, valuable insights from direct
+   operator feedback were also presented (see Appendix A).
 
 3.2.3.  Discussion
 
@@ -527,7 +542,79 @@ Table of Contents
               <https://ietf.iad1.qualtrics.com/jfe/form/
               SV_9vQxBRiZqDntarc>.
 
-Appendix A.  Position Papers
+   [SURVEY-INSIGHTS]
+              "Insights from Operator Survey & Outreach", December 2024,
+              <https://datatracker.ietf.org/meeting/interim-2024-
+              nemopsws-02/materials/slides-interim-2024-nemopsws-02-
+              sessa-6-insights-from-operator-outreach-survey-03.pdf>.
+
+Appendix A.  Insights from Operator Feedback
+
+A.1.  General Insights
+
+   1.  In network deployments, operations are typically at the bottom of
+       the ladder.  It's the most squeezed for time and resources.
+       Network engineers are not typically seasoned developers.  The
+       development of needed in-house tools often takes years to
+       develop.  There is a need for tools that are easy to use and just
+       work.
+
+   2.  Vast majority of smaller operators use CLI and open source to
+       manage their networks.
+
+   3.  There is debate fatigue.  The protocol/model debate is a
+       recurring conversation.  The problem isn’t going away.
+
+   4.  It was suggested that other domains (e.g., K8N/automation) are
+       years ahead of the current network engineering stack.
+
+   5.  Support for multiple friendly, stable and feature rich libraries
+       for programming languages is needed.  Many DevOps routines use
+       shell scripts, others use a high-level programming language.  In
+       any case, on the client side, multiple programming languages are
+       used.
+
+   6.  Screen scraping is both necessary and evil.  This most often
+       occurs when interacting with a device having only a CLI.
+
+   7.  It was noted that there could be an outreach to Academia to
+       establish programs to teach lessons using modern management
+       stacks, and then a new generation of engineers could be helping
+       to improve tooling and automation, with university (and/or IETF)
+       hackathons.
+
+A.2.  Data Models
+
+   1.  In some network deployments, the focus is solely on service-level
+       models, such that device-level protocols and device-level models
+       are unimportant.  This assumes the existence of a device
+       adaptation layer to transcode service-level models to device-
+       level models and conform to the device-specific protocol.
+
+   2.  There is a need for solutions to not hide vendor-specific knobs.
+       Currently, vendors compete by differentiating their offerings in
+       unique ways.  The reason why an Operator may choose a particular
+       vendor is because of its differentiating features.  Whilst
+       standard models enable conformance, they must not hide the
+       vendor-specific knobs.  YANG deviations are a partial solution to
+       not hiding vendor knobs.
+
+   3.  It was emphasized that streaming telemetry requires picking a
+       model and sticking with it.  It is quite a commitment and the
+       current environment makes the decision harder.
+
+   4.  It was noted that IETF's focus should be on defining abstract/
+       service-level data models since it is the only thing the
+       community may ever agree on.
+
+   5.  There was a point about navigating non-device-specific models
+       being difficult.  If understood correctly, the Network Engineer
+       knows the CLI command but has trouble grepping for it in YANG
+       modules defined by SDOs.
+
+   6.  There was a wish that IETF and OpenConfig models would merge.
+
+Appendix B.  Position Papers
 
    20 position papers were submitted to the workshop call for papers.
    All papers are available at
@@ -567,7 +654,7 @@ Appendix A.  Position Papers
       Wilton, A.  Huang-Feng, and P.  Francois: Agile Incremental Driven
       Development for Network Management [GRAF]
 
-Appendix B.  Workshop Participants
+Appendix C.  Workshop Participants
 
    The workshop participants were Alex Huang, Alexander Clemm, Alexander
    PELOV, Benoit Claise, Boris Khasanov, Brad Peters (nbn), Carsten
@@ -589,7 +676,7 @@ Appendix B.  Workshop Participants
    Toerless Eckert, Wangbo, Warren Kumari, Wes Hardaker, Wim Henderickx,
    Xue Yang, Y.  Richard Yang, Yangbo, Yisong Liu, and Zhenqiang Li.
 
-Appendix C.  Workshop Program Committee
+Appendix D.  Workshop Program Committee
 
    The workshop program committee members were Wes Hardaker, Dhruv
    Dhody, Qin Wu, Suresh Krishnan, Benoît Claise, Mohamed Boucadair,
