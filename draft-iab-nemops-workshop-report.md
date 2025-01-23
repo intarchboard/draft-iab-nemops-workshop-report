@@ -33,6 +33,9 @@ informative:
   RFC7950:
   RFC8040:
   I-D.ietf-core-comi:
+  SURVEY:
+    target: https://ietf.iad1.qualtrics.com/jfe/form/SV_9vQxBRiZqDntarc
+    title: Next Era of Network Management Operations (NEMOPS) workshop survey 
   SCHONWALDER:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf
     title: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations
@@ -71,6 +74,12 @@ This document is a report on the proceedings of the workshop. The views and posi
 Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation.  Thus, the content of this report follows the flow and dialogue of the workshop but does not necessarily attempt to capture a consensus, unless stated otherwise.
 
 # Outreach and Survey
+
+There has been a noticeable decline in the direct participation of network operators in the IETF and its associated discussions on network management protocols and operations. Many operators prioritize operational conferences over standards development organizations (SDOs), such as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc.
+
+To address this, the Program Committee (PC) planned outreach initiatives to foster discussions and gather interest by engaging with operators at these venues and conducting information/requirement-gathering sessions. Participants were encouraged to submit position papers or expressions of interest to join the workshop. Additionally, a survey [SURVEY] was conducted to collect valuable insights to inform the workshop.
+
+The PC intends to continue engaging with network operators after the workshop to facilitate information sharing and gather their feedback, helping to shape the next steps and outcomes of the workshop.
 
 # Workshop Scope and Discussion
 The workshop was organized across three days with all-group discussion slots, one per day. The following topic areas were identified and the program committee organized paper submissions into three main themes for each of the three discussion slots. During each discussion, those papers were presented sequentially with open discussion held at the end of each day.
