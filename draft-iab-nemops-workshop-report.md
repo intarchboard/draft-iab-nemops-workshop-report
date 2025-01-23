@@ -107,6 +107,30 @@ informative:
         ins:  H. Keller
         name: Holger Keller
     date: November 2024
+  JIMENEZ:
+    target: https://www.ietf.org/slides/slides-nemopsws-paper-evolving-challenges-and-solutions-in-network-management-00.pdf
+    title: Evolving Challenges and Solutions in Network Management
+    author:
+      -
+        ins:  J. Jiménez
+        name: Jaime Jiménez
+      -
+        ins:  S. Mansfield
+        name: Scott Mansfield
+      -
+        ins:  R. Rodriguez A
+        name: Raquel Rodriguez A
+      -
+        ins:  M. Pesonen
+        name: Mikko Pesonen
+      -
+        ins:  V. Torvinen
+        name: Vesa Torvinen
+      -
+        ins:  J. Karvonen
+        name: Janne Karvonen
+     date: November 2024
+
 --- abstract
 
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
@@ -169,6 +193,8 @@ The open discussion highlighted the divergence between vendor implementations of
 The second day of the workshop concentrated on challenges and emerging requirements for future network management operations. The presentation emphasized the importance of validation, observability, automation, and the need for agile, incremental development of both network models and management protocols. A compilation of new requirements is being maintained in {{I-D.boucadair-nmop-rfc3535-20years-later}}. The final presentation of the day provided a summary of the survey results and operator feedback gathered from outreach events.
 
 ### Operator Feedback
+
+{{KELLER}} shared Deutsche Telekom’s perspective, emphasizing that while YANG performs well for provisioning, it currently falls short in providing the operational stability required for validation. Achieving fully closed-loop automated and autonomous networking will require a greater focus on observability, particularly through advancements in streaming telemetry.
 
 ### Survey
 
@@ -276,6 +302,7 @@ This is the list of all papers:
 * C. Bormann: CORECONF: Managing IoT Devices with YANG Models {{BORMANN}}
 * R. Shakir: Rethinking Standardisation of Network Management {{SHAKIR}}
 * N. Warnke, R. Geib, M. Horneffer, and H. Keller: NEMOPS: RFC3535 and the forgotten word — Or Provisioning is only a subset of Network Management {{KELLER}}
+* J. Jiménez, S. Mansfield, R. Rodriguez A., M. Pesonen, V. Torvinen, and J. Karvonen: Evolving Challenges and Solutions in Network Management {{JIMENEZ}}
 
 # Workshop Participants
 
