@@ -186,6 +186,9 @@ informative:
         ins:  P. Francois
         name: Pierre Francois
     date: November 2024
+  CLAISE:
+    target: https://www.ietf.org/slides/slides-nemopsws-paper-knowledge-graph-framework-for-network-operations-00.pdf
+    title: Knowledge Graph Framework for Network Operations  
 --- abstract
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
 
@@ -266,7 +269,15 @@ The open discussion featured feedback from implementers, highlighting how diverg
 
 ## Session III: Future (possible solutions, recommendations and next steps)
 
-## Key Takeaways
+The final day of the workshop centred on exploring potential future solutions and identifying key takeaways, recommendations, and next steps. Initial presentations covered topics such as the use of the Knowledge Graph Framework and concrete suggestions for future directions. To conclude the workshop, the chairs worked to summarize the key takeaways {{key}} that garnered consensus among the participants.
+
+### Future Directions
+
+
+
+### Discussion
+
+## Key Takeaways {#key}
 
 At the end of the third day, the discussion turned to key takeaways that had consensus. In the process of discussion there were some realizations where additional work was also needed.
 
@@ -392,6 +403,7 @@ This is the list of all papers:
 * J. Jiménez, S. Mansfield, R. Rodriguez A., M. Pesonen, V. Torvinen, and J. Karvonen: Evolving Challenges and Solutions in Network Management {{JIMENEZ}}
 * M. Boucadair, L. M. Contreras, O. Gonzalez de Dios, T. Graf, R. Rahman, and L. Tailhardat: RFC 3535, 20 Years Later: An Update of Operators Requirements on Network Management Protocols and Modelling {{CONTRERAS}}
 * T. Graf, H. Keller, D. Voyer, P. Lucente, B. Claise, R. Wilton, A. Huang-Feng, and P. Francois: Agile Incremental Driven Development for Network Management {{GRAF}}
+* B. Claise, T. Graf, H. Keller, D. Voyer, P. Lucente, D. Lopez, I. D. Martinez-Casanueva, B. Peters, P. Fasano, P. Ran, W. Cheng, and M. Mackey: Knowledge Graph Framework for Network Operations {{CLAISE}}
 
 # Workshop Participants
 
