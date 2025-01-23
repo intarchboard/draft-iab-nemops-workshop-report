@@ -138,6 +138,10 @@ The workshop began by reflecting on the IAB’s role in shaping the evolution of
 
 Drawing from the experience of OpenConfig {{OPENCONFIG}}, {{SHAKIR}} emphasized that protocol definition cannot be done in isolation. It must integrate lessons learned from implementation and large-scale deployment. He highlighted the importance of enabling quick iterations, shipping rapidly, embracing open-source culture, adopting systems thinking driven by business outcomes, and reusing existing technologies rather than developing solutions exclusively for network management.
 
+### Discussion
+
+The open discussion highlighted the divergence between vendor implementations of standards and what is accessible via YANG models, particularly when compared to CLI. Common challenges identified included performance issues at scale, the steep learning curve for network management protocols, models, and tools, and the backward compatibility of models. Some participants suggested that the IETF should focus on system-level APIs that address specific problems. Additionally, the lack of simple tools for smaller networks operating under tight timelines and budgets was emphasized. A key question raised was whether the proliferation of protocols and languages complicates adoption, and if converging on a single approach would improve adoption.
+
 ## Session II: Present (identified problems & requirements)
 
 ## Session III: Future (possible solutions, recommendations and next steps)
