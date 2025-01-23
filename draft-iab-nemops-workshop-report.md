@@ -36,6 +36,7 @@ informative:
   SURVEY:
     target: https://ietf.iad1.qualtrics.com/jfe/form/SV_9vQxBRiZqDntarc
     title: Next Era of Network Management Operations (NEMOPS) workshop survey
+    date: October 2024
   SCHONWALDER:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf
     title: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations
@@ -92,7 +93,7 @@ The workshop was organized across three days with all-group discussion slots, on
 
 ## Key Takeaways
 
-At the end of the third day the discussion turned to key takeaways that had consensus. In the process of discussion there were some realizations where additional work was also needed.
+At the end of the third day, the discussion turned to key takeaways that had consensus. In the process of discussion there were some realizations where additional work was also needed.
 
 [XXX: note at this point these are cut and paste from the slides and not properly edited/cleaned/moved around]
 
@@ -110,14 +111,14 @@ These takeaways try to document the general thinking of the participants with re
 1. Documentation about the architecture and usage of the network
    management ecosystem is lacking.  More work is needed to create
    general architecture documentation, deployment guides, tutorials,
-   training material, getting started guides.
+   training material, and getting started guides.
 1. Transitioning between network management frameworks is challenging,
    just like it is for transitioning between other protocols like IPv4
    to IPv6.
 1. Model-driven network management is generally a success where it is
    implemented and possible to use.
 1. More easily usable network management tools for the operators are
-   needed.  The lack of open source tools are seen as a barrier to
+   needed.  The lack of open-source tools is seen as a barrier to
    adoption.  Tools need good use cases, example flows and better
    analysis of when and how they work and have been successful.
 
@@ -125,12 +126,12 @@ These takeaways try to document the general thinking of the participants with re
 
 1. Netconf and YANG are not used much for monitoring tasks.
 1. Netconf and YANG do not have full coverage on many devices.
-1. Polling based solutions are still frequently deployed.
-1. Full coverage of NetConf support on devices dose not exist today.
-1. Polling based solutions are still frequently deployed.  Push based solutions are often desired but are not yet widely available.
+1. Polling-based solutions are still frequently deployed.
+1. Full coverage of NetConf support on devices does not exist today.
+1. Polling-based solutions are still frequently deployed.  Push-based solutions are often desired but are not yet widely available.
 
-1. False: Netconf for configuration has been successful in some larger scale deployment
-    1. Let’s discuss this further on list
+1. False: Netconf for configuration has been successful in some larger-scale deployment
+    1. Let’s discuss this further on the list
     1. Service config?
 1. False: Full device control and configuration frequently requires CLI and screen scraping
 
@@ -147,7 +148,7 @@ These takeaways try to document the general thinking of the participants with re
    service-level model but is not a complete solution by itself.
 1. Network configuration needs to be verifiable to ensure any
    potential changes can be accepted by devices.  Model translation
-   adapters (likely performed on the management-station not the end
+   adapters (likely performed on the management station not the end
    device) may be the best path forward to simultaneously achieve this
    and a goal of supporting one configuration set across a diversity
    of devices with different internal models.
@@ -155,26 +156,26 @@ These takeaways try to document the general thinking of the participants with re
 
 ### Standardization conclusions
 
-1. A methodology rapid model development procedures is needed to
+1. A methodology of rapid model development procedures is needed to
    ensure model deployment can keep pace with new feature deployment.
-   We need a solution that significantly increase the speed and
+   We need a solution that significantly increases the speed and
    predictable timeline for developing and publishing models within
    the IETF.  New approaches and methods to make models live outside
    of published RFCs should be explored.  An experiment should be
    started to test a new rapid development approach.
 1. Protocol and model complexity should be reduced to keep additions
-   and changes to a minimal set of agreed upon core features.
+   and changes to a minimal set of agreed-upon core features.
 1. More standardization focus is needed on the scalability of the
    different roles of network management: monitoring, configuration,
    notifications.
-1. Enhancements to network management protocols and models needs to be
+1. Enhancements to network management protocols and models need to be
    backed by real-world operator use cases and expected adoption by
    vendors.  Vendors and operators will need to work together to
    ensure these goals are appropriately met.
 
 ### Additional work needed
 
-Here we list the things that the group realized needed significant more attention in order to come to conclusion about.
+Here we list the things that the group realized needed significantly more attention in order to come to a conclusion.
 
 --- back
 
