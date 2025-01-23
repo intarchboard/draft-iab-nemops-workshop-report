@@ -235,6 +235,17 @@ informative:
         ins:  K. Watsen
         name: Kent Watsen
     date: November 2024
+  WILTON:
+    target: https://datatracker.ietf.org/doc/slides-nemopsws-paper-device-network-management-current-status-and-future-direction/
+    title: Device Network Management - Current Status, and Future Direction
+    author:
+      -
+        ins:  R. Wilton
+        name: Rob Wilton
+      -
+        ins:  N. Corran
+        name: Nick Corran
+    date: November 2024
 --- abstract
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
 
@@ -319,9 +330,13 @@ The final day of the workshop centred on exploring potential future solutions an
 
 ### Future Directions
 
-{{CLAISE}} highlighted the challenges of integrating data models across different silos, protocols, and data structures, emphasizing the need for a machine-readable approach to expose semantics. A potential solution was proposed using a knowledge graph based on the Semantic Web Stack, along with the need to define a basic ontology for the networking domain in an iterative manner.
+{{CLAISE}} highlighted the challenges of integrating data models across different silos, protocols, and data structures, emphasizing the need for a machine-readable approach to expose semantics. A potential solution was proposed using a knowledge graph based on the Semantic Web Stack, along with the need to define a basic ontology for the networking domain in an iterative manner. {{WATSEN}} recommends prioritizing the following areas: (1) RESTCONF (including YANG-Push Lite), (2) the Network Management Datastore Architecture (NMDA), (3) Data Model Adapters, and (4) Device Protocol Adapters. {{WILTON}} recommends reducing unnecessary complexity, delivering timely solutions, fostering open collaboration between vendors and operators, and prioritizing simplicity. Practical suggestions include focusing on YANG-Push Lite, introducing YANG 2.0 through incremental updates, developing NETCONFv2, and managing IETF YANG models as code or APIs rather than embedding them within RFCs.
 
 ### Discussion
+
+The open discussion delved into the absence of NMDA in OpenConfig, the history of introducing gNMI in the IETF, and the challenges of building consensus on common ground and converging on a single protocol. It also explored approaches to handling YANG models within the IETF, such as leveraging GitHub, along with the challenges associated with its use. The discussion emphasized the need for process experimentation, particularly at the working group or area level, and considered ways to involve operators in an iterative process.
+
+Some topics absent from the workshop discussions included tooling and strategies to support tool development. The primary focus was on YANG and NETCONF/RESTCONF, while several other network management protocols and techniques currently used received little attention.
 
 ## Key Takeaways {#key}
 
@@ -451,6 +466,7 @@ This is the list of all papers:
 * T. Graf, H. Keller, D. Voyer, P. Lucente, B. Claise, R. Wilton, A. Huang-Feng, and P. Francois: Agile Incremental Driven Development for Network Management {{GRAF}}
 * B. Claise, T. Graf, H. Keller, D. Voyer, P. Lucente, D. Lopez, I. D. Martinez-Casanueva, B. Peters, P. Fasano, P. Ran, W. Cheng, and M. Mackey: Knowledge Graph Framework for Network Operations {{CLAISE}}
 * K. Watsen: Four Thoughts for How to Improve Network Management for Operators {{WATSEN}}
+* R. Wilton and N. Corran: Device Network Management: Current Status and Future Direction {{WILTON}}
 
 # Workshop Participants
 
