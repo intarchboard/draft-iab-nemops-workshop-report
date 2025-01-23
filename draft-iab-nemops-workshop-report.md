@@ -59,6 +59,17 @@ informative:
         ins:  I. Farrer
         name: Ian Farrer
     date: November 2024
+  HARDAKER:
+    target: https://www.ietf.org/slides/slides-nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-00.pdf
+    title: Lessons Learned from 30 Years of Net-SNMP
+    author:
+      -
+        ins:  W. Hardaker
+        name: Wes Hardaker
+    date: November 2024  
+  NET-SNMP:
+    target: http://www.net-snmp.org/
+    title: Net-SNMP
 --- abstract
 
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
@@ -102,7 +113,9 @@ The workshop was organized across three days with all-group discussion slots, on
 
 The first day of the workshop focused on reflecting on the past by reviewing the evolution of network management since the 2002 workshop, analyzing both the successes and the challenges encountered along the way. The presentations covered a range of topics, including reflections on the history of network management, lessons learned from widely used tools, practices in constrained networks, and the need to reconsider how network management models and protocols are standardized within the IETF.
 
-The workshop began by reflecting on the IAB’s role in shaping the evolution of network management, focusing on the context and key outcomes of the previous workshop, an assessment of the current state, and an acknowledgement of some regrets. {{SCHONWALDER}} emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable, Declarative, Reproducible, and Verifiable. An operator’s perspective highlighted that the recommendations of {{RFC3535}}, which led to the development of YANG and NETCONF, have been successful in addressing device configuration. However, in certain areas, advancements in semantics and protocols for streaming telemetry have even surpassed the original scope. {{LARSSON}} stressed the need to prioritize service modeling, including operational state, to support closed-loop automation. Furthermore, the absence of open-source tools, NMS and device model implementations was recognized as a significant obstacle to advancing standardization efforts.
+The workshop began by reflecting on the IAB’s role in shaping the evolution of network management, focusing on the context and key outcomes of the previous workshop, an assessment of the current state, and an acknowledgement of some regrets. {{SCHONWALDER}} emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable, Declarative, Reproducible, and Verifiable. An operator’s perspective highlighted that the recommendations of {{RFC3535}}, which led to the development of YANG and NETCONF, have been successful in addressing device configuration. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope. {{LARSSON}} stressed the need to prioritize service modeling, including operational state, to support closed-loop automation. Furthermore, the absence of open-source tools, NMS and device model implementations was recognized as a significant obstacle to advancing standardization efforts.
+
+{{HARDEKAR}} emphasized that the success of Net-SNMP {{NET-SNMP}} was driven by empowering users through simplicity. He stressed that the focus should remain on ensuring ease of use and adaptability of the protocols. Emphasis was placed on the two distinct audiences for standardized network management protocols: toolkit vendors and system operators. Their requirements for protocol simplicity differ, and it is essential to address the needs of both to ensure success.
 
 ## Session II: Present (identified problems & requirements)
 
@@ -204,6 +217,7 @@ This is the list of all papers:
 
 * J Schönwälder: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations {{SCHONWALDER}}
 * K. Larsson, K. Lambrechts, and I. Farrer: RFC3535, 20 Years Later from an Operator’s Perspective (Deutsche Telekom) {{LARSSON}}
+* W. Hardaker: Lessons Learned from 30 Years of Net-SNMP {{HARDAKER}}
 
 # Workshop Participants
 
