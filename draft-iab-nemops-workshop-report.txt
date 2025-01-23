@@ -187,7 +187,7 @@ Table of Contents
 
 3.4.  Key Takeaways
 
-   At the end of the third day the discussion turned to key takeaways
+   At the end of the third day, the discussion turned to key takeaways
    that had consensus.  In the process of discussion there were some
    realizations where additional work was also needed.
 
@@ -212,7 +212,7 @@ Table of Contents
    3.  Documentation about the architecture and usage of the network
        management ecosystem is lacking.  More work is needed to create
        general architecture documentation, deployment guides, tutorials,
-       training material, getting started guides.
+       training material, and getting started guides.
 
    4.  Transitioning between network management frameworks is
        challenging, just like it is for transitioning between other
@@ -222,7 +222,7 @@ Table of Contents
        is implemented and possible to use.
 
    6.  More easily usable network management tools for the operators are
-       needed.  The lack of open source tools are seen as a barrier to
+       needed.  The lack of open-source tools is seen as a barrier to
        adoption.  Tools need good use cases, example flows and better
        analysis of when and how they work and have been successful.
 
@@ -232,18 +232,18 @@ Table of Contents
 
    2.  Netconf and YANG do not have full coverage on many devices.
 
-   3.  Polling based solutions are still frequently deployed.
+   3.  Polling-based solutions are still frequently deployed.
 
-   4.  Full coverage of NetConf support on devices dose not exist today.
+   4.  Full coverage of NetConf support on devices does not exist today.
 
-   5.  Polling based solutions are still frequently deployed.  Push
+   5.  Polling-based solutions are still frequently deployed.  Push-
        based solutions are often desired but are not yet widely
        available.
 
    6.  False: Netconf for configuration has been successful in some
-       larger scale deployment
+       larger-scale deployment
 
-       1.  Let’s discuss this further on list
+       1.  Let’s discuss this further on the list
 
        2.  Service config?
 
@@ -267,7 +267,7 @@ Table of Contents
 
    5.  Network configuration needs to be verifiable to ensure any
        potential changes can be accepted by devices.  Model translation
-       adapters (likely performed on the management-station not the end
+       adapters (likely performed on the management station not the end
        device) may be the best path forward to simultaneously achieve
        this and a goal of supporting one configuration set across a
        diversity of devices with different internal models.
@@ -276,9 +276,9 @@ Table of Contents
 
 3.4.4.  Standardization conclusions
 
-   1.  A methodology rapid model development procedures is needed to
+   1.  A methodology of rapid model development procedures is needed to
        ensure model deployment can keep pace with new feature
-       deployment.  We need a solution that significantly increase the
+       deployment.  We need a solution that significantly increases the
        speed and predictable timeline for developing and publishing
        models within the IETF.  New approaches and methods to make
        models live outside of published RFCs should be explored.  An
@@ -286,21 +286,21 @@ Table of Contents
        approach.
 
    2.  Protocol and model complexity should be reduced to keep additions
-       and changes to a minimal set of agreed upon core features.
+       and changes to a minimal set of agreed-upon core features.
 
    3.  More standardization focus is needed on the scalability of the
        different roles of network management: monitoring, configuration,
        notifications.
 
-   4.  Enhancements to network management protocols and models needs to
+   4.  Enhancements to network management protocols and models need to
        be backed by real-world operator use cases and expected adoption
        by vendors.  Vendors and operators will need to work together to
        ensure these goals are appropriately met.
 
 3.4.5.  Additional work needed
 
-   Here we list the things that the group realized needed significant
-   more attention in order to come to conclusion about.
+   Here we list the things that the group realized needed significantly
+   more attention in order to come to a conclusion.
 
 4.  Informative References
 
@@ -336,7 +336,7 @@ Table of Contents
               and-service-configurations-00.pdf>.
 
    [SURVEY]   "Next Era of Network Management Operations (NEMOPS)
-              workshop survey", n.d.,
+              workshop survey", October 2024,
               <https://ietf.iad1.qualtrics.com/jfe/form/
               SV_9vQxBRiZqDntarc>.
 
