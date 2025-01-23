@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 26 July 2025                                    22 January 2025
+Expires: 27 July 2025                                    23 January 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -62,7 +62,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 26 July 2025.
+   This Internet-Draft will expire on 27 July 2025.
 
 Copyright Notice
 
@@ -150,6 +150,25 @@ Table of Contents
 
 2.  Outreach and Survey
 
+   There has been a noticeable decline in the direct participation of
+   network operators in the IETF and its associated discussions on
+   network management protocols and operations.  Many operators
+   prioritize operational conferences over standards development
+   organizations (SDOs), such as RIPE, NANOG, APRICOT, LACNIC, AutoConn,
+   etc.
+
+   To address this, the Program Committee (PC) planned outreach
+   initiatives to foster discussions and gather interest by engaging
+   with operators at these venues and conducting information/
+   requirement-gathering sessions.  Participants were encouraged to
+   submit position papers or expressions of interest to join the
+   workshop.  Additionally, a survey [SURVEY] was conducted to collect
+   valuable insights to inform the workshop.
+
+   The PC intends to continue engaging with network operators after the
+   workshop to facilitate information sharing and gather their feedback,
+   helping to shape the next steps and outcomes of the workshop.
+
 3.  Workshop Scope and Discussion
 
    The workshop was organized across three days with all-group
@@ -215,46 +234,45 @@ Table of Contents
 
    3.  Polling based solutions are still frequently deployed.
 
-   4.  False: Netconf for configuration has been successful in some
+   4.  Full coverage of NetConf support on devices dose not exist today.
+
+   5.  Polling based solutions are still frequently deployed.  Push
+       based solutions are often desired but are not yet widely
+       available.
+
+   6.  False: Netconf for configuration has been successful in some
        larger scale deployment
 
        1.  Let’s discuss this further on list
 
        2.  Service config?
 
-   5.  False: Full device control and configuration frequently requires
+   7.  False: Full device control and configuration frequently requires
        CLI and screen scraping
-
-   6.  Full coverage of NetConf support on devices is missing
-
-   7.  Polling based solutions are still frequently deployed.  Push
-       based solutions are often desired but are not yet widely
-       available.
 
 3.4.3.  Modeling conclusions
 
-   [XXX: note -- I don't think we talked about this slide much -Wes]
+   1.  Some YANG models can become too complex, though not as a fault of
+       the language.
 
-   1.  YANG models can sometimes get too complex (not a fault of the
-       language)
+   2.  Multi-vendor compatibility support is required.
 
-   2.  Vendor-specific features need to be exposed through network
-       management protocols
+   3.  Even vendor-specific features, not just standardized protocol
+       features, need to be exposed through network management protocols
+       for a network management ecosystem to be viable.
 
-   3.  More service-level modeling is needed
+   4.  Greater support for service-level modeling is needed.  Device
+       level modeling can be a building block to achieve a sufficient
+       service-level model but is not a complete solution by itself.
 
-       1.  Device level modeling needs to be a building block but is not
-           a complete service-level solution
+   5.  Network configuration needs to be verifiable to ensure any
+       potential changes can be accepted by devices.  Model translation
+       adapters (likely performed on the management-station not the end
+       device) may be the best path forward to simultaneously achieve
+       this and a goal of supporting one configuration set across a
+       diversity of devices with different internal models.
 
-   4.  Network configuration needs to be verifiable
-
-   5.  Multi-vendor compatibility support is required
-
-   6.  Full coverage of YANG models on all devices is missing
-
-   7.  Model translation adaptors may be the best path forward
-
-       1.  Likely off-device
+   6.  Full coverage of YANG models on all devices does not exist today.
 
 3.4.4.  Standardization conclusions
 
@@ -316,6 +334,11 @@ Table of Contents
               2024, <https://www.ietf.org/slides/slides-nemopsws-paper-
               composable-declarative-reproducible-verifiable-network-
               and-service-configurations-00.pdf>.
+
+   [SURVEY]   "Next Era of Network Management Operations (NEMOPS)
+              workshop survey", n.d.,
+              <https://ietf.iad1.qualtrics.com/jfe/form/
+              SV_9vQxBRiZqDntarc>.
 
 Appendix A.  Position Papers
 
