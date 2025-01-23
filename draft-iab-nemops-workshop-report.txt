@@ -91,6 +91,8 @@ Table of Contents
        3.2.3.  Discussion
      3.3.  Session III: Future (possible solutions, recommendations
            and next steps)
+       3.3.1.  Future Directions
+       3.3.2.  Discussion
      3.4.  Key Takeaways
        3.4.1.  Ecosystem conclusions
        3.4.2.  Protocol conclusions
@@ -331,6 +333,18 @@ Table of Contents
 3.3.  Session III: Future (possible solutions, recommendations and next
       steps)
 
+   The final day of the workshop centred on exploring potential future
+   solutions and identifying key takeaways, recommendations, and next
+   steps.  Initial presentations covered topics such as the use of the
+   Knowledge Graph Framework and concrete suggestions for future
+   directions.  To conclude the workshop, the chairs worked to summarize
+   the key takeaways Section 3.4 that garnered consensus among the
+   participants.
+
+3.3.1.  Future Directions
+
+3.3.2.  Discussion
+
 3.4.  Key Takeaways
 
    At the end of the third day, the discussion turned to key takeaways
@@ -454,6 +468,13 @@ Table of Contents
               Models", November 2024, <https://www.ietf.org/slides/
               slides-nemopsws-paper-coreconf-managing-iot-devices-with-
               yang-models-00.pdf>.
+
+   [CLAISE]   Claise, B., Graf, T., Keller, H., Voyer, D., Lucente, P.,
+              Lopez, D., Martinez-Casanueva, I., Peters, B., Fasano, P.,
+              Ran, P., Cheng, W., and M. Mackey, "Knowledge Graph
+              Framework for Network Operations", November 2024,
+              <https://www.ietf.org/slides/slides-nemopsws-paper-
+              knowledge-graph-framework-for-network-operations-00.pdf>.
 
    [CONTRERAS]
               Boucadair, M., Contreras, L. M., Gonzalez de Dios, O.,
@@ -663,6 +684,11 @@ Appendix B.  Position Papers
    *  T.  Graf, H.  Keller, D.  Voyer, P.  Lucente, B.  Claise, R.
       Wilton, A.  Huang-Feng, and P.  Francois: Agile Incremental Driven
       Development for Network Management [GRAF]
+
+   *  B.  Claise, T.  Graf, H.  Keller, D.  Voyer, P.  Lucente, D.
+      Lopez, I.  D.  Martinez-Casanueva, B.  Peters, P.  Fasano, P.
+      Ran, W.  Cheng, and M.  Mackey: Knowledge Graph Framework for
+      Network Operations [CLAISE]
 
 Appendix C.  Workshop Participants
 
