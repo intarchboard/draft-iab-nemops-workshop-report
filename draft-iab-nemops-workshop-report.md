@@ -45,17 +45,17 @@ informative:
         ins:  J. Schönwälder
         name: Jürgen Schönwälder
     date: November 2024
-  LARSSON:  
+  LARSSON:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-rfc3535-years-later-from-an-operators-perspective-deutsche-telekom-00.pdf
     title: RFC3535, 20 Years Later from an Operator's Perspective (Deutsche Telekom)
     author:
       -
         ins:  K. Larsson
         name: Kristian Larsson
-      -  
+      -
         ins:  K. Lambrechts
         name: Kris Lambrechts
-      -  
+      -
         ins:  I. Farrer
         name: Ian Farrer
     date: November 2024
