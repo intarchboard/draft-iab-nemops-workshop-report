@@ -109,7 +109,7 @@ informative:
     date: November 2024
   JIMENEZ:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-evolving-challenges-and-solutions-in-network-management-00.pdf
-    title: Evolving Challenges and Solutions in Network Management
+    title: "Evolving Challenges and Solutions in Network Management"
     author:
       -
         ins:  J. Jiménez
@@ -130,7 +130,6 @@ informative:
         ins:  J. Karvonen
         name: Janne Karvonen
      date: November 2024
-
 --- abstract
 
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
