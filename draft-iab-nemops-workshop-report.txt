@@ -281,7 +281,12 @@ Table of Contents
    simple tools for smaller networks operating under tight timelines and
    budgets was emphasized.  A key question raised was whether the
    proliferation of protocols and languages complicates adoption, and if
-   converging on a single approach would improve adoption.
+   converging on a single approach would improve adoption.  The
+   existence of multiple schemas and protocols beyond NETCONF, such as
+   BMP and IPFIX, to address network management challenges beyond
+   configuration is an established reality.  What is required is a
+   mechanism to interconnect and harmonize these schemas to provide a
+   cohesive and comprehensive understanding of the data.
 
 3.2.  Session II: Present (identified problems & requirements)
 
