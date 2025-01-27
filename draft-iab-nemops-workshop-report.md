@@ -32,6 +32,7 @@ informative:
   RFC6241:
   RFC7950:
   RFC8040:
+  RFC8309:
   I-D.ietf-core-comi:
   I-D.boucadair-nmop-rfc3535-20years-later:
   SURVEY:
@@ -383,7 +384,7 @@ The first day of the workshop focused on reflecting on the past by reviewing the
 
 The workshop began by reflecting on the IAB’s role in shaping the evolution of network management away from CLI/SNMP/MIB, focusing on the context and key outcomes of the previous workshop, an assessment of the current state, and an acknowledgement of some regrets (such as XML as the data representation format). {{SCHONWALDER}} emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable (assembled out of modular configurations), Declarative (define state while systems determine themselves how to move to it), Reproducible (reliably and consistently recreated), and Verifiable (tools to verify properties).
 
-An operator’s perspective highlighted that the recommendations of {{RFC3535}}, which led to the development of YANG and NETCONF, have been successful in addressing device configuration. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope of {{RFC3535}}. {{LARSSON}} cautioned against making changes that could break the ecosystem. The presentation also highlighted the need to prioritize service modeling, including operational state, to enable closed-loop automation. Moreover, the lack of open-source tools, NMS, and device model implementations was identified as a major barrier to advancing standardization efforts.
+An operator’s perspective highlighted that the recommendations of {{RFC3535}} (which led to the development of YANG and NETCONF) have been successful in addressing device configuration. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope of {{RFC3535}}. {{LARSSON}} cautioned against making changes that could disrupt the ecosystem. The presentation emphasized the need to prioritize service modeling in the IETF and addressed the challenges of mapping to the Business Support Systems (BSS) domain. It also stressed the importance of including the operational state in service models to enable closed-loop automation for end-to-end (E2E) services. Revisiting {{RFC8309}}, which asserts that the operational state of a service is not part of a customer service model but can be achieved through extensions, was suggested. Additionally, the lack of open-source NMS implementations, tools, and device model implementations was identified as a significant barrier to advancing standardization efforts. The IETF could play a key role in fostering and enabling collaborations to address these challenges including an off-box translation tool of the IETF device model to vendor proprietary models.
 
 ### Lessons to be Learned
 
