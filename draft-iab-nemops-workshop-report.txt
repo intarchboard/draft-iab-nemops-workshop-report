@@ -495,6 +495,12 @@ Table of Contents
 
 4.  Informative References
 
+   [BLESS]    Bless, R., "An Invariant for Future Resilient Network
+              Management Operations", November 2024,
+              <https://www.ietf.org/slides/slides-nemopsws-paper-an-
+              invariant-for-future-resilient-network-management-
+              operations-00.pdf>.
+
    [BORMANN]  Bormann, C., "CORECONF: Managing IoT Devices with YANG
               Models", November 2024, <https://www.ietf.org/slides/
               slides-nemopsws-paper-coreconf-managing-iot-devices-with-
@@ -788,6 +794,9 @@ Appendix B.  Position Papers
 
    *  T.  Eckert and M.  Richardson: Resilient Remote Manageability of
       Wide-Area Network Infrastructures [ECKERT]
+
+   *  R.  Bless: An Invariant for Future Resilient Network Management
+      Operations [BLESS]
 
 Appendix C.  Workshop Participants
 
