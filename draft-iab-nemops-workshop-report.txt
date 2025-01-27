@@ -516,6 +516,12 @@ Table of Contents
               rfc3535-years-later-an-update-of-operators-requirements-
               on-network-management-protocols-and-modelling-00.pdf>.
 
+   [ECKERT]   Eckert, T. and M. Richardson, "Resilient Remote
+              Manageability of Wide-Area Network Infrastructures",
+              November 2024, <https://www.ietf.org/slides/slides-
+              nemopsws-paper-resilient-remote-managability-of-wide-area-
+              network-infrastructures-00.pdf>.
+
    [FOROUGHI] Foroughi, P. and L. Ciavaglia, "Projecting Data Mesh to
               Model-driven Telemetry: A Path to Data Ecosystem’s
               Management Operations", November 2024,
@@ -779,6 +785,9 @@ Appendix B.  Position Papers
    *  L.  M.  Contreras, R.  Schott, S.  Randriamasy, R.  Yang, and J.
       Ros-Giralt: Towards a Unified Compute and Communication
       Infrastructure for Application and Network Management [GIRALT]
+
+   *  T.  Eckert and M.  Richardson: Resilient Remote Manageability of
+      Wide-Area Network Infrastructures [ECKERT]
 
 Appendix C.  Workshop Participants
 
