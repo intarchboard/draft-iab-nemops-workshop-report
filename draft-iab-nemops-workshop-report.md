@@ -263,6 +263,17 @@ informative:
         ins:  J. Bonnin
         name: Jean-Marie Bonnin
     date: November 2024
+  FOROUGHI:
+    target: https://www.ietf.org/slides/slides-nemopsws-paper-projecting-data-mesh-to-model-driven-telemetry-a-path-to-data-ecosystems-management-operations-00.pdf
+    title: "Projecting Data Mesh to Model-driven Telemetry: A Path to Data Ecosystem’s Management Operations"
+    author:
+      -
+        ins:  P. Foroughi
+        name: Parisa Foroughi
+      -
+        ins:  L. Ciavaglia
+        name: Laurent Ciavaglia
+    date: November 2024
 --- abstract
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
 
@@ -485,6 +496,7 @@ This is the list of all papers:
 * K. Watsen: Four Thoughts for How to Improve Network Management for Operators {{WATSEN}}
 * R. Wilton and N. Corran: Device Network Management: Current Status and Future Direction {{WILTON}}
 * M. Gudi, A. Pelov, L. Toutain, and J.-M. Bonnin: Evolving Network Management Architecture: Integrating CORECONF with NETCONF for Efficient Telemetry and Management {{GUDI}}
+* P. Foroughi and L. Ciavaglia: Projecting Data Mesh to Model-driven Telemetry: A Path to Data Ecosystem’s Management Operations {{FOROUGHI}}
 
 # Workshop Participants
 
