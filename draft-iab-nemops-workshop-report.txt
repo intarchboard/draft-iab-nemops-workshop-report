@@ -523,6 +523,14 @@ Table of Contents
               projecting-data-mesh-to-model-driven-telemetry-a-path-to-
               data-ecosystems-management-operations-00.pdf>.
 
+   [GIRALT]   Contreras, L. M., Schott, R., Randriamasy, S., Yang, R.,
+              and J. Ros-Giralt, "Towards a Unified Compute and
+              Communication Infrastructure for Application and Network
+              Management", November 2024, <https://www.ietf.org/slides/
+              slides-nemopsws-paper-towards-a-unified-compute-and-
+              communication-infrastructure-for-application-and-network-
+              management-00.pdf>.
+
    [GRAF]     Graf, T., Keller, H., Voyer, D., Lucente, P., Claise, B.,
               Wilton, R., Huang-Feng, A., and P. Francois, "Agile
               Incremental Driven Development for Network Management",
@@ -767,6 +775,10 @@ Appendix B.  Position Papers
       [MARTINEZ]
 
    *  J.  Jiménez: Managing IoT Devices with LwM2M [JIMENEZ]
+
+   *  L.  M.  Contreras, R.  Schott, S.  Randriamasy, R.  Yang, and J.
+      Ros-Giralt: Towards a Unified Compute and Communication
+      Infrastructure for Application and Network Management [GIRALT]
 
 Appendix C.  Workshop Participants
 
