@@ -622,6 +622,12 @@ Table of Contents
               Protocol", RFC 8040, DOI 10.17487/RFC8040, January 2017,
               <https://www.rfc-editor.org/rfc/rfc8040>.
 
+   [SCHARF]   Scharf, M., "Network Management Challenges for IP-based
+              Cyber-Physical Networks", November 2024,
+              <https://www.ietf.org/slides/slides-nemopsws-paper-
+              network-management-challenges-for-ip-based-cyber-physical-
+              networks-00.pdf>.
+
    [SCHONWALDER]
               Schönwälder, J., "Composable, Declarative, Reproducible,
               Verifiable Network and Service Configurations", November
@@ -797,6 +803,9 @@ Appendix B.  Position Papers
 
    *  R.  Bless: An Invariant for Future Resilient Network Management
       Operations [BLESS]
+
+   *  M.  Scharf: Network Management Challenges for IP-based Cyber-
+      Physical Networks [SCHARF]
 
 Appendix C.  Workshop Participants
 
