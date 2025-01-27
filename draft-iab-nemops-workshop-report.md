@@ -1,5 +1,5 @@
 ---
-title: "Report from the IAB Workshop on the Next Era of Network Management Operations"
+title: "Report from the IAB Workshop on the Next Era of Network Management Operations (NEMOPS)"
 abbrev: "NEMOPS Workshop Report"
 category: info
 
@@ -346,11 +346,11 @@ Note that this document is a report on the proceedings of the workshop.  The vie
 
 # Introduction
 
-The IAB organized a workshop in June 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" [RFC3535] which identified 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF.
+The IAB organized a workshop in 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" [RFC3535] which identified 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF.
 
 Those requirements were instrumental in developing first the NETCONF protocol (in the NETCONF Working Group) [RFC6241], the associated YANG data modeling language (in the NETMOD Working Group) [RFC7950], RESTCONF [RFC8040], and most recently CORECONF [I-D.ietf-core-comi].
 
-The NEMOPS workshop aimed to discuss the following key topics:
+The recent NEMOPS IAB workshop aimed to discuss the following key topics:
 
 * Review the outcomes and results of the 2002 workshop (current deployments, state of the art) and identify any operational barriers that prevent these technologies from being widely implemented (limitations, hurdles).
 * Sketch new requirements for future network management operations in a collaborative manner with the industry, network operators, and protocol engineers.
@@ -368,9 +368,9 @@ Furthermore, the content of the report comes from presentations given by worksho
 
 There has been a noticeable decline in the direct participation of network operators in the IETF and its associated discussions on network management protocols and operations. Many operators prioritize operational conferences over standards development organizations (SDOs), such as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc.
 
-To address this, the Program Committee (PC) planned outreach initiatives to foster discussions and gather interest by engaging with operators at these venues and conducting information/requirement-gathering sessions. Participants were encouraged to submit position papers or expressions of interest to join the workshop. Additionally, a survey [SURVEY] was conducted to collect valuable insights to inform the workshop.
+To address this, the IAB workshop's Program Committee (PC) planned outreach initiatives to foster discussions and gather interest by engaging with operators at these venues and conducting information/requirement-gathering sessions. Participants were encouraged to submit 'position papers' or 'expressions of interest' to join the workshop. Additionally, a survey [SURVEY] was conducted to collect valuable insights to inform the workshop.
 
-The PC intends to continue engaging with network operators after the workshop to facilitate information sharing and gather their feedback, helping to shape the next steps and outcomes of the workshop.
+The PC continues to engage with network operators after the workshop to facilitate information sharing and gather their feedback, helping to shape the next steps and outcomes of the workshop.
 
 # Workshop Scope and Discussion
 The workshop was organized across three days with all-group discussion slots, one per day. The following topic areas were identified and the program committee organized paper submissions into three main themes for each of the three discussion slots. During each discussion, those papers were presented sequentially with open discussion held at the end of each day. On the last day, a discussion on the key takeaways from the workshop and possible next steps took place.
