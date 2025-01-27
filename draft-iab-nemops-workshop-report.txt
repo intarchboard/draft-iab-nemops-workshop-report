@@ -249,19 +249,21 @@ Table of Contents
    is essential to address the needs of both to ensure success.
    [BORMANN] presented an overview of the CORECONF architecture,
    showcasing how model-driven network management techniques can be
-   applied to manage IoT devices, with a focus on the unique
-   characteristics of constrained nodes.  Some participants noted that
-   the binary encoding of CBOR has applications that extend beyond IoT
-   networks.
+   applied to manage IoT devices (which is different from other network
+   management scenarios), with a focus on the unique characteristics of
+   constrained nodes.  Some participants noted that the binary encoding
+   of CBOR has applications that extend beyond the IoT networks.
 
    Drawing from the experience of OpenConfig [OPENCONFIG], [SHAKIR]
-   emphasized that protocol definition cannot be done in isolation.  It
-   must integrate lessons learned from implementation and large-scale
-   deployment.  He highlighted the importance of enabling quick
-   iterations, shipping rapidly, embracing open-source culture, adopting
-   systems thinking driven by business outcomes, and reusing existing
-   technologies rather than developing solutions exclusively for network
-   management.
+   emphasized that protocol definition and data models cannot be done in
+   isolation.  It must integrate lessons learned from implementation and
+   large-scale deployment.  He highlighted the importance of enabling
+   quick iterations, shipping rapidly, embracing open-source, readily
+   available tools, adopting systems thinking driven by business
+   outcomes, and reusing existing technologies rather than developing
+   solutions exclusively for operator network management.  A call was
+   made for IETF to rethink the approach to standardize data models and
+   the associated network management protocols.
 
 3.1.3.  Discussion
 
