@@ -126,8 +126,7 @@ Table of Contents
    YANG data modeling language (in the NETMOD Working Group) [RFC7950],
    RESTCONF [RFC8040], and most recently CORECONF [I-D.ietf-core-comi].
 
-   The recent NEMOPS IAB workshop aimed to discuss the following key
-   topics:
+   The recent NEMOPS IAB workshop focussed on the following key topics:
 
    *  Review the outcomes and results of the 2002 workshop (current
       deployments, state of the art) and identify any operational
@@ -206,22 +205,28 @@ Table of Contents
 3.1.1.  Reflections
 
    The workshop began by reflecting on the IAB’s role in shaping the
-   evolution of network management, focusing on the context and key
-   outcomes of the previous workshop, an assessment of the current
-   state, and an acknowledgement of some regrets.  [SCHONWALDER]
-   emphasized the need to shift the focus from device-level
-   configuration to network and service-level configuration.  Key
-   properties highlighted for effective network and service
-   configurations included being Composable, Declarative, Reproducible,
-   and Verifiable.  An operator’s perspective highlighted that the
-   recommendations of [RFC3535], which led to the development of YANG
-   and NETCONF, have been successful in addressing device configuration.
-   In certain areas, the advancements in semantics and protocols for
-   streaming telemetry have even surpassed the original scope.
-   [LARSSON] stressed the need to prioritize service modeling, including
-   operational state, to support closed-loop automation.  Furthermore,
-   the absence of open-source tools, NMS and device model
-   implementations was recognized as a significant obstacle to advancing
+   evolution of network management away from CLI/SNMP/MIB, focusing on
+   the context and key outcomes of the previous workshop, an assessment
+   of the current state, and an acknowledgement of some regrets (such as
+   XML as the data representation format).  [SCHONWALDER] emphasized the
+   need to shift the focus from device-level configuration to network
+   and service-level configuration.  Key properties highlighted for
+   effective network and service configurations included being
+   Composable (assembled out of modular configurations), Declarative
+   (define state while systems determine themselves how to move to it),
+   Reproducible (reliably and consistently recreated), and Verifiable
+   (tools to verify properties).
+
+   An operator’s perspective highlighted that the recommendations of
+   [RFC3535], which led to the development of YANG and NETCONF, have
+   been successful in addressing device configuration.  In certain
+   areas, the advancements in semantics and protocols for streaming
+   telemetry have even surpassed the original scope of [RFC3535].
+   [LARSSON] cautioned against making changes that could break the
+   ecosystem.  The presentation also highlighted the need to prioritize
+   service modeling, including operational state, to enable closed-loop
+   automation.  Moreover, the lack of open-source tools, NMS, and device
+   model implementations was identified as a major barrier to advancing
    standardization efforts.
 
 3.1.2.  Lessons to be Learned
