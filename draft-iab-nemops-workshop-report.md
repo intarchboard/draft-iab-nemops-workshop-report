@@ -310,6 +310,17 @@ informative:
         ins:  J. Ros-Giralt
         name: Jordi Ros-Giralt
     date: November 2024
+  ECKERT:
+    target: https://www.ietf.org/slides/slides-nemopsws-paper-resilient-remote-managability-of-wide-area-network-infrastructures-00.pdf
+    title: Resilient Remote Manageability of Wide-Area Network Infrastructures
+    author:
+      -
+        ins:  T. Eckert
+        name: Toerless Eckert
+      -
+        ins:  M. Richardson
+        name: Michael Richardson
+    date: November 2024
 --- abstract
 The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
 
@@ -536,6 +547,7 @@ This is the list of all papers:
 * I. D. Martinez-Casanueva: IAB NEMOPS Position Paper - Telefonica {{MARTINEZ}}
 * J. Jiménez: Managing IoT Devices with LwM2M {{JIMENEZ}}
 * L. M. Contreras, R. Schott, S. Randriamasy, R. Yang, and J. Ros-Giralt: Towards a Unified Compute and Communication Infrastructure for Application and Network Management {{GIRALT}}
+* T. Eckert and M. Richardson: Resilient Remote Manageability of Wide-Area Network Infrastructures {{ECKERT}}
 
 # Workshop Participants
 
