@@ -516,6 +516,13 @@ Table of Contents
               rfc3535-years-later-an-update-of-operators-requirements-
               on-network-management-protocols-and-modelling-00.pdf>.
 
+   [FOROUGHI] Foroughi, P. and L. Ciavaglia, "Projecting Data Mesh to
+              Model-driven Telemetry: A Path to Data Ecosystem’s
+              Management Operations", November 2024,
+              <https://www.ietf.org/slides/slides-nemopsws-paper-
+              projecting-data-mesh-to-model-driven-telemetry-a-path-to-
+              data-ecosystems-management-operations-00.pdf>.
+
    [GRAF]     Graf, T., Keller, H., Voyer, D., Lucente, P., Claise, B.,
               Wilton, R., Huang-Feng, A., and P. Francois, "Agile
               Incremental Driven Development for Network Management",
@@ -749,6 +756,10 @@ Appendix B.  Position Papers
    *  M.  Gudi, A.  Pelov, L.  Toutain, and J.-M.  Bonnin: Evolving
       Network Management Architecture: Integrating CORECONF with NETCONF
       for Efficient Telemetry and Management [GUDI]
+
+   *  P.  Foroughi and L.  Ciavaglia: Projecting Data Mesh to Model-
+      driven Telemetry: A Path to Data Ecosystem’s Management Operations
+      [FOROUGHI]
 
 Appendix C.  Workshop Participants
 
