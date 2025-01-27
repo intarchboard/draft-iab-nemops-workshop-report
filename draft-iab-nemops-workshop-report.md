@@ -573,7 +573,7 @@ The workshop participants were Alex Huang, Alexander Clemm, Alexander PELOV, Ben
 
 # Workshop Program Committee
 
-The workshop program committee members were Wes Hardaker, Dhruv Dhody, Qin Wu, Suresh Krishnan, Benoît Claise, Mohamed Boucadair, Mahesh Jethanandani, Kent Watsen, and Warren Kumari.
+The workshop program committee members were Wes Hardaker (co-chair), Dhruv Dhody (co-chair), Qin Wu, Suresh Krishnan, Benoît Claise, Mohamed Boucadair, Mahesh Jethanandani, Kent Watsen, and Warren Kumari.
 
 # IAB Members at the Time of Approval
 {:numbered="false"}
