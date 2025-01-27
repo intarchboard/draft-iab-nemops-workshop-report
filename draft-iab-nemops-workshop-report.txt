@@ -578,6 +578,11 @@ Table of Contents
               slides-nemopsws-paper-rfc3535-years-later-from-an-
               operators-perspective-deutsche-telekom-00.pdf>.
 
+   [MARTINEZ] Martinez-Casanueva, I., "IAB NEMOPS Position Paper -
+              Telefonica", November 2024, <https://www.ietf.org/slides/
+              slides-nemopsws-paper-iab-nemops-position-paper-
+              telefonica-00.pdf>.
+
    [NET-SNMP] "Net-SNMP", n.d., <http://www.net-snmp.org/>.
 
    [OPENCONFIG]
@@ -760,6 +765,9 @@ Appendix B.  Position Papers
    *  P.  Foroughi and L.  Ciavaglia: Projecting Data Mesh to Model-
       driven Telemetry: A Path to Data Ecosystem’s Management Operations
       [FOROUGHI]
+
+   *  I.  D.  Martinez-Casanueva: IAB NEMOPS Position Paper - Telefonica
+      [MARTINEZ]
 
 Appendix C.  Workshop Participants
 
