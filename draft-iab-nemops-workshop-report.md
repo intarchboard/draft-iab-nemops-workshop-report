@@ -346,11 +346,11 @@ Note that this document is a report on the proceedings of the workshop.  The vie
 
 # Introduction
 
-The IAB organized a workshop in 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" [RFC3535] which identified 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF.
+The IAB organized a workshop in 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" {{RFC3535}} which identified 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF.
 
-Those requirements were instrumental in developing first the NETCONF protocol (in the NETCONF Working Group) [RFC6241], the associated YANG data modeling language (in the NETMOD Working Group) [RFC7950], RESTCONF [RFC8040], and most recently CORECONF [I-D.ietf-core-comi].
+Those requirements were instrumental in developing first the NETCONF protocol (in the NETCONF Working Group) {{RFC6241}}, the associated YANG data modeling language (in the NETMOD Working Group) {{RFC7950}}, RESTCONF {{RFC8040}}, and most recently CORECONF {{I-D.ietf-core-comi}}.
 
-The recent NEMOPS IAB workshop aimed to discuss the following key topics:
+The recent NEMOPS IAB workshop focussed on the following key topics:
 
 * Review the outcomes and results of the 2002 workshop (current deployments, state of the art) and identify any operational barriers that prevent these technologies from being widely implemented (limitations, hurdles).
 * Sketch new requirements for future network management operations in a collaborative manner with the industry, network operators, and protocol engineers.
@@ -381,7 +381,9 @@ The first day of the workshop focused on reflecting on the past by reviewing the
 
 ### Reflections
 
-The workshop began by reflecting on the IAB’s role in shaping the evolution of network management, focusing on the context and key outcomes of the previous workshop, an assessment of the current state, and an acknowledgement of some regrets. {{SCHONWALDER}} emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable, Declarative, Reproducible, and Verifiable. An operator’s perspective highlighted that the recommendations of {{RFC3535}}, which led to the development of YANG and NETCONF, have been successful in addressing device configuration. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope. {{LARSSON}} stressed the need to prioritize service modeling, including operational state, to support closed-loop automation. Furthermore, the absence of open-source tools, NMS and device model implementations was recognized as a significant obstacle to advancing standardization efforts.
+The workshop began by reflecting on the IAB’s role in shaping the evolution of network management away from CLI/SNMP/MIB, focusing on the context and key outcomes of the previous workshop, an assessment of the current state, and an acknowledgement of some regrets (such as XML as the data representation format). {{SCHONWALDER}} emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable (assembled out of modular configurations), Declarative (define state while systems determine themselves how to move to it), Reproducible (reliably and consistently recreated), and Verifiable (tools to verify properties). 
+
+An operator’s perspective highlighted that the recommendations of {{RFC3535}}, which led to the development of YANG and NETCONF, have been successful in addressing device configuration. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope of {{RFC3535}}. {{LARSSON}} emphasized the importance of exercising caution when making changes that could break the ecosystem. The discussion also highlighted the need to prioritize service modeling, including operational state, to enable closed-loop automation. Additionally, the lack of open-source tools, NMS, and device model implementations was identified as a major barrier to advancing standardization efforts.
 
 ### Lessons to be Learned
 
