@@ -218,16 +218,25 @@ Table of Contents
    (tools to verify properties).
 
    An operator’s perspective highlighted that the recommendations of
-   [RFC3535], which led to the development of YANG and NETCONF, have
+   [RFC3535] (which led to the development of YANG and NETCONF) have
    been successful in addressing device configuration.  In certain
    areas, the advancements in semantics and protocols for streaming
    telemetry have even surpassed the original scope of [RFC3535].
-   [LARSSON] cautioned against making changes that could break the
-   ecosystem.  The presentation also highlighted the need to prioritize
-   service modeling, including operational state, to enable closed-loop
-   automation.  Moreover, the lack of open-source tools, NMS, and device
-   model implementations was identified as a major barrier to advancing
-   standardization efforts.
+   [LARSSON] cautioned against making changes that could disrupt the
+   ecosystem.  The presentation emphasized the need to prioritize
+   service modeling in the IETF and addressed the challenges of mapping
+   to the Business Support Systems (BSS) domain.  It also stressed the
+   importance of including the operational state in service models to
+   enable closed-loop automation for end-to-end (E2E) services.
+   Revisiting [RFC8309], which asserts that the operational state of a
+   service is not part of a customer service model but can be achieved
+   through extensions, was suggested.  Additionally, the lack of open-
+   source NMS implementations, tools, and device model implementations
+   was identified as a significant barrier to advancing standardization
+   efforts.  The IETF could play a key role in fostering and enabling
+   collaborations to address these challenges including an off-box
+   translation tool of the IETF device model to vendor proprietary
+   models.
 
 3.1.2.  Lessons to be Learned
 
@@ -627,6 +636,10 @@ Table of Contents
    [RFC8040]  Bierman, A., Bjorklund, M., and K. Watsen, "RESTCONF
               Protocol", RFC 8040, DOI 10.17487/RFC8040, January 2017,
               <https://www.rfc-editor.org/rfc/rfc8040>.
+
+   [RFC8309]  Wu, Q., Liu, W., and A. Farrel, "Service Models
+              Explained", RFC 8309, DOI 10.17487/RFC8309, January 2018,
+              <https://www.rfc-editor.org/rfc/rfc8309>.
 
    [SCHARF]   Scharf, M., "Network Management Challenges for IP-based
               Cyber-Physical Networks", November 2024,
