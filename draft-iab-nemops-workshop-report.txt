@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 27 July 2025                                    23 January 2025
+Expires: 31 July 2025                                    27 January 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -62,7 +62,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 July 2025.
+   This Internet-Draft will expire on 31 July 2025.
 
 Copyright Notice
 
@@ -523,6 +523,14 @@ Table of Contents
               nemopsws-paper-agile-incremental-driven-development-for-
               network-management-01.pdf>.
 
+   [GUDI]     Gudi, M., Pelov, A., Toutain, L., and J. Bonnin, "Evolving
+              Network Management Architecture: Integrating CORECONF with
+              NETCONF for Efficient Telemetry and Management", November
+              2024, <https://www.ietf.org/slides/slides-nemopsws-paper-
+              evolving-network-management-architecture-integrating-
+              coreconf-with-netconf-for-efficient-telemetry-and-
+              management-00.pdf>.
+
    [HARDAKER] Hardaker, W., "Lessons Learned from 30 Years of Net-SNMP",
               November 2024, <https://www.ietf.org/slides/slides-
               nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-
@@ -737,6 +745,10 @@ Appendix B.  Position Papers
 
    *  R.  Wilton and N.  Corran: Device Network Management: Current
       Status and Future Direction [WILTON]
+
+   *  M.  Gudi, A.  Pelov, L.  Toutain, and J.-M.  Bonnin: Evolving
+      Network Management Architecture: Integrating CORECONF with NETCONF
+      for Efficient Telemetry and Management [GUDI]
 
 Appendix C.  Workshop Participants
 
