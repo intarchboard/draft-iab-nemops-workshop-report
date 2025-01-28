@@ -407,8 +407,12 @@ Table of Contents
    the most popular configuration tools, NetConf is the preferred
    configuration protocol, and Prometheus and SNMP are widely used for
    monitoring.  The survey also captured feedback on network automation
-   and streaming telemetry.  Additionally, valuable insights from direct
-   operator feedback were also presented (see Appendix A).
+   and streaming telemetry.  Issues and future requirements such as
+   scalability, performance, the need for easier mapping of various
+   models, tooling, management of legacy devices, collaboration with
+   open-source, and vendor-specific issues were highlighted.
+   Additionally, valuable insights from direct operator feedback were
+   also presented (see Appendix A).
 
 3.2.3.  Discussion
 
