@@ -402,13 +402,31 @@ The second day of the workshop concentrated on challenges and emerging requireme
 
 ### Operator Feedback
 
-{{KELLER}} shared Deutsche Telekom’s perspective, emphasizing that while YANG performs well for provisioning, it currently falls short in providing the operational stability required for validation. Achieving fully closed-loop automated and autonomous networking will require a greater focus on observability, particularly through advancements in streaming telemetry.
+{{KELLER}} shared Deutsche Telekom’s perspective, emphasizing that while YANG models perform well for provisioning, they currently fall short in providing the operational stability required for validation. Achieving fully closed-loop automated and autonomous networking will require a greater focus on observability, particularly through advancements in streaming telemetry with "on-change".
 
-{{JIMENEZ}} discussed the challenges associated with the SDN Transport Automation Platform, including issues with data streaming, scalability, diverse models, and mechanisms to secure the network management protocols. The presentation also emphasized how advancements in AI and machine learning, along with the potential adaptation of protocols designed for constrained environments, could drive the next evolution in network management.
+{{JIMENEZ}} discussed the challenges associated with the SDN Transport Automation Platform, including observability and analytics requirements, issues with data streaming, scalability, diverse models in heterogeneous multi-vendor environments, and mechanisms to secure the network management protocols. The presentation also emphasized how advancements in AI and machine learning, along with the potential adaptation of protocols designed for constrained environments, could drive the next evolution in network management.
 
 Using YANG-Push as an example, {{GRAF}} highlights how standards development often fails to align with the needs of network operators, the constraints of network vendors, and the integration requirements. Most critically, it lacks an agile, incremental development process. The presentation advocated for adopting an iterative approach to standards development, focusing on delivering minimal viable products as part of the process.
 
-{{CONTRERAS}} emphasized the importance of reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through {{I-D.boucadair-nmop-rfc3535-20years-later}}, leveraging feedback and discussions from the workshop.
+{{CONTRERAS}} emphasized reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through {{I-D.boucadair-nmop-rfc3535-20years-later}}, leveraging feedback and discussions from the workshop. Some key requirements highlighted were:
+* Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in opensource projects that facilitate access to code.
+* Need to rationalize the DM space and avoid redundant efforts. Unlike service and network models, IETF-defined device models are not widely implemented.
+* Define a reference approach/process for service exposure discovery (APIs discovery).
+* Outlines set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs.
+* Need for a reference specification to translate YANG-based data into the knowledge graph (KG).
+* Consider approaches for YANG models to scale.
+* Consider programmatic approaches to ensure lossless mappings between service/network/device data models.
+* Consider approaches to ensure reuse/consistent data structure across various NM segments.
+* Some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness.
+* Necessity to handle the heterogeneity of data, configuration, and network management/requirements. Resolving such issues could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.
+* Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.
+* Need to ease the integration of low-level/network-oriented solutions with native "IT tooling"
+* Ease exposure of libraries and host tools (e.g., yangkit) to ease integration.
+* Focus on tooling is needed, especially on the client side.
+* Create an eco-system where data and networking engineers can collaborate.
+* The distinct approaches followed in both the compute and the network environments to define suitable mechanisms for enabling an efficient interplay, while highly automating the overall service delivery procedure.
+* The target application/applicability of a network management approach should be documented.
+* Readily available API specifications could be generalized from YANG modules for fast development, prototyping, and validation.
 
 ### Survey
 
