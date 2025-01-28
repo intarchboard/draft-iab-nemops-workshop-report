@@ -1352,25 +1352,63 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="section-3.2.1-1"><span>[<a href="#KELLER" class="cite xref">KELLER</a>]</span> shared Deutsche Telekom’s perspective, emphasizing that while YANG models perform well for provisioning, they currently fall short in providing the operational stability required for validation. Achieving fully closed-loop automated and autonomous networking will require a greater focus on observability, particularly through advancements in streaming telemetry with "on-change".<a href="#section-3.2.1-1" class="pilcrow">¶</a></p>
 <p id="section-3.2.1-2"><span>[<a href="#JIMENEZ" class="cite xref">JIMENEZ</a>]</span> discussed the challenges associated with the SDN Transport Automation Platform, including observability and analytics requirements, issues with data streaming, scalability, diverse models in heterogeneous multi-vendor environments, and mechanisms to secure the network management protocols. The presentation also emphasized how advancements in AI and machine learning, along with the potential adaptation of protocols designed for constrained environments, could drive the next evolution in network management.<a href="#section-3.2.1-2" class="pilcrow">¶</a></p>
 <p id="section-3.2.1-3">Using YANG-Push as an example, <span>[<a href="#GRAF" class="cite xref">GRAF</a>]</span> highlights how standards development often fails to align with the needs of network operators, the constraints of network vendors, and the integration requirements. Most critically, it lacks an agile, incremental development process. The presentation advocated for adopting an iterative approach to standards development, focusing on delivering minimal viable products as part of the process.<a href="#section-3.2.1-3" class="pilcrow">¶</a></p>
-<p id="section-3.2.1-4"><span>[<a href="#CONTRERAS" class="cite xref">CONTRERAS</a>]</span> emphasized reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through <span>[<a href="#I-D.boucadair-nmop-rfc3535-20years-later" class="cite xref">I-D.boucadair-nmop-rfc3535-20years-later</a>]</span>, leveraging feedback and discussions from the workshop. Some key requirements highlighted were:
-* Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in opensource projects that facilitate access to code.
-* Need to rationalize the DM space and avoid redundant efforts. Unlike service and network models, IETF-defined device models are not widely implemented.
-* Define a reference approach/process for service exposure discovery (APIs discovery).
-* Outlines set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs.
-* Need for a reference specification to translate YANG-based data into the knowledge graph (KG).
-* Consider approaches for YANG models to scale.
-* Consider programmatic approaches to ensure lossless mappings between service/network/device data models.
-* Consider approaches to ensure reuse/consistent data structure across various NM segments.
-* Some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness.
-* Necessity to handle the heterogeneity of data, configuration, and network management/requirements. Resolving such issues could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.
-* Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.
-* Need to ease the integration of low-level/network-oriented solutions with native "IT tooling"
-* Ease exposure of libraries and host tools (e.g., yangkit) to ease integration.
-* Focus on tooling is needed, especially on the client side.
-* Create an eco-system where data and networking engineers can collaborate.
-* The distinct approaches followed in both the compute and the network environments to define suitable mechanisms for enabling an efficient interplay, while highly automating the overall service delivery procedure.
-* The target application/applicability of a network management approach should be documented.
-* Readily available API specifications could be generalized from YANG modules for fast development, prototyping, and validation.<a href="#section-3.2.1-4" class="pilcrow">¶</a></p>
+<p id="section-3.2.1-4"><span>[<a href="#CONTRERAS" class="cite xref">CONTRERAS</a>]</span> emphasized reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through <span>[<a href="#I-D.boucadair-nmop-rfc3535-20years-later" class="cite xref">I-D.boucadair-nmop-rfc3535-20years-later</a>]</span>, leveraging feedback and discussions from the workshop. Some key requirements highlighted were:<a href="#section-3.2.1-4" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-3.2.1-5.1">
+              <p id="section-3.2.1-5.1.1">Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in opensource projects that facilitate access to code.<a href="#section-3.2.1-5.1.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.2">
+              <p id="section-3.2.1-5.2.1">Need to rationalize the DM space and avoid redundant efforts. Unlike service and network models, IETF-defined device models are not widely implemented.<a href="#section-3.2.1-5.2.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.3">
+              <p id="section-3.2.1-5.3.1">Define a reference approach/process for service exposure discovery (APIs discovery).<a href="#section-3.2.1-5.3.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.4">
+              <p id="section-3.2.1-5.4.1">Outlines set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs.<a href="#section-3.2.1-5.4.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.5">
+              <p id="section-3.2.1-5.5.1">Need for a reference specification to translate YANG-based data into the knowledge graph (KG).<a href="#section-3.2.1-5.5.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.6">
+              <p id="section-3.2.1-5.6.1">Consider approaches for YANG models to scale.<a href="#section-3.2.1-5.6.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.7">
+              <p id="section-3.2.1-5.7.1">Consider programmatic approaches to ensure lossless mappings between service/network/device data models.<a href="#section-3.2.1-5.7.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.8">
+              <p id="section-3.2.1-5.8.1">Consider approaches to ensure reuse/consistent data structure across various NM segments.<a href="#section-3.2.1-5.8.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.9">
+              <p id="section-3.2.1-5.9.1">Some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness.<a href="#section-3.2.1-5.9.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.10">
+              <p id="section-3.2.1-5.10.1">Necessity to handle the heterogeneity of data, configuration, and network management/requirements. Resolving such issues could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.<a href="#section-3.2.1-5.10.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.11">
+              <p id="section-3.2.1-5.11.1">Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.<a href="#section-3.2.1-5.11.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.12">
+              <p id="section-3.2.1-5.12.1">Need to ease the integration of low-level/network-oriented solutions with native "IT tooling"<a href="#section-3.2.1-5.12.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.13">
+              <p id="section-3.2.1-5.13.1">Ease exposure of libraries and host tools (e.g., yangkit) to ease integration.<a href="#section-3.2.1-5.13.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.14">
+              <p id="section-3.2.1-5.14.1">Focus on tooling is needed, especially on the client side.<a href="#section-3.2.1-5.14.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.15">
+              <p id="section-3.2.1-5.15.1">Create an eco-system where data and networking engineers can collaborate.<a href="#section-3.2.1-5.15.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.16">
+              <p id="section-3.2.1-5.16.1">The distinct approaches followed in both the compute and the network environments to define suitable mechanisms for enabling an efficient interplay, while highly automating the overall service delivery procedure.<a href="#section-3.2.1-5.16.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.17">
+              <p id="section-3.2.1-5.17.1">The target application/applicability of a network management approach should be documented.<a href="#section-3.2.1-5.17.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-3.2.1-5.18">
+              <p id="section-3.2.1-5.18.1">Readily available API specifications could be generalized from YANG modules for fast development, prototyping, and validation.<a href="#section-3.2.1-5.18.1" class="pilcrow">¶</a></p>
+</li>
+          </ul>
 </section>
 </div>
 <div id="survey">
