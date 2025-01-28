@@ -435,7 +435,7 @@ As outlined in {{outreach}}, the workshop program committee organized outreach i
 
 ### Discussion
 
-The open discussion featured feedback from implementers, highlighting how divergence in vendor implementations creates complexity and necessitates workarounds. Challenges were noted in mapping standard models to internal device models and legacy devices. The conversation also emphasized the importance of developing open-source reference implementations, compliance testing, and interoperability solutions.
+The open discussion featured feedback from implementers, highlighting the difficulty in moving to YANG and mapping to vendor implementations and how divergence in the implementations creates complexity and necessitates workarounds. It is necessary to support standard models alongside native vendor models, which adds complexity and leads to confusion. Challenges were noted in mapping standard models to internal device models and legacy devices. The conversation also emphasized the importance of developing open-source reference implementations, compliance and interoperability testing for vendors, and better quality of vendor implementation and documentation. The implementation and support of multiple models (IETF, OpenConfig, and native) is an unavoidable reality in network management. Additionally, since the services offered by operators vary significantly, reaching a consensus on a common service model within the IETF can be a challenging task.
 
 ## Session III: Future (possible solutions, recommendations and next steps)
 
