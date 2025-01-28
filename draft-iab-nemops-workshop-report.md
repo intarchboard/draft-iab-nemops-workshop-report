@@ -409,6 +409,7 @@ The second day of the workshop concentrated on challenges and emerging requireme
 Using YANG-Push as an example, {{GRAF}} highlights how standards development often fails to align with the needs of network operators, the constraints of network vendors, and the integration requirements. Most critically, it lacks an agile, incremental development process. The presentation advocated for adopting an iterative approach to standards development, focusing on delivering minimal viable products as part of the process.
 
 {{CONTRERAS}} emphasized reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through {{I-D.boucadair-nmop-rfc3535-20years-later}}, leveraging feedback and discussions from the workshop. Some key requirements highlighted were:
+
 * Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in opensource projects that facilitate access to code.
 * Need to rationalize the DM space and avoid redundant efforts. Unlike service and network models, IETF-defined device models are not widely implemented.
 * Define a reference approach/process for service exposure discovery (APIs discovery).
