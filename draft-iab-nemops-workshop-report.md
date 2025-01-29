@@ -453,7 +453,7 @@ Some topics absent from the workshop discussions included tooling (what is curre
 
 ## Key Takeaways {#key}
 
-At the end of the third day, the discussion turned to key takeaways that had consensus. In the process of discussion, there were some realizations where additional work was also needed.
+At the end of the third day, the discussion turned to key takeaways that have high-level consensus which were live edited during the last discussion of the workshop. In the process of discussion, there were some realizations where additional work was also needed. 
 
 [Note at this point, these are cut and pasted from the slides and not properly edited/cleaned/moved around]
 
@@ -564,14 +564,14 @@ Here we list the things that the group realized needed significantly more attent
 
 # Key Recommendations from Operator Feedback {#recommendations}
 
-Various recommendations were made by the operators during the outreach events. The key ones presented during the workshop were:
+Various recommendations were made by the operators during the outreach events. The key ones presented during the workshop were (there were lot more collected):
 
 *  Everyone: Continue to focus on model-driven management as a means to achieve automation.
 *  SDOs: Re-introduce “running code” as part of the specification verification process.
 *  Operators: Be actively involved with the “running code” efforts.
 *  IETF: Recommend a solution stack for common use cases.
 *  Ambassadors: Evangelize the recommended solution stack for common cases.
-*  Vendors: Support the recommended solution stack for common cases.
+*  Vendors: Support the recommended approach to solution stack for common cases.
 
 # Position Papers
 
