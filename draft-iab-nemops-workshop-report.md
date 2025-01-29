@@ -453,7 +453,7 @@ Some topics absent from the workshop discussions included tooling (what is curre
 
 ## Key Takeaways {#key}
 
-At the end of the third day, the discussion turned to key takeaways that have high-level consensus which were live edited during the last discussion of the workshop. In the process of discussion, there were some realizations where additional work was also needed. 
+At the end of the third day, the discussion turned to key takeaways that have high-level consensus which were live edited during the last discussion of the workshop. In the process of discussion, there were some realizations where additional work was also needed.
 
 [Note at this point, these are cut and pasted from the slides and not properly edited/cleaned/moved around]
 
