@@ -512,8 +512,9 @@ Table of Contents
 3.4.  Key Takeaways
 
    At the end of the third day, the discussion turned to key takeaways
-   that had consensus.  In the process of discussion, there were some
-   realizations where additional work was also needed.
+   that have high-level consensus which were live edited during the last
+   discussion of the workshop.  In the process of discussion, there were
+   some realizations where additional work was also needed.
 
    [Note at this point, these are cut and pasted from the slides and not
    properly edited/cleaned/moved around]
@@ -870,7 +871,8 @@ A.2.  Data Models
 Appendix B.  Key Recommendations from Operator Feedback
 
    Various recommendations were made by the operators during the
-   outreach events.  The key ones presented during the workshop were:
+   outreach events.  The key ones presented during the workshop were
+   (there were lot more collected):
 
    *  Everyone: Continue to focus on model-driven management as a means
       to achieve automation.
@@ -885,7 +887,8 @@ Appendix B.  Key Recommendations from Operator Feedback
    *  Ambassadors: Evangelize the recommended solution stack for common
       cases.
 
-   *  Vendors: Support the recommended solution stack for common cases.
+   *  Vendors: Support the recommended approach to solution stack for
+      common cases.
 
 Appendix C.  Position Papers
 
