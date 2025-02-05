@@ -488,11 +488,6 @@ These takeaways try to document the general thinking of the participants with re
 1. Full coverage of NetConf support on devices does not exist today.
 1. Polling-based solutions are still frequently deployed.  Push-based solutions are often desired but are not yet widely available.
 
-1. False: Netconf for configuration has been successful in some larger-scale deployment
-    1. Let’s discuss this further on the list
-    1. Service config?
-1. False: Full device control and configuration frequently requires CLI and screen scraping
-
 ### Modeling conclusions
 
 1. Some YANG models can become too complex, though not as a fault of
@@ -534,6 +529,8 @@ These takeaways try to document the general thinking of the participants with re
 ### Additional work needed
 
 Here we list the things that the group realized needed significantly more attention in order to come to a conclusion.
+
+1. Some saw NETCONF for configuration as being successful in some larger-scale deployments.  Although this statement is true in some contexts, many operators indicated their need to rely on other forms of access to management their networks such as CLIs, expect scripts, and other protocols.  Work in this area is needed to bring NETCONF into significantly greater deployment and usability.  Some participants see RESTCONF as a significant step forward in this direction.
 
 --- back
 
