@@ -11,7 +11,7 @@
        The &quot;Next Era of Network Management Operations (NEMOPS)&quot; workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF. 
        Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily reflect IAB's views and positions. 
     " name="description">
-<meta content="xml2rfc 3.25.0" name="generator">
+<meta content="xml2rfc 3.26.0" name="generator">
 <meta content="YANG" name="keyword">
 <meta content="NETCONF" name="keyword">
 <meta content="RESTCONF" name="keyword">
@@ -19,7 +19,7 @@
 <meta content="RFC3535" name="keyword">
 <meta content="draft-iab-nemops-workshop-report-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.25.0
+  xml2rfc 3.26.0
     Python 3.12.8
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
@@ -1050,11 +1050,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">NEMOPS Workshop Report</td>
-<td class="right">January 2025</td>
+<td class="right">February 2025</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Hardaker &amp; Dhody</td>
-<td class="center">Expires 2 August 2025</td>
+<td class="center">Expires 17 August 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1067,12 +1067,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-iab-nemops-workshop-report-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-01-29" class="published">29 January 2025</time>
+<time datetime="2025-02-13" class="published">13 February 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-08-02">2 August 2025</time></dd>
+<dd class="expires"><time datetime="2025-08-17">17 August 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1120,7 +1120,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 2 August 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 17 August 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1463,7 +1463,6 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-3.4" class="section-number selfRef">3.4. </a><a href="#name-key-takeaways" class="section-name selfRef">Key Takeaways</a>
         </h3>
 <p id="section-3.4-1">At the end of the third day, the discussion turned to key takeaways that have high-level consensus which were live edited during the last discussion of the workshop. In the process of discussion, there were some realizations where additional work was also needed.<a href="#section-3.4-1" class="pilcrow">¶</a></p>
-<p id="section-3.4-2">[Note at this point, these are cut and pasted from the slides and not properly edited/cleaned/moved around]<a href="#section-3.4-2" class="pilcrow">¶</a></p>
 <div id="ecosystem-conclusions">
 <section id="section-3.4.1">
           <h4 id="name-ecosystem-conclusions">
@@ -1526,20 +1525,6 @@ analysis of when and how they work and have been successful.<a href="#section-3.
 </li>
             <li id="section-3.4.2-1.5">
               <p id="section-3.4.2-1.5.1">Polling-based solutions are still frequently deployed.  Push-based solutions are often desired but are not yet widely available.<a href="#section-3.4.2-1.5.1" class="pilcrow">¶</a></p>
-</li>
-            <li id="section-3.4.2-1.6">
-              <p id="section-3.4.2-1.6.1">False: Netconf for configuration has been successful in some larger-scale deployment<a href="#section-3.4.2-1.6.1" class="pilcrow">¶</a></p>
-<ol start="1" type="1" class="normal type-1" id="section-3.4.2-1.6.2">
-<li id="section-3.4.2-1.6.2.1">
-                  <p id="section-3.4.2-1.6.2.1.1">Let’s discuss this further on the list<a href="#section-3.4.2-1.6.2.1.1" class="pilcrow">¶</a></p>
-</li>
-                <li id="section-3.4.2-1.6.2.2">
-                  <p id="section-3.4.2-1.6.2.2.1">Service config?<a href="#section-3.4.2-1.6.2.2.1" class="pilcrow">¶</a></p>
-</li>
-              </ol>
-</li>
-            <li id="section-3.4.2-1.7">
-              <p id="section-3.4.2-1.7.1">False: Full device control and configuration frequently requires CLI and screen scraping<a href="#section-3.4.2-1.7.1" class="pilcrow">¶</a></p>
 </li>
           </ol>
 </section>
@@ -1620,6 +1605,11 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-1.4.1" class="p
 <a href="#section-3.4.5" class="section-number selfRef">3.4.5. </a><a href="#name-additional-work-needed" class="section-name selfRef">Additional work needed</a>
           </h4>
 <p id="section-3.4.5-1">Here we list the things that the group realized needed significantly more attention in order to come to a conclusion.<a href="#section-3.4.5-1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-3.4.5-2">
+<li id="section-3.4.5-2.1">
+              <p id="section-3.4.5-2.1.1">Some saw NETCONF for configuration as being successful in some larger-scale deployments.  Although this statement is true in some contexts, many operators indicated their need to rely on other forms of access to management their networks such as CLIs, expect scripts, and other protocols.  Work in this area is needed to bring NETCONF into significantly greater deployment and usability.  Some participants see RESTCONF as a significant step forward in this direction.<a href="#section-3.4.5-2.1.1" class="pilcrow">¶</a></p>
+</li>
+          </ol>
 </section>
 </div>
 </section>

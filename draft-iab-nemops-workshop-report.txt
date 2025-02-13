@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 2 August 2025                                   29 January 2025
+Expires: 17 August 2025                                 13 February 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -62,7 +62,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 2 August 2025.
+   This Internet-Draft will expire on 17 August 2025.
 
 Copyright Notice
 
@@ -516,9 +516,6 @@ Table of Contents
    discussion of the workshop.  In the process of discussion, there were
    some realizations where additional work was also needed.
 
-   [Note at this point, these are cut and pasted from the slides and not
-   properly edited/cleaned/moved around]
-
 3.4.1.  Ecosystem conclusions
 
    These takeaways try to document the general thinking of the
@@ -564,16 +561,6 @@ Table of Contents
    5.  Polling-based solutions are still frequently deployed.  Push-
        based solutions are often desired but are not yet widely
        available.
-
-   6.  False: Netconf for configuration has been successful in some
-       larger-scale deployment
-
-       1.  Let’s discuss this further on the list
-
-       2.  Service config?
-
-   7.  False: Full device control and configuration frequently requires
-       CLI and screen scraping
 
 3.4.3.  Modeling conclusions
 
@@ -626,6 +613,15 @@ Table of Contents
 
    Here we list the things that the group realized needed significantly
    more attention in order to come to a conclusion.
+
+   1.  Some saw NETCONF for configuration as being successful in some
+       larger-scale deployments.  Although this statement is true in
+       some contexts, many operators indicated their need to rely on
+       other forms of access to management their networks such as CLIs,
+       expect scripts, and other protocols.  Work in this area is needed
+       to bring NETCONF into significantly greater deployment and
+       usability.  Some participants see RESTCONF as a significant step
+       forward in this direction.
 
 4.  Informative References
 
