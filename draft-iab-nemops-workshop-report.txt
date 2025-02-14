@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 17 August 2025                                 13 February 2025
+Expires: 18 August 2025                                 14 February 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -15,19 +15,19 @@ Expires: 17 August 2025                                 13 February 2025
 Abstract
 
    The "Next Era of Network Management Operations (NEMOPS)" workshop was
-   convened by the Internet Architecture Board (IAB) on December 3-5,
+   convened by the Internet Architecture Board (IAB) from December 3-5,
    2024 as a three-day online meeting.  It builds on a previous 2002
    workshop, the outcome of which was documented in RFC 3535 identifying
    14 operator requirements for consideration in future network
    management protocol design and related data models, along with some
    recommendations for the IETF.  Much has changed in the Internet’s
    operation and technological foundations since then.  The NEMOPS
-   workshop reviewed the past outcomes and identified any operational
+   workshop reviewed the past outcomes and discussed any operational
    barriers that prevented these technologies from being widely
-   implemented.  It sketched new requirements for future network
-   management operations collaboratively with the industry, network
-   operators and protocol engineers, and developed a suggested action
-   plan and recommendations for the IETF.
+   implemented.  With the industry, network operators and protocol
+   engineers working in collaboration, the workshop developed a
+   suggested plan of action and network management recommendations for
+   the IETF and IRTF.
 
    Note that this document is a report on the proceedings of the
    workshop.  The views and positions documented in this report were
@@ -62,7 +62,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 17 August 2025.
+   This Internet-Draft will expire on 18 August 2025.
 
 Copyright Notice
 
@@ -114,20 +114,19 @@ Table of Contents
 1.  Introduction
 
    The IAB organized a workshop in 2002 to establish a dialog between
-   network operators and protocol developers, and to guide IETF when
-   working on network management protocols.  The outcome of that
-   workshop was documented in the "Overview of the 2002 IAB Network
-   Management Workshop" [RFC3535] which identified 14 operator
-   requirements for consideration in future network management protocol
-   design and related data models, along with some recommendations for
-   the IETF.
+   network operators and protocol developers, and to guide the IETF's
+   work on network management protocols.  The outcome of that workshop
+   was documented in the "Overview of the 2002 IAB Network Management
+   Workshop" [RFC3535] which identified 14 operator requirements and 11
+   recommendations for consideration in future network management
+   protocol design and related data models within the IETF.
 
    Those requirements were instrumental in developing first the NETCONF
    protocol (in the NETCONF Working Group) [RFC6241], the associated
    YANG data modeling language (in the NETMOD Working Group) [RFC7950],
    RESTCONF [RFC8040], and most recently CORECONF [I-D.ietf-core-comi].
 
-   The recent NEMOPS IAB workshop focussed on the following key topics:
+   The recent NEMOPS IAB workshop focussed on the following key tasks:
 
    *  Review the outcomes and results of the 2002 workshop (current
       deployments, state of the art) and identify any operational
@@ -162,35 +161,39 @@ Table of Contents
 
 2.  Outreach and Survey
 
-   There has been a noticeable decline in the direct participation of
-   network operators in the IETF and its associated discussions on
-   network management protocols and operations.  Many operators
-   prioritize operational conferences over standards development
-   organizations (SDOs), such as RIPE, NANOG, APRICOT, LACNIC, AutoConn,
-   etc.
+   There has been a noticeable decline, since the last workshop, in the
+   direct participation of network operators in the IETF and its
+   associated discussions on network management protocols and
+   operations.  Many operators prioritize operational conferences such
+   as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc over attending
+   standards development organizations (SDOs) like the IETF.
 
    To address this, the IAB workshop's Program Committee (PC) planned
    outreach initiatives to foster discussions and gather interest by
-   engaging with operators at these venues and conducting information/
-   requirement-gathering sessions.  Participants were encouraged to
-   submit 'position papers' or 'expressions of interest' to join the
-   workshop.  Additionally, a survey [SURVEY] was conducted to collect
-   valuable insights to inform the workshop.
+   engaging with operators at these operational venues and conducting
+   information/requirement-gathering sessions.  Participants were
+   encouraged to submit "position papers" or "expressions of interest"
+   to join the workshop.  Additionally, a [SURVEY] was conducted to
+   collect valuable insights to inform the workshop.
 
-   The PC continues to engage with network operators after the workshop
+   The PC continued to engage with network operators after the workshop
    to facilitate information sharing and gather their feedback, helping
    to shape the next steps and outcomes of the workshop.
 
 3.  Workshop Scope and Discussion
 
-   The workshop was organized across three days with all-group
-   discussion slots, one per day.  The following topic areas were
-   identified and the program committee organized paper submissions into
-   three main themes for each of the three discussion slots.  During
-   each discussion, those papers were presented sequentially with open
-   discussion held at the end of each day.  On the last day, a
+   The workshop was organized across three days with all participants
+   contributing to one discussion per day.  The workshop was organized
+   around three topic areas: "Session I: the Past (lookback and
+   analysis)" (Section 3.1), "Session II: Present (identified problems
+   and requirements)" (Section 3.2), and "Session III: Future (possible
+   solutions, recommendations and next steps)" (Section 3.3).  The
+   program committee organized the paper submissions to fit these three
+   main themes in order to drive discussion during each of the slots.
+   During each discussion, the papers were presented sequentially and an
+   open discussion was held afterward.  On the last day, an additional
    discussion on the key takeaways from the workshop and possible next
-   steps took place.
+   steps took place (Section 3.4).
 
 3.1.  Session I: Past (lookback, analysis)
 

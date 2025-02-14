@@ -8,7 +8,7 @@
 <meta content="Wes Hardaker" name="author">
 <meta content="Dhruv Dhody" name="author">
 <meta content="
-       The &quot;Next Era of Network Management Operations (NEMOPS)&quot; workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF. 
+       The &quot;Next Era of Network Management Operations (NEMOPS)&quot; workshop was convened by the Internet Architecture Board (IAB) from December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and discussed any operational barriers that prevented these technologies from being widely implemented. With the industry, network operators and protocol engineers working in collaboration, the workshop developed a suggested plan of action and network management recommendations for the IETF and IRTF. 
        Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily reflect IAB's views and positions. 
     " name="description">
 <meta content="xml2rfc 3.26.0" name="generator">
@@ -1054,7 +1054,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Hardaker &amp; Dhody</td>
-<td class="center">Expires 17 August 2025</td>
+<td class="center">Expires 18 August 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1067,12 +1067,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-iab-nemops-workshop-report-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-02-13" class="published">13 February 2025</time>
+<time datetime="2025-02-14" class="published">14 February 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-08-17">17 August 2025</time></dd>
+<dd class="expires"><time datetime="2025-08-18">18 August 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1087,7 +1087,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">Report from the IAB Workshop on the Next Era of Network Management Operations (NEMOPS)</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) from December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and discussed any operational barriers that prevented these technologies from being widely implemented. With the industry, network operators and protocol engineers working in collaboration, the workshop developed a suggested plan of action and network management recommendations for the IETF and IRTF.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 <p id="section-abstract-2">Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily reflect IAB's views and positions.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
@@ -1120,7 +1120,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 17 August 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 18 August 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1265,9 +1265,9 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="name-introduction">
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
-<p id="section-1-1">The IAB organized a workshop in 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span> which identified 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF.<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-1">The IAB organized a workshop in 2002 to establish a dialog between network operators and protocol developers, and to guide the IETF's work on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span> which identified 14 operator requirements and 11 recommendations for consideration in future network management protocol design and related data models within the IETF.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <p id="section-1-2">Those requirements were instrumental in developing first the NETCONF protocol (in the NETCONF Working Group) <span>[<a href="#RFC6241" class="cite xref">RFC6241</a>]</span>, the associated YANG data modeling language (in the NETMOD Working Group) <span>[<a href="#RFC7950" class="cite xref">RFC7950</a>]</span>, RESTCONF <span>[<a href="#RFC8040" class="cite xref">RFC8040</a>]</span>, and most recently CORECONF <span>[<a href="#I-D.ietf-core-comi" class="cite xref">I-D.ietf-core-comi</a>]</span>.<a href="#section-1-2" class="pilcrow">¶</a></p>
-<p id="section-1-3">The recent NEMOPS IAB workshop focussed on the following key topics:<a href="#section-1-3" class="pilcrow">¶</a></p>
+<p id="section-1-3">The recent NEMOPS IAB workshop focussed on the following key tasks:<a href="#section-1-3" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-1-4.1">
           <p id="section-1-4.1.1">Review the outcomes and results of the 2002 workshop (current deployments, state of the art) and identify any operational barriers that prevent these technologies from being widely implemented (limitations, hurdles).<a href="#section-1-4.1.1" class="pilcrow">¶</a></p>
@@ -1296,9 +1296,9 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="name-outreach-and-survey">
 <a href="#section-2" class="section-number selfRef">2. </a><a href="#name-outreach-and-survey" class="section-name selfRef">Outreach and Survey</a>
       </h2>
-<p id="section-2-1">There has been a noticeable decline in the direct participation of network operators in the IETF and its associated discussions on network management protocols and operations. Many operators prioritize operational conferences over standards development organizations (SDOs), such as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc.<a href="#section-2-1" class="pilcrow">¶</a></p>
-<p id="section-2-2">To address this, the IAB workshop's Program Committee (PC) planned outreach initiatives to foster discussions and gather interest by engaging with operators at these venues and conducting information/requirement-gathering sessions. Participants were encouraged to submit 'position papers' or 'expressions of interest' to join the workshop. Additionally, a survey <span>[<a href="#SURVEY" class="cite xref">SURVEY</a>]</span> was conducted to collect valuable insights to inform the workshop.<a href="#section-2-2" class="pilcrow">¶</a></p>
-<p id="section-2-3">The PC continues to engage with network operators after the workshop to facilitate information sharing and gather their feedback, helping to shape the next steps and outcomes of the workshop.<a href="#section-2-3" class="pilcrow">¶</a></p>
+<p id="section-2-1">There has been a noticeable decline, since the last workshop, in the direct participation of network operators in the IETF and its associated discussions on network management protocols and operations. Many operators prioritize operational conferences such as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc over attending standards development organizations (SDOs) like the IETF.<a href="#section-2-1" class="pilcrow">¶</a></p>
+<p id="section-2-2">To address this, the IAB workshop's Program Committee (PC) planned outreach initiatives to foster discussions and gather interest by engaging with operators at these operational venues and conducting information/requirement-gathering sessions. Participants were encouraged to submit "position papers" or "expressions of interest" to join the workshop. Additionally, a <span>[<a href="#SURVEY" class="cite xref">SURVEY</a>]</span> was conducted to collect valuable insights to inform the workshop.<a href="#section-2-2" class="pilcrow">¶</a></p>
+<p id="section-2-3">The PC continued to engage with network operators after the workshop to facilitate information sharing and gather their feedback, helping to shape the next steps and outcomes of the workshop.<a href="#section-2-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="workshop-scope-and-discussion">
@@ -1306,8 +1306,9 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="name-workshop-scope-and-discussi">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-workshop-scope-and-discussi" class="section-name selfRef">Workshop Scope and Discussion</a>
       </h2>
-<p id="section-3-1">The workshop was organized across three days with all-group discussion slots, one per day. The following topic areas were identified and the program committee organized paper submissions into three main themes for each of the three discussion slots. During each discussion, those papers were presented sequentially with open discussion held at the end of each day. On the last day, a discussion on the key takeaways from the workshop and possible next steps took place.<a href="#section-3-1" class="pilcrow">¶</a></p>
-<div id="session-i-past-lookback-analysis">
+<p id="section-3-1">The workshop was organized across three days with all participants contributing to one discussion per day. The workshop was organized around three topic areas: "Session I: the Past (lookback and analysis)" (<a href="#past" class="auto internal xref">Section 3.1</a>), "Session II: Present (identified problems and requirements)" (<a href="#present" class="auto internal xref">Section 3.2</a>), and "Session III: Future (possible solutions, recommendations and next steps)" (<a href="#future" class="auto internal xref">Section 3.3</a>).
+The program committee organized the paper submissions to fit these three main themes in order to drive discussion during each of the slots. During each discussion, the papers were presented sequentially and an open discussion was held afterward. On the last day, an additional discussion on the key takeaways from the workshop and possible next steps took place (<a href="#key" class="auto internal xref">Section 3.4</a>).<a href="#section-3-1" class="pilcrow">¶</a></p>
+<div id="past">
 <section id="section-3.1">
         <h3 id="name-session-i-past-lookback-ana">
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-session-i-past-lookback-ana" class="section-name selfRef">Session I: Past (lookback, analysis)</a>
@@ -1341,7 +1342,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </div>
 </section>
 </div>
-<div id="session-ii-present-identified-problems-requirements">
+<div id="present">
 <section id="section-3.2">
         <h3 id="name-session-ii-present-identifi">
 <a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-session-ii-present-identifi" class="section-name selfRef">Session II: Present (identified problems &amp; requirements)</a>
@@ -1432,7 +1433,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </div>
 </section>
 </div>
-<div id="session-iii-future-possible-solutions-recommendations-and-next-steps">
+<div id="future">
 <section id="section-3.3">
         <h3 id="name-session-iii-future-possible">
 <a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-session-iii-future-possible" class="section-name selfRef">Session III: Future (possible solutions, recommendations and next steps)</a>
