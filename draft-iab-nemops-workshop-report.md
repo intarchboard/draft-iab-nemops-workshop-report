@@ -339,7 +339,7 @@ informative:
         name: Michael Scharf
     date: November 2024
 --- abstract
-The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) on December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and identified any operational barriers that prevented these technologies from being widely implemented. It sketched new requirements for future network management operations collaboratively with the industry, network operators and protocol engineers, and developed a suggested action plan and recommendations for the IETF.
+The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) from December 3-5, 2024 as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535 identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and discussed any operational barriers that prevented these technologies from being widely implemented. With the industry, network operators and protocol engineers working in collaboration, the workshop developed a suggested plan of action and network management recommendations for the IETF and IRTF.
 
 Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily reflect IAB's views and positions.
 
@@ -347,11 +347,11 @@ Note that this document is a report on the proceedings of the workshop.  The vie
 
 # Introduction
 
-The IAB organized a workshop in 2002 to establish a dialog between network operators and protocol developers, and to guide IETF when working on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" {{RFC3535}} which identified 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF.
+The IAB organized a workshop in 2002 to establish a dialog between network operators and protocol developers, and to guide the IETF's work on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" {{RFC3535}} which identified 14 operator requirements and 11 recommendations for consideration in future network management protocol design and related data models within the IETF.
 
 Those requirements were instrumental in developing first the NETCONF protocol (in the NETCONF Working Group) {{RFC6241}}, the associated YANG data modeling language (in the NETMOD Working Group) {{RFC7950}}, RESTCONF {{RFC8040}}, and most recently CORECONF {{I-D.ietf-core-comi}}.
 
-The recent NEMOPS IAB workshop focussed on the following key topics:
+The recent NEMOPS IAB workshop focussed on the following key tasks:
 
 * Review the outcomes and results of the 2002 workshop (current deployments, state of the art) and identify any operational barriers that prevent these technologies from being widely implemented (limitations, hurdles).
 * Sketch new requirements for future network management operations in a collaborative manner with the industry, network operators, and protocol engineers.
@@ -367,16 +367,18 @@ Furthermore, the content of the report comes from presentations given by worksho
 
 # Outreach and Survey {#outreach}
 
-There has been a noticeable decline in the direct participation of network operators in the IETF and its associated discussions on network management protocols and operations. Many operators prioritize operational conferences over standards development organizations (SDOs), such as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc.
+There has been a noticeable decline, since the last workshop, in the direct participation of network operators in the IETF and its associated discussions on network management protocols and operations. Many operators prioritize operational conferences such as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc over attending standards development organizations (SDOs) like the IETF.
 
-To address this, the IAB workshop's Program Committee (PC) planned outreach initiatives to foster discussions and gather interest by engaging with operators at these venues and conducting information/requirement-gathering sessions. Participants were encouraged to submit 'position papers' or 'expressions of interest' to join the workshop. Additionally, a survey [SURVEY] was conducted to collect valuable insights to inform the workshop.
+To address this, the IAB workshop's Program Committee (PC) planned outreach initiatives to foster discussions and gather interest by engaging with operators at these operational venues and conducting information/requirement-gathering sessions. Participants were encouraged to submit "position papers" or "expressions of interest" to join the workshop. Additionally, a [SURVEY] was conducted to collect valuable insights to inform the workshop.
 
-The PC continues to engage with network operators after the workshop to facilitate information sharing and gather their feedback, helping to shape the next steps and outcomes of the workshop.
+The PC continued to engage with network operators after the workshop to facilitate information sharing and gather their feedback, helping to shape the next steps and outcomes of the workshop.
 
 # Workshop Scope and Discussion
-The workshop was organized across three days with all-group discussion slots, one per day. The following topic areas were identified and the program committee organized paper submissions into three main themes for each of the three discussion slots. During each discussion, those papers were presented sequentially with open discussion held at the end of each day. On the last day, a discussion on the key takeaways from the workshop and possible next steps took place.
 
-## Session I: Past (lookback, analysis)
+The workshop was organized across three days with all participants contributing to one discussion per day. The workshop was organized around three topic areas: "Session I: the Past (lookback and analysis)" ({{past}}), "Session II: Present (identified problems and requirements)" ({{present}}), and "Session III: Future (possible solutions, recommendations and next steps)" ({{future}}).
+The program committee organized the paper submissions to fit these three main themes in order to drive discussion during each of the slots. During each discussion, the papers were presented sequentially and an open discussion was held afterward. On the last day, an additional discussion on the key takeaways from the workshop and possible next steps took place ({{key}}).
+
+## Session I: Past (lookback, analysis) {#past}
 
 The first day of the workshop focused on reflecting on the past by reviewing the evolution of network management since the 2002 workshop, analyzing both the successes and the challenges encountered along the way. The presentations covered a range of topics, including reflections on the history of network management, lessons learned from widely used tools, practices in constrained networks, and the need to reconsider how network management models and protocols are standardized within the IETF.
 
@@ -396,7 +398,7 @@ Drawing from the experience of OpenConfig {{OPENCONFIG}}, {{SHAKIR}} emphasized 
 
 The open discussion highlighted the divergence between vendor implementations of YANG models and what is accessible via it, particularly when compared to CLI. Questions about how to implement the fast iterations and rapid changes characteristic within the IETF standards process, particularly in comparison to the approach used by OpenConfig. Common challenges identified included lack of tooling, performance issues at scale, the steep learning curve for network management protocols/models/tools, initial difficulty in moving away from CLI, and the backward compatibility of models (versioning). Some participants suggested that the IETF should focus on system-level APIs that address specific problems. Additionally, the lack of simple tools for smaller networks operating under tight timelines and budgets was emphasized. A key question raised was whether the proliferation of protocols and languages complicates adoption, and if converging on a single approach would improve adoption. The existence of multiple schemas and protocols beyond NETCONF, such as BMP and IPFIX, to address network management challenges beyond configuration is an established reality. What is required is a mechanism to interconnect and harmonize these schemas to provide a cohesive and comprehensive understanding of the data.
 
-## Session II: Present (identified problems & requirements)
+## Session II: Present (identified problems & requirements) {#present}
 
 The second day of the workshop concentrated on challenges and emerging requirements for future network management operations. The presentation emphasized the importance of validation, observability, automation, and the need for agile, incremental development of both network models and management protocols. A compilation of new requirements is being maintained in {{I-D.boucadair-nmop-rfc3535-20years-later}}. The final presentation of the day provided a summary of the survey results and operator feedback gathered from outreach events.
 
@@ -437,7 +439,7 @@ As outlined in {{outreach}}, the workshop program committee organized outreach i
 
 The open discussion featured feedback from implementers, highlighting the difficulty in moving to YANG and mapping to vendor implementations and how divergence in the implementations creates complexity and necessitates workarounds. It is necessary to support standard models alongside native vendor models, which adds complexity and leads to confusion. Challenges were highlighted in mapping standard models to internal device models and legacy devices, with some cases where mapping is not feasible at all (device-specific knobs). The conversation also emphasized the importance of developing open-source reference implementations, compliance and interoperability testing for vendors, and better quality of vendor implementation and documentation. The implementation and support of multiple models (IETF, OpenConfig, and native) is an unavoidable reality in network management. Additionally, since the services offered by operators vary significantly, reaching a consensus on a common service model within the IETF can be a challenging task. It was also noted that the IETF should expedite the publication of standards as well as consider gating them with multiple interoperable implementations.
 
-## Session III: Future (possible solutions, recommendations and next steps)
+## Session III: Future (possible solutions, recommendations and next steps) {#future}
 
 The final day of the workshop centred on exploring potential future solutions and identifying key takeaways, recommendations, and next steps. Initial presentations covered topics such as the use of the Knowledge Graph Framework and concrete suggestions for future directions. To conclude the workshop, the chairs worked to summarize the key takeaways (see {{key}}) that garnered consensus among the participants.
 
