@@ -411,7 +411,7 @@ The second day of the workshop concentrated on challenges and emerging requireme
 
 Using YANG-Push as an example, {{GRAF}} highlighted how standards development often fails to align with the needs of network operators, the constraints of network vendors, and the integration requirements. Most critically, it lacks an agile, incremental development process. The presentation advocated for adopting an iterative approach to standards development, focusing on delivering minimal viable products as part of the process.
 
-{{CONTRERAS}} emphasized reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through {{I-D.boucadair-nmop-rfc3535-20years-later}}, leveraging feedback and discussions from the workshop. Some key requirements and suggestions highlighted were:
+{{CONTRERAS}} emphasized reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through {{I-D.boucadair-nmop-rfc3535-20years-later}}, leveraging feedback and discussions from the workshop. Some key requirements, suggestions and observations were highlighted:
 
 * Network software implementations can only happen with a strong, committed standardization effort, complemented by active involvement in opensource projects that facilitate access to code.
 * Need to rationalize the device model space and avoid redundant efforts. Unlike service and network models, IETF-defined device models are not widely implemented.
@@ -422,7 +422,7 @@ Using YANG-Push as an example, {{GRAF}} highlighted how standards development of
 * Consider programmatic approaches to ensure lossless mappings between service/network/device data models.
 * Consider approaches to ensure reuse/consistent data structure across various NM segments.
 * Some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness.
-* Necessity to handle the heterogeneity of data, configuration, and network management/requirements. Resolving such issues could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.
+* There is a necessity to handle the heterogeneity of data, configuration, and network management/requirements. Resolving such issues could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.
 * Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.
 * Need to ease the integration of low-level/network-oriented solutions with native "IT tooling"
 * Ease exposure of libraries and host tools (e.g., yangkit) to ease integration.
@@ -438,29 +438,29 @@ As outlined in {{outreach}}, the workshop program committee organized outreach i
 
 ### Discussion
 
-The open discussion featured feedback from implementers, highlighting the difficulty in moving to YANG and mapping to vendor implementations and how divergence in the implementations creates complexity and necessitates workarounds. It is necessary to support standard models alongside native vendor models, which adds complexity and leads to confusion. Challenges were highlighted in mapping standard models to internal device models and legacy devices, with some cases where mapping is not feasible at all (device-specific knobs). The conversation also emphasized the importance of developing open-source reference implementations, compliance and interoperability testing for vendors, and better quality of vendor implementation and documentation. The implementation and support of multiple models (IETF, OpenConfig, and native) is an unavoidable reality in network management. Additionally, since the services offered by operators vary significantly, reaching a consensus on a common service model within the IETF can be a challenging task. It was also noted that the IETF should expedite the publication of standards as well as consider gating them with multiple interoperable implementations.
+The Session II open discussion featured feedback from implementers, highlighting the difficulty in moving to YANG and mapping to vendor implementations and how divergence in the implementations creates complexity and necessitates workarounds. Implementations need to support standard models alongside native vendor models, which adds complexity and leads to confusion. Challenges were highlighted in mapping standard models to internal device models and legacy devices, with some cases where mapping is not feasible at all (device-specific knobs). The conversation also emphasized the importance of developing open-source reference implementations, compliance and interoperability testing for vendors, and better quality of vendor implementation and documentation. The implementation and support of multiple models (IETF, OpenConfig, and native) is an unavoidable reality in network management. Additionally, since the services offered by operators vary significantly, reaching a consensus on a common service model within the IETF can be a challenging task. It was also noted that the IETF should expedite the publication of standards as well as consider gating them with multiple interoperable implementations.
 
 ## Session III: Future (possible solutions, recommendations and next steps) {#future}
 
-The final day of the workshop centred on exploring potential future solutions and identifying key takeaways, recommendations, and next steps. Initial presentations covered topics such as the use of the Knowledge Graph Framework and concrete suggestions for future directions. To conclude the workshop, the chairs worked to summarize the key takeaways (see {{key}}) that garnered consensus among the participants.
+The final day of the workshop centred on exploring potential future solutions and identifying key takeaways, recommendations, and next steps. At the end of day three, to conclude the workshop the chairs worked to summarize the key takeaways (see {{key}}) that garnered consensus among the participants.
 
 ### Future Directions
 
-{{CLAISE}} highlighted the challenges of integrating data models across different silos, protocols, and data structures, emphasizing the need for a machine-readable approach to expose semantics. Additionally, the related tools being developed and showcased in the Hackathon, along with the various challenges in mapping across protocols and models, were discussed. A potential solution was proposed using a knowledge graph based on the Semantic Web Stack, along with the need to define a basic ontology for the networking domain in an iterative manner (outside of RFCs). {{WATSEN}} recommends prioritizing the following areas and made four recommendations: (1) RESTCONF+JSON (including YANG-Push Lite) as a single protocol beyond network management, (2) Network Management Datastore Architecture (NMDA) model, (3) Data Model Adapters (off-box so that common standard models can be developed in parallel to the required device "native" models), and (4) Device Protocol Adapters (with RESTCONF-like NBI for a common shared-by-all repository). {{WILTON}} recommends reducing unnecessary complexity, delivering timely solutions, fostering open collaboration between vendors and operators, prioritizing simplicity, and converging to a single model/protocol (though that is hard to do). Practical suggestions include focusing on YANG-Push Lite, introducing YANG 2.0 through incremental updates, developing NETCONFv2, and managing IETF YANG models as code or APIs rather than embedding them within RFCs.
+{{CLAISE}} highlighted the challenges of integrating data models across different silos, protocols, and data structures, emphasizing the need for a machine-readable approach to expose semantics. Additionally, the related tools being developed and showcased in the Hackathon (XXX: which hackathon?), along with the various challenges in mapping across protocols and models, were discussed. A potential solution was proposed using a knowledge graph based on the Semantic Web Stack, along with the need to define a basic ontology for the networking domain in an iterative manner (outside of RFCs). {{WATSEN}} recommends prioritizing the following areas in four recommendations: (1) using RESTCONF+JSON (including YANG-Push Lite) as a single protocol beyond network management, (2) defining a Network Management Datastore Architecture (NMDA) model, (3) creating data model adapters (off-box so that common standard models can be developed in parallel to the required device "native" models), and (4) defining device protocol adapters (with RESTCONF-like NBI for a common shared-by-all repository). {{WILTON}} recommends reducing unnecessary complexity, delivering timely solutions, fostering open collaboration between vendors and operators, prioritizing simplicity, and converging to a single model/protocol (though this was discussed as difficult to accomplish). Practical suggestions include focusing on YANG-Push Lite, introducing YANG 2.0 through incremental updates, developing NETCONFv2, and managing IETF YANG models as code or APIs rather than embedding them within RFCs.
 
 ### Discussion
 
-The open discussion delved into the absence of NMDA in OpenConfig and if it is needed and its complexity, the history of introducing gNMI in the IETF (whether RESTCONF offer any advantage over it), and the challenges of building consensus on the common ground takes time (without shortcutting the consensus building process) and converging on a single protocol (and it is practical). Emphasize off-box adapters, allowing vendors to continue innovating and developing native models rapidly. Meanwhile, standard model mapping to native models can be maintained in a common repository, enabling the community to assess coverage and alignment. Further, the discussion explored alternative approaches to YANG models within the IETF outside of RFCs, such as leveraging GitHub to accelerate the process (along with the challenges associated with it), living documents within the WG charter, and supporting academia to take up the open source efforts such as device adapters. The discussion emphasized the need for process experimentation, particularly at the working group or area level where we could have consensus among the YANG/OPS community on how we iterate in WGs without IETF/RFC-wide changes but making sure the operators are involved in the process. Is YANG applicable beyond network management? Can applications adopt YANG as a modelling language to define their services?
+The open discussion delved into the absence of NMDA in OpenConfig and if the resulting complexity it is needed, the history of introducing gNMI in the IETF (whether RESTCONF offers any advantage over it), and the challenges that building consensus on common ground takes time (without short-cutting the consensus building process) and practicality of converging on a single protocol (and it is practical). Emphasize off-box adapters, allowing vendors to continue innovating and developing native models rapidly. One suggestion that attracted a lot of discussion centered on developing a standard model mapping to native models that could be maintained in a common repository, enabling the community to assess coverage and alignment. Further, the discussion explored alternative approaches to YANG models within the IETF but outside of RFCs, such as leveraging GitHub to accelerate the process (along with the challenges associated with it), living documents within the WG charter, and supporting academia to take up the open source efforts such as device adapters. The discussion emphasized the need for process experimentation, particularly at the working group or area level where we could have consensus among the YANG/OPS community on how we iterate in WGs without IETF/RFC-wide changes but making sure the operators are involved in the process. Conversation ensued around questions asked such as "Is YANG applicable beyond network management?" and "Can applications adopt YANG as a modelling language to define their services?"
 
-Some topics absent from the workshop discussions included tooling (what is currently missing) and strategies to support tool development (who pays, who develops, who maintains). The primary focus of the discussion was on YANG and NETCONF/RESTCONF, while several other network management protocols and techniques currently used received little attention during the workshop. The discussion on future directions prioritized improving existing solutions rather than introducing entirely new ones (such as enabling intelligence in network management). Some key recommendations made by operators during outreach {{outreach}} are listed at {{recommendations}}.
+Some topics absent from the workshop discussions included tooling (what is currently missing) and strategies to support tool development (who pays, who develops, who maintains). The primary focus of the discussion was on YANG and NETCONF/RESTCONF, while several other network management protocols and techniques currently used received less attention during the workshop. The discussion on future directions prioritized improving existing solutions rather than introducing entirely new ones (such as enabling intelligence in network management). Some key recommendations made by operators during outreach {{outreach}} are listed in {{recommendations}}.
 
 ## Key Takeaways {#key}
 
-At the end of the third day, the discussion turned to key takeaways that have high-level consensus which were live edited during the last discussion of the workshop. In the process of discussion, there were some realizations where additional work was also needed.
+At the end of the third day, the discussion turned to key takeaways that have high-level consensus.  These were live edited during the last discussion of the workshop and anything that did not reach wide consensus was moved into a "future considerations" list ({{workneeded}}).
 
 ### Ecosystem conclusions
 
-These takeaways try to document the general thinking of the participants with respect to the entire Network Management ecosystem as it exists today.
+The following takeaways try to document the general thinking of the participants with respect to the entire Network Management ecosystem as it exists today.
 
 1. The current network management protocols, models and tools still
    fail the ‘ease of use’ requirement.  Participants noted that the
@@ -476,8 +476,8 @@ These takeaways try to document the general thinking of the participants with re
 1. Transitioning between network management frameworks is challenging,
    just like it is for transitioning between other protocols like IPv4
    to IPv6.
-1. Model-driven network management is generally a success where it is
-   implemented and possible to use.
+1. Model-driven network management is generally a success where it has been
+   implemented and is possible to use.
 1. More easily usable network management tools for the operators are
    needed.  The lack of open-source tools is seen as a barrier to
    adoption.  Tools need good use cases, example flows and better
@@ -485,32 +485,36 @@ These takeaways try to document the general thinking of the participants with re
 
 ### Protocol conclusions
 
+The following conclusions came while discussing Network Management protocols more specifically.
+
 1. Netconf and YANG are not used much for monitoring tasks.
 1. Netconf and YANG do not have full coverage on many devices.
-1. Polling-based solutions are still frequently deployed.
-1. Full coverage of NetConf support on devices does not exist today.
 1. Polling-based solutions are still frequently deployed.  Push-based solutions are often desired but are not yet widely available.
 
 ### Modeling conclusions
 
+The following conclusions came while discussing Network Management modeling more specifically.
+
 1. Some YANG models can become too complex, though not as a fault of
-   the language.
+   the language itself.
 1. Multi-vendor compatibility support is required.
 1. Even vendor-specific features, not just standardized protocol
-   features, need to be exposed through network management protocols
+   features, need to be exposed through network management models and protocols
    for a network management ecosystem to be viable.
 1. Greater support for service-level modeling is needed.  Device level
    modeling can be a building block to achieve a sufficient
-   service-level model but is not a complete solution by itself.
+   service-level model, but is not a complete solution by itself.
 1. Network configuration needs to be verifiable to ensure any
    potential changes can be accepted by devices.  Model translation
    adapters (likely performed on the management station not the end
    device) may be the best path forward to simultaneously achieve this
-   and a goal of supporting one configuration set across a diversity
+   and the goal of supporting one configuration set across a diversity
    of devices with different internal models.
-1. Full coverage of YANG models on all devices does not exist today.
 
 ### Standardization conclusions
+
+The following conclusions came while discussing the best ways to standardize network management protocols and associated models.
+
 
 1. A methodology of rapid model development procedures is needed to
    ensure model deployment can keep pace with new feature deployment.
@@ -529,11 +533,11 @@ These takeaways try to document the general thinking of the participants with re
    vendors.  Vendors and operators will need to work together to
    ensure these goals are appropriately met.
 
-### Additional work needed
+### Additional work needed {#workneeded}
 
 Here we list the things that the group realized needed significantly more attention in order to come to a conclusion.
 
-1. Some saw NETCONF for configuration as being successful in some larger-scale deployments.  Although this statement is true in some contexts, many operators indicated their need to rely on other forms of access to management their networks such as CLIs, expect scripts, and other protocols.  Work in this area is needed to bring NETCONF into significantly greater deployment and usability.  Some participants see RESTCONF as a significant step forward in this direction.
+1. Some saw NETCONF for configuration as being successful in some larger-scale deployments.  Although this statement is true in some contexts, many operators indicated their need to rely on other forms of access to management their networks such as CLIs, expect scripts, and other protocols.  Work in this area is needed to bring NETCONF into significantly greater deployment and usability.  Some participants see RESTCONF as a significant step forward in solving this dilemma.
 
 --- back
 
