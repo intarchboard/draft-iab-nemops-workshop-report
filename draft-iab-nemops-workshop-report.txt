@@ -191,7 +191,7 @@ Table of Contents
    program committee organized the paper submissions to fit these three
    main themes in order to drive discussion during each of the slots.
    During each discussion, the papers were presented sequentially and an
-   open discussion was held afterward.  On the last day, an additional
+   open discussion was held afterwards.  On the last day, an additional
    discussion on the key takeaways from the workshop and possible next
    steps took place (Section 3.4).
 
@@ -212,7 +212,7 @@ Table of Contents
    evolution of network management away from CLI/SNMP/MIB technologies,
    focusing on the context and key outcomes of the previous workshop, an
    assessment of the current state of network management as a whole, and
-   an acknowledgment of some regrets in how network management
+   an acknowledgement of some regrets in how network management
    technologies developed in the last two decades (such as XML as the
    data representation format).  [SCHONWALDER] emphasized the need to
    shift the focus from device-level configuration to network and
@@ -344,7 +344,8 @@ Table of Contents
 
    *  Network software implementations can only happen with a strong,
       committed standardization effort, complemented by active
-      involvement in opensource projects that facilitate access to code.
+      involvement in open-source projects that facilitate access to
+      code.
 
    *  Need to rationalize the device model space and avoid redundant
       efforts.  Unlike service and network models, IETF-defined device
@@ -357,7 +358,7 @@ Table of Contents
       appropriate justifications, that will help foster more
       implementations that meet operators’ needs.
 
-   *  There is need for a reference specification to translate YANG-
+   *  There is a need for a reference specification to translate YANG-
       based data into the knowledge graph (KG).
 
    *  Consider approaches to help YANG models scale.
@@ -467,7 +468,7 @@ Table of Contents
    domain in an iterative manner (outside of RFCs).  [WATSEN] recommends
    prioritizing the following areas in four recommendations: (1) using
    RESTCONF+JSON (including YANG-Push Lite) as a single protocol beyond
-   network management, (2) defining a Network Management Datastore
+   network management, (2) utilizing Network Management Datastore
    Architecture (NMDA) model, (3) creating data model adapters (off-box
    so that common standard models can be developed in parallel to the
    required device "native" models), and (4) defining device protocol
@@ -483,30 +484,30 @@ Table of Contents
 
 3.3.2.  Discussion
 
-   The open discussion delved into the absence of NMDA in OpenConfig and
-   if the resulting complexity it is needed, the history of introducing
-   gNMI in the IETF (whether RESTCONF offers any advantage over it), and
-   the challenges that building consensus on common ground takes time
-   (without short-cutting the consensus building process) and
-   practicality of converging on a single protocol (and it is
-   practical).  Emphasize off-box adapters, allowing vendors to continue
-   innovating and developing native models rapidly.  One suggestion that
-   attracted a lot of discussion centered on developing a standard model
-   mapping to native models that could be maintained in a common
-   repository, enabling the community to assess coverage and alignment.
-   Further, the discussion explored alternative approaches to YANG
-   models within the IETF but outside of RFCs, such as leveraging GitHub
-   to accelerate the process (along with the challenges associated with
-   it), living documents within the WG charter, and supporting academia
-   to take up the open source efforts such as device adapters.  The
-   discussion emphasized the need for process experimentation,
-   particularly at the working group or area level where we could have
-   consensus among the YANG/OPS community on how we iterate in WGs
-   without IETF/RFC-wide changes but making sure the operators are
-   involved in the process.  Conversation ensued around questions asked
-   such as "Is YANG applicable beyond network management?" and "Can
-   applications adopt YANG as a modelling language to define their
-   services?"
+   The Session III open discussion delved into the absence of NMDA in
+   OpenConfig and if the resulting complexity is needed, the history of
+   introducing gNMI in the IETF (whether RESTCONF offers any advantage
+   over it), and the challenges that building consensus on the common
+   ground takes time (without short-cutting the consensus building
+   process) and practicality of converging on a single protocol (and it
+   is practical).  Emphasize off-box adapters, allowing vendors to
+   continue innovating and developing native models rapidly.  One
+   suggestion that attracted a lot of discussions centred on developing
+   a standard model mapping to native models that could be maintained in
+   a common repository, enabling the community to assess coverage and
+   alignment.  Further, the discussion explored alternative approaches
+   to YANG models within the IETF but outside of RFCs, such as
+   leveraging GitHub to accelerate the process (along with the
+   challenges associated with it), living documents within the WG
+   charter, and supporting academia to take up the open source efforts
+   such as device adapters.  The discussion emphasized the need for
+   process experimentation, particularly at the working group or area
+   level where we could have consensus among the YANG/OPS community on
+   how we iterate in WGs without IETF/RFC-wide changes but making sure
+   the operators are involved in the process.  Conversations ensued
+   around questions asked such as "Is YANG applicable beyond network
+   management?" and "Can applications adopt YANG as a modelling language
+   to define their services?"
 
    Some topics absent from the workshop discussions included tooling
    (what is currently missing) and strategies to support tool
@@ -517,7 +518,7 @@ Table of Contents
    future directions prioritized improving existing solutions rather
    than introducing entirely new ones (such as enabling intelligence in
    network management).  Some key recommendations made by operators
-   during outreach Section 2 are listed in Appendix B.
+   during outreach (Section 2) are listed in Appendix B.
 
 3.4.  Key Takeaways
 
@@ -545,7 +546,7 @@ Table of Contents
    3.  Documentation about the architecture and usage of the network
        management ecosystem is lacking.  More work is needed to create
        general architecture documentation, deployment guides, tutorials,
-       training material, and getting started guides.
+       training material, and getting-started guides.
 
    4.  Transitioning between network management frameworks is
        challenging, just like it is for transitioning between other
@@ -592,7 +593,7 @@ Table of Contents
 
    5.  Network configuration needs to be verifiable to ensure any
        potential changes can be accepted by devices.  Model translation
-       adapters (likely performed on the management station not the end
+       adapters (likely performed on the management station, not the end
        device) may be the best path forward to simultaneously achieve
        this and the goal of supporting one configuration set across a
        diversity of devices with different internal models.
@@ -631,7 +632,7 @@ Table of Contents
    1.  Some saw NETCONF for configuration as being successful in some
        larger-scale deployments.  Although this statement is true in
        some contexts, many operators indicated their need to rely on
-       other forms of access to management their networks such as CLIs,
+       other forms of access to manage their networks such as CLIs,
        expect scripts, and other protocols.  Work in this area is needed
        to bring NETCONF into significantly greater deployment and
        usability.  Some participants see RESTCONF as a significant step
@@ -817,7 +818,7 @@ Table of Contents
 
 Appendix A.  Insights from Operator Feedback
 
-   [TODO: Check if this is useful in the RFC or should it be removed]
+   [TODO: Check if this is useful in the RFC or should be removed]
 
 A.1.  General Insights
 
