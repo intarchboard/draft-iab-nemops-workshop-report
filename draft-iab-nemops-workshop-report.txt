@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 19 August 2025                                 15 February 2025
+Expires: 23 August 2025                                 19 February 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -62,7 +62,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 19 August 2025.
+   This Internet-Draft will expire on 23 August 2025.
 
 Copyright Notice
 
@@ -459,10 +459,10 @@ Table of Contents
    [CLAISE] highlighted the challenges of integrating data models across
    different silos, protocols, and data structures, emphasizing the need
    for a machine-readable approach to expose semantics.  Additionally,
-   the related tools being developed and showcased in the Hackathon
-   (XXX: which hackathon?), along with the various challenges in mapping
-   across protocols and models, were discussed.  A potential solution
-   was proposed using a knowledge graph based on the Semantic Web Stack,
+   the related tools being developed and showcased in the IETF
+   Hackathons, along with the various challenges in mapping across
+   protocols and models, were discussed.  A potential solution was
+   proposed using a knowledge graph based on the Semantic Web Stack,
    along with the need to define a basic ontology for the networking
    domain in an iterative manner (outside of RFCs).  [WATSEN] recommends
    prioritizing the following areas in four recommendations: (1) using
