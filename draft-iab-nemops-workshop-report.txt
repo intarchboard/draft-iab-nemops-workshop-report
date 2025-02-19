@@ -436,15 +436,15 @@ Table of Contents
    with some cases where mapping is not feasible at all (device-specific
    knobs).  The conversation also emphasized the importance of
    developing open-source reference implementations, compliance and
-   interoperability testing for vendors, and better quality of vendor
-   implementation and documentation.  The implementation and support of
-   multiple models (IETF, OpenConfig, and native) is an unavoidable
-   reality in network management.  Additionally, since the services
-   offered by operators vary significantly, reaching a consensus on a
-   common service model within the IETF can be a challenging task.  It
-   was also noted that the IETF should expedite the publication of
-   standards as well as consider gating them with multiple interoperable
-   implementations.
+   interoperability testing for vendors with real data, and better
+   quality of vendor implementation and documentation.  The
+   implementation and support of multiple models (IETF, OpenConfig, and
+   native) is an unavoidable reality in network management.
+   Additionally, since the services offered by operators vary
+   significantly, reaching a consensus on a common service model within
+   the IETF can be a challenging task.  It was also noted that the IETF
+   should expedite the publication of standards as well as consider
+   gating them with multiple interoperable implementations.
 
 3.3.  Session III: Future (possible solutions, recommendations and next
       steps)
