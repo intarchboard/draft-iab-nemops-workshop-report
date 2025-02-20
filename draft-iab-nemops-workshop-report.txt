@@ -730,7 +730,15 @@ Table of Contents
               3 November 2024, <https://datatracker.ietf.org/doc/html/
               draft-ietf-core-comi-19>.
 
-   [JIMENEZ]  Jiménez, J., "Managing IoT Devices with LwM2M", November
+   [JIMENEZ]  Jiménez, J., Mansfield, S., , Pesonen, M., Torvinen, V.,
+              and J. Karvonen, "Evolving Challenges and Solutions in
+              Network Management", November 2024,
+              <https://www.ietf.org/slides/slides-nemopsws-paper-
+              evolving-challenges-and-solutions-in-network-management-
+              00.pdf>.
+
+   [JIMENEZ-2]
+              Jiménez, J., "Managing IoT Devices with LwM2M", November
               2024, <https://www.ietf.org/slides/slides-nemopsws-paper-
               managing-iot-devices-with-lwmm-00.pdf>.
 
@@ -974,7 +982,7 @@ Appendix C.  Position Papers
    *  I.  D.  Martinez-Casanueva: IAB NEMOPS Position Paper - Telefonica
       [MARTINEZ]
 
-   *  J.  Jiménez: Managing IoT Devices with LwM2M [JIMENEZ]
+   *  J.  Jiménez: Managing IoT Devices with LwM2M [JIMENEZ-2]
 
    *  L.  M.  Contreras, R.  Schott, S.  Randriamasy, R.  Yang, and J.
       Ros-Giralt: Towards a Unified Compute and Communication
