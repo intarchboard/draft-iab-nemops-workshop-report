@@ -539,6 +539,10 @@ Here we list the things that the group realized needed significantly more attent
 
 1. Some saw NETCONF for configuration as being successful in some larger-scale deployments.  Although this statement is true in some contexts, many operators indicated their need to rely on other forms of access to manage their networks such as CLIs, expect scripts, and other protocols.  Work in this area is needed to bring NETCONF into significantly greater deployment and usability.  Some participants see RESTCONF as a significant step forward in solving this dilemma.
 
+# Security Considerations
+
+This document is a workshop report and does not impact the security of the Internet.
+
 --- back
 
 # Insights from Operator Feedback {#insights}
