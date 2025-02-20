@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 23 August 2025                                 19 February 2025
+Expires: 24 August 2025                                 20 February 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -62,7 +62,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 23 August 2025.
+   This Internet-Draft will expire on 24 August 2025.
 
 Copyright Notice
 
@@ -99,7 +99,8 @@ Table of Contents
        3.4.3.  Modeling conclusions
        3.4.4.  Standardization conclusions
        3.4.5.  Additional work needed
-   4.  Informative References
+   4.  Security Considerations
+   5.  Informative References
    Appendix A.  Insights from Operator Feedback
      A.1.  General Insights
      A.2.  Data Models
@@ -638,7 +639,12 @@ Table of Contents
        usability.  Some participants see RESTCONF as a significant step
        forward in solving this dilemma.
 
-4.  Informative References
+4.  Security Considerations
+
+   This document is a workshop report and does not impact the security
+   of the Internet.
+
+5.  Informative References
 
    [BLESS]    Bless, R., "An Invariant for Future Resilient Network
               Management Operations", November 2024,
