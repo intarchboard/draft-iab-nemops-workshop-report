@@ -284,7 +284,7 @@ informative:
         ins:  I. Martinez-Casanueva
         name: Ignacio Dominguez Martinez-Casanueva
     date: November 2024
-  JIMENEZ:
+  JIMENEZ-2:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-managing-iot-devices-with-lwmm-00.pdf
     title: Managing IoT Devices with LwM2M
     author:
@@ -600,7 +600,7 @@ This is the list of all papers:
 * M. Gudi, A. Pelov, L. Toutain, and J.-M. Bonnin: Evolving Network Management Architecture: Integrating CORECONF with NETCONF for Efficient Telemetry and Management {{GUDI}}
 * P. Foroughi and L. Ciavaglia: Projecting Data Mesh to Model-driven Telemetry: A Path to Data Ecosystem’s Management Operations {{FOROUGHI}}
 * I. D. Martinez-Casanueva: IAB NEMOPS Position Paper - Telefonica {{MARTINEZ}}
-* J. Jiménez: Managing IoT Devices with LwM2M {{JIMENEZ}}
+* J. Jiménez: Managing IoT Devices with LwM2M {{JIMENEZ-2}}
 * L. M. Contreras, R. Schott, S. Randriamasy, R. Yang, and J. Ros-Giralt: Towards a Unified Compute and Communication Infrastructure for Application and Network Management {{GIRALT}}
 * T. Eckert and M. Richardson: Resilient Remote Manageability of Wide-Area Network Infrastructures {{ECKERT}}
 * R. Bless: An Invariant for Future Resilient Network Management Operations {{BLESS}}
