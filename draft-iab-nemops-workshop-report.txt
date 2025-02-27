@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 24 August 2025                                 20 February 2025
+Expires: 31 August 2025                                 27 February 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -62,7 +62,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 24 August 2025.
+   This Internet-Draft will expire on 31 August 2025.
 
 Copyright Notice
 
@@ -1012,9 +1012,9 @@ Appendix D.  Workshop Participants
    Michael Richardson, Michael Scharf, Mikko Pesonen, Nacho Dominguez
    (Telefonica), Naveen Achyuta, Nick Corran, Nils Warnke, Oscar
    Gonzalez de Dios, Paolo Lucente, Parisa Foroughi, Per Andersson, Phil
-   Shafer, Qin Wu, Qiufang Ma, Raquel Rodriguez, Reshad, Reshad Rahman,
-   Rob Shakir, Rob Wilton, Roland Bless (KIT), Roland Schott, Rüdiger
-   Geib, Rui Zhuang, Ruibo Han, Sabine Randriamasy, Scott Mansfield
+   Shafer, Qin Wu, Qiufang Ma, Raquel Rodriguez, Reshad Rahman, Rob
+   Shakir, Rob Wilton, Roland Bless (KIT), Roland Schott, Rüdiger Geib,
+   Rui Zhuang, Ruibo Han, Sabine Randriamasy, Scott Mansfield
    (Ericsson), Scott Robohn, Shengnan Yue, Suresh Krishnan, Thomas Graf,
    Toerless Eckert, Wangbo, Warren Kumari, Wes Hardaker, Wim Henderickx,
    Xue Yang, Y.  Richard Yang, Yangbo, Yisong Liu, and Zhenqiang Li.
