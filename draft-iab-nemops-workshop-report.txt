@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 31 August 2025                                 27 February 2025
+Expires: 4 September 2025                                   3 March 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -62,7 +62,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 31 August 2025.
+   This Internet-Draft will expire on 4 September 2025.
 
 Copyright Notice
 
@@ -628,7 +628,8 @@ Table of Contents
 3.4.5.  Additional work needed
 
    Here we list the things that the group realized needed significantly
-   more attention in order to come to a conclusion.
+   more attention in order to come to a conclusion while updating the
+   key takeaways in real time.
 
    1.  Some saw NETCONF for configuration as being successful in some
        larger-scale deployments.  Although this statement is true in
@@ -638,6 +639,10 @@ Table of Contents
        to bring NETCONF into significantly greater deployment and
        usability.  Some participants see RESTCONF as a significant step
        forward in solving this dilemma.
+
+   While many other items also need further discussion, this list
+   specifically includes those that were actively discussed during the
+   live editing session in the workshop.
 
 4.  Security Considerations
 
