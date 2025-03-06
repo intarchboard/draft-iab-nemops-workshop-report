@@ -99,7 +99,7 @@ Table of Contents
        3.4.3.  Modeling conclusions
        3.4.4.  Standardization conclusions
        3.4.5.  Conclusions that did not reach consensus during the
-               takeways discussion
+               takeaways discussion
    4.  Security Considerations
    5.  Informative References
    Appendix A.  Insights from Operator Feedback
@@ -626,7 +626,7 @@ Table of Contents
        by vendors.  Vendors and operators will need to work together to
        ensure these goals are appropriately met.
 
-3.4.5.  Conclusions that did not reach consensus during the takeways
+3.4.5.  Conclusions that did not reach consensus during the takeaways
         discussion
 
    Here we list the things that the group realized needed significantly
