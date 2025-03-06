@@ -533,7 +533,7 @@ The following conclusions came while discussing the best ways to standardize net
    vendors.  Vendors and operators will need to work together to
    ensure these goals are appropriately met.
 
-### Additional work needed {#workneeded}
+### Conclusions that did not reach consensus during the takeways discussion {#workneeded}
 
 Here we list the things that the group realized needed significantly more attention in order to come to a conclusion while updating the key takeaways in real time.
 
