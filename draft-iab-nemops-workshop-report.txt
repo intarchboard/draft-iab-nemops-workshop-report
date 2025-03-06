@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 4 September 2025                                   3 March 2025
+Expires: 7 September 2025                                   6 March 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -62,7 +62,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 4 September 2025.
+   This Internet-Draft will expire on 7 September 2025.
 
 Copyright Notice
 
@@ -98,7 +98,8 @@ Table of Contents
        3.4.2.  Protocol conclusions
        3.4.3.  Modeling conclusions
        3.4.4.  Standardization conclusions
-       3.4.5.  Additional work needed
+       3.4.5.  Conclusions that did not reach consensus during the
+               takeways discussion
    4.  Security Considerations
    5.  Informative References
    Appendix A.  Insights from Operator Feedback
@@ -625,7 +626,8 @@ Table of Contents
        by vendors.  Vendors and operators will need to work together to
        ensure these goals are appropriately met.
 
-3.4.5.  Additional work needed
+3.4.5.  Conclusions that did not reach consensus during the takeways
+        discussion
 
    Here we list the things that the group realized needed significantly
    more attention in order to come to a conclusion while updating the
