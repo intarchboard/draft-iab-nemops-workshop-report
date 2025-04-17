@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-04-15T01:50:23.927849+00:00",
+  "timestamp": "2025-04-17T01:48:20.079131+00:00",
   "repo": "intarchboard/draft-iab-nemops-workshop-report",
   "labels": [
     {
@@ -94,6 +94,42 @@
           "updatedAt": "2024-12-20T05:41:18Z"
         }
       ]
+    },
+    {
+      "number": 2,
+      "id": "I_kwDONe90rM6yx6_-",
+      "title": "Comments from Benoit on 10th April",
+      "url": "https://github.com/intarchboard/draft-iab-nemops-workshop-report/issues/2",
+      "state": "OPEN",
+      "author": "dhruvdhody",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "dhruvdhody"
+      ],
+      "labels": [],
+      "body": "See https://mailarchive.ietf.org/arch/msg/nemops-interest/djLEwUxFoEeYCvccxR8mtBlYTkw/",
+      "createdAt": "2025-04-16T12:03:43Z",
+      "updatedAt": "2025-04-16T12:03:46Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 3,
+      "id": "I_kwDONe90rM6yx8YB",
+      "title": "Pending comment from Phil",
+      "url": "https://github.com/intarchboard/draft-iab-nemops-workshop-report/issues/3",
+      "state": "OPEN",
+      "author": "dhruvdhody",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "dhruvdhody"
+      ],
+      "labels": [],
+      "body": "Phil asked for reformat at https://mailarchive.ietf.org/arch/msg/nemops-interest/0K1KXldk4pMlWugpw8sueWFZq7c/\n\nWes provided a suggested update at https://mailarchive.ietf.org/arch/msg/nemops-interest/Vzdx7yzFmiNTAUw1wWx7Iok7wxs/\n\nDhruv to make the update",
+      "createdAt": "2025-04-16T12:06:03Z",
+      "updatedAt": "2025-04-16T12:06:03Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
   "pulls": []
