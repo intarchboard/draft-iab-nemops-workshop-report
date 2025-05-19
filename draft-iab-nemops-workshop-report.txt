@@ -1063,7 +1063,9 @@ IAB Members at the Time of Approval
 
 Acknowledgments
 
-   TBD
+   Thanks to Benoît Claise, Jürgen Schönwälder, Kristian Larsson, Jaime
+   Jiménez, Michael Richardson, and Phil Shafer for helpful suggestions
+   to improve this report.
 
 Authors' Addresses
 
