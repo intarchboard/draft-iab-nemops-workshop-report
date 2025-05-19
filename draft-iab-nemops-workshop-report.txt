@@ -100,8 +100,9 @@ Table of Contents
        3.4.4.  Standardization conclusions
        3.4.5.  Conclusions that did not reach consensus during the
                takeaways discussion
-   4.  Security Considerations
-   5.  Informative References
+   4.  Not Covered in the Workshop
+   5.  Security Considerations
+   6.  Informative References
    Appendix A.  Insights from Operator Feedback
      A.1.  General Insights
      A.2.  Data Models
@@ -230,7 +231,7 @@ Table of Contents
    been successful in addressing device configuration in many, but not
    all, environments.  In certain areas, the advancements in semantics
    and protocols for streaming telemetry have even surpassed the
-   original scope of [RFC3535].  [LARSSON] cautioned against making
+   original scope of [RFC3535].  [FARRER] cautioned against making
    changes that could disrupt the ecosystem.  The presentation
    emphasized the need to prioritize service modeling in the IETF and
    addressed the challenges of mapping to the Business Support Systems
@@ -314,6 +315,10 @@ Table of Contents
    [KELLER] shared Deutsche Telekom’s perspective, emphasizing that
    while YANG models perform well for provisioning, they currently fall
    short in providing the operational stability required for validation.
+   While the IETF service models — where available, are considered
+   stable and in good condition, the OpenConfig device models were noted
+   as lacking feature richness and stability.  In contrast, vendor YANG
+   models are often more flexible and available in a more timely manner.
    Achieving fully closed-loop automated and autonomous networking will
    require a greater focus on observability, particularly through
    advancements in streaming telemetry with the "on-change" feature
@@ -354,11 +359,21 @@ Table of Contents
       models are not widely implemented.
 
    *  Define a reference approach/process for service exposure discovery
-      and API discovery.
+      (API discovery).
 
    *  Outlines set of recommendations for core/key features, along with
       appropriate justifications, that will help foster more
       implementations that meet operators’ needs.
+
+   *  Reassess the value of some IETF proposals, including compared to
+      competing or emerging solutions (e.g., gNMI vs. YANG-Push)
+
+   *  Need for a more agile process for the development and maintenance
+      of YANG modules in the IETF.  RFCs might not be suited for
+      documenting YANG modules.
+
+   *  Consider approaches to ease integration by-design (e.g., protocols
+      and data models).
 
    *  There is a need for a reference specification to translate YANG-
       based data into the knowledge graph (KG).
@@ -416,7 +431,7 @@ Table of Contents
    backgrounds, as well as insights into the most widely used tools,
    protocols, and APIs for configuration, monitoring, and other network
    operations.  Notably, the survey revealed that Ansible and CLI are
-   the most popular configuration tools, NetConf is the preferred
+   the most popular configuration tools, NETCONF is the preferred
    configuration protocol, and Prometheus and SNMP are widely used for
    monitoring.  The survey also captured feedback on network automation
    and streaming telemetry.  Issues and future requirements such as
@@ -467,22 +482,25 @@ Table of Contents
    protocols and models, were discussed.  A potential solution was
    proposed using a knowledge graph based on the Semantic Web Stack,
    along with the need to define a basic ontology for the networking
-   domain in an iterative manner (outside of RFCs).  [WATSEN] recommends
-   prioritizing the following areas in four recommendations: (1) using
-   RESTCONF+JSON (including YANG-Push Lite) as a single protocol beyond
-   network management, (2) utilizing Network Management Datastore
-   Architecture (NMDA) model, (3) creating data model adapters (off-box
-   so that common standard models can be developed in parallel to the
-   required device "native" models), and (4) defining device protocol
-   adapters (with RESTCONF-like NBI for a common shared-by-all
-   repository).  [WILTON] recommends reducing unnecessary complexity,
-   delivering timely solutions, fostering open collaboration between
-   vendors and operators, prioritizing simplicity, and converging to a
-   single model/protocol (though this was discussed as difficult to
-   accomplish).  Practical suggestions include focusing on YANG-Push
-   Lite, introducing YANG 2.0 through incremental updates, developing
-   NETCONFv2, and managing IETF YANG models as code or APIs rather than
-   embedding them within RFCs.
+   domain in an iterative manner (outside of RFCs).
+
+   [WATSEN] recommends prioritizing the following areas in four
+   recommendations: (1) using RESTCONF+JSON (including YANG-Push Lite)
+   as a single protocol beyond network management, (2) utilizing Network
+   Management Datastore Architecture (NMDA) model, (3) creating data
+   model adapters (off-box so that common standard models can be
+   developed in parallel to the required device "native" models), and
+   (4) defining device protocol adapters (with RESTCONF-like NBI for a
+   common shared-by-all repository).
+
+   [WILTON] recommends reducing unnecessary complexity, delivering
+   timely solutions, fostering open collaboration between vendors and
+   operators, prioritizing simplicity, and converging to a single model/
+   protocol (though this was discussed as difficult to accomplish).
+   Practical suggestions include focusing on YANG-Push Lite, introducing
+   YANG 2.0 through incremental updates, developing NETCONFv2, and
+   managing IETF YANG models as code or APIs rather than embedding them
+   within RFCs.
 
 3.3.2.  Discussion
 
@@ -511,16 +529,8 @@ Table of Contents
    management?" and "Can applications adopt YANG as a modelling language
    to define their services?"
 
-   Some topics absent from the workshop discussions included tooling
-   (what is currently missing) and strategies to support tool
-   development (who pays, who develops, who maintains).  The primary
-   focus of the discussion was on YANG and NETCONF/RESTCONF, while
-   several other network management protocols and techniques currently
-   used received less attention during the workshop.  The discussion on
-   future directions prioritized improving existing solutions rather
-   than introducing entirely new ones (such as enabling intelligence in
-   network management).  Some key recommendations made by operators
-   during outreach (Section 2) are listed in Appendix B.
+   Some key recommendations made by operators during outreach
+   (Section 2) are listed in Appendix B.
 
 3.4.  Key Takeaways
 
@@ -649,12 +659,24 @@ Table of Contents
    specifically includes those that were actively discussed during the
    live editing session in the workshop.
 
-4.  Security Considerations
+4.  Not Covered in the Workshop
+
+   Some topics absent from the workshop discussions included tooling
+   (what is currently missing) and strategies to support tool
+   development (who pays, who develops, who maintains).  The primary
+   focus of the discussion was on YANG and NETCONF/RESTCONF, while
+   several other network management protocols and techniques currently
+   used received less attention during the workshop.  The discussion
+   during the workshop on possible future directions prioritized
+   improving existing solutions rather than introducing entirely new
+   ones (such as enabling intelligence in network management).
+
+5.  Security Considerations
 
    This document is a workshop report and does not impact the security
    of the Internet.
 
-5.  Informative References
+6.  Informative References
 
    [BLESS]    Bless, R., "An Invariant for Future Resilient Network
               Management Operations", November 2024,
@@ -688,6 +710,12 @@ Table of Contents
               November 2024, <https://www.ietf.org/slides/slides-
               nemopsws-paper-resilient-remote-managability-of-wide-area-
               network-infrastructures-00.pdf>.
+
+   [FARRER]   Larsson, K., Lambrechts, K., and I. Farrer, "RFC3535, 20
+              Years Later from an Operator's Perspective (Deutsche
+              Telekom)", November 2024, <https://www.ietf.org/slides/
+              slides-nemopsws-paper-rfc3535-years-later-from-an-
+              operators-perspective-deutsche-telekom-00.pdf>.
 
    [FOROUGHI] Foroughi, P. and L. Ciavaglia, "Projecting Data Mesh to
               Model-driven Telemetry: A Path to Data Ecosystem’s
@@ -757,12 +785,6 @@ Table of Contents
               is only a subset of Network Management", November 2024,
               <https://www.ietf.org/slides/slides-nemopsws-nemops-
               rfc3535-and-the-forgotten-word-00.pdf>.
-
-   [LARSSON]  Larsson, K., Lambrechts, K., and I. Farrer, "RFC3535, 20
-              Years Later from an Operator's Perspective (Deutsche
-              Telekom)", November 2024, <https://www.ietf.org/slides/
-              slides-nemopsws-paper-rfc3535-years-later-from-an-
-              operators-perspective-deutsche-telekom-00.pdf>.
 
    [MARTINEZ] Martinez-Casanueva, I., "IAB NEMOPS Position Paper -
               Telefonica", November 2024, <https://www.ietf.org/slides/
@@ -841,8 +863,6 @@ Table of Contents
               direction/>.
 
 Appendix A.  Insights from Operator Feedback
-
-   [TODO: Check if this is useful in the RFC or should be removed]
 
 A.1.  General Insights
 
@@ -943,7 +963,7 @@ Appendix C.  Position Papers
       Network and Service Configurations [SCHONWALDER]
 
    *  K.  Larsson, K.  Lambrechts, and I.  Farrer: RFC3535, 20 Years
-      Later from an Operator’s Perspective (Deutsche Telekom) [LARSSON]
+      Later from an Operator’s Perspective (Deutsche Telekom) [FARRER]
 
    *  W.  Hardaker: Lessons Learned from 30 Years of Net-SNMP [HARDAKER]
 
@@ -1010,7 +1030,7 @@ Appendix C.  Position Papers
 Appendix D.  Workshop Participants
 
    The workshop participants were Alex Huang, Alexander Clemm, Alexander
-   PELOV, Benoit Claise, Boris Khasanov, Brad Peters (nbn), Carsten
+   Pelov, Benoit Claise, Boris Khasanov, Brad Peters (nbn), Carsten
    Bormann, Chongfeng Xie, Cindy Morgan, Dan Voyer, Darren Loher, Dean
    Bogdanovic, Dean Bogdanović, Dhruv Dhody, Diego Lopez, Ebben Aries,
    Frank (Chong Feng), Holger Keller, Ian Farrer, Jaime Jimenez, James
