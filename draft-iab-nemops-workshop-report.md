@@ -537,7 +537,9 @@ The following conclusions came while discussing the best ways to standardize net
 
 Here we list the things that the group realized needed significantly more attention in order to come to a conclusion while updating the key takeaways in real time.
 
-1. Some saw NETCONF for configuration as being successful in some larger-scale deployments.  Although this statement is true in some contexts, many operators indicated their need to rely on other forms of access to manage their networks such as CLIs, expect scripts, and other protocols.  Work in this area is needed to bring NETCONF into significantly greater deployment and usability.  Some participants see RESTCONF as a significant step forward in solving this dilemma.
+1.  Some, but not all, saw NETCONF for configuration as being successful in some larger-scale deployments.  Although this statement is true in some contexts, many operators indicated their need to rely on other forms of access to manage their networks, such as CLIs, Expect scripts, and other protocols.
+
+2.  Many hope that NETCONF, and RESTCONF more specifically, will continue to move to a long-term configuration management solution.  However, some participants doubted whether the protocol and its data models can ever be truly ubiquitous and keep pace with the device deployment pace.
 
 While many other items also need further discussion, this list specifically includes those that were actively discussed during the live editing session in the workshop.
 
