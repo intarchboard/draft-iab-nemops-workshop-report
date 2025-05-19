@@ -635,4 +635,4 @@ Internet Architecture Board members at the time this document was approved for p
 # Acknowledgments
 {:numbered="false"}
 
-TBD
+Thanks to Benoît Claise, Jürgen Schönwälder, Kristian Larsson, Jaime Jiménez, Michael Richardson, and Phil Shafer for helpful suggestions to improve this report.
