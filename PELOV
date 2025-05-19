@@ -52,7 +52,7 @@ informative:
         ins:  J. Schönwälder
         name: Jürgen Schönwälder
     date: November 2024
-  LARSSON:
+  FARRER:
     target: https://www.ietf.org/slides/slides-nemopsws-paper-rfc3535-years-later-from-an-operators-perspective-deutsche-telekom-00.pdf
     title: RFC3535, 20 Years Later from an Operator's Perspective (Deutsche Telekom)
     author:
@@ -387,7 +387,7 @@ The first day of the workshop focused on reflecting on the past by reviewing the
 
 The workshop began by reflecting on the IAB’s role in shaping the evolution of network management away from CLI/SNMP/MIB technologies, focusing on the context and key outcomes of the previous workshop, an assessment of the current state of network management as a whole, and an acknowledgement of some regrets in how network management technologies developed in the last two decades (such as XML as the data representation format). {{SCHONWALDER}} emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable (assembled out of modular configurations), Declarative (define state while systems determine themselves how to implement those goals), Reproducible (reliably and consistently recreated), and Verifiable (asserting that the correct changes have been applied).
 
-An operator’s perspective highlighted that the recommendations of {{RFC3535}} (which led to the development of YANG and NETCONF) have been successful in addressing device configuration in many, but not all, environments. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope of {{RFC3535}}. {{LARSSON}} cautioned against making changes that could disrupt the ecosystem. The presentation emphasized the need to prioritize service modeling in the IETF and addressed the challenges of mapping to the Business Support Systems (BSS) domain. It also stressed the importance of including the operational state in service models to enable closed-loop automation for end-to-end (E2E) services. Revisiting {{RFC8309}}, which asserts that the operational state of a service is not part of a customer service model but can be achieved through extensions, was suggested. Additionally, the lack of open-source NMS implementations, tools, and device model implementations was identified as a significant barrier to advancing standardization efforts. The IETF could play a key role in fostering and enabling collaborations to address these challenges including an off-box translation tool of the IETF device model to vendor proprietary models.
+An operator’s perspective highlighted that the recommendations of {{RFC3535}} (which led to the development of YANG and NETCONF) have been successful in addressing device configuration in many, but not all, environments. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope of {{RFC3535}}. {{FARRER}} cautioned against making changes that could disrupt the ecosystem. The presentation emphasized the need to prioritize service modeling in the IETF and addressed the challenges of mapping to the Business Support Systems (BSS) domain. It also stressed the importance of including the operational state in service models to enable closed-loop automation for end-to-end (E2E) services. Revisiting {{RFC8309}}, which asserts that the operational state of a service is not part of a customer service model but can be achieved through extensions, was suggested. Additionally, the lack of open-source NMS implementations, tools, and device model implementations was identified as a significant barrier to advancing standardization efforts. The IETF could play a key role in fostering and enabling collaborations to address these challenges including an off-box translation tool of the IETF device model to vendor proprietary models.
 
 ### Lessons to be Learned
 
@@ -405,7 +405,7 @@ The second day of the workshop concentrated on challenges and emerging requireme
 
 ### Operator Feedback
 
-{{KELLER}} shared Deutsche Telekom’s perspective, emphasizing that while YANG models perform well for provisioning, they currently fall short in providing the operational stability required for validation. Achieving fully closed-loop automated and autonomous networking will require a greater focus on observability, particularly through advancements in streaming telemetry with the "on-change" feature {{RFC9196}}.
+{{KELLER}} shared Deutsche Telekom’s perspective, emphasizing that while YANG models perform well for provisioning, they currently fall short in providing the operational stability required for validation. While the IETF service models — where available, are considered stable and in good condition, the OpenConfig device models were noted as lacking feature richness and stability. In contrast, vendor YANG models are often more flexible and available in a more timely manner. Achieving fully closed-loop automated and autonomous networking will require a greater focus on observability, particularly through advancements in streaming telemetry with the "on-change" feature {{RFC9196}}.
 
 {{JIMENEZ}} discussed the challenges associated with the Software Defined Networking (SDN) Transport Automation Platform, including observability and analytics requirements, issues with data streaming, scalability, diverse models in heterogeneous multi-vendor environments, and mechanisms to secure the network management protocols. The presentation also emphasized how advancements in AI and machine learning, along with the potential adaptation of protocols designed for constrained environments, could drive the next evolution in network management.
 
@@ -415,8 +415,11 @@ Using YANG-Push as an example, {{GRAF}} highlighted how standards development of
 
 * Network software implementations can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code.
 * Need to rationalize the device model space and avoid redundant efforts. Unlike service and network models, IETF-defined device models are not widely implemented.
-* Define a reference approach/process for service exposure discovery and API discovery.
+* Define a reference approach/process for service exposure discovery (API discovery).
 * Outlines set of recommendations for core/key features, along with appropriate justifications, that will help foster more implementations that meet operators’ needs.
+* Reassess the value of some IETF proposals, including compared to competing or emerging solutions (e.g., gNMI vs. YANG-Push)
+* Need for a more agile process for the development and maintenance of YANG modules in the IETF. RFCs might not be suited for documenting YANG modules.
+* Consider approaches to ease integration by-design (e.g., protocols and data models).
 * There is a need for a reference specification to translate YANG-based data into the knowledge graph (KG).
 * Consider approaches to help YANG models scale.
 * Consider programmatic approaches to ensure lossless mappings between service/network/device data models.
@@ -434,7 +437,7 @@ Using YANG-Push as an example, {{GRAF}} highlighted how standards development of
 
 ### Survey
 
-As outlined in {{outreach}}, the workshop program committee organized outreach initiatives to gather direct feedback and conducted a survey. {{SURVEY-INSIGHTS}} provided an overview of the respondents’ backgrounds, as well as insights into the most widely used tools, protocols, and APIs for configuration, monitoring, and other network operations. Notably, the survey revealed that Ansible and CLI are the most popular configuration tools, NetConf is the preferred configuration protocol, and Prometheus and SNMP are widely used for monitoring. The survey also captured feedback on network automation and streaming telemetry. Issues and future requirements such as scalability, performance, the need for easier mapping of various models, tooling, management of legacy devices, collaboration with open-source, and vendor-specific issues were highlighted. Additionally, valuable insights from direct operator feedback were also presented (see {{insights}}).
+As outlined in {{outreach}}, the workshop program committee organized outreach initiatives to gather direct feedback and conducted a survey. {{SURVEY-INSIGHTS}} provided an overview of the respondents’ backgrounds, as well as insights into the most widely used tools, protocols, and APIs for configuration, monitoring, and other network operations. Notably, the survey revealed that Ansible and CLI are the most popular configuration tools, NETCONF is the preferred configuration protocol, and Prometheus and SNMP are widely used for monitoring. The survey also captured feedback on network automation and streaming telemetry. Issues and future requirements such as scalability, performance, the need for easier mapping of various models, tooling, management of legacy devices, collaboration with open-source, and vendor-specific issues were highlighted. Additionally, valuable insights from direct operator feedback were also presented (see {{insights}}).
 
 ### Discussion
 
@@ -446,13 +449,17 @@ The final day of the workshop centred on exploring potential future solutions an
 
 ### Future Directions
 
-{{CLAISE}} highlighted the challenges of integrating data models across different silos, protocols, and data structures, emphasizing the need for a machine-readable approach to expose semantics. Additionally, the related tools being developed and showcased in the IETF Hackathons, along with the various challenges in mapping across protocols and models, were discussed. A potential solution was proposed using a knowledge graph based on the Semantic Web Stack, along with the need to define a basic ontology for the networking domain in an iterative manner (outside of RFCs). {{WATSEN}} recommends prioritizing the following areas in four recommendations: (1) using RESTCONF+JSON (including YANG-Push Lite) as a single protocol beyond network management, (2) utilizing Network Management Datastore Architecture (NMDA) model, (3) creating data model adapters (off-box so that common standard models can be developed in parallel to the required device "native" models), and (4) defining device protocol adapters (with RESTCONF-like NBI for a common shared-by-all repository). {{WILTON}} recommends reducing unnecessary complexity, delivering timely solutions, fostering open collaboration between vendors and operators, prioritizing simplicity, and converging to a single model/protocol (though this was discussed as difficult to accomplish). Practical suggestions include focusing on YANG-Push Lite, introducing YANG 2.0 through incremental updates, developing NETCONFv2, and managing IETF YANG models as code or APIs rather than embedding them within RFCs.
+{{CLAISE}} highlighted the challenges of integrating data models across different silos, protocols, and data structures, emphasizing the need for a machine-readable approach to expose semantics. Additionally, the related tools being developed and showcased in the IETF Hackathons, along with the various challenges in mapping across protocols and models, were discussed. A potential solution was proposed using a knowledge graph based on the Semantic Web Stack, along with the need to define a basic ontology for the networking domain in an iterative manner (outside of RFCs).
+
+{{WATSEN}} recommends prioritizing the following areas in four recommendations: (1) using RESTCONF+JSON (including YANG-Push Lite) as a single protocol beyond network management, (2) utilizing Network Management Datastore Architecture (NMDA) model, (3) creating data model adapters (off-box so that common standard models can be developed in parallel to the required device "native" models), and (4) defining device protocol adapters (with RESTCONF-like NBI for a common shared-by-all repository).
+
+{{WILTON}} recommends reducing unnecessary complexity, delivering timely solutions, fostering open collaboration between vendors and operators, prioritizing simplicity, and converging to a single model/protocol (though this was discussed as difficult to accomplish). Practical suggestions include focusing on YANG-Push Lite, introducing YANG 2.0 through incremental updates, developing NETCONFv2, and managing IETF YANG models as code or APIs rather than embedding them within RFCs.
 
 ### Discussion
 
 The Session III open discussion delved into the absence of NMDA in OpenConfig and if the resulting complexity is needed, the history of introducing gNMI in the IETF (whether RESTCONF offers any advantage over it), and the challenges that building consensus on the common ground takes time (without short-cutting the consensus building process) and practicality of converging on a single protocol (and it is practical). Emphasize off-box adapters, allowing vendors to continue innovating and developing native models rapidly. One suggestion that attracted a lot of discussions centred on developing a standard model mapping to native models that could be maintained in a common repository, enabling the community to assess coverage and alignment. Further, the discussion explored alternative approaches to YANG models within the IETF but outside of RFCs, such as leveraging GitHub to accelerate the process (along with the challenges associated with it), living documents within the WG charter, and supporting academia to take up the open source efforts such as device adapters. The discussion emphasized the need for process experimentation, particularly at the working group or area level where we could have consensus among the YANG/OPS community on how we iterate in WGs without IETF/RFC-wide changes but making sure the operators are involved in the process. Conversations ensued around questions asked such as "Is YANG applicable beyond network management?" and "Can applications adopt YANG as a modelling language to define their services?"
 
-Some topics absent from the workshop discussions included tooling (what is currently missing) and strategies to support tool development (who pays, who develops, who maintains). The primary focus of the discussion was on YANG and NETCONF/RESTCONF, while several other network management protocols and techniques currently used received less attention during the workshop. The discussion on future directions prioritized improving existing solutions rather than introducing entirely new ones (such as enabling intelligence in network management). Some key recommendations made by operators during outreach ({{outreach}}) are listed in {{recommendations}}.
+Some key recommendations made by operators during outreach ({{outreach}}) are listed in {{recommendations}}.
 
 ## Key Takeaways {#key}
 
@@ -543,6 +550,10 @@ Here we list the things that the group realized needed significantly more attent
 
 While many other items also need further discussion, this list specifically includes those that were actively discussed during the live editing session in the workshop.
 
+# Not Covered in the Workshop
+
+Some topics absent from the workshop discussions included tooling (what is currently missing) and strategies to support tool development (who pays, who develops, who maintains). The primary focus of the discussion was on YANG and NETCONF/RESTCONF, while several other network management protocols and techniques currently used received less attention during the workshop. The discussion during the workshop on possible future directions prioritized improving existing solutions rather than introducing entirely new ones (such as enabling intelligence in network management). 
+
 # Security Considerations
 
 This document is a workshop report and does not impact the security of the Internet.
@@ -550,8 +561,6 @@ This document is a workshop report and does not impact the security of the Inter
 --- back
 
 # Insights from Operator Feedback {#insights}
-
-[TODO: Check if this is useful in the RFC or should be removed]
 
 ## General Insights
 
@@ -590,7 +599,7 @@ Various recommendations were made by the operators during the outreach events. T
 This is the list of all papers:
 
 * J Schönwälder: Composable, Declarative, Reproducible, Verifiable Network and Service Configurations {{SCHONWALDER}}
-* K. Larsson, K. Lambrechts, and I. Farrer: RFC3535, 20 Years Later from an Operator’s Perspective (Deutsche Telekom) {{LARSSON}}
+* K. Larsson, K. Lambrechts, and I. Farrer: RFC3535, 20 Years Later from an Operator’s Perspective (Deutsche Telekom) {{FARRER}}
 * W. Hardaker: Lessons Learned from 30 Years of Net-SNMP {{HARDAKER}}
 * C. Bormann: CORECONF: Managing IoT Devices with YANG Models {{BORMANN}}
 * R. Shakir: Rethinking Standardisation of Network Management {{SHAKIR}}
@@ -612,7 +621,7 @@ This is the list of all papers:
 
 # Workshop Participants
 
-The workshop participants were Alex Huang, Alexander Clemm, Alexander PELOV, Benoit Claise, Boris Khasanov, Brad Peters (nbn), Carsten Bormann, Chongfeng Xie, Cindy Morgan, Dan Voyer, Darren Loher, Dean Bogdanovic, Dean Bogdanović, Dhruv Dhody, Diego Lopez, Ebben Aries, Frank (Chong Feng), Holger Keller, Ian Farrer, Jaime Jimenez, James Cumming, Janne Karvonen, Jason Sterne, Jiaming Ye, Jinming Li, John Carson, Julien Maisonneuve, Jürgen Schönwälder, Kent Watsen, Kris Lambrechts, Kristian Larsson, Laurent Ciavaglia, Laurent Toutain, Liz Flynn, Luis M. Contreras (Telefonica), Mahesh Jethanandani, Manoj Gudi, Martin Horneffer, Matthew Bocci, Med Boucadair, Michael Mackey, Michael Richardson, Michael Scharf, Mikko Pesonen, Nacho Dominguez (Telefonica), Naveen Achyuta, Nick Corran, Nils Warnke, Oscar Gonzalez de Dios, Paolo Lucente, Parisa Foroughi, Per Andersson, Phil Shafer, Qin Wu, Qiufang Ma, Raquel Rodriguez, Reshad Rahman, Rob Shakir, Rob Wilton, Roland Bless (KIT), Roland Schott, Rüdiger Geib, Rui Zhuang, Ruibo Han, Sabine Randriamasy, Scott Mansfield (Ericsson), Scott Robohn, Shengnan Yue, Suresh Krishnan, Thomas Graf, Toerless Eckert, Wangbo, Warren Kumari, Wes Hardaker, Wim Henderickx, Xue Yang, Y. Richard Yang, Yangbo, Yisong Liu, and Zhenqiang Li.
+The workshop participants were Alex Huang, Alexander Clemm, Alexander Pelov, Benoit Claise, Boris Khasanov, Brad Peters (nbn), Carsten Bormann, Chongfeng Xie, Cindy Morgan, Dan Voyer, Darren Loher, Dean Bogdanovic, Dean Bogdanović, Dhruv Dhody, Diego Lopez, Ebben Aries, Frank (Chong Feng), Holger Keller, Ian Farrer, Jaime Jimenez, James Cumming, Janne Karvonen, Jason Sterne, Jiaming Ye, Jinming Li, John Carson, Julien Maisonneuve, Jürgen Schönwälder, Kent Watsen, Kris Lambrechts, Kristian Larsson, Laurent Ciavaglia, Laurent Toutain, Liz Flynn, Luis M. Contreras (Telefonica), Mahesh Jethanandani, Manoj Gudi, Martin Horneffer, Matthew Bocci, Med Boucadair, Michael Mackey, Michael Richardson, Michael Scharf, Mikko Pesonen, Nacho Dominguez (Telefonica), Naveen Achyuta, Nick Corran, Nils Warnke, Oscar Gonzalez de Dios, Paolo Lucente, Parisa Foroughi, Per Andersson, Phil Shafer, Qin Wu, Qiufang Ma, Raquel Rodriguez, Reshad Rahman, Rob Shakir, Rob Wilton, Roland Bless (KIT), Roland Schott, Rüdiger Geib, Rui Zhuang, Ruibo Han, Sabine Randriamasy, Scott Mansfield (Ericsson), Scott Robohn, Shengnan Yue, Suresh Krishnan, Thomas Graf, Toerless Eckert, Wangbo, Warren Kumari, Wes Hardaker, Wim Henderickx, Xue Yang, Y. Richard Yang, Yangbo, Yisong Liu, and Zhenqiang Li.
 
 # Workshop Program Committee
 
