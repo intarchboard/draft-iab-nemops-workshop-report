@@ -552,7 +552,7 @@ While many other items also need further discussion, this list specifically incl
 
 # Not Covered in the Workshop
 
-Some topics absent from the workshop discussions included tooling (what is currently missing) and strategies to support tool development (who pays, who develops, who maintains). The primary focus of the discussion was on YANG and NETCONF/RESTCONF, while several other network management protocols and techniques currently used received less attention during the workshop. The discussion during the workshop on possible future directions prioritized improving existing solutions rather than introducing entirely new ones (such as enabling intelligence in network management). 
+Some topics absent from the workshop discussions included tooling (what is currently missing) and strategies to support tool development (who pays, who develops, who maintains). The primary focus of the discussion was on YANG and NETCONF/RESTCONF, while several other network management protocols and techniques currently used received less attention during the workshop. The discussion during the workshop on possible future directions prioritized improving existing solutions rather than introducing entirely new ones (such as enabling intelligence in network management).
 
 # Security Considerations
 
