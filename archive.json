@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-05-18T02:00:02.617115+00:00",
+  "timestamp": "2025-05-20T01:55:03.145625+00:00",
   "repo": "intarchboard/draft-iab-nemops-workshop-report",
   "labels": [
     {
@@ -100,7 +100,7 @@
       "id": "I_kwDONe90rM6yx6_-",
       "title": "Comments from Benoit on 10th April",
       "url": "https://github.com/intarchboard/draft-iab-nemops-workshop-report/issues/2",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "dhruvdhody",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [
@@ -109,16 +109,24 @@
       "labels": [],
       "body": "See https://mailarchive.ietf.org/arch/msg/nemops-interest/djLEwUxFoEeYCvccxR8mtBlYTkw/",
       "createdAt": "2025-04-16T12:03:43Z",
-      "updatedAt": "2025-04-16T12:03:46Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2025-05-19T09:19:21Z",
+      "closedAt": "2025-05-19T09:19:21Z",
+      "comments": [
+        {
+          "author": "dhruvdhody",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "See https://github.com/intarchboard/draft-iab-nemops-workshop-report/commit/85a3739eb714ec903d93d297b9fe0a442738336d",
+          "createdAt": "2025-05-19T09:19:21Z",
+          "updatedAt": "2025-05-19T09:19:21Z"
+        }
+      ]
     },
     {
       "number": 3,
       "id": "I_kwDONe90rM6yx8YB",
       "title": "Pending comment from Phil",
       "url": "https://github.com/intarchboard/draft-iab-nemops-workshop-report/issues/3",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "dhruvdhody",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [
@@ -127,9 +135,17 @@
       "labels": [],
       "body": "Phil asked for reformat at https://mailarchive.ietf.org/arch/msg/nemops-interest/0K1KXldk4pMlWugpw8sueWFZq7c/\n\nWes provided a suggested update at https://mailarchive.ietf.org/arch/msg/nemops-interest/Vzdx7yzFmiNTAUw1wWx7Iok7wxs/\n\nDhruv to make the update",
       "createdAt": "2025-04-16T12:06:03Z",
-      "updatedAt": "2025-04-16T12:06:03Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2025-05-19T07:10:21Z",
+      "closedAt": "2025-05-19T07:10:20Z",
+      "comments": [
+        {
+          "author": "dhruvdhody",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Merged with https://github.com/intarchboard/draft-iab-nemops-workshop-report/commit/a37cb2e8ddbfb83eb9c25bd89acecee5d6692aef",
+          "createdAt": "2025-05-19T07:10:20Z",
+          "updatedAt": "2025-05-19T07:10:20Z"
+        }
+      ]
     }
   ],
   "pulls": []
