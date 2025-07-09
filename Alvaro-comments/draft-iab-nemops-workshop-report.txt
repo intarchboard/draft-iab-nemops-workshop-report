@@ -104,7 +104,8 @@ Table of Contents
                takeaways discussion
    4.  Not Covered in the Workshop
    5.  Security Considerations
-   6.  Informative References
+   6.  IANA Considerations
+   7.  Informative References
    Appendix A.  Insights from Operator Feedback
      A.1.  General Insights
      A.2.  Data Models
@@ -691,7 +692,14 @@ Table of Contents
    This document is a workshop report and does not impact the security
    of the Internet.
 
-6.  Informative References
+6.  IANA Considerations
+
+   This document does not have any IANA considerations.
+
+   [Note to the RFC Editor: Please remove this section during
+   publication.]
+
+7.  Informative References
 
    [BLESS]    Bless, R., "An Invariant for Future Resilient Network
               Management Operations", November 2024,
