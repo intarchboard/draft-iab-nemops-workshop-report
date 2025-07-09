@@ -562,6 +562,12 @@ Some topics absent from the workshop discussions included tooling (what is curre
 
 This document is a workshop report and does not impact the security of the Internet.
 
+# IANA Considerations
+
+This document does not have any IANA considerations.
+
+[Note to the RFC Editor: Please remove this section during publication.]
+
 --- back
 
 # Insights from Operator Feedback {#insights}
