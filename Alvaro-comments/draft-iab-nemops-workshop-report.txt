@@ -4,8 +4,9 @@
 
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
-Intended status: Informational                                  D. Dhody
-Expires: 20 November 2025                                    19 May 2025
+Updates: 3535 (if approved)                                     D. Dhody
+Intended status: Informational                               9 July 2025
+Expires: 10 January 2026
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -16,23 +17,24 @@ Abstract
 
    The "Next Era of Network Management Operations (NEMOPS)" workshop was
    convened by the Internet Architecture Board (IAB) from December 3-5,
-   2024 as a three-day online meeting.  It builds on a previous 2002
-   workshop, the outcome of which was documented in RFC 3535 identifying
-   14 operator requirements for consideration in future network
-   management protocol design and related data models, along with some
-   recommendations for the IETF.  Much has changed in the Internet’s
-   operation and technological foundations since then.  The NEMOPS
-   workshop reviewed the past outcomes and discussed any operational
-   barriers that prevented these technologies from being widely
-   implemented.  With the industry, network operators and protocol
-   engineers working in collaboration, the workshop developed a
+   2024, as a three-day online meeting.  It builds on a previous 2002
+   workshop, the outcome of which was documented in RFC 3535,
+   identifying 14 operator requirements for consideration in future
+   network management protocol design and related data models, along
+   with some recommendations for the IETF.  Much has changed in the
+   Internet’s operation and technological foundations since then.  The
+   NEMOPS workshop reviewed the past outcomes and discussed any
+   operational barriers that prevented these technologies from being
+   widely implemented.  With the industry, network operators and
+   protocol engineers working in collaboration, the workshop developed a
    suggested plan of action and network management recommendations for
    the IETF and IRTF.
 
    Note that this document is a report on the proceedings of the
    workshop.  The views and positions documented in this report were
    expressed during the workshop by participants and do not necessarily
-   reflect IAB's views and positions.
+   reflect IAB's views and positions.  This document updates RFC 3535 as
+   the report of the follow-up IAB workshop on Network Management.
 
 About This Document
 
@@ -62,7 +64,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 November 2025.
+   This Internet-Draft will expire on 10 January 2026.
 
 Copyright Notice
 
@@ -120,16 +122,16 @@ Table of Contents
    network operators and protocol developers, and to guide the IETF's
    work on network management protocols.  The outcome of that workshop
    was documented in the "Overview of the 2002 IAB Network Management
-   Workshop" [RFC3535] which identified 14 operator requirements and 11
+   Workshop" [RFC3535], which identified 14 operator requirements and 11
    recommendations for consideration in future network management
    protocol design and related data models within the IETF.
 
-   Those requirements were instrumental in developing first the NETCONF
+   Those requirements were instrumental in developing the NETCONF
    protocol (in the NETCONF Working Group) [RFC6241], the associated
    YANG data modeling language (in the NETMOD Working Group) [RFC7950],
    RESTCONF [RFC8040], and most recently CORECONF [I-D.ietf-core-comi].
 
-   The recent NEMOPS IAB workshop focussed on the following key tasks:
+   The recent NEMOPS IAB workshop focused on the following key tasks:
 
    *  Review the outcomes and results of the 2002 workshop (current
       deployments, state of the art) and identify any operational
@@ -141,6 +143,9 @@ Table of Contents
       and protocol engineers.
 
    *  Develop a plan of action and recommendations for the IETF.
+
+   This document updates RFC 3535 as the report of the follow-up IAB
+   workshop on Network Management.
 
 1.1.  About this workshop report content
 
@@ -168,7 +173,7 @@ Table of Contents
    direct participation of network operators in the IETF and its
    associated discussions on network management protocols and
    operations.  Many operators prioritize operational conferences such
-   as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc over attending
+   as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc, over attending
    standards development organizations (SDOs) like the IETF.
 
    To address this, the IAB workshop's Program Committee (PC) planned
@@ -185,7 +190,7 @@ Table of Contents
 
 3.  Workshop Scope and Discussion
 
-   The workshop was organized across three days with all participants
+   The workshop was organized across three days, with all participants
    contributing to one discussion per day.  The workshop was organized
    around three topic areas: "Session I: the Past (lookback and
    analysis)" (Section 3.1), "Session II: Present (identified problems
@@ -193,10 +198,18 @@ Table of Contents
    solutions, recommendations and next steps)" (Section 3.3).  The
    program committee organized the paper submissions to fit these three
    main themes in order to drive discussion during each of the slots.
-   During each discussion, the papers were presented sequentially and an
-   open discussion was held afterwards.  On the last day, an additional
-   discussion on the key takeaways from the workshop and possible next
-   steps took place (Section 3.4).
+   During each discussion, the papers were presented sequentially, and
+   an open discussion was held afterwards.  On the last day, an
+   additional discussion on the key takeaways from the workshop and
+   possible next steps took place (Section 3.4).
+
+   The workshop agenda for each day is at past
+   (https://datatracker.ietf.org/doc/agenda-interim-2024-nemopsws-
+   01-sessa/), present (https://datatracker.ietf.org/doc/agenda-interim-
+   2024-nemopsws-02-sessa/), and future
+   (https://datatracker.ietf.org/doc/agenda-interim-2024-nemopsws-
+   03-sessa/).  All workshop papers and slides are at materials
+   (https://datatracker.ietf.org/group/nemopsws/materials/).
 
 3.1.  Session I: Past (lookback, analysis)
 
@@ -243,7 +256,7 @@ Table of Contents
    Additionally, the lack of open-source NMS implementations, tools, and
    device model implementations was identified as a significant barrier
    to advancing standardization efforts.  The IETF could play a key role
-   in fostering and enabling collaborations to address these challenges
+   in fostering and enabling collaborations to address these challenges,
    including an off-box translation tool of the IETF device model to
    vendor proprietary models.
 
@@ -271,17 +284,17 @@ Table of Contents
    available tools, adopting systems thinking driven by business
    outcomes, and reusing existing technologies rather than developing
    solutions exclusively for operator network management.  A call was
-   made for IETF to rethink the approach to standardize data models and
-   the associated network management protocols under this guidance.
+   made for the IETF to rethink the approach to standardize data models
+   and the associated network management protocols under this guidance.
 
 3.1.3.  Discussion
 
    The Session I open discussion highlighted the divergence between
-   vendor implementations of YANG models and what is accessible via it,
-   particularly when compared to CLI.  Questions were raised about how
-   to incorporate fast iteration and rapid changes within the
+   vendor implementations of YANG models and what is accessible via
+   them, particularly when compared to CLI.  Questions were raised about
+   how to incorporate fast iteration and rapid changes within the
    established IETF process and culture, especially in contrast to the
-   approach used by OpenConfig.  Common challenges identified included
+   approach used by OpenConfig.  Common challenges identified included a
    lack of tooling, performance issues at scale, the steep learning
    curve for network management protocols/models/tools, initial
    difficulty in moving away from CLI, and the backward compatibility of
@@ -315,9 +328,9 @@ Table of Contents
    [KELLER] shared Deutsche Telekom’s perspective, emphasizing that
    while YANG models perform well for provisioning, they currently fall
    short in providing the operational stability required for validation.
-   While the IETF service models — where available, are considered
-   stable and in good condition, the OpenConfig device models were noted
-   as lacking feature richness and stability.  In contrast, vendor YANG
+   While the IETF service models, where available, are considered stable
+   and in good condition, the OpenConfig device models were noted as
+   lacking feature richness and stability.  In contrast, vendor YANG
    models are often more flexible and available in a more timely manner.
    Achieving fully closed-loop automated and autonomous networking will
    require a greater focus on observability, particularly through
@@ -361,8 +374,8 @@ Table of Contents
    *  Define a reference approach/process for service exposure discovery
       (API discovery).
 
-   *  Outlines set of recommendations for core/key features, along with
-      appropriate justifications, that will help foster more
+   *  Outlines a set of recommendations for core/key features, along
+      with appropriate justifications, that will help foster more
       implementations that meet operators’ needs.
 
    *  Reassess the value of some IETF proposals, including compared to
@@ -372,7 +385,7 @@ Table of Contents
       of YANG modules in the IETF.  RFCs might not be suited for
       documenting YANG modules.
 
-   *  Consider approaches to ease integration by-design (e.g., protocols
+   *  Consider approaches to ease integration by design (e.g., protocols
       and data models).
 
    *  There is a need for a reference specification to translate YANG-
@@ -386,7 +399,7 @@ Table of Contents
    *  Consider approaches to ensure reuse/consistent data structure
       across various NM segments.
 
-   *  Some networks have specific network management requirements such
+   *  Some networks have specific network management requirements, such
       as the need for asynchronous operations or constraints on data
       compactness.
 
@@ -409,7 +422,7 @@ Table of Contents
 
    *  Focus on tooling is needed, especially on the client side.
 
-   *  Create an eco-system where data and networking engineers can
+   *  Create an ecosystem where data and networking engineers can
       collaborate.
 
    *  The distinct approaches followed in both the compute and the
@@ -468,7 +481,7 @@ Table of Contents
 
    The final day of the workshop centred on exploring potential future
    solutions and identifying key takeaways, recommendations, and next
-   steps.  At the end of day three, to conclude the workshop the chairs
+   steps.  At the end of day three, to conclude the workshop, the chairs
    worked to summarize the key takeaways (see Section 3.4) that garnered
    consensus among the participants.
 
@@ -504,13 +517,15 @@ Table of Contents
 
 3.3.2.  Discussion
 
-   The Session III open discussion delved into the absence of NMDA in
-   OpenConfig and if the resulting complexity is needed, the history of
-   introducing gNMI in the IETF (whether RESTCONF offers any advantage
-   over it), and the challenges that building consensus on the common
-   ground takes time (without short-cutting the consensus building
-   process) and practicality of converging on a single protocol (and it
-   is practical).  Emphasize off-box adapters, allowing vendors to
+   The open discussion in Session III explored several topics, including
+   the absence of NMDA in OpenConfig and whether the associated
+   complexity is justified; the historical context of gNMI’s
+   introduction in the IETF and whether RESTCONF provides any advantages
+   over it; and the challenges of building consensus, noting that while
+   the process takes time, it should not be short-circuited.  The
+   session also addressed the practicality of converging on a single
+   protocol and concluded that such convergence is, in fact, feasible.
+   The discussion emphasized off-box adapters, which allow vendors to
    continue innovating and developing native models rapidly.  One
    suggestion that attracted a lot of discussions centred on developing
    a standard model mapping to native models that could be maintained in
@@ -519,13 +534,13 @@ Table of Contents
    to YANG models within the IETF but outside of RFCs, such as
    leveraging GitHub to accelerate the process (along with the
    challenges associated with it), living documents within the WG
-   charter, and supporting academia to take up the open source efforts
+   charter, and supporting academia to take up the open source efforts,
    such as device adapters.  The discussion emphasized the need for
    process experimentation, particularly at the working group or area
-   level where we could have consensus among the YANG/OPS community on
-   how we iterate in WGs without IETF/RFC-wide changes but making sure
+   level, where we could have consensus among the YANG/OPS community on
+   how we iterate in WGs without IETF/RFC-wide changes, but making sure
    the operators are involved in the process.  Conversations ensued
-   around questions asked such as "Is YANG applicable beyond network
+   around questions asked, such as "Is YANG applicable beyond network
    management?" and "Can applications adopt YANG as a modelling language
    to define their services?"
 
@@ -535,8 +550,8 @@ Table of Contents
 3.4.  Key Takeaways
 
    At the end of the third day, the discussion turned to key takeaways
-   that have high-level consensus.  These were live edited during the
-   last discussion of the workshop and anything that did not reach wide
+   that have a high-level consensus.  These were live edited during the
+   last discussion of the workshop, and anything that did not reach wide
    consensus was moved into a "future considerations" list
    (Section 3.4.5).
 
@@ -575,7 +590,7 @@ Table of Contents
 3.4.2.  Protocol conclusions
 
    The following conclusions came while discussing Network Management
-   protocols more specifically.
+   protocols, more specifically.
 
    1.  Netconf and YANG are not used much for monitoring tasks.
 
@@ -588,7 +603,7 @@ Table of Contents
 3.4.3.  Modeling conclusions
 
    The following conclusions came while discussing Network Management
-   modeling more specifically.
+   modeling, more specifically.
 
    1.  Some YANG models can become too complex, though not as a fault of
        the language itself.
@@ -599,9 +614,9 @@ Table of Contents
        features, need to be exposed through network management models
        and protocols for a network management ecosystem to be viable.
 
-   4.  Greater support for service-level modeling is needed.  Device
+   4.  Greater support for service-level modeling is needed.  Device-
        level modeling can be a building block to achieve a sufficient
-       service-level model, but is not a complete solution by itself.
+       service-level model, but it is not a complete solution by itself.
 
    5.  Network configuration needs to be verifiable to ensure any
        potential changes can be accepted by devices.  Model translation
@@ -612,8 +627,8 @@ Table of Contents
 
 3.4.4.  Standardization conclusions
 
-   The following conclusions came while discussing the best ways to
-   standardize network management protocols and associated models.
+   The following conclusions were reached while discussing the best ways
+   to standardize network management protocols and associated models.
 
    1.  A methodology of rapid model development procedures is needed to
        ensure model deployment can keep pace with new feature
@@ -873,7 +888,7 @@ A.1.  General Insights
        develop.  There is a need for tools that are easy to use and just
        work.
 
-   2.  Vast majority of smaller operators use CLI and open source to
+   2.  The vast majority of smaller operators use CLI and open source to
        manage their networks.
 
    3.  There is debate fatigue.  The protocol/model debate is a
@@ -882,19 +897,19 @@ A.1.  General Insights
    4.  It was suggested that other domains (e.g., K8N/automation) are
        years ahead of the current network engineering stack.
 
-   5.  Support for multiple friendly, stable and feature rich libraries
+   5.  Support for multiple friendly, stable and feature-rich libraries
        for programming languages is needed.  Many DevOps routines use
-       shell scripts, others use a high-level programming language.  In
-       any case, on the client side, multiple programming languages are
-       used.
+       shell scripts, while others use a high-level programming
+       language.  In any case, on the client side, multiple programming
+       languages are used.
 
    6.  Screen scraping is both necessary and evil.  This most often
        occurs when interacting with a device having only a CLI.
 
    7.  It was noted that there could be an outreach to Academia to
        establish programs to teach lessons using modern management
-       stacks, and then a new generation of engineers could be helping
-       to improve tooling and automation, with university (and/or IETF)
+       stacks, and then a new generation of engineers could help to
+       improve tooling and automation, with university (and/or IETF)
        hackathons.
 
 A.2.  Data Models
@@ -914,7 +929,7 @@ A.2.  Data Models
        not hiding vendor knobs.
 
    3.  It was emphasized that streaming telemetry requires picking a
-       model and sticking with it.  It is quite a commitment and the
+       model and sticking with it.  It is quite a commitment, and the
        current environment makes the decision harder.
 
    4.  It was noted that IETF's focus should be on defining abstract/
@@ -926,13 +941,13 @@ A.2.  Data Models
        knows the CLI command but has trouble grepping for it in YANG
        modules defined by SDOs.
 
-   6.  There was a wish that IETF and OpenConfig models would merge.
+   6.  There was a wish that the IETF and OpenConfig models would merge.
 
 Appendix B.  Key Recommendations from Operator Feedback
 
    Various recommendations were made by the operators during the
    outreach events.  The key ones presented during the workshop were
-   (there were lot more collected):
+   (there were a lot more collected):
 
    *  Everyone: Continue to focus on model-driven management as a means
       to achieve automation.
@@ -947,8 +962,8 @@ Appendix B.  Key Recommendations from Operator Feedback
    *  Ambassadors: Evangelize the recommended solution stack for common
       cases.
 
-   *  Vendors: Support the recommended approach to solution stack for
-      common cases.
+   *  Vendors: Support the recommended approach to the solution stack
+      for common cases.
 
 Appendix C.  Position Papers
 
@@ -1030,24 +1045,24 @@ Appendix C.  Position Papers
 Appendix D.  Workshop Participants
 
    The workshop participants were Alex Huang, Alexander Clemm, Alexander
-   Pelov, Benoit Claise, Boris Khasanov, Brad Peters (nbn), Carsten
-   Bormann, Chongfeng Xie, Cindy Morgan, Dan Voyer, Darren Loher, Dean
+   Pelov, Benoit Claise, Boris Khasanov, Brad Peters, Carsten Bormann,
+   Chongfeng Xie, Cindy Morgan, Dan Voyer, Darren Loher, Dean
    Bogdanovic, Dean Bogdanović, Dhruv Dhody, Diego Lopez, Ebben Aries,
    Frank (Chong Feng), Holger Keller, Ian Farrer, Jaime Jimenez, James
    Cumming, Janne Karvonen, Jason Sterne, Jiaming Ye, Jinming Li, John
    Carson, Julien Maisonneuve, Jürgen Schönwälder, Kent Watsen, Kris
    Lambrechts, Kristian Larsson, Laurent Ciavaglia, Laurent Toutain, Liz
-   Flynn, Luis M.  Contreras (Telefonica), Mahesh Jethanandani, Manoj
-   Gudi, Martin Horneffer, Matthew Bocci, Med Boucadair, Michael Mackey,
-   Michael Richardson, Michael Scharf, Mikko Pesonen, Nacho Dominguez
-   (Telefonica), Naveen Achyuta, Nick Corran, Nils Warnke, Oscar
-   Gonzalez de Dios, Paolo Lucente, Parisa Foroughi, Per Andersson, Phil
-   Shafer, Qin Wu, Qiufang Ma, Raquel Rodriguez, Reshad Rahman, Rob
-   Shakir, Rob Wilton, Roland Bless (KIT), Roland Schott, Rüdiger Geib,
-   Rui Zhuang, Ruibo Han, Sabine Randriamasy, Scott Mansfield
-   (Ericsson), Scott Robohn, Shengnan Yue, Suresh Krishnan, Thomas Graf,
-   Toerless Eckert, Wangbo, Warren Kumari, Wes Hardaker, Wim Henderickx,
-   Xue Yang, Y.  Richard Yang, Yangbo, Yisong Liu, and Zhenqiang Li.
+   Flynn, Luis M.  Contreras, Mahesh Jethanandani, Manoj Gudi, Martin
+   Horneffer, Matthew Bocci, Med Boucadair, Michael Mackey, Michael
+   Richardson, Michael Scharf, Mikko Pesonen, Nacho Dominguez, Naveen
+   Achyuta, Nick Corran, Nils Warnke, Oscar Gonzalez de Dios, Paolo
+   Lucente, Parisa Foroughi, Per Andersson, Phil Shafer, Qin Wu, Qiufang
+   Ma, Raquel Rodriguez, Reshad Rahman, Rob Shakir, Rob Wilton, Roland
+   Bless, Roland Schott, Rüdiger Geib, Rui Zhuang, Ruibo Han, Sabine
+   Randriamasy, Scott Mansfield, Scott Robohn, Shengnan Yue, Suresh
+   Krishnan, Thomas Graf, Toerless Eckert, Wangbo, Warren Kumari, Wes
+   Hardaker, Wim Henderickx, Xue Yang, Y.  Richard Yang, Yangbo, Yisong
+   Liu, and Zhenqiang Li.
 
 Appendix E.  Workshop Program Committee
 
@@ -1063,7 +1078,9 @@ IAB Members at the Time of Approval
 
 Acknowledgments
 
-   TBD
+   Thanks to Benoît Claise, Jürgen Schönwälder, Kristian Larsson, Jaime
+   Jiménez, Michael Richardson, and Phil Shafer for helpful suggestions
+   to improve this report.
 
 Authors' Addresses
 
