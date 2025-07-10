@@ -149,8 +149,8 @@ Table of Contents
    second IAB workshop on the future of Network Management.  The goal of
    the second workshop was not to invalidate or replace the first, but
    to extend the discussion with lessons learned since then.  Together,
-   both documents capture the evolving needs of network management over
-   time.
+   both documents capture a snapshot of the evolving needs of network
+   management over time.
 
 1.1.  About this workshop report content
 
