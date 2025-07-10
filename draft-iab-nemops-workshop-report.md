@@ -359,7 +359,7 @@ The recent NEMOPS IAB workshop focused on the following key tasks:
 * Sketch new requirements for future network management operations in a collaborative manner with the industry, network operators, and protocol engineers.
 * Develop a plan of action and recommendations for the IETF.
 
-This document updates RFC 3535 as the report of the follow-up IAB workshop on Network Management.
+This document updates RFC 3535 with new information gathered from the second IAB workshop on the future of Network Management. The goal of the second workshop was not to invalidate or replace the first, but to extend the discussion with lessons learned since then. Together, both documents capture the evolving needs of network management over time.
 
 ## About this workshop report content
 
