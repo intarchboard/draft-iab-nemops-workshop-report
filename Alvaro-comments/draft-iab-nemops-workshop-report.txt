@@ -5,8 +5,8 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Updates: 3535 (if approved)                                     D. Dhody
-Intended status: Informational                               9 July 2025
-Expires: 10 January 2026
+Intended status: Informational                              10 July 2025
+Expires: 11 January 2026
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -64,7 +64,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 10 January 2026.
+   This Internet-Draft will expire on 11 January 2026.
 
 Copyright Notice
 
@@ -145,8 +145,12 @@ Table of Contents
 
    *  Develop a plan of action and recommendations for the IETF.
 
-   This document updates RFC 3535 as the report of the follow-up IAB
-   workshop on Network Management.
+   This document updates RFC 3535 with new information gathered from the
+   second IAB workshop on the future of Network Management.  The goal of
+   the second workshop was not to invalidate or replace the first, but
+   to extend the discussion with lessons learned since then.  Together,
+   both documents capture the evolving needs of network management over
+   time.
 
 1.1.  About this workshop report content
 
