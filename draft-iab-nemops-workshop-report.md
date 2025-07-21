@@ -641,19 +641,20 @@ The workshop program committee members were Wes Hardaker (co-chair), Dhruv Dhody
 {:numbered="false"}
 
 Internet Architecture Board members at the time this document was approved for publication were:
-- Matthew Bocci
-- Roman Danyliw
-- Dhruv Dhody
-- Jana Iyengar
-- Cullen Jennings
-- Suresh Krishnan
-- Mirja Kühlewind
-- Warren Kumari
-- Jason Livingood
-- Mark Nottingham
-- Tommy Pauly
-- Alvaro Retana
-- Qin Wu
+
+* Matthew Bocci
+* Roman Danyliw
+* Dhruv Dhody
+* Jana Iyengar
+* Cullen Jennings
+* Suresh Krishnan
+* Mirja Kühlewind
+* Warren Kumari
+* Jason Livingood
+* Mark Nottingham
+* Tommy Pauly
+* Alvaro Retana
+* Qin Wu
 
 # Acknowledgments
 {:numbered="false"}
