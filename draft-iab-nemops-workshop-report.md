@@ -640,9 +640,24 @@ The workshop program committee members were Wes Hardaker (co-chair), Dhruv Dhody
 # IAB Members at the Time of Approval
 {:numbered="false"}
 
-Internet Architecture Board members at the time this document was approved for publication were: TODO
+Internet Architecture Board members at the time this document was approved for publication were:
+- Matthew Bocci
+- Roman Danyliw
+- Dhruv Dhody
+- Jana Iyengar
+- Cullen Jennings
+- Suresh Krishnan
+- Mirja Kühlewind
+- Warren Kumari
+- Jason Livingood
+- Mark Nottingham
+- Tommy Pauly
+- Alvaro Retana
+- Qin Wu
 
 # Acknowledgments
 {:numbered="false"}
 
 Thanks to Benoît Claise, Jürgen Schönwälder, Kristian Larsson, Jaime Jiménez, Michael Richardson, and Phil Shafer for helpful suggestions to improve this report.
+
+Thanks to Alvaro Retana for shepherding this document.
