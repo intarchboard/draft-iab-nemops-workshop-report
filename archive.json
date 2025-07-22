@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-07-13T02:15:27.110388+00:00",
+  "timestamp": "2025-07-22T02:05:26.555263+00:00",
   "repo": "intarchboard/draft-iab-nemops-workshop-report",
   "labels": [
     {
@@ -154,24 +154,26 @@
       "id": "PR_kwDONe90rM6eGMvt",
       "title": "Shepherd Review by Alvaro",
       "url": "https://github.com/intarchboard/draft-iab-nemops-workshop-report/pull/4",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "dhruvdhody",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "https://mailarchive.ietf.org/arch/msg/architecture-discuss/pJ2is78SqaZFwYzRhwsHk_k9VNw/",
       "createdAt": "2025-07-09T10:23:20Z",
-      "updatedAt": "2025-07-10T15:59:39Z",
+      "updatedAt": "2025-07-21T13:24:16Z",
       "baseRepository": "intarchboard/draft-iab-nemops-workshop-report",
       "baseRefName": "main",
       "baseRefOid": "08438c675408903e276273f84fbfea4e49d42cf5",
       "headRepository": "intarchboard/draft-iab-nemops-workshop-report",
       "headRefName": "Alvaro-comments",
       "headRefOid": "0e0e92b4c3c097f4d2d64c5a05059f90f6bf664d",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2025-07-21T13:24:15Z",
+      "mergedAt": "2025-07-21T13:24:15Z",
+      "mergedBy": "dhruvdhody",
+      "mergeCommit": {
+        "oid": "df552f90b5b54193e1653f19fc557da785b830fc"
+      },
       "comments": [
         {
           "author": "hardaker",
