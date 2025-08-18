@@ -36,7 +36,7 @@ informative:
   RFC8309:
   RFC9196:
   I-D.ietf-core-comi:
-  I-D.boucadair-nmop-rfc3535-20years-later:
+  I-D.ietf-nmop-rfc3535-20years-later:
   SURVEY:
     target: https://ietf.iad1.qualtrics.com/jfe/form/SV_9vQxBRiZqDntarc
     title: Next Era of Network Management Operations (NEMOPS) workshop survey
@@ -341,13 +341,15 @@ informative:
         name: Michael Scharf
     date: November 2024
 --- abstract
-The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) from December 3-5, 2024, as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535, identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and discussed any operational barriers that prevented these technologies from being widely implemented. With the industry, network operators and protocol engineers working in collaboration, the workshop developed a suggested plan of action and network management recommendations for the IETF and IRTF.
+The "Next Era of Network Management Operations (NEMOPS)" workshop was convened by the Internet Architecture Board (IAB) from December 3-5, 2024, as a three-day online meeting. It builds on a previous 2002 workshop, the outcome of which was documented in RFC 3535, identifying 14 operator requirements for consideration in future network management protocol design and related data models, along with some recommendations for the IETF. Much has changed in the Internet’s operation and technological foundations since then. The NEMOPS workshop reviewed the past outcomes and discussed any operational barriers that prevented these technologies from being widely implemented. With the industry, network operators and protocol engineers working in collaboration, the workshop developed a suggested plan of action and network management recommendations for the IETF and IRTF. This document updates RFC 3535 as the report of the follow-up IAB workshop on Network Management.
 
-Note that this document is a report on the proceedings of the workshop.  The views and positions documented in this report were expressed during the workshop by participants and do not necessarily reflect IAB's views and positions. This document updates RFC 3535 as the report of the follow-up IAB workshop on Network Management.
+Note that this document is a report on the proceedings of the workshop. The views and positions documented in this report are those of the workshop participants and do not necessarily reflect IAB views and positions.
 
 --- middle
 
 # Introduction
+
+The Internet Architecture Board (IAB) holds occasional workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture.  This long-term planning function of the IAB is complementary to the ongoing engineering efforts performed by working groups of the Internet Engineering Task Force (IETF).
 
 The IAB organized a workshop in 2002 to establish a dialog between network operators and protocol developers, and to guide the IETF's work on network management protocols. The outcome of that workshop was documented in the "Overview of the 2002 IAB Network Management Workshop" {{RFC3535}}, which identified 14 operator requirements and 11 recommendations for consideration in future network management protocol design and related data models within the IETF.
 
@@ -363,17 +365,13 @@ This document updates RFC 3535 with new information gathered from the second IAB
 
 ## About this workshop report content
 
-The Internet Architecture Board (IAB) holds occasional workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture.  This long-term planning function of the IAB is complementary to the ongoing engineering efforts performed by working groups of the Internet Engineering Task Force (IETF).
-
 This document is a report on the proceedings of the workshop. The views and positions documented in this report are expressed during the workshop by participants and do not necessarily reflect IAB's views and positions.
 
 Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation.  Thus, the content of this report follows the flow and dialogue of the workshop but does not necessarily attempt to capture a consensus, unless stated otherwise.
 
 # Outreach and Survey {#outreach}
 
-There has been a noticeable decline, since the last workshop, in the direct participation of network operators in the IETF and its associated discussions on network management protocols and operations. Many operators prioritize operational conferences such as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc, over attending standards development organizations (SDOs) like the IETF.
-
-To address this, the IAB workshop's Program Committee (PC) planned outreach initiatives to foster discussions and gather interest by engaging with operators at these operational venues and conducting information/requirement-gathering sessions. Participants were encouraged to submit "position papers" or "expressions of interest" to join the workshop. Additionally, a [SURVEY] was conducted to collect valuable insights to inform the workshop.
+The IAB workshop's Program Committee (PC) planned outreach initiatives to foster discussions and gather interest by engaging with operators at various operational venues (RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc) and conducting information/requirement-gathering sessions. Participants were encouraged to submit "position papers" or "expressions of interest" to join the workshop. Additionally, a [SURVEY] was conducted to collect valuable insights to inform the workshop.
 
 The PC continued to engage with network operators after the workshop to facilitate information sharing and gather their feedback, helping to shape the next steps and outcomes of the workshop.
 
@@ -405,7 +403,7 @@ The Session I open discussion highlighted the divergence between vendor implemen
 
 ## Session II: Present (identified problems & requirements) {#present}
 
-The second day of the workshop concentrated on challenges and emerging requirements for future network management operations. The presentation emphasized the importance of validation, observability, automation, and the need for agile, incremental development of both network models and management protocols. A compilation of new requirements is being maintained in {{I-D.boucadair-nmop-rfc3535-20years-later}}. The final presentation of the day provided a summary of the survey results and operator feedback gathered from outreach events.
+The second day of the workshop concentrated on challenges and emerging requirements for future network management operations. The presentation emphasized the importance of validation, observability, automation, and the need for agile, incremental development of both network models and management protocols. A compilation of new requirements from operators was presented; they are being maintained in {{I-D.ietf-nmop-rfc3535-20years-later}}. The final presentation of the day provided a summary of the survey results and operator feedback gathered from outreach events.
 
 ### Operator Feedback
 
@@ -415,7 +413,7 @@ The second day of the workshop concentrated on challenges and emerging requireme
 
 Using YANG-Push as an example, {{GRAF}} highlighted how standards development often fails to align with the needs of network operators, the constraints of network vendors, and the integration requirements. Most critically, it lacks an agile, incremental development process. The presentation advocated for adopting an iterative approach to standards development, focusing on delivering minimal viable products as part of the process.
 
-{{CONTRERAS}} emphasized reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through {{I-D.boucadair-nmop-rfc3535-20years-later}}, leveraging feedback and discussions from the workshop. Some key requirements, suggestions and observations were highlighted:
+{{CONTRERAS}} emphasized reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through {{I-D.ietf-nmop-rfc3535-20years-later}}, leveraging feedback and discussions from the workshop. Some key requirements, suggestions and observations that were highlighted in the workshop:
 
 * Network software implementations can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code.
 * Need to rationalize the device model space and avoid redundant efforts. Unlike service and network models, IETF-defined device models are not widely implemented.
