@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-07-22T02:05:26.555263+00:00",
+  "timestamp": "2025-08-19T01:53:47.544208+00:00",
   "repo": "intarchboard/draft-iab-nemops-workshop-report",
   "labels": [
     {
@@ -209,6 +209,73 @@
           "createdAt": "2025-07-10T15:59:39Z",
           "updatedAt": "2025-07-10T15:59:39Z",
           "comments": []
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "id": "PR_kwDONe90rM6kChsC",
+      "title": "As per Mirja's comments",
+      "url": "https://github.com/intarchboard/draft-iab-nemops-workshop-report/pull/5",
+      "state": "OPEN",
+      "author": "dhruvdhody",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-08-18T06:32:30Z",
+      "updatedAt": "2025-08-18T15:05:19Z",
+      "baseRepository": "intarchboard/draft-iab-nemops-workshop-report",
+      "baseRefName": "main",
+      "baseRefOid": "3aa484abf136b6ba358be32a0f20b6dc0fcd62b8",
+      "headRepository": "intarchboard/draft-iab-nemops-workshop-report",
+      "headRefName": "dhruvdhody-mirja-patch",
+      "headRefOid": "2dc3095f64656e31d65e6c6b3cc78b1457d3363c",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDONe90rM66fTPt",
+          "commit": {
+            "abbreviatedOid": "2dc3095"
+          },
+          "author": "hardaker",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-18T15:03:29Z",
+          "updatedAt": "2025-08-18T15:03:30Z",
+          "comments": [
+            {
+              "originalPosition": 14,
+              "body": "So there was a lot of discussion on the list, with most people agreeing with Juergen's perspective that \"updating\" is wrong, as workshop reports are documenting the results of a workshop are not really updating the past workshop, since the results of the past workshop are frozen in time at that moment.  This document \"follows\" it or \"continues the discussion\" or something, but I think the consensus was (as I read it) that we should remove the updates: line and remove this sentence, or change it to something other than \"updates\".",
+              "createdAt": "2025-08-18T15:03:29Z",
+              "updatedAt": "2025-08-18T15:03:30Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDONe90rM66fU1U",
+          "commit": {
+            "abbreviatedOid": "2dc3095"
+          },
+          "author": "hardaker",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-18T15:05:18Z",
+          "updatedAt": "2025-08-18T15:05:19Z",
+          "comments": [
+            {
+              "originalPosition": 52,
+              "body": "so the problem with linking to the the nmop draft is that it'll hold up the publication of this draft as a dependancy?  Or we can tell the editor to publish it with only the reference to the ID that may or may not get published in the future through the NMOP WG?.",
+              "createdAt": "2025-08-18T15:05:18Z",
+              "updatedAt": "2025-08-18T15:05:19Z"
+            }
+          ]
         }
       ]
     }
