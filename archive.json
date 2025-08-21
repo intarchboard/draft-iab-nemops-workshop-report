@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-08-19T01:53:47.544208+00:00",
+  "timestamp": "2025-08-21T01:50:18.076825+00:00",
   "repo": "intarchboard/draft-iab-nemops-workshop-report",
   "labels": [
     {
@@ -224,13 +224,13 @@
       "labels": [],
       "body": "",
       "createdAt": "2025-08-18T06:32:30Z",
-      "updatedAt": "2025-08-18T15:05:19Z",
+      "updatedAt": "2025-08-19T17:29:05Z",
       "baseRepository": "intarchboard/draft-iab-nemops-workshop-report",
       "baseRefName": "main",
       "baseRefOid": "3aa484abf136b6ba358be32a0f20b6dc0fcd62b8",
       "headRepository": "intarchboard/draft-iab-nemops-workshop-report",
       "headRefName": "dhruvdhody-mirja-patch",
-      "headRefOid": "2dc3095f64656e31d65e6c6b3cc78b1457d3363c",
+      "headRefOid": "f22e7eaea6f39a5d334c876dc5116e32a0ae7703",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -274,6 +274,86 @@
               "body": "so the problem with linking to the the nmop draft is that it'll hold up the publication of this draft as a dependancy?  Or we can tell the editor to publish it with only the reference to the ID that may or may not get published in the future through the NMOP WG?.",
               "createdAt": "2025-08-18T15:05:18Z",
               "updatedAt": "2025-08-18T15:05:19Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDONe90rM66qivd",
+          "commit": {
+            "abbreviatedOid": "2dc3095"
+          },
+          "author": "dhruvdhody",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-19T10:36:10Z",
+          "updatedAt": "2025-08-19T10:36:10Z",
+          "comments": [
+            {
+              "originalPosition": 52,
+              "body": "It will still be an informative reference, and thus it will not hold up the publication. ",
+              "createdAt": "2025-08-19T10:36:10Z",
+              "updatedAt": "2025-08-19T10:36:10Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDONe90rM66qt8X",
+          "commit": {
+            "abbreviatedOid": "2dc3095"
+          },
+          "author": "dhruvdhody",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-19T10:50:21Z",
+          "updatedAt": "2025-08-19T10:50:21Z",
+          "comments": [
+            {
+              "originalPosition": 14,
+              "body": "I agreed with Alvaro's (@aretana) point that update is the only metadata tagging technique we have. The balance we have is that the last para in introduction section explains the actual relationship. \r\n\r\nHow about this change in the abstract -\r\n```` \r\nThis document updates (builds on) RFC 3535 as the report \r\nof the follow-up IAB workshop on Network Management.\r\n````",
+              "createdAt": "2025-08-19T10:50:21Z",
+              "updatedAt": "2025-08-19T10:50:21Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDONe90rM66vUAX",
+          "commit": {
+            "abbreviatedOid": "2dc3095"
+          },
+          "author": "hardaker",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-19T16:03:24Z",
+          "updatedAt": "2025-08-19T16:03:25Z",
+          "comments": [
+            {
+              "originalPosition": 14,
+              "body": "That's better wording.  I actually agreed with the update point too, until I really thought \"why does it need the update tag in the first place?  what is it actually buying us?\"  I'd argue that it's both not needed, and the updates tag is really meant for standards documents more than informational ones that are reporting on workshops.\r\n\r\n[it's also not a hill I'm going to die on, and it's up to the current IAB to make the call]",
+              "createdAt": "2025-08-19T16:03:24Z",
+              "updatedAt": "2025-08-19T16:03:25Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDONe90rM66wR07",
+          "commit": {
+            "abbreviatedOid": "2dc3095"
+          },
+          "author": "dhruvdhody",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-19T17:29:05Z",
+          "updatedAt": "2025-08-19T17:29:05Z",
+          "comments": [
+            {
+              "originalPosition": 14,
+              "body": "Not a hill I want to die on either! I added the change. Let us wait for Alvaro (shepherd) to look it over! ",
+              "createdAt": "2025-08-19T17:29:05Z",
+              "updatedAt": "2025-08-19T17:29:05Z"
             }
           ]
         }
