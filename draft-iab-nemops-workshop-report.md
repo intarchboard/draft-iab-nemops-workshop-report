@@ -448,7 +448,7 @@ The Session II open discussion featured feedback from implementers, highlighting
 
 The final day of the workshop centred on exploring potential future solutions and identifying key takeaways, recommendations, and next steps. At the end of day three, to conclude the workshop, the chairs worked to summarize the key takeaways (see {{key}}) that garnered consensus among the participants.
 
-### Future Directions
+### Suggestions on Future Directions
 
 {{CLAISE}} highlighted the challenges of integrating data models across different silos, protocols, and data structures, emphasizing the need for a machine-readable approach to expose semantics. Additionally, the related tools being developed and showcased in the IETF Hackathons, along with the various challenges in mapping across protocols and models, were discussed. A potential solution was proposed using a knowledge graph based on the Semantic Web Stack, along with the need to define a basic ontology for the networking domain in an iterative manner (outside of RFCs).
 
