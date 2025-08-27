@@ -4,9 +4,8 @@
 
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
-Updates: 3535 (if approved)                                     D. Dhody
-Intended status: Informational                              21 July 2025
-Expires: 22 January 2026
+Intended status: Informational                                  D. Dhody
+Expires: 28 February 2026                                 27 August 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -28,13 +27,13 @@ Abstract
    widely implemented.  With the industry, network operators and
    protocol engineers working in collaboration, the workshop developed a
    suggested plan of action and network management recommendations for
-   the IETF and IRTF.
+   the IETF and IRTF.  Building on RFC 3535, this document provides the
+   report of the follow-up IAB workshop on Network Management.
 
    Note that this document is a report on the proceedings of the
-   workshop.  The views and positions documented in this report were
-   expressed during the workshop by participants and do not necessarily
-   reflect IAB's views and positions.  This document updates RFC 3535 as
-   the report of the follow-up IAB workshop on Network Management.
+   workshop.  The views and positions documented in this report are
+   those of the workshop participants and do not necessarily reflect IAB
+   views and positions.
 
 About This Document
 
@@ -64,7 +63,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 January 2026.
+   This Internet-Draft will expire on 28 February 2026.
 
 Copyright Notice
 
@@ -119,6 +118,13 @@ Table of Contents
 
 1.  Introduction
 
+   The Internet Architecture Board (IAB) holds occasional workshops
+   designed to consider long-term issues and strategies for the
+   Internet, and to suggest future directions for the Internet
+   architecture.  This long-term planning function of the IAB is
+   complementary to the ongoing engineering efforts performed by working
+   groups of the Internet Engineering Task Force (IETF).
+
    The IAB organized a workshop in 2002 to establish a dialog between
    network operators and protocol developers, and to guide the IETF's
    work on network management protocols.  The outcome of that workshop
@@ -145,21 +151,14 @@ Table of Contents
 
    *  Develop a plan of action and recommendations for the IETF.
 
-   This document updates RFC 3535 with new information gathered from the
-   second IAB workshop on the future of Network Management.  The goal of
-   the second workshop was not to invalidate or replace the first, but
-   to extend the discussion with lessons learned since then.  Together,
-   both documents capture a snapshot of the evolving needs of network
-   management over time.
+   This document builds on RFC 3535 with new information gathered from
+   the second IAB workshop on the future of Network Management.  The
+   goal of the second workshop was not to invalidate or replace the
+   first, but to extend the discussion with lessons learned since then.
+   Together, both documents capture a snapshot of the evolving needs of
+   network management over time.
 
 1.1.  About this workshop report content
-
-   The Internet Architecture Board (IAB) holds occasional workshops
-   designed to consider long-term issues and strategies for the
-   Internet, and to suggest future directions for the Internet
-   architecture.  This long-term planning function of the IAB is
-   complementary to the ongoing engineering efforts performed by working
-   groups of the Internet Engineering Task Force (IETF).
 
    This document is a report on the proceedings of the workshop.  The
    views and positions documented in this report are expressed during
@@ -174,20 +173,14 @@ Table of Contents
 
 2.  Outreach and Survey
 
-   There has been a noticeable decline, since the last workshop, in the
-   direct participation of network operators in the IETF and its
-   associated discussions on network management protocols and
-   operations.  Many operators prioritize operational conferences such
-   as RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc, over attending
-   standards development organizations (SDOs) like the IETF.
-
-   To address this, the IAB workshop's Program Committee (PC) planned
-   outreach initiatives to foster discussions and gather interest by
-   engaging with operators at these operational venues and conducting
-   information/requirement-gathering sessions.  Participants were
-   encouraged to submit "position papers" or "expressions of interest"
-   to join the workshop.  Additionally, a [SURVEY] was conducted to
-   collect valuable insights to inform the workshop.
+   The IAB workshop's Program Committee (PC) planned outreach
+   initiatives to foster discussions and gather interest by engaging
+   with operators at various operational venues (RIPE, NANOG, APRICOT,
+   LACNIC, AutoConn, etc) and conducting information/requirement-
+   gathering sessions.  Participants were encouraged to submit "position
+   papers" or "expressions of interest" to join the workshop.
+   Additionally, a [SURVEY] was conducted to collect valuable insights
+   to inform the workshop.
 
    The PC continued to engage with network operators after the workshop
    to facilitate information sharing and gather their feedback, helping
@@ -323,9 +316,9 @@ Table of Contents
    presentation emphasized the importance of validation, observability,
    automation, and the need for agile, incremental development of both
    network models and management protocols.  A compilation of new
-   requirements is being maintained in
-   [I-D.boucadair-nmop-rfc3535-20years-later].  The final presentation
-   of the day provided a summary of the survey results and operator
+   requirements from operators was presented; they are being maintained
+   in [I-D.ietf-nmop-rfc3535-20years-later].  The final presentation of
+   the day provided a summary of the survey results and operator
    feedback gathered from outreach events.
 
 3.2.1.  Operator Feedback
@@ -363,9 +356,9 @@ Table of Contents
    [CONTRERAS] emphasized reassessing deployment assumptions and
    incorporating updated operator requirements.  The authors are
    addressing these aspects through
-   [I-D.boucadair-nmop-rfc3535-20years-later], leveraging feedback and
+   [I-D.ietf-nmop-rfc3535-20years-later], leveraging feedback and
    discussions from the workshop.  Some key requirements, suggestions
-   and observations were highlighted:
+   and observations that were highlighted in the workshop:
 
    *  Network software implementations can only happen with a strong,
       committed standardization effort, complemented by active
@@ -779,21 +772,21 @@ Table of Contents
               nemopsws-paper-lessons-learned-from-30-years-of-net-snmp-
               00.pdf>.
 
-   [I-D.boucadair-nmop-rfc3535-20years-later]
-              Boucadair, M., Contreras, L. M., de Dios, O. G., Graf, T.,
-              Rahman, R., and L. Tailhardat, "RFC 3535, 20 Years Later:
-              An Update of Operators Requirements on Network Management
-              Protocols and Modelling", Work in Progress, Internet-
-              Draft, draft-boucadair-nmop-rfc3535-20years-later-08, 12
-              May 2025, <https://datatracker.ietf.org/doc/html/draft-
-              boucadair-nmop-rfc3535-20years-later-08>.
-
    [I-D.ietf-core-comi]
               Veillette, M., Van der Stok, P., Pelov, A., Bierman, A.,
               and C. Bormann, "CoAP Management Interface (CORECONF)",
               Work in Progress, Internet-Draft, draft-ietf-core-comi-20,
               6 May 2025, <https://datatracker.ietf.org/doc/html/draft-
               ietf-core-comi-20>.
+
+   [I-D.ietf-nmop-rfc3535-20years-later]
+              Boucadair, M., Contreras, L. M., de Dios, O. G., Graf, T.,
+              Rahman, R., and L. Tailhardat, "An Update of Operators
+              Requirements on Network Management Protocols and
+              Modelling", Work in Progress, Internet-Draft, draft-ietf-
+              nmop-rfc3535-20years-later-00, 7 August 2025,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-nmop-
+              rfc3535-20years-later-00>.
 
    [JIMENEZ]  Jiménez, J., Mansfield, S., , Pesonen, M., Torvinen, V.,
               and J. Karvonen, "Evolving Challenges and Solutions in
