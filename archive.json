@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-08-21T01:50:18.076825+00:00",
+  "timestamp": "2025-08-28T01:48:00.803881+00:00",
   "repo": "intarchboard/draft-iab-nemops-workshop-report",
   "labels": [
     {
@@ -217,24 +217,26 @@
       "id": "PR_kwDONe90rM6kChsC",
       "title": "As per Mirja's comments",
       "url": "https://github.com/intarchboard/draft-iab-nemops-workshop-report/pull/5",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "dhruvdhody",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2025-08-18T06:32:30Z",
-      "updatedAt": "2025-08-19T17:29:05Z",
+      "updatedAt": "2025-08-27T07:41:24Z",
       "baseRepository": "intarchboard/draft-iab-nemops-workshop-report",
       "baseRefName": "main",
       "baseRefOid": "3aa484abf136b6ba358be32a0f20b6dc0fcd62b8",
       "headRepository": "intarchboard/draft-iab-nemops-workshop-report",
       "headRefName": "dhruvdhody-mirja-patch",
-      "headRefOid": "f22e7eaea6f39a5d334c876dc5116e32a0ae7703",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "3f5e1722e93212966a6c35fb08e74a770094567a",
+      "closedAt": "2025-08-27T07:41:24Z",
+      "mergedAt": "2025-08-27T07:41:24Z",
+      "mergedBy": "dhruvdhody",
+      "mergeCommit": {
+        "oid": "d97b55430a2186693c2cad780c2126313954a7df"
+      },
       "comments": [],
       "reviews": [
         {
@@ -356,8 +358,74 @@
               "updatedAt": "2025-08-19T17:29:05Z"
             }
           ]
+        },
+        {
+          "id": "PRR_kwDONe90rM68F-AB",
+          "commit": {
+            "abbreviatedOid": "2dc3095"
+          },
+          "author": "aretana",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-26T13:37:19Z",
+          "updatedAt": "2025-08-26T13:37:19Z",
+          "comments": [
+            {
+              "originalPosition": 14,
+              "body": "The tags, AFAIK, are not meant for a particular intended status -- all can use them.\r\n\r\nUnfortunately, the only tag that we have today that can point to some relationship with rfc3535 is \"Updates\".  Yes, it would have been better if it were called something else, but that's all we have.\r\n\r\nTo me, the bottom line is: do we want to call attention to the relationship (the fact that the workshop was a follow-up to the first one -- i.e. the report is a follow-up too) in the header/metadata of the RFC-to-be, OR, is the current text in the document (which mentions the relationship to the first workshop and rfc3535) enough?\r\n\r\nIMO, we've already spent more time discussing this (mainly about the lack of appropriate tags) than we should have.  Not having the tag will make any new readers of rfc3535 miss the connection to the new RFC (everyone who has commented is already familiar with the history)...that's probably the biggest/only downside of not having the tag.  I can live with that.",
+              "createdAt": "2025-08-26T13:37:19Z",
+              "updatedAt": "2025-08-26T13:37:19Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDONe90rM68Rh3N",
+          "commit": {
+            "abbreviatedOid": "2dc3095"
+          },
+          "author": "dhruvdhody",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-27T07:37:01Z",
+          "updatedAt": "2025-08-27T07:37:01Z",
+          "comments": [
+            {
+              "originalPosition": 14,
+              "body": "Lets move forward and remove the update tag then. Roman also has an issue with it. Looks like we are in the rough :)",
+              "createdAt": "2025-08-27T07:37:01Z",
+              "updatedAt": "2025-08-27T07:37:16Z"
+            }
+          ]
         }
       ]
+    },
+    {
+      "number": 6,
+      "id": "PR_kwDONe90rM6llRKt",
+      "title": "Comments from Roman",
+      "url": "https://github.com/intarchboard/draft-iab-nemops-workshop-report/pull/6",
+      "state": "OPEN",
+      "author": "dhruvdhody",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-08-27T11:25:50Z",
+      "updatedAt": "2025-08-27T11:31:39Z",
+      "baseRepository": "intarchboard/draft-iab-nemops-workshop-report",
+      "baseRefName": "main",
+      "baseRefOid": "f514e6275c1d64088adeb1fca733d3bef4b95124",
+      "headRepository": "intarchboard/draft-iab-nemops-workshop-report",
+      "headRefName": "dhruvdhody-roman-patch",
+      "headRefOid": "29950fad79827cf8bd1edfcb97aecafd5aa8bb9d",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
