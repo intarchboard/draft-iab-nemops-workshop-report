@@ -1054,7 +1054,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Hardaker &amp; Dhody</td>
-<td class="center">Expires 28 February 2026</td>
+<td class="center">Expires 2 March 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1067,12 +1067,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-iab-nemops-workshop-report-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-08-27" class="published">27 August 2025</time>
+<time datetime="2025-08-29" class="published">29 August 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2026-02-28">28 February 2026</time></dd>
+<dd class="expires"><time datetime="2026-03-02">2 March 2026</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1120,7 +1120,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 28 February 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 2 March 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1234,10 +1234,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-insights-from-operator-feed" class="internal xref">Insights from Operator Feedback</a></p>
+            <p id="section-toc.1-1.8.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-operator-feedback-2" class="internal xref">Operator Feedback</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.1">
-                <p id="section-toc.1-1.8.2.1.1"><a href="#appendix-A.1" class="auto internal xref">A.1</a>.  <a href="#name-general-insights" class="internal xref">General Insights</a></p>
+                <p id="section-toc.1-1.8.2.1.1"><a href="#appendix-A.1" class="auto internal xref">A.1</a>.  <a href="#name-general" class="internal xref">General</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.2">
                 <p id="section-toc.1-1.8.2.2.1"><a href="#appendix-A.2" class="auto internal xref">A.2</a>.  <a href="#name-data-models" class="internal xref">Data Models</a></p>
@@ -1307,7 +1307,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-2" class="section-number selfRef">2. </a><a href="#name-outreach-and-survey" class="section-name selfRef">Outreach and Survey</a>
       </h2>
 <p id="section-2-1">The IAB workshop's Program Committee (PC) planned outreach initiatives to foster discussions and gather interest by engaging with operators at various operational venues (RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc) and conducting information/requirement-gathering sessions. Participants were encouraged to submit "position papers" or "expressions of interest" to join the workshop. Additionally, a <span>[<a href="#SURVEY" class="cite xref">SURVEY</a>]</span> was conducted to collect valuable insights to inform the workshop.<a href="#section-2-1" class="pilcrow">¶</a></p>
-<p id="section-2-2">The PC continued to engage with network operators after the workshop to facilitate information sharing and gather their feedback, helping to shape the next steps and outcomes of the workshop.<a href="#section-2-2" class="pilcrow">¶</a></p>
+<p id="section-2-2">Some PC members continued to engage with network operators at operational venues after the workshop to facilitate information sharing and gather their feedback on the workshop, thereby helping to shape the next steps and outcomes.<a href="#section-2-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="workshop-scope-and-discussion">
@@ -1329,7 +1329,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-3.1.1" class="section-number selfRef">3.1.1. </a><a href="#name-reflections" class="section-name selfRef">Reflections</a>
           </h4>
 <p id="section-3.1.1-1">The workshop began by reflecting on the IAB’s role in shaping the evolution of network management away from CLI/SNMP/MIB technologies, focusing on the context and key outcomes of the previous workshop, an assessment of the current state of network management as a whole, and an acknowledgement of some regrets in how network management technologies developed in the last two decades (such as XML as the data representation format). <span>[<a href="#SCHONWALDER" class="cite xref">SCHONWALDER</a>]</span> emphasized the need to shift the focus from device-level configuration to network and service-level configuration. Key properties highlighted for effective network and service configurations included being Composable (assembled out of modular configurations), Declarative (define state while systems determine themselves how to implement those goals), Reproducible (reliably and consistently recreated), and Verifiable (asserting that the correct changes have been applied).<a href="#section-3.1.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.1.1-2">An operator’s perspective highlighted that the recommendations of <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span> (which led to the development of YANG and NETCONF) have been successful in addressing device configuration in many, but not all, environments. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope of <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span>. <span>[<a href="#FARRER" class="cite xref">FARRER</a>]</span> cautioned against making changes that could disrupt the ecosystem. The presentation emphasized the need to prioritize service modeling in the IETF and addressed the challenges of mapping to the Business Support Systems (BSS) domain. It also stressed the importance of including the operational state in service models to enable closed-loop automation for end-to-end (E2E) services. Revisiting <span>[<a href="#RFC8309" class="cite xref">RFC8309</a>]</span>, which asserts that the operational state of a service is not part of a customer service model but can be achieved through extensions, was suggested. Additionally, the lack of open-source NMS implementations, tools, and device model implementations was identified as a significant barrier to advancing standardization efforts. The IETF could play a key role in fostering and enabling collaborations to address these challenges, including an off-box translation tool of the IETF device model to vendor proprietary models.<a href="#section-3.1.1-2" class="pilcrow">¶</a></p>
+<p id="section-3.1.1-2">An operator’s perspective highlighted that the recommendations of <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span> (which led to the development of YANG and NETCONF) have been successful in addressing device configuration in many, but not all, environments. In certain areas, the advancements in semantics and protocols for streaming telemetry have even surpassed the original scope of <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span>. <span>[<a href="#FARRER" class="cite xref">FARRER</a>]</span> cautioned against making changes that could disrupt the ecosystem. The presentation emphasized the need to prioritize service modeling in the IETF and addressed the challenges of mapping to the Business Support Systems (BSS) domain. It also stressed the importance of including the operational state in service models to enable closed-loop automation for end-to-end (E2E) services. Revisiting <span>[<a href="#RFC8309" class="cite xref">RFC8309</a>]</span>, which asserts that the operational state of a service is not part of a customer service model but can be achieved through extensions, was suggested. Additionally, the lack of open-source NMS implementations, tools, and device model implementations was identified as a significant barrier to advancing standardization efforts. The IETF could play a key role in fostering and enabling collaborations to address these challenges. While the IETF does not itself build tools, it was suggested that having a translation tool that runs outside the network device to map IETF device models to vendor-specific ones would be beneficial.<a href="#section-3.1.1-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="lessons-to-be-learned">
@@ -1337,8 +1337,8 @@ svg :is([fill="white"], [fill^="#fff"]) {
           <h4 id="name-lessons-to-be-learned">
 <a href="#section-3.1.2" class="section-number selfRef">3.1.2. </a><a href="#name-lessons-to-be-learned" class="section-name selfRef">Lessons to be Learned</a>
           </h4>
-<p id="section-3.1.2-1"><span>[<a href="#HARDAKER" class="cite xref">HARDAKER</a>]</span> emphasized that the success of Net-SNMP <span>[<a href="#NET-SNMP" class="cite xref">NET-SNMP</a>]</span> was driven by empowering users through simplicity. He stressed that the focus should remain on ensuring ease of use and adaptability of the protocols. Emphasis was placed on the two distinct audiences for standardized network management protocols: toolkit vendors and system operators. Their requirements for protocol simplicity differ, and it is essential to address the needs of both to ensure success. <span>[<a href="#BORMANN" class="cite xref">BORMANN</a>]</span> presented an overview of the CORECONF architecture, showcasing how model-driven network management techniques can be applied to manage IoT devices (which is different from other network management scenarios), with a focus on the unique characteristics of constrained nodes. Some participants noted that the binary encoding of CBOR has applications that extend beyond the IoT networks.<a href="#section-3.1.2-1" class="pilcrow">¶</a></p>
-<p id="section-3.1.2-2">Drawing from the experience of OpenConfig <span>[<a href="#OPENCONFIG" class="cite xref">OPENCONFIG</a>]</span>, <span>[<a href="#SHAKIR" class="cite xref">SHAKIR</a>]</span> emphasized that protocol definition and data models cannot be done in isolation. It must integrate lessons learned from implementation and large-scale deployment. He highlighted the importance of enabling quick iterations, shipping rapidly, embracing open-source, readily available tools, adopting systems thinking driven by business outcomes, and reusing existing technologies rather than developing solutions exclusively for operator network management. A call was made for the IETF to rethink the approach to standardize data models and the associated network management protocols under this guidance.<a href="#section-3.1.2-2" class="pilcrow">¶</a></p>
+<p id="section-3.1.2-1"><span>[<a href="#HARDAKER" class="cite xref">HARDAKER</a>]</span> emphasized that the success of Net-SNMP <span>[<a href="#NET-SNMP" class="cite xref">NET-SNMP</a>]</span> was driven by empowering users through simplicity, stressing that the focus should remain on ensuring ease of use and adaptability of the protocols. Emphasis was placed on the two distinct audiences for standardized network management protocols: toolkit vendors and system operators. Their requirements for protocol simplicity differ, and it is essential to address the needs of both to ensure success. <span>[<a href="#BORMANN" class="cite xref">BORMANN</a>]</span> presented an overview of the CORECONF architecture, showcasing how model-driven network management techniques can be applied to manage IoT devices (which is different from other network management scenarios), with a focus on the unique characteristics of constrained nodes. Some participants noted that the binary encoding of CBOR has applications that extend beyond the IoT networks.<a href="#section-3.1.2-1" class="pilcrow">¶</a></p>
+<p id="section-3.1.2-2">Drawing from the experience of OpenConfig <span>[<a href="#OPENCONFIG" class="cite xref">OPENCONFIG</a>]</span>, <span>[<a href="#SHAKIR" class="cite xref">SHAKIR</a>]</span> emphasized that protocol definition and data models cannot be done in isolation; instead, they must integrate lessons learned from implementation and large-scale deployment. Thus, highlighting the importance of enabling quick iterations, shipping rapidly, embracing open-source, readily available tools, adopting systems thinking driven by business outcomes, and reusing existing technologies rather than developing solutions exclusively for operator network management. A call was made for the IETF to rethink the approach to standardize data models and the associated network management protocols under this guidance.<a href="#section-3.1.2-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="discussion">
@@ -1362,7 +1362,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
           <h4 id="name-operator-feedback">
 <a href="#section-3.2.1" class="section-number selfRef">3.2.1. </a><a href="#name-operator-feedback" class="section-name selfRef">Operator Feedback</a>
           </h4>
-<p id="section-3.2.1-1"><span>[<a href="#KELLER" class="cite xref">KELLER</a>]</span> shared Deutsche Telekom’s perspective, emphasizing that while YANG models perform well for provisioning, they currently fall short in providing the operational stability required for validation. While the IETF service models, where available, are considered stable and in good condition, the OpenConfig device models were noted as lacking feature richness and stability. In contrast, vendor YANG models are often more flexible and available in a more timely manner. Achieving fully closed-loop automated and autonomous networking will require a greater focus on observability, particularly through advancements in streaming telemetry with the "on-change" feature <span>[<a href="#RFC9196" class="cite xref">RFC9196</a>]</span>.<a href="#section-3.2.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.2.1-1"><span>[<a href="#KELLER" class="cite xref">KELLER</a>]</span> shared Deutsche Telekom’s perspective, emphasizing that while YANG models perform well for provisioning, they currently fall short in providing the operational stability required for validation. In their experience, the IETF service models (where available) were considered stable and in good condition, whereas the OpenConfig device models were noted as lacking feature richness and stability. In contrast, vendor YANG models are often more flexible and available in a more timely manner. Achieving fully closed-loop automated and autonomous networking will require a greater focus on observability, particularly through advancements in streaming telemetry with the "on-change" feature <span>[<a href="#RFC9196" class="cite xref">RFC9196</a>]</span>.<a href="#section-3.2.1-1" class="pilcrow">¶</a></p>
 <p id="section-3.2.1-2"><span>[<a href="#JIMENEZ" class="cite xref">JIMENEZ</a>]</span> discussed the challenges associated with the Software Defined Networking (SDN) Transport Automation Platform, including observability and analytics requirements, issues with data streaming, scalability, diverse models in heterogeneous multi-vendor environments, and mechanisms to secure the network management protocols. The presentation also emphasized how advancements in AI and machine learning, along with the potential adaptation of protocols designed for constrained environments, could drive the next evolution in network management.<a href="#section-3.2.1-2" class="pilcrow">¶</a></p>
 <p id="section-3.2.1-3">Using YANG-Push as an example, <span>[<a href="#GRAF" class="cite xref">GRAF</a>]</span> highlighted how standards development often fails to align with the needs of network operators, the constraints of network vendors, and the integration requirements. Most critically, it lacks an agile, incremental development process. The presentation advocated for adopting an iterative approach to standards development, focusing on delivering minimal viable products as part of the process.<a href="#section-3.2.1-3" class="pilcrow">¶</a></p>
 <p id="section-3.2.1-4"><span>[<a href="#CONTRERAS" class="cite xref">CONTRERAS</a>]</span> emphasized reassessing deployment assumptions and incorporating updated operator requirements. The authors are addressing these aspects through <span>[<a href="#I-D.ietf-nmop-rfc3535-20years-later" class="cite xref">I-D.ietf-nmop-rfc3535-20years-later</a>]</span>, leveraging feedback and discussions from the workshop. Some key requirements, suggestions and observations that were highlighted in the workshop:<a href="#section-3.2.1-4" class="pilcrow">¶</a></p>
@@ -1446,7 +1446,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
           <h4 id="name-discussion-2">
 <a href="#section-3.2.3" class="section-number selfRef">3.2.3. </a><a href="#name-discussion-2" class="section-name selfRef">Discussion</a>
           </h4>
-<p id="section-3.2.3-1">The Session II open discussion featured feedback from implementers, highlighting the difficulty in moving to YANG and mapping to vendor implementations and how divergence in the implementations creates complexity and necessitates workarounds. Implementations need to support standard models alongside native vendor models, which adds complexity and leads to confusion. Challenges were highlighted in mapping standard models to internal device models and legacy devices, with some cases where mapping is not feasible at all (device-specific knobs). The conversation also emphasized the importance of developing open-source reference implementations, compliance and interoperability testing for vendors with real data, and better quality of vendor implementation and documentation. The implementation and support of multiple models (IETF, OpenConfig, and native) is an unavoidable reality in network management. Additionally, since the services offered by operators vary significantly, reaching a consensus on a common service model within the IETF can be a challenging task. It was also noted that the IETF should expedite the publication of standards as well as consider gating them with multiple interoperable implementations.<a href="#section-3.2.3-1" class="pilcrow">¶</a></p>
+<p id="section-3.2.3-1">The Session II open discussion featured feedback from implementers, highlighting the difficulty in moving to YANG and mapping to vendor implementations and how divergence in the implementations creates complexity and necessitates workarounds. Implementations need to support standard models alongside native vendor models, which adds complexity and leads to confusion. Challenges were highlighted in mapping standard models to internal device models and legacy devices, with some cases where mapping is not feasible at all (device-specific knobs). The conversation also emphasized the importance of developing open-source reference implementations, compliance and interoperability testing for vendors with real data, and better quality of vendor implementation and documentation. The implementation and support of multiple models (IETF, OpenConfig, and native vendor models) is an unavoidable reality in network management. Additionally, since the services offered by operators vary significantly, reaching a consensus on a common service model within the IETF can be a challenging task. It was also noted that the IETF should expedite the publication of standards as well as consider gating them with multiple interoperable implementations.<a href="#section-3.2.3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1463,7 +1463,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-3.3.1" class="section-number selfRef">3.3.1. </a><a href="#name-suggestions-on-future-direc" class="section-name selfRef">Suggestions on Future Directions</a>
           </h4>
 <p id="section-3.3.1-1"><span>[<a href="#CLAISE" class="cite xref">CLAISE</a>]</span> highlighted the challenges of integrating data models across different silos, protocols, and data structures, emphasizing the need for a machine-readable approach to expose semantics. Additionally, the related tools being developed and showcased in the IETF Hackathons, along with the various challenges in mapping across protocols and models, were discussed. A potential solution was proposed using a knowledge graph based on the Semantic Web Stack, along with the need to define a basic ontology for the networking domain in an iterative manner (outside of RFCs).<a href="#section-3.3.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.3.1-2"><span>[<a href="#WATSEN" class="cite xref">WATSEN</a>]</span> recommends prioritizing the following areas in four recommendations: (1) using RESTCONF+JSON (including YANG-Push Lite) as a single protocol beyond network management, (2) utilizing Network Management Datastore Architecture (NMDA) model, (3) creating data model adapters (off-box so that common standard models can be developed in parallel to the required device "native" models), and (4) defining device protocol adapters (with RESTCONF-like NBI for a common shared-by-all repository).<a href="#section-3.3.1-2" class="pilcrow">¶</a></p>
+<p id="section-3.3.1-2"><span>[<a href="#WATSEN" class="cite xref">WATSEN</a>]</span> recommends prioritizing the following areas in four recommendations: (1) using RESTCONF+JSON (including YANG-Push Lite) as a single protocol beyond network management, (2) utilizing Network Management Datastore Architecture (NMDA) model, (3) creating data model adapters (off-box so that common standard models can be developed in parallel to the required device "native" vendor models), and (4) defining device protocol adapters (with RESTCONF-like NBI for a common shared-by-all repository).<a href="#section-3.3.1-2" class="pilcrow">¶</a></p>
 <p id="section-3.3.1-3"><span>[<a href="#WILTON" class="cite xref">WILTON</a>]</span> recommends reducing unnecessary complexity, delivering timely solutions, fostering open collaboration between vendors and operators, prioritizing simplicity, and converging to a single model/protocol (though this was discussed as difficult to accomplish). Practical suggestions include focusing on YANG-Push Lite, introducing YANG 2.0 through incremental updates, developing NETCONFv2, and managing IETF YANG models as code or APIs rather than embedding them within RFCs.<a href="#section-3.3.1-3" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -1472,8 +1472,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
           <h4 id="name-discussion-3">
 <a href="#section-3.3.2" class="section-number selfRef">3.3.2. </a><a href="#name-discussion-3" class="section-name selfRef">Discussion</a>
           </h4>
-<p id="section-3.3.2-1">The open discussion in Session III explored several topics, including the absence of NMDA in OpenConfig and whether the associated complexity is justified; the historical context of gNMI’s introduction in the IETF and whether RESTCONF provides any advantages over it; and the challenges of building consensus, noting that while the process takes time, it should not be short-circuited. The session also addressed the practicality of converging on a single protocol and concluded that such convergence is, in fact, feasible. The discussion emphasized off-box adapters, which allow vendors to continue innovating and developing native models rapidly. One suggestion that attracted a lot of discussions centred on developing a standard model mapping to native models that could be maintained in a common repository, enabling the community to assess coverage and alignment. Further, the discussion explored alternative approaches to YANG models within the IETF but outside of RFCs, such as leveraging GitHub to accelerate the process (along with the challenges associated with it), living documents within the WG charter, and supporting academia to take up the open source efforts, such as device adapters. The discussion emphasized the need for process experimentation, particularly at the working group or area level, where we could have consensus among the YANG/OPS community on how we iterate in WGs without IETF/RFC-wide changes, but making sure the operators are involved in the process. Conversations ensued around questions asked, such as "Is YANG applicable beyond network management?" and "Can applications adopt YANG as a modelling language to define their services?"<a href="#section-3.3.2-1" class="pilcrow">¶</a></p>
-<p id="section-3.3.2-2">Some key recommendations made by operators during outreach (<a href="#outreach" class="auto internal xref">Section 2</a>) are listed in <a href="#recommendations" class="auto internal xref">Appendix B</a>.<a href="#section-3.3.2-2" class="pilcrow">¶</a></p>
+<p id="section-3.3.2-1">The open discussion in Session III explored a range of topics. These included the absence of NMDA in OpenConfig and debate over whether its complexity is justified; the historical context of gNMI’s introduction in the IETF and whether RESTCONF offers advantages over it; and the broader challenges of building consensus, with participants noting that while the process takes time, it should not be short-circuited. The discussion also addressed the practicality of converging on a single protocol and concluded that such convergence is, in fact, feasible.<a href="#section-3.3.2-1" class="pilcrow">¶</a></p>
+<p id="section-3.3.2-2">The discussion emphasized off-box adapters, which allow vendors to continue innovating and developing native vendor models rapidly. One suggestion that attracted a lot of discussion centred on developing a standard model mapping to native vendor models that could be maintained in a common repository, enabling the community to assess coverage and alignment.<a href="#section-3.3.2-2" class="pilcrow">¶</a></p>
+<p id="section-3.3.2-3">Further, the discussion explored alternative approaches to YANG models within the IETF but outside of RFCs, such as leveraging GitHub to accelerate the process (along with the challenges associated with it), living documents within the WG charter, and supporting academia to take up the open source efforts, such as device adapters. The discussion emphasized the need for process experimentation, particularly at the working group or area level, where we could have consensus among the YANG/OPS community on how we iterate in WGs without IETF/RFC-wide changes, but making sure the operators are involved in the process.<a href="#section-3.3.2-3" class="pilcrow">¶</a></p>
+<p id="section-3.3.2-4">Conversations ensued around questions asked, such as "Is YANG applicable beyond network management?" and "Can applications adopt YANG as a modelling language to define their services?"<a href="#section-3.3.2-4" class="pilcrow">¶</a></p>
+<p id="section-3.3.2-5">Some key recommendations made by operators during outreach (<a href="#outreach" class="auto internal xref">Section 2</a>) are listed in <a href="#recommendations" class="auto internal xref">Appendix B</a>.<a href="#section-3.3.2-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1483,7 +1486,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         <h3 id="name-key-takeaways">
 <a href="#section-3.4" class="section-number selfRef">3.4. </a><a href="#name-key-takeaways" class="section-name selfRef">Key Takeaways</a>
         </h3>
-<p id="section-3.4-1">At the end of the third day, the discussion turned to key takeaways that have a high-level consensus.  These were live edited during the last discussion of the workshop, and anything that did not reach wide consensus was moved into a "future considerations" list (<a href="#workneeded" class="auto internal xref">Section 3.4.5</a>).<a href="#section-3.4-1" class="pilcrow">¶</a></p>
+<p id="section-3.4-1">At the end of the third day, the discussion turned to key takeaways that have a high-level consensus.  These were live edited during the last discussion of the workshop, and anything that did not reach a wide consensus was moved into a "future considerations" list (<a href="#workneeded" class="auto internal xref">Section 3.4.5</a>).<a href="#section-3.4-1" class="pilcrow">¶</a></p>
 <div id="ecosystem-conclusions">
 <section id="section-3.4.1">
           <h4 id="name-ecosystem-conclusions">
@@ -1499,8 +1502,9 @@ tools almost matter more than the protocols.<a href="#section-3.4.1-2.1.1" class
             <li id="section-3.4.1-2.2">
               <p id="section-3.4.1-2.2.1">The overall ecosystem is still fragmented for both protocols and
 data models.  SNMP is still used extensively for monitoring, and
-the CLI is still heavily relied on in many networks.  Popular
-protocols include SNMP, CLI, NETCONF, RESTCONF, gNMI, etc.<a href="#section-3.4.1-2.2.1" class="pilcrow">¶</a></p>
+the CLI is still heavily relied on for configuration in many
+networks.  Popular protocols include SNMP, NETCONF, RESTCONF,
+and gNMI.<a href="#section-3.4.1-2.2.1" class="pilcrow">¶</a></p>
 </li>
             <li id="section-3.4.1-2.3">
               <p id="section-3.4.1-2.3.1">Documentation about the architecture and usage of the network
@@ -1534,10 +1538,10 @@ analysis of when and how they work and have been successful.<a href="#section-3.
 <p id="section-3.4.2-1">The following conclusions came while discussing Network Management protocols, more specifically.<a href="#section-3.4.2-1" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-3.4.2-2">
 <li id="section-3.4.2-2.1">
-              <p id="section-3.4.2-2.1.1">Netconf and YANG are not used much for monitoring tasks.<a href="#section-3.4.2-2.1.1" class="pilcrow">¶</a></p>
+              <p id="section-3.4.2-2.1.1">NETCONF and YANG are not used much for monitoring tasks.<a href="#section-3.4.2-2.1.1" class="pilcrow">¶</a></p>
 </li>
             <li id="section-3.4.2-2.2">
-              <p id="section-3.4.2-2.2.1">Netconf and YANG do not have full coverage on many devices.<a href="#section-3.4.2-2.2.1" class="pilcrow">¶</a></p>
+              <p id="section-3.4.2-2.2.1">NETCONF and YANG do not have full coverage on many devices.<a href="#section-3.4.2-2.2.1" class="pilcrow">¶</a></p>
 </li>
             <li id="section-3.4.2-2.3">
               <p id="section-3.4.2-2.3.1">Polling-based solutions are still frequently deployed.  Push-based solutions are often desired but are not yet widely available.<a href="#section-3.4.2-2.3.1" class="pilcrow">¶</a></p>
@@ -1553,8 +1557,7 @@ analysis of when and how they work and have been successful.<a href="#section-3.
 <p id="section-3.4.3-1">The following conclusions came while discussing Network Management modeling, more specifically.<a href="#section-3.4.3-1" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-3.4.3-2">
 <li id="section-3.4.3-2.1">
-              <p id="section-3.4.3-2.1.1">Some YANG models can become too complex, though not as a fault of
-the language itself.<a href="#section-3.4.3-2.1.1" class="pilcrow">¶</a></p>
+              <p id="section-3.4.3-2.1.1">Some YANG models can become complex due to the underlying features they represent, not due to the language itself.<a href="#section-3.4.3-2.1.1" class="pilcrow">¶</a></p>
 </li>
             <li id="section-3.4.3-2.2">
               <p id="section-3.4.3-2.2.1">Multi-vendor compatibility support is required.<a href="#section-3.4.3-2.2.1" class="pilcrow">¶</a></p>
@@ -1799,13 +1802,14 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-2.4.1" class="p
 </div>
 <div id="insights">
 <section id="appendix-A">
-      <h2 id="name-insights-from-operator-feed">
-<a href="#appendix-A" class="section-number selfRef">Appendix A. </a><a href="#name-insights-from-operator-feed" class="section-name selfRef">Insights from Operator Feedback</a>
+      <h2 id="name-operator-feedback-2">
+<a href="#appendix-A" class="section-number selfRef">Appendix A. </a><a href="#name-operator-feedback-2" class="section-name selfRef">Operator Feedback</a>
       </h2>
-<div id="general-insights">
+<p id="appendix-A-1">This section compiles the operator feedback gathered through outreach and information gathering at various operational venues (RIPE, NANOG, APRICOT, LACNIC, AutoConn, etc). The PC synthesized this input and presented it during the workshop (see <a href="#survey" class="auto internal xref">Section 3.2.2</a>).<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<div id="general">
 <section id="appendix-A.1">
-        <h3 id="name-general-insights">
-<a href="#appendix-A.1" class="section-number selfRef">A.1. </a><a href="#name-general-insights" class="section-name selfRef">General Insights</a>
+        <h3 id="name-general">
+<a href="#appendix-A.1" class="section-number selfRef">A.1. </a><a href="#name-general" class="section-name selfRef">General</a>
         </h3>
 <ol start="1" type="1" class="normal type-1" id="appendix-A.1-1">
 <li id="appendix-A.1-1.1">
@@ -1824,7 +1828,7 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-2.4.1" class="p
             <p id="appendix-A.1-1.5.1">Support for multiple friendly, stable and feature-rich libraries for programming languages is needed. Many DevOps routines use shell scripts, while others use a high-level programming language. In any case, on the client side, multiple programming languages are used.<a href="#appendix-A.1-1.5.1" class="pilcrow">¶</a></p>
 </li>
           <li id="appendix-A.1-1.6">
-            <p id="appendix-A.1-1.6.1">Screen scraping is both necessary and evil. This most often occurs when interacting with a device having only a CLI.<a href="#appendix-A.1-1.6.1" class="pilcrow">¶</a></p>
+            <p id="appendix-A.1-1.6.1">Screen scraping is unfortunately necessary and painful. This most often occurs when interacting with a device having only a CLI.<a href="#appendix-A.1-1.6.1" class="pilcrow">¶</a></p>
 </li>
           <li id="appendix-A.1-1.7">
             <p id="appendix-A.1-1.7.1">It was noted that there could be an outreach to Academia to establish programs to teach lessons using modern management stacks, and then a new generation of engineers could help to improve tooling and automation, with university (and/or IETF) hackathons.<a href="#appendix-A.1-1.7.1" class="pilcrow">¶</a></p>
@@ -1842,7 +1846,7 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-2.4.1" class="p
             <p id="appendix-A.2-1.1.1">In some network deployments, the focus is solely on service-level models, such that device-level protocols and device-level models are unimportant. This assumes the existence of a device adaptation layer to transcode service-level models to device-level models and conform to the device-specific protocol.<a href="#appendix-A.2-1.1.1" class="pilcrow">¶</a></p>
 </li>
           <li id="appendix-A.2-1.2">
-            <p id="appendix-A.2-1.2.1">There is a need for solutions to not hide vendor-specific knobs. Currently, vendors compete by differentiating their offerings in unique ways. The reason why an Operator may choose a particular vendor is because of its differentiating features. Whilst standard models enable conformance, they must not hide the vendor-specific knobs. YANG deviations are a partial solution to not hiding vendor knobs.<a href="#appendix-A.2-1.2.1" class="pilcrow">¶</a></p>
+            <p id="appendix-A.2-1.2.1">There is a need for solutions to not hide vendor-specific parameters. Currently, vendors compete by differentiating their offerings in unique ways. The reason why an Operator may choose a particular vendor is because of its differentiating features. Whilst standard models enable conformance, they must not hide the vendor-specific parameters. YANG deviations are a partial solution to not hiding vendor knobs.<a href="#appendix-A.2-1.2.1" class="pilcrow">¶</a></p>
 </li>
           <li id="appendix-A.2-1.3">
             <p id="appendix-A.2-1.3.1">It was emphasized that streaming telemetry requires picking a model and sticking with it. It is quite a commitment, and the current environment makes the decision harder.<a href="#appendix-A.2-1.3.1" class="pilcrow">¶</a></p>
@@ -1851,7 +1855,7 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-2.4.1" class="p
             <p id="appendix-A.2-1.4.1">It was noted that IETF's focus should be on defining abstract/service-level data models since it is the only thing the community may ever agree on.<a href="#appendix-A.2-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li id="appendix-A.2-1.5">
-            <p id="appendix-A.2-1.5.1">There was a point about navigating non-device-specific models being difficult. If understood correctly, the Network Engineer knows the CLI command but has trouble grepping for it in YANG modules defined by SDOs.<a href="#appendix-A.2-1.5.1" class="pilcrow">¶</a></p>
+            <p id="appendix-A.2-1.5.1">It was noted that navigating standard models can be difficult. The Network Engineer knows the vendor CLI commands but has trouble locating the corresponding leaves in the standard YANG models defined by SDOs.<a href="#appendix-A.2-1.5.1" class="pilcrow">¶</a></p>
 </li>
           <li id="appendix-A.2-1.6">
             <p id="appendix-A.2-1.6.1">There was a wish that the IETF and OpenConfig models would merge.<a href="#appendix-A.2-1.6.1" class="pilcrow">¶</a></p>
@@ -1881,7 +1885,7 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-2.4.1" class="p
           <p id="appendix-B-2.4.1">IETF: Recommend a solution stack for common use cases.<a href="#appendix-B-2.4.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="appendix-B-2.5">
-          <p id="appendix-B-2.5.1">Ambassadors: Evangelize the recommended solution stack for common cases.<a href="#appendix-B-2.5.1" class="pilcrow">¶</a></p>
+          <p id="appendix-B-2.5.1">Technology Ambassadors: Evangelize the recommended solution stack for common cases.<a href="#appendix-B-2.5.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="appendix-B-2.6">
           <p id="appendix-B-2.6.1">Vendors: Support the recommended approach to the solution stack for common cases.<a href="#appendix-B-2.6.1" class="pilcrow">¶</a></p>
@@ -2030,7 +2034,7 @@ ensure these goals are appropriately met.<a href="#section-3.4.4-2.4.1" class="p
       <h2 id="name-acknowledgments">
 <a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
-<p id="appendix-G-1">Thanks to Benoît Claise, Jürgen Schönwälder, Kristian Larsson, Jaime Jiménez, Michael Richardson, and Phil Shafer for helpful suggestions to improve this report.<a href="#appendix-G-1" class="pilcrow">¶</a></p>
+<p id="appendix-G-1">Thanks to Benoît Claise, Jürgen Schönwälder, Kristian Larsson, Jaime Jiménez, Michael Richardson, Phil Shafer, Mirja Kühlewind, and Roman Danyliw for helpful suggestions to improve this report.<a href="#appendix-G-1" class="pilcrow">¶</a></p>
 <p id="appendix-G-2">Thanks to Alvaro Retana for shepherding this document.<a href="#appendix-G-2" class="pilcrow">¶</a></p>
 </section>
 </div>

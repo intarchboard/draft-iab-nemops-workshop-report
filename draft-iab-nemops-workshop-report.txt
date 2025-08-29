@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 28 February 2026                                 27 August 2025
+Expires: 2 March 2026                                     29 August 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -63,7 +63,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 28 February 2026.
+   This Internet-Draft will expire on 2 March 2026.
 
 Copyright Notice
 
@@ -105,8 +105,8 @@ Table of Contents
    5.  Security Considerations
    6.  IANA Considerations
    7.  Informative References
-   Appendix A.  Insights from Operator Feedback
-     A.1.  General Insights
+   Appendix A.  Operator Feedback
+     A.1.  General
      A.2.  Data Models
    Appendix B.  Key Recommendations from Operator Feedback
    Appendix C.  Position Papers
@@ -182,9 +182,10 @@ Table of Contents
    Additionally, a [SURVEY] was conducted to collect valuable insights
    to inform the workshop.
 
-   The PC continued to engage with network operators after the workshop
-   to facilitate information sharing and gather their feedback, helping
-   to shape the next steps and outcomes of the workshop.
+   Some PC members continued to engage with network operators at
+   operational venues after the workshop to facilitate information
+   sharing and gather their feedback on the workshop, thereby helping to
+   shape the next steps and outcomes.
 
 3.  Workshop Scope and Discussion
 
@@ -254,14 +255,15 @@ Table of Contents
    Additionally, the lack of open-source NMS implementations, tools, and
    device model implementations was identified as a significant barrier
    to advancing standardization efforts.  The IETF could play a key role
-   in fostering and enabling collaborations to address these challenges,
-   including an off-box translation tool of the IETF device model to
-   vendor proprietary models.
+   in fostering and enabling collaborations to address these challenges.
+   While the IETF does not itself build tools, it was suggested that
+   having a translation tool that runs outside the network device to map
+   IETF device models to vendor-specific ones would be beneficial.
 
 3.1.2.  Lessons to be Learned
 
    [HARDAKER] emphasized that the success of Net-SNMP [NET-SNMP] was
-   driven by empowering users through simplicity.  He stressed that the
+   driven by empowering users through simplicity, stressing that the
    focus should remain on ensuring ease of use and adaptability of the
    protocols.  Emphasis was placed on the two distinct audiences for
    standardized network management protocols: toolkit vendors and system
@@ -276,14 +278,15 @@ Table of Contents
 
    Drawing from the experience of OpenConfig [OPENCONFIG], [SHAKIR]
    emphasized that protocol definition and data models cannot be done in
-   isolation.  It must integrate lessons learned from implementation and
-   large-scale deployment.  He highlighted the importance of enabling
-   quick iterations, shipping rapidly, embracing open-source, readily
-   available tools, adopting systems thinking driven by business
-   outcomes, and reusing existing technologies rather than developing
-   solutions exclusively for operator network management.  A call was
-   made for the IETF to rethink the approach to standardize data models
-   and the associated network management protocols under this guidance.
+   isolation; instead, they must integrate lessons learned from
+   implementation and large-scale deployment.  Thus, highlighting the
+   importance of enabling quick iterations, shipping rapidly, embracing
+   open-source, readily available tools, adopting systems thinking
+   driven by business outcomes, and reusing existing technologies rather
+   than developing solutions exclusively for operator network
+   management.  A call was made for the IETF to rethink the approach to
+   standardize data models and the associated network management
+   protocols under this guidance.
 
 3.1.3.  Discussion
 
@@ -326,14 +329,14 @@ Table of Contents
    [KELLER] shared Deutsche Telekom’s perspective, emphasizing that
    while YANG models perform well for provisioning, they currently fall
    short in providing the operational stability required for validation.
-   While the IETF service models, where available, are considered stable
-   and in good condition, the OpenConfig device models were noted as
-   lacking feature richness and stability.  In contrast, vendor YANG
-   models are often more flexible and available in a more timely manner.
-   Achieving fully closed-loop automated and autonomous networking will
-   require a greater focus on observability, particularly through
-   advancements in streaming telemetry with the "on-change" feature
-   [RFC9196].
+   In their experience, the IETF service models (where available) were
+   considered stable and in good condition, whereas the OpenConfig
+   device models were noted as lacking feature richness and stability.
+   In contrast, vendor YANG models are often more flexible and available
+   in a more timely manner.  Achieving fully closed-loop automated and
+   autonomous networking will require a greater focus on observability,
+   particularly through advancements in streaming telemetry with the
+   "on-change" feature [RFC9196].
 
    [JIMENEZ] discussed the challenges associated with the Software
    Defined Networking (SDN) Transport Automation Platform, including
@@ -467,12 +470,12 @@ Table of Contents
    interoperability testing for vendors with real data, and better
    quality of vendor implementation and documentation.  The
    implementation and support of multiple models (IETF, OpenConfig, and
-   native) is an unavoidable reality in network management.
-   Additionally, since the services offered by operators vary
-   significantly, reaching a consensus on a common service model within
-   the IETF can be a challenging task.  It was also noted that the IETF
-   should expedite the publication of standards as well as consider
-   gating them with multiple interoperable implementations.
+   native vendor models) is an unavoidable reality in network
+   management.  Additionally, since the services offered by operators
+   vary significantly, reaching a consensus on a common service model
+   within the IETF can be a challenging task.  It was also noted that
+   the IETF should expedite the publication of standards as well as
+   consider gating them with multiple interoperable implementations.
 
 3.3.  Session III: Future (possible solutions, recommendations and next
       steps)
@@ -500,9 +503,9 @@ Table of Contents
    as a single protocol beyond network management, (2) utilizing Network
    Management Datastore Architecture (NMDA) model, (3) creating data
    model adapters (off-box so that common standard models can be
-   developed in parallel to the required device "native" models), and
-   (4) defining device protocol adapters (with RESTCONF-like NBI for a
-   common shared-by-all repository).
+   developed in parallel to the required device "native" vendor models),
+   and (4) defining device protocol adapters (with RESTCONF-like NBI for
+   a common shared-by-all repository).
 
    [WILTON] recommends reducing unnecessary complexity, delivering
    timely solutions, fostering open collaboration between vendors and
@@ -515,32 +518,37 @@ Table of Contents
 
 3.3.2.  Discussion
 
-   The open discussion in Session III explored several topics, including
-   the absence of NMDA in OpenConfig and whether the associated
-   complexity is justified; the historical context of gNMI’s
-   introduction in the IETF and whether RESTCONF provides any advantages
-   over it; and the challenges of building consensus, noting that while
-   the process takes time, it should not be short-circuited.  The
-   session also addressed the practicality of converging on a single
-   protocol and concluded that such convergence is, in fact, feasible.
+   The open discussion in Session III explored a range of topics.  These
+   included the absence of NMDA in OpenConfig and debate over whether
+   its complexity is justified; the historical context of gNMI’s
+   introduction in the IETF and whether RESTCONF offers advantages over
+   it; and the broader challenges of building consensus, with
+   participants noting that while the process takes time, it should not
+   be short-circuited.  The discussion also addressed the practicality
+   of converging on a single protocol and concluded that such
+   convergence is, in fact, feasible.
+
    The discussion emphasized off-box adapters, which allow vendors to
-   continue innovating and developing native models rapidly.  One
-   suggestion that attracted a lot of discussions centred on developing
-   a standard model mapping to native models that could be maintained in
-   a common repository, enabling the community to assess coverage and
-   alignment.  Further, the discussion explored alternative approaches
-   to YANG models within the IETF but outside of RFCs, such as
-   leveraging GitHub to accelerate the process (along with the
-   challenges associated with it), living documents within the WG
-   charter, and supporting academia to take up the open source efforts,
-   such as device adapters.  The discussion emphasized the need for
-   process experimentation, particularly at the working group or area
-   level, where we could have consensus among the YANG/OPS community on
-   how we iterate in WGs without IETF/RFC-wide changes, but making sure
-   the operators are involved in the process.  Conversations ensued
-   around questions asked, such as "Is YANG applicable beyond network
-   management?" and "Can applications adopt YANG as a modelling language
-   to define their services?"
+   continue innovating and developing native vendor models rapidly.  One
+   suggestion that attracted a lot of discussion centred on developing a
+   standard model mapping to native vendor models that could be
+   maintained in a common repository, enabling the community to assess
+   coverage and alignment.
+
+   Further, the discussion explored alternative approaches to YANG
+   models within the IETF but outside of RFCs, such as leveraging GitHub
+   to accelerate the process (along with the challenges associated with
+   it), living documents within the WG charter, and supporting academia
+   to take up the open source efforts, such as device adapters.  The
+   discussion emphasized the need for process experimentation,
+   particularly at the working group or area level, where we could have
+   consensus among the YANG/OPS community on how we iterate in WGs
+   without IETF/RFC-wide changes, but making sure the operators are
+   involved in the process.
+
+   Conversations ensued around questions asked, such as "Is YANG
+   applicable beyond network management?" and "Can applications adopt
+   YANG as a modelling language to define their services?"
 
    Some key recommendations made by operators during outreach
    (Section 2) are listed in Appendix B.
@@ -549,8 +557,8 @@ Table of Contents
 
    At the end of the third day, the discussion turned to key takeaways
    that have a high-level consensus.  These were live edited during the
-   last discussion of the workshop, and anything that did not reach wide
-   consensus was moved into a "future considerations" list
+   last discussion of the workshop, and anything that did not reach a
+   wide consensus was moved into a "future considerations" list
    (Section 3.4.5).
 
 3.4.1.  Ecosystem conclusions
@@ -565,8 +573,9 @@ Table of Contents
 
    2.  The overall ecosystem is still fragmented for both protocols and
        data models.  SNMP is still used extensively for monitoring, and
-       the CLI is still heavily relied on in many networks.  Popular
-       protocols include SNMP, CLI, NETCONF, RESTCONF, gNMI, etc.
+       the CLI is still heavily relied on for configuration in many
+       networks.  Popular protocols include SNMP, NETCONF, RESTCONF, and
+       gNMI.
 
    3.  Documentation about the architecture and usage of the network
        management ecosystem is lacking.  More work is needed to create
@@ -590,9 +599,9 @@ Table of Contents
    The following conclusions came while discussing Network Management
    protocols, more specifically.
 
-   1.  Netconf and YANG are not used much for monitoring tasks.
+   1.  NETCONF and YANG are not used much for monitoring tasks.
 
-   2.  Netconf and YANG do not have full coverage on many devices.
+   2.  NETCONF and YANG do not have full coverage on many devices.
 
    3.  Polling-based solutions are still frequently deployed.  Push-
        based solutions are often desired but are not yet widely
@@ -603,8 +612,8 @@ Table of Contents
    The following conclusions came while discussing Network Management
    modeling, more specifically.
 
-   1.  Some YANG models can become too complex, though not as a fault of
-       the language itself.
+   1.  Some YANG models can become complex due to the underlying
+       features they represent, not due to the language itself.
 
    2.  Multi-vendor compatibility support is required.
 
@@ -882,9 +891,14 @@ Table of Contents
               device-network-management-current-status-and-future-
               direction/>.
 
-Appendix A.  Insights from Operator Feedback
+Appendix A.  Operator Feedback
 
-A.1.  General Insights
+   This section compiles the operator feedback gathered through outreach
+   and information gathering at various operational venues (RIPE, NANOG,
+   APRICOT, LACNIC, AutoConn, etc).  The PC synthesized this input and
+   presented it during the workshop (see Section 3.2.2).
+
+A.1.  General
 
    1.  In network deployments, operations are typically at the bottom of
        the ladder.  It's the most squeezed for time and resources.
@@ -908,8 +922,9 @@ A.1.  General Insights
        language.  In any case, on the client side, multiple programming
        languages are used.
 
-   6.  Screen scraping is both necessary and evil.  This most often
-       occurs when interacting with a device having only a CLI.
+   6.  Screen scraping is unfortunately necessary and painful.  This
+       most often occurs when interacting with a device having only a
+       CLI.
 
    7.  It was noted that there could be an outreach to Academia to
        establish programs to teach lessons using modern management
@@ -925,13 +940,13 @@ A.2.  Data Models
        adaptation layer to transcode service-level models to device-
        level models and conform to the device-specific protocol.
 
-   2.  There is a need for solutions to not hide vendor-specific knobs.
-       Currently, vendors compete by differentiating their offerings in
-       unique ways.  The reason why an Operator may choose a particular
-       vendor is because of its differentiating features.  Whilst
-       standard models enable conformance, they must not hide the
-       vendor-specific knobs.  YANG deviations are a partial solution to
-       not hiding vendor knobs.
+   2.  There is a need for solutions to not hide vendor-specific
+       parameters.  Currently, vendors compete by differentiating their
+       offerings in unique ways.  The reason why an Operator may choose
+       a particular vendor is because of its differentiating features.
+       Whilst standard models enable conformance, they must not hide the
+       vendor-specific parameters.  YANG deviations are a partial
+       solution to not hiding vendor knobs.
 
    3.  It was emphasized that streaming telemetry requires picking a
        model and sticking with it.  It is quite a commitment, and the
@@ -941,10 +956,10 @@ A.2.  Data Models
        service-level data models since it is the only thing the
        community may ever agree on.
 
-   5.  There was a point about navigating non-device-specific models
-       being difficult.  If understood correctly, the Network Engineer
-       knows the CLI command but has trouble grepping for it in YANG
-       modules defined by SDOs.
+   5.  It was noted that navigating standard models can be difficult.
+       The Network Engineer knows the vendor CLI commands but has
+       trouble locating the corresponding leaves in the standard YANG
+       models defined by SDOs.
 
    6.  There was a wish that the IETF and OpenConfig models would merge.
 
@@ -964,8 +979,8 @@ Appendix B.  Key Recommendations from Operator Feedback
 
    *  IETF: Recommend a solution stack for common use cases.
 
-   *  Ambassadors: Evangelize the recommended solution stack for common
-      cases.
+   *  Technology Ambassadors: Evangelize the recommended solution stack
+      for common cases.
 
    *  Vendors: Support the recommended approach to the solution stack
       for common cases.
@@ -1110,8 +1125,8 @@ IAB Members at the Time of Approval
 Acknowledgments
 
    Thanks to Benoît Claise, Jürgen Schönwälder, Kristian Larsson, Jaime
-   Jiménez, Michael Richardson, and Phil Shafer for helpful suggestions
-   to improve this report.
+   Jiménez, Michael Richardson, Phil Shafer, Mirja Kühlewind, and Roman
+   Danyliw for helpful suggestions to improve this report.
 
    Thanks to Alvaro Retana for shepherding this document.
 
