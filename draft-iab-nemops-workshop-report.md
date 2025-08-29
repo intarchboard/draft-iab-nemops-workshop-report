@@ -584,7 +584,7 @@ This section compiles the operator feedback gathered through outreach and inform
 3. There is debate fatigue. The protocol/model debate is a recurring conversation. The problem isn’t going away.
 4. It was suggested that other domains (e.g., K8N/automation) are years ahead of the current network engineering stack.
 5. Support for multiple friendly, stable and feature-rich libraries for programming languages is needed. Many DevOps routines use shell scripts, while others use a high-level programming language. In any case, on the client side, multiple programming languages are used.
-6. Screen scraping is both necessary and painful. This most often occurs when interacting with a device having only a CLI.
+6. Screen scraping is unfortunately necessary and painful. This most often occurs when interacting with a device having only a CLI.
 7. It was noted that there could be an outreach to Academia to establish programs to teach lessons using modern management stacks, and then a new generation of engineers could help to improve tooling and automation, with university (and/or IETF) hackathons.
 
 ## Data Models
@@ -593,7 +593,7 @@ This section compiles the operator feedback gathered through outreach and inform
 2. There is a need for solutions to not hide vendor-specific parameters. Currently, vendors compete by differentiating their offerings in unique ways. The reason why an Operator may choose a particular vendor is because of its differentiating features. Whilst standard models enable conformance, they must not hide the vendor-specific parameters. YANG deviations are a partial solution to not hiding vendor knobs.
 3. It was emphasized that streaming telemetry requires picking a model and sticking with it. It is quite a commitment, and the current environment makes the decision harder.
 4. It was noted that IETF's focus should be on defining abstract/service-level data models since it is the only thing the community may ever agree on.
-5. It was noted that navigating standard models can be difficult. The Network Engineer knows the vendor CLI commands but has trouble locating the corresponding nodes in the standard YANG models defined by SDOs.
+5. It was noted that navigating standard models can be difficult. The Network Engineer knows the vendor CLI commands but has trouble locating the corresponding leaves in the standard YANG models defined by SDOs.
 6. There was a wish that the IETF and OpenConfig models would merge.
 
 # Key Recommendations from Operator Feedback {#recommendations}
