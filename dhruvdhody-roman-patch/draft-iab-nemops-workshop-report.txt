@@ -5,7 +5,7 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                          
 Intended status: Informational                                  D. Dhody
-Expires: 28 February 2026                                 27 August 2025
+Expires: 2 March 2026                                     29 August 2025
 
 
    Report from the IAB Workshop on the Next Era of Network Management
@@ -63,7 +63,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 28 February 2026.
+   This Internet-Draft will expire on 2 March 2026.
 
 Copyright Notice
 
@@ -922,8 +922,9 @@ A.1.  General
        language.  In any case, on the client side, multiple programming
        languages are used.
 
-   6.  Screen scraping is both necessary and painful.  This most often
-       occurs when interacting with a device having only a CLI.
+   6.  Screen scraping is unfortunately necessary and painful.  This
+       most often occurs when interacting with a device having only a
+       CLI.
 
    7.  It was noted that there could be an outreach to Academia to
        establish programs to teach lessons using modern management
@@ -957,7 +958,7 @@ A.2.  Data Models
 
    5.  It was noted that navigating standard models can be difficult.
        The Network Engineer knows the vendor CLI commands but has
-       trouble locating the corresponding nodes in the standard YANG
+       trouble locating the corresponding leaves in the standard YANG
        models defined by SDOs.
 
    6.  There was a wish that the IETF and OpenConfig models would merge.
