@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-08-28T01:48:00.803881+00:00",
+  "timestamp": "2025-08-31T01:53:11.746112+00:00",
   "repo": "intarchboard/draft-iab-nemops-workshop-report",
   "labels": [
     {
@@ -406,26 +406,109 @@
       "id": "PR_kwDONe90rM6llRKt",
       "title": "Comments from Roman",
       "url": "https://github.com/intarchboard/draft-iab-nemops-workshop-report/pull/6",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "dhruvdhody",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2025-08-27T11:25:50Z",
-      "updatedAt": "2025-08-27T11:31:39Z",
+      "updatedAt": "2025-08-29T18:13:27Z",
       "baseRepository": "intarchboard/draft-iab-nemops-workshop-report",
       "baseRefName": "main",
       "baseRefOid": "f514e6275c1d64088adeb1fca733d3bef4b95124",
       "headRepository": "intarchboard/draft-iab-nemops-workshop-report",
       "headRefName": "dhruvdhody-roman-patch",
-      "headRefOid": "29950fad79827cf8bd1edfcb97aecafd5aa8bb9d",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "551763d1c61e49675a695c1e28d781c93bd068f3",
+      "closedAt": "2025-08-29T18:13:27Z",
+      "mergedAt": "2025-08-29T18:13:27Z",
+      "mergedBy": "dhruvdhody",
+      "mergeCommit": {
+        "oid": "ee5dc70a4f75d71cea8b6ae263c941fa2b917fb1"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDONe90rM684U5E",
+          "commit": {
+            "abbreviatedOid": "29950fa"
+          },
+          "author": "hardaker",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-29T14:08:55Z",
+          "updatedAt": "2025-08-29T14:08:56Z",
+          "comments": [
+            {
+              "originalPosition": 130,
+              "body": "So I think we don't want either evil or painful.  The point behind \"evil\" was that it shouldn't be needed.  So painful doesn't quite get that aspect, though is probably a better word choice.  How about \"unfortunately necessary and painful\" or \"painful and unfortunately necessary because standard APIs do not exist\" or ...",
+              "createdAt": "2025-08-29T14:08:56Z",
+              "updatedAt": "2025-08-29T14:08:56Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDONe90rM684WO7",
+          "commit": {
+            "abbreviatedOid": "29950fa"
+          },
+          "author": "hardaker",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-29T14:09:51Z",
+          "updatedAt": "2025-08-29T14:09:52Z",
+          "comments": [
+            {
+              "originalPosition": 141,
+              "body": "nodes -> leaves?",
+              "createdAt": "2025-08-29T14:09:51Z",
+              "updatedAt": "2025-08-29T14:09:52Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDONe90rM687MQ4",
+          "commit": {
+            "abbreviatedOid": "29950fa"
+          },
+          "author": "dhruvdhody",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-29T18:10:51Z",
+          "updatedAt": "2025-08-29T18:10:51Z",
+          "comments": [
+            {
+              "originalPosition": 130,
+              "body": "will change to \"unfortunately necessary and painful\"",
+              "createdAt": "2025-08-29T18:10:51Z",
+              "updatedAt": "2025-08-29T18:10:51Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDONe90rM687M5I",
+          "commit": {
+            "abbreviatedOid": "29950fa"
+          },
+          "author": "dhruvdhody",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-08-29T18:11:50Z",
+          "updatedAt": "2025-08-29T18:11:50Z",
+          "comments": [
+            {
+              "originalPosition": 141,
+              "body": "ack",
+              "createdAt": "2025-08-29T18:11:50Z",
+              "updatedAt": "2025-08-29T18:11:50Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
